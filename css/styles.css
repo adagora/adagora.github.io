@@ -199,7 +199,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 svg {
@@ -10250,5 +10250,11 @@ section.resume-section .resume-section-content {
     margin-right: -3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .card__section {
+    padding: 0px !important
   }
 }
