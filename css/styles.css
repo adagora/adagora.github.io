@@ -457,7 +457,7 @@ mark,
 
 .list-inline-item {
   display: inline-block;
-  color: #ffc107;
+  color: #18efb1;
 }
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
@@ -9866,7 +9866,7 @@ button.bg-dark:focus {
 }
 
 .text-primary-name {
-  background: linear-gradient(65deg, #FF5135 0, #FF0080 100%);
+  background: linear-gradient(65deg, #117a8b 0, #18efb1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #fff !important;
@@ -9901,7 +9901,7 @@ a.text-info:hover, a.text-info:focus {
 }
 
 .text-warning {
-  color: #ffc107 !important;
+  color: #18efb1 !important;
 }
 
 a.text-warning:hover, a.text-warning:focus {
@@ -10163,7 +10163,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background: linear-gradient(65deg, #FF5135 0, #FF0080 100%);
+  background: linear-gradient(65deg, #117a8b 0, #18efb1 100%);
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
