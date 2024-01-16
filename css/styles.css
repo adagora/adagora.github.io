@@ -64,7 +64,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #768696;
+  color: #adb5bd;
   text-align: left;
   background-color: #141516;
 }
@@ -4787,6 +4787,8 @@ a.badge-primary:focus, a.badge-primary.focus {
 .badge-secondary {
   color: #fff;
   background-color: #6c757d;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
 }
 a.badge-secondary:hover, a.badge-secondary:focus {
   color: #fff;
