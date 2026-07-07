@@ -1,0 +1,178 @@
+[
+  {
+    "id": "pdf-wiki",
+    "title": "PDF Wiki",
+    "url": "https://github.com/adagora/pdf-wiki",
+    "summary": "Local-first knowledge base from PDFs. Drop a PDF, run ingest, get a cross-linked markdown wiki with semantic search. Two extraction paths: Anthropic API key (fast, no page limit) or Claude Code subscription (zero config, 60pp max). Claude Sonnet vision describes every figure as > [!figure] blocks. Optional PNG extraction via Poppler. Configurable via pdfwiki.config.yaml with pre-commit gate, CI, and a review-changes workflow for collaborative knowledge curation.",
+    "category": "AI",
+    "tags": ["TypeScript", "Node.js", "AI", "RAG", "Claude"]
+  },
+  {
+    "id": "loop-me-enterprise",
+    "title": "Loop-me Enterprise",
+    "url": "https://github.com/adagora/loop-me-enterprise",
+    "summary": "An AI-powered interview system where a virtual interviewer runs structured conversations using Google's Gemini agents. Think of it as an automated HR assistant that conducts interviews, takes notes, and writes reports — all while keeping context across the whole conversation.",
+    "category": "AI",
+    "tags": ["TypeScript", "Node.js", "Gemini AI", "Full Stack"]
+  },
+  {
+    "id": "anonymization-research",
+    "title": "PII Anonymization Research",
+    "url": "https://github.com/adagora/anonimizacja-research",
+    "summary": "Researched and benchmarked multiple AI methods for detecting and removing personal information from text. Compared LLMs, specialized NLP models, and Microsoft's Presidio framework — think of it as finding the best tool to automatically redact names, addresses, and sensitive data from documents.",
+    "category": "AI",
+    "tags": ["Python", "AI/ML", "NLP", "Research"]
+  },
+  {
+    "id": "adaptive-retrieval",
+    "title": "Adaptive Retrieval",
+    "url": "https://github.com/adagora/adaptive-retrieval",
+    "summary": "Smarter RAG: the model self-checks if retrieved information is sufficient. If not, it escalates for deep research — reducing hallucinations without extra latency on easy questions.",
+    "category": "AI",
+    "tags": ["Python", "RAG", "Deep Research"]
+  },
+  {
+    "id": "msteams-transcript-processor",
+    "title": "Teams Transcript Processor",
+    "url": "https://github.com/adagora/msteams-transcript-processor",
+    "summary": "Automated pipeline ingesting MS Teams meeting recordings via webhooks, analyzing with AI, and storing structured reports. Two-server architecture for enterprise compliance.",
+    "category": "AI",
+    "tags": ["TypeScript", "Node.js", "Microsoft Graph"]
+  },
+  {
+    "id": "math-tool-pricing",
+    "title": "Math Tool / Pricing Agent",
+    "url": "https://github.com/adagora/math-tool",
+    "summary": "Multi-agent playground built on the Vercel AI SDK and Bun. Four workspaces: arithmetic CLI agent, interactive code REPL, eBay pricing agent that searches live listings and computes quotes, and a web server exposing all agents over SSE with a static UI.",
+    "category": "AI",
+    "tags": ["TypeScript", "Bun", "AI SDK", "Full Stack"]
+  },
+  {
+    "id": "streamr-ml-demo",
+    "title": "Streamr ML Trading",
+    "url": "https://github.com/adagora/streamr-ml-demo",
+    "summary": "Hackathon project: real-time data streaming + ML for crypto trading signals. Won 2nd place at LearnWeb3 AI Hackathon.",
+    "category": "AI",
+    "tags": ["Node.js", "ML", "Hackathon", "Web3"]
+  },
+  {
+    "id": "ai-chat-pdf",
+    "title": "Book AI Chat (PDF RAG)",
+    "url": "https://cryptoregulationtalk.onrender.com/",
+    "summary": "Upload a PDF and ask questions with AI. PostgresML powers semantic search over document text.",
+    "category": "AI",
+    "tags": ["Node.js", "PostgresML", "RAG"]
+  },
+  {
+    "id": "cad-pricing-tool",
+    "title": "CAD Pricing Tool",
+    "url": "https://github.com/adagora/cad-tools",
+    "summary": "Deterministic pricing engine for machined parts from STEP files. Reads 3D geometry via OpenCASCADE, computes machining time from volume and features, applies workshop rates, and generates an interactive HTML quote — no guessing, no hallucinations.",
+    "category": "CAD/Manufacturing",
+    "tags": ["Python", "CAD", "OpenCASCADE", "Manufacturing"]
+  },
+  {
+    "id": "manufacturing-route-analysis",
+    "title": "Manufacturing Route Analysis",
+    "url": "https://github.com/adagora/manufacturing-tool",
+    "summary": "Auditable analysis tool for factory routing decisions. Parses PLC telemetry into structured datasets, scores every gate decision, detects counterfactual opportunities, and generates three standalone HTML dashboards — architecture map, scoring report, and interactive Q&A chat.",
+    "category": "CAD/Manufacturing",
+    "tags": ["Python", "Data", "Manufacturing", "AI"]
+  },
+  {
+    "id": "crypto-trading-monitor",
+    "title": "Crypto Trading Monitor",
+    "url": "https://github.com/adagora/trading",
+    "summary": "Real-time cryptocurrency monitoring system with multi-exchange support (Binance, Kraken, KuCoin). Routes symbols to the correct exchange automatically, tracks market data, and supports autonomous execution strategies for paper trading.",
+    "category": "Trading",
+    "tags": ["Python", "FastAPI", "Web3", "Trading"]
+  },
+  {
+    "id": "currency-manager",
+    "title": "Currency Manager",
+    "url": "https://transfer.reputeme.com/",
+    "summary": "Financial application for fiat and crypto transfers. Built for regulated fintech with sanction screening and compliance features.",
+    "category": "Fintech",
+    "tags": ["React", "TypeScript", "Cypress", "Fintech"]
+  },
+  {
+    "id": "alike-pintrest",
+    "title": "Alike (Ranking Engine)",
+    "url": "https://github.com/adagora/alike-pintrest",
+    "summary": "Manufacturing part similarity and ranking engine inspired by Pinterest's ranking algorithms. Learns which parts, materials, and processes are related and ranks them by relevance to the query — a \"you might also like\" for workshop inventories and supplier catalogs.",
+    "category": "CAD/Manufacturing",
+    "tags": ["Go", "Algorithms", "Manufacturing"]
+  },
+  {
+    "id": "eboombox",
+    "title": "Eboombox",
+    "url": "https://eboombox.vercel.app/",
+    "summary": "Sound visualization for Cardano blockchain (EUTXO model). Turns on-chain transactions into audio — making blockchain data explorable through sound.",
+    "category": "Web3",
+    "tags": ["Next.js", "Web3", "Cardano"]
+  },
+  {
+    "id": "zkFloki",
+    "title": "ZKFloki Staking dApp",
+    "url": "https://github.com/adagora/adagora.github.io/blob/master/assets/img/zkFloki.png",
+    "summary": "Staking application on zkSync layer 2. Users lock tokens and earn rewards — designed and shipped with a friend in 5 days.",
+    "category": "Web3",
+    "tags": ["React", "Web3", "useDapp"]
+  },
+  {
+    "id": "nft-perpetual",
+    "title": "NFT Perpetual Trading",
+    "url": "https://frontend-eneftis.vercel.app/",
+    "summary": "Trading platform giving exposure to NFT floor prices without owning the NFTs. Full stack — frontend, backend watcher, PostgreSQL.",
+    "category": "Web3",
+    "tags": ["React", "GraphQL", "PostgreSQL", "Web3"]
+  },
+  {
+    "id": "foundry-contracts",
+    "title": "Smart Contract Collection",
+    "url": "https://github.com/adagora/foundry-stablecoin",
+    "summary": "Stablecoin, lottery, and fundraising contracts in Solidity with Foundry. Demonstrates Ethereum development and formal testing practices.",
+    "category": "Web3",
+    "tags": ["Solidity", "Foundry", "Smart Contracts"]
+  },
+  {
+    "id": "minting-cardano",
+    "title": "Cardano Token Minting",
+    "url": "https://github.com/adagora/minting-on-Cardano-blockchain/tree/master/minting",
+    "summary": "Toolkit for minting tokens and NFTs on Cardano. Includes on-chain NFT reconstruction guide.",
+    "category": "Web3",
+    "tags": ["Python", "Cardano", "Blockchain"]
+  },
+  {
+    "id": "table-crud",
+    "title": "Table CRUD (Prisma)",
+    "url": "https://codesandbox.io/p/github/adagora/task-nextjs-prisma",
+    "summary": "Full-stack user management app with Next.js and Prisma ORM. Clean UI for create, read, update, delete operations.",
+    "category": "Full Stack",
+    "tags": ["Next.js", "Prisma", "Full Stack"]
+  },
+  {
+    "id": "news-aggregator",
+    "title": "News Aggregator",
+    "url": "https://github.com/adagora/gnNews-redux-toolkit-rtk-query-mui",
+    "summary": "News feed aggregator from NewsAPI — state management with Redux Toolkit and RTK Query.",
+    "category": "Frontend",
+    "tags": ["React", "Redux", "TypeScript"]
+  },
+  {
+    "id": "printu-demo",
+    "title": "Printu SVG Bounding Box",
+    "url": "https://printu-demo.vercel.app/",
+    "summary": "Interactive tool creating bounding boxes around SVG elements. Demonstrates geometric computation and canvas manipulation.",
+    "category": "Frontend",
+    "tags": ["React", "SVG", "TypeScript"]
+  },
+  {
+    "id": "charts-custom",
+    "title": "Custom Charts (D3)",
+    "url": "https://github.com/adagora/charts-custom",
+    "summary": "Custom graph components with Recharts and D3.js — bar charts, line charts, interactive plots for data visualization.",
+    "category": "Data",
+    "tags": ["Next.js", "D3", "Data Viz"]
+  }
+]
