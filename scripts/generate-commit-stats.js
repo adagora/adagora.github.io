@@ -76,10 +76,10 @@ async function generateCommitStats(repoList) {
 
 /* ─── Shipstream: recent activity feed ─── */
 
-async function generateShipstream(privateRepos = new Set()) {
+async function generateShipstream(reposByPush = [], privateRepos = new Set()) {
   const items = [];
 
-  // Fetch merged PRs from the last 90 days
+  // Fetch merged PRs authored by adagora across all visible repos
   try {
     const prs = await apiGet(
       '/search/issues?q=author:adagora+type:pr+is:merged&sort=updated&order=desc&per_page=20'
@@ -99,27 +99,30 @@ async function generateShipstream(privateRepos = new Set()) {
     }
   } catch (err) { console.warn(`  shipstream PRs: ${err.message}`); }
 
-  // Fetch recent commits via search API (requires special accept header for commit search)
-  try {
-    const commits = await apiGet(
-      '/search/commits?q=author:adagora&sort=author-date&order=desc&per_page=20',
-      'application/vnd.github.v3+json'
-    );
-    if (commits && commits.items) {
-      for (const c of commits.items) {
-        const repo = c.repository ? c.repository.full_name : '';
+  // Fetch recent commits directly from the most recently pushed repos.
+  // Uses the repo API (not search API), which works reliably for private repos.
+  const topRepos = reposByPush.slice(0, 30);
+  const commitPromises = topRepos.map(async (fullName) => {
+    try {
+      const commits = await apiGet(`/repos/${fullName}/commits?author=adagora&per_page=3`);
+      if (!commits || commits.length === 0) return;
+      for (const c of commits) {
         const sha = c.sha ? c.sha.slice(0, 7) : '';
         items.push({
           type: 'commit',
-          repo,
-          message: c.commit ? (c.commit.message || '').split('\n')[0] : '',
+          repo: fullName,
+          message: c.commit && c.commit.message ? c.commit.message.split('\n')[0] : '',
           url: c.html_url,
           date: c.commit && c.commit.author ? c.commit.author.date : (c.commit && c.commit.committer ? c.commit.committer.date : ''),
           sha,
         });
       }
+    } catch (err) {
+      // repo might not allow commit listing; skip silently
     }
-  } catch (err) { console.warn(`  shipstream commits: ${err.message}`); }
+  });
+  // Fire all repo commit fetches in parallel
+  await Promise.allSettled(commitPromises);
 
   // Deduplicate by url and sort descending by date
   const seen = new Set();
@@ -155,6 +158,10 @@ async function main() {
   }
 
   const repoList = [...ownerRepoSet].sort();
+  // Keep the push-sorted order for shipstream (most recently pushed first)
+  const reposByPush = repos
+    .filter(r => ownerRepoSet.has(r.full_name))
+    .map(r => r.full_name);
   console.log(`Found ${repoList.length} repos`);
 
   // Commit stats
@@ -165,7 +172,7 @@ async function main() {
   console.log(`${total} commits → data/commit-stats.json`);
 
   // Shipstream activity feed (private repos filtered out for safety)
-  const feed = await generateShipstream(privateRepos);
+  const feed = await generateShipstream(reposByPush, privateRepos);
   fs.writeFileSync('data/recent-activity.json', JSON.stringify({
     generated: new Date().toISOString(), items: feed,
   }, null, 2));
