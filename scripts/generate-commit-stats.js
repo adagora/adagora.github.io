@@ -49,30 +49,16 @@ async function generateCommitStats(repoList) {
 
   for (const fullName of repoList) {
     try {
-      const stats = await apiGet(`/repos/${fullName}/stats/participation`);
-      if (stats && Array.isArray(stats.all) && stats.all.length > 0) {
-        for (let w = 0; w < stats.all.length; w++) {
-          if (stats.all[w] === 0) continue;
-          const perDay = Math.round(stats.all[w] / 7);
-          const base = new Date(oneYearAgo);
-          for (let d = 0; d < 7; d++) {
-            const day = new Date(base);
-            day.setDate(base.getDate() + (w + 1) * 7 - d);
-            dayCounts[day.toISOString().slice(0, 10)] = (dayCounts[day.toISOString().slice(0, 10)] || 0) + perDay;
-          }
-        }
-      } else {
-        const commits = await apiPaginate(
-          `/repos/${fullName}/commits?since=${oneYearAgo.toISOString()}&author=adagora`
-        );
-        for (const c of commits) {
-          if (c.commit && c.commit.author && c.commit.author.date) {
-            const key = c.commit.author.date.slice(0, 10);
-            dayCounts[key] = (dayCounts[key] || 0) + 1;
-          }
+      const commits = await apiPaginate(
+        `/repos/${fullName}/commits?since=${oneYearAgo.toISOString()}&author=adagora`
+      );
+      for (const c of commits) {
+        if (c.commit && c.commit.author && c.commit.author.date) {
+          const key = c.commit.author.date.slice(0, 10);
+          dayCounts[key] = (dayCounts[key] || 0) + 1;
         }
       }
-    } catch (err) { console.warn(`  stats ${fullName}: ${err.message}`); }
+    } catch (err) { console.warn(`  ${fullName}: ${err.message}`); }
   }
 
   const days = {};
