@@ -76,7 +76,7 @@ async function generateCommitStats(repoList) {
 
 /* ─── Shipstream: recent activity feed ─── */
 
-async function generateShipstream() {
+async function generateShipstream(privateRepos = new Set()) {
   const items = [];
 
   // Fetch merged PRs from the last 90 days
@@ -131,7 +131,10 @@ async function generateShipstream() {
   }
   unique.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  return unique.slice(0, 25);
+  // Filter out private repos — repo names visible in the feed must be safe
+  const safe = unique.filter(item => !privateRepos.has(item.repo));
+
+  return safe.slice(0, 25);
 }
 
 /* ─── Main ─── */
@@ -140,7 +143,10 @@ async function main() {
   const repos = await apiPaginate('/user/repos?type=all&sort=pushed');
   const ownerRepoSet = new Set();
 
+  const privateRepos = new Set();
+
   for (const r of repos) {
+    if (r.private) privateRepos.add(r.full_name);
     if (r.owner && r.owner.type === 'Organization') {
       if (r.permissions && r.permissions.push) ownerRepoSet.add(r.full_name);
     } else {
@@ -158,8 +164,8 @@ async function main() {
   }, null, 2));
   console.log(`${total} commits → data/commit-stats.json`);
 
-  // Shipstream activity feed
-  const feed = await generateShipstream();
+  // Shipstream activity feed (private repos filtered out for safety)
+  const feed = await generateShipstream(privateRepos);
   fs.writeFileSync('data/recent-activity.json', JSON.stringify({
     generated: new Date().toISOString(), items: feed,
   }, null, 2));
