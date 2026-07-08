@@ -1,9 +1,8 @@
 {
-  "generated": "2026-07-07T18:57:40.358Z",
-  "total": 845,
+  "generated": "2026-07-08T08:25:17.837Z",
+  "total": 857,
   "days": {
-    "2025-07-07": 0,
-    "2025-07-08": 5,
+    "2025-07-08": 4,
     "2025-07-09": 4,
     "2025-07-10": 5,
     "2025-07-11": 6,
@@ -366,7 +365,8 @@
     "2026-07-03": 10,
     "2026-07-04": 2,
     "2026-07-05": 7,
-    "2026-07-06": 1
+    "2026-07-06": 1,
+    "2026-07-07": 13
   },
   "repos": [
     "adagora/---source---",
@@ -446,6 +446,7 @@
     "adagora/llm-video-extract-frames",
     "adagora/llmwiki",
     "adagora/lokalise",
+    "adagora/lokalise-old",
     "adagora/lokalisev2",
     "adagora/lol",
     "adagora/loop-coding-agent",
@@ -507,7 +508,6 @@
     "adagora/t3",
     "adagora/t4",
     "adagora/t5",
-    "adagora/t6",
     "adagora/table-crud",
     "adagora/task",
     "adagora/task-backend",

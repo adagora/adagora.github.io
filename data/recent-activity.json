@@ -1,6 +1,110 @@
 {
-  "generated": "2026-07-07T18:57:41.445Z",
+  "generated": "2026-07-08T08:25:19.569Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/adagora.github.io",
+      "message": "fix(shipstream): recent activity",
+      "url": "https://github.com/adagora/adagora.github.io/commit/202ce704c450f9911e2906acd20409b00ad3a308",
+      "date": "2026-07-07T19:32:46Z",
+      "sha": "202ce70"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/adagora.github.io",
+      "message": "update proj",
+      "url": "https://github.com/adagora/adagora.github.io/commit/aa09d052d3fd44fd435bc2d4f364d327ef2fd6ea",
+      "date": "2026-07-07T19:24:55Z",
+      "sha": "aa09d05"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/adagora.github.io",
+      "message": "Filter private repos from shipstream feed for safety",
+      "url": "https://github.com/adagora/adagora.github.io/commit/85e3b82d207d8d0f510cf0fc9d2e48eaad115300",
+      "date": "2026-07-07T18:56:27Z",
+      "sha": "85e3b82"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/cad-tools",
+      "message": "add fixes, update models on ui",
+      "url": "https://github.com/adagora/cad-tools/commit/4e6c594f94ce7fd3661d9b7d9ecf45da950c54d3",
+      "date": "2026-06-16T15:20:31Z",
+      "sha": "4e6c594"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/cad-tools",
+      "message": "Retire ROOT_PROMPT.md + the unused MCP/Claude-Desktop path",
+      "url": "https://github.com/adagora/cad-tools/commit/1ff235a9f071dabf56be3d72c7627a460d79bb85",
+      "date": "2026-06-15T16:26:01Z",
+      "sha": "1ff235a"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/cad-tools",
+      "message": "Webapp single-source config: read skill config, drop parallel config.json model",
+      "url": "https://github.com/adagora/cad-tools/commit/7cc09e6723ea6c24b904fdb2e517ecd7380df17d",
+      "date": "2026-06-15T16:16:01Z",
+      "sha": "7cc09e6"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/calc-price-agent",
+      "message": "chore: bump version to 0.0.117 in plan",
+      "url": "https://github.com/adagora/calc-price-agent/commit/4780b372c520290423dd89e15312e1652cac3980",
+      "date": "2026-05-14T18:26:50Z",
+      "sha": "4780b37"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/calc-price-agent",
+      "message": "feat: add --save-build CLI flag for persisted builds (spec 16)",
+      "url": "https://github.com/adagora/calc-price-agent/commit/cbfb97fe9112b39d569cc3ce84f5303dbdbc0767",
+      "date": "2026-05-14T18:25:22Z",
+      "sha": "cbfb97f"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/calc-price-agent",
+      "message": "CSS: Standardize refinement and budget panels to CSS variables",
+      "url": "https://github.com/adagora/calc-price-agent/commit/51386953d56640e7032d16e9a87f140ba23e7f4c",
+      "date": "2026-05-14T18:24:10Z",
+      "sha": "5138695"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/loop-coding-agent",
+      "message": "update",
+      "url": "https://github.com/adagora/loop-coding-agent/commit/82a9e36c75213223bbc77db04d91aa7328481f23",
+      "date": "2026-01-28T19:23:52Z",
+      "sha": "82a9e36"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/loop-coding-agent",
+      "message": "init",
+      "url": "https://github.com/adagora/loop-coding-agent/commit/7294961ea98666f3558e32a0b806725fbe40264e",
+      "date": "2026-01-27T20:20:55Z",
+      "sha": "7294961"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/agent-demo",
+      "message": "Add comprehensive product specification for Gora CLI",
+      "url": "https://github.com/adagora/agent-demo/commit/1e56e3131795c097d2d048cd22b9efeaee4c73b8",
+      "date": "2026-01-18T19:37:12Z",
+      "sha": "1e56e31"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/agent-demo",
+      "message": "Migrate to Bun.js and add GPT-5.2-Codex support",
+      "url": "https://github.com/adagora/agent-demo/commit/610615528d9c2c492c7b02a3d74114eb978328c7",
+      "date": "2026-01-18T14:43:38Z",
+      "sha": "6106155"
+    },
     {
       "type": "pr",
       "repo": "infiniflow/ragflow",
