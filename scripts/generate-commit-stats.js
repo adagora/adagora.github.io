@@ -76,55 +76,56 @@ async function generateCommitStats(repoList) {
 
 /* ─── Shipstream: recent activity feed ─── */
 
-async function generateShipstream(reposByPush = [], privateRepos = new Set()) {
+async function generateShipstream() {
   const items = [];
 
-  // Fetch merged PRs authored by adagora across all visible repos
-  try {
-    const prs = await apiGet(
-      '/search/issues?q=author:adagora+type:pr+is:merged&sort=updated&order=desc&per_page=20'
-    );
-    if (prs && prs.items) {
-      for (const pr of prs.items) {
-        items.push({
-          type: 'pr',
-          repo: pr.repository_url ? pr.repository_url.replace('https://api.github.com/repos/', '') : '',
-          title: pr.title,
-          url: pr.html_url,
-          date: pr.updated_at || pr.created_at,
-          state: pr.state,
-          merged: true,
-        });
-      }
-    }
-  } catch (err) { console.warn(`  shipstream PRs: ${err.message}`); }
+  // Events API for discovery, then repo API for commit details (PushEvents strip commits).
+  const events = await apiPaginate('/users/adagora/events');
 
-  // Fetch recent commits directly from the most recently pushed repos.
-  // Uses the repo API (not search API), which works reliably for private repos.
-  const topRepos = reposByPush.slice(0, 30);
-  const commitPromises = topRepos.map(async (fullName) => {
-    try {
-      const commits = await apiGet(`/repos/${fullName}/commits?author=adagora&per_page=3`);
-      if (!commits || commits.length === 0) return;
-      for (const c of commits) {
-        const sha = c.sha ? c.sha.slice(0, 7) : '';
-        items.push({
-          type: 'commit',
-          repo: fullName,
-          message: c.commit && c.commit.message ? c.commit.message.split('\n')[0] : '',
-          url: c.html_url,
-          date: c.commit && c.commit.author ? c.commit.author.date : (c.commit && c.commit.committer ? c.commit.committer.date : ''),
-          sha,
-        });
+  const pushRepos = new Map();
+  for (const event of events) {
+    if (event.type === 'PushEvent' && event.repo?.name) {
+      if (!pushRepos.has(event.repo.name)) {
+        pushRepos.set(event.repo.name, event.created_at);
       }
-    } catch (err) {
-      // repo might not allow commit listing; skip silently
+    } else if (
+      event.type === 'PullRequestEvent' &&
+      event.payload?.action === 'closed' &&
+      event.payload?.pull_request?.merged
+    ) {
+      const pr = event.payload.pull_request;
+      items.push({
+        type: 'pr',
+        repo: event.repo?.name || '',
+        title: pr.title,
+        url: pr.html_url,
+        date: pr.updated_at || event.created_at,
+        state: 'closed',
+        merged: true,
+      });
     }
+  }
+
+  const commitPromises = [...pushRepos.entries()].map(async ([fullName]) => {
+    try {
+      const commits = await apiGet(`/repos/${fullName}/commits?author=adagora&per_page=5`);
+      if (!Array.isArray(commits)) return;
+      for (const c of commits) {
+        if (c.commit?.author?.date) {
+          items.push({
+            type: 'commit',
+            repo: fullName,
+            message: c.commit.message ? c.commit.message.split('\n')[0] : '',
+            url: c.html_url || `https://github.com/${fullName}/commit/${c.sha}`,
+            date: c.commit.author.date,
+            sha: c.sha ? c.sha.slice(0, 7) : '',
+          });
+        }
+      }
+    } catch (_) {}
   });
-  // Fire all repo commit fetches in parallel
   await Promise.allSettled(commitPromises);
 
-  // Deduplicate by url and sort descending by date
   const seen = new Set();
   const unique = [];
   for (const item of items) {
@@ -134,10 +135,7 @@ async function generateShipstream(reposByPush = [], privateRepos = new Set()) {
   }
   unique.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  // Filter out private repos — repo names visible in the feed must be safe
-  const safe = unique.filter(item => !privateRepos.has(item.repo));
-
-  return safe.slice(0, 25);
+  return unique.slice(0, 25);
 }
 
 /* ─── Main ─── */
@@ -146,10 +144,7 @@ async function main() {
   const repos = await apiPaginate('/user/repos?type=all&sort=pushed');
   const ownerRepoSet = new Set();
 
-  const privateRepos = new Set();
-
   for (const r of repos) {
-    if (r.private) privateRepos.add(r.full_name);
     if (r.owner && r.owner.type === 'Organization') {
       if (r.permissions && r.permissions.push) ownerRepoSet.add(r.full_name);
     } else {
@@ -158,10 +153,6 @@ async function main() {
   }
 
   const repoList = [...ownerRepoSet].sort();
-  // Keep the push-sorted order for shipstream (most recently pushed first)
-  const reposByPush = repos
-    .filter(r => ownerRepoSet.has(r.full_name))
-    .map(r => r.full_name);
   console.log(`Found ${repoList.length} repos`);
 
   // Commit stats
@@ -171,8 +162,8 @@ async function main() {
   }, null, 2));
   console.log(`${total} commits → data/commit-stats.json`);
 
-  // Shipstream activity feed (private repos filtered out for safety)
-  const feed = await generateShipstream(reposByPush, privateRepos);
+  // Shipstream activity feed — uses Events API, no per-repo iteration needed
+  const feed = await generateShipstream();
   fs.writeFileSync('data/recent-activity.json', JSON.stringify({
     generated: new Date().toISOString(), items: feed,
   }, null, 2));

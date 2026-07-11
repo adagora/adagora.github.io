@@ -1,6 +1,46 @@
 {
-  "generated": "2026-07-11T07:52:24.499Z",
+  "generated": "2026-07-11T18:13:53.491Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(workbench): SPA shell — layout, hash router, object explorer (bu8.19)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/00fe59b01d4058eea800b7979ddb4a3dfc15ce10",
+      "date": "2026-07-11T14:16:52Z",
+      "sha": "00fe59b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(conform,snapshot,window,rollout): validate and close five slices (6io.6, bu8.5, bu8.6, 8y5.4, 8y5.5)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/a4fda08016ee7a32a77e34fa1e75cf795bb74939",
+      "date": "2026-07-11T13:04:34Z",
+      "sha": "a4fda08"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(predict): expose Markov path-conditioned prediction on CLI and HTTP (8y5.7)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/a12007be8f308386ad8bfd594037641f62db6fe4",
+      "date": "2026-07-10T17:19:05Z",
+      "sha": "a12007b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "chore(dx): /bead skill — one-bead-per-session workflow for solo agent runs",
+      "url": "https://github.com/adagora/alike-pintrest/commit/80a5365df5687efc7872a1cdf85b1386f58a72f8",
+      "date": "2026-07-10T05:40:19Z",
+      "sha": "80a5365"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "fix(ingest): truncation-tolerant payload extraction with attributed skips (1lh.10)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/5ce5f7f2e1df44d7bb7dc4b3f6dbb71f483df7d9",
+      "date": "2026-07-10T05:31:01Z",
+      "sha": "5ce5f7f"
+    },
     {
       "type": "commit",
       "repo": "adagora/adagora.github.io",
@@ -24,6 +64,38 @@
       "url": "https://github.com/adagora/adagora.github.io/commit/85e3b82d207d8d0f510cf0fc9d2e48eaad115300",
       "date": "2026-07-07T18:56:27Z",
       "sha": "85e3b82"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/adagora.github.io",
+      "message": "Fix commit stats: count only own commits, not all contributors",
+      "url": "https://github.com/adagora/adagora.github.io/commit/b570e7b712e8443cc7ab97864a5a48176ae69222",
+      "date": "2026-07-07T18:48:30Z",
+      "sha": "b570e7b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/adagora.github.io",
+      "message": "Fix workflow: use PAT for checkout to bypass branch protection",
+      "url": "https://github.com/adagora/adagora.github.io/commit/1967b2fdb9dada950152f83cacbe49d0f9f0ebd9",
+      "date": "2026-07-07T18:41:39Z",
+      "sha": "1967b2f"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/loop-me-enterprise",
+      "message": "more attached type, some improvement",
+      "url": "https://github.com/adagora/loop-me-enterprise/commit/f86fd63f4282bdb8001c91d678611bbd3dcf8733",
+      "date": "2026-07-06T18:42:59Z",
+      "sha": "f86fd63"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/loop-me-enterprise",
+      "message": "general improvement",
+      "url": "https://github.com/adagora/loop-me-enterprise/commit/f78d4c411dd07db7c568c0d30b203688c7baaca6",
+      "date": "2026-07-01T22:08:15Z",
+      "sha": "f78d4c4"
     },
     {
       "type": "commit",
@@ -51,131 +123,59 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/calc-price-agent",
-      "message": "chore: bump version to 0.0.117 in plan",
-      "url": "https://github.com/adagora/calc-price-agent/commit/4780b372c520290423dd89e15312e1652cac3980",
-      "date": "2026-05-14T18:26:50Z",
-      "sha": "4780b37"
+      "repo": "adagora/cad-tools",
+      "message": "Fix bugs found in self-review of this session's code",
+      "url": "https://github.com/adagora/cad-tools/commit/be9c09c7a07ada11066ac051d32a7dd676245b4e",
+      "date": "2026-06-15T15:46:12Z",
+      "sha": "be9c09c"
     },
     {
       "type": "commit",
-      "repo": "adagora/calc-price-agent",
-      "message": "feat: add --save-build CLI flag for persisted builds (spec 16)",
-      "url": "https://github.com/adagora/calc-price-agent/commit/cbfb97fe9112b39d569cc3ce84f5303dbdbc0767",
-      "date": "2026-05-14T18:25:22Z",
-      "sha": "cbfb97f"
+      "repo": "adagora/cad-tools",
+      "message": "Update beads: close W6.3 + W6.4 + EPIC W6 complete (7 of 8 epics)",
+      "url": "https://github.com/adagora/cad-tools/commit/9ff28900b3fb1325bc22b4143c119ef51a02cc34",
+      "date": "2026-06-15T15:24:34Z",
+      "sha": "9ff2890"
     },
     {
       "type": "commit",
-      "repo": "adagora/calc-price-agent",
-      "message": "CSS: Standardize refinement and budget panels to CSS variables",
-      "url": "https://github.com/adagora/calc-price-agent/commit/51386953d56640e7032d16e9a87f140ba23e7f4c",
-      "date": "2026-05-14T18:24:10Z",
-      "sha": "5138695"
+      "repo": "adagora/wiki-llm-with-markdown-editor",
+      "message": "improve ingestion, add some example",
+      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/07830111db259b199cad400d2eba3ac80e3709d0",
+      "date": "2026-05-19T20:17:27Z",
+      "sha": "0783011"
     },
     {
       "type": "commit",
-      "repo": "adagora/loop-coding-agent",
-      "message": "update",
-      "url": "https://github.com/adagora/loop-coding-agent/commit/82a9e36c75213223bbc77db04d91aa7328481f23",
-      "date": "2026-01-28T19:23:52Z",
-      "sha": "82a9e36"
+      "repo": "adagora/wiki-llm-with-markdown-editor",
+      "message": "add chat ui to jot",
+      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/bd7f72d2a6840de2614ebebf79f636c9d05cfd52",
+      "date": "2026-05-17T16:03:42Z",
+      "sha": "bd7f72d"
     },
     {
       "type": "commit",
-      "repo": "adagora/loop-coding-agent",
-      "message": "init",
-      "url": "https://github.com/adagora/loop-coding-agent/commit/7294961ea98666f3558e32a0b806725fbe40264e",
-      "date": "2026-01-27T20:20:55Z",
-      "sha": "7294961"
+      "repo": "adagora/wiki-llm-with-markdown-editor",
+      "message": "update kb",
+      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/9903c3c769f1343c559437d1496b2542e21e9224",
+      "date": "2026-05-17T13:58:50Z",
+      "sha": "9903c3c"
     },
     {
       "type": "commit",
-      "repo": "adagora/agent-demo",
-      "message": "Add comprehensive product specification for Gora CLI",
-      "url": "https://github.com/adagora/agent-demo/commit/1e56e3131795c097d2d048cd22b9efeaee4c73b8",
-      "date": "2026-01-18T19:37:12Z",
-      "sha": "1e56e31"
+      "repo": "adagora/wiki-llm-with-markdown-editor",
+      "message": "feat(tables): add table lookup and parameter index drafts",
+      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/393498d9bbea418c12aed17ed591b4b3ca2a0e8b",
+      "date": "2026-05-11T18:28:56Z",
+      "sha": "393498d"
     },
     {
       "type": "commit",
-      "repo": "adagora/agent-demo",
-      "message": "Migrate to Bun.js and add GPT-5.2-Codex support",
-      "url": "https://github.com/adagora/agent-demo/commit/610615528d9c2c492c7b02a3d74114eb978328c7",
-      "date": "2026-01-18T14:43:38Z",
-      "sha": "6106155"
-    },
-    {
-      "type": "pr",
-      "repo": "infiniflow/ragflow",
-      "title": "Fix: floating widget match style with original one",
-      "url": "https://github.com/infiniflow/ragflow/pull/10317",
-      "date": "2025-09-28T05:58:11Z",
-      "state": "closed",
-      "merged": true
-    },
-    {
-      "type": "pr",
-      "repo": "theeldermillenial/solarathon",
-      "title": "feat(token-registry): fix partial match, add some ui components",
-      "url": "https://github.com/theeldermillenial/solarathon/pull/13",
-      "date": "2023-12-12T10:27:47Z",
-      "state": "closed",
-      "merged": true
-    },
-    {
-      "type": "pr",
-      "repo": "theeldermillenial/solarathon",
-      "title": "fix: add fallback to 24h binance service",
-      "url": "https://github.com/theeldermillenial/solarathon/pull/8",
-      "date": "2023-12-01T14:15:10Z",
-      "state": "closed",
-      "merged": true
-    },
-    {
-      "type": "pr",
-      "repo": "theeldermillenial/solarathon",
-      "title": "feat(token-registry): initial page design",
-      "url": "https://github.com/theeldermillenial/solarathon/pull/9",
-      "date": "2023-12-01T13:13:06Z",
-      "state": "closed",
-      "merged": true
-    },
-    {
-      "type": "pr",
-      "repo": "theeldermillenial/solarathon",
-      "title": "Technicalanly",
-      "url": "https://github.com/theeldermillenial/solarathon/pull/6",
-      "date": "2023-11-28T13:46:34Z",
-      "state": "closed",
-      "merged": true
-    },
-    {
-      "type": "pr",
-      "repo": "theeldermillenial/solarathon",
-      "title": "feat(dashboard): draggable cards",
-      "url": "https://github.com/theeldermillenial/solarathon/pull/5",
-      "date": "2023-11-28T08:23:52Z",
-      "state": "closed",
-      "merged": true
-    },
-    {
-      "type": "pr",
-      "repo": "theeldermillenial/solarathon",
-      "title": "ci: set ploomber id",
-      "url": "https://github.com/theeldermillenial/solarathon/pull/3",
-      "date": "2023-11-24T11:55:30Z",
-      "state": "closed",
-      "merged": true
-    },
-    {
-      "type": "pr",
-      "repo": "theeldermillenial/solarathon",
-      "title": "feat(dashboard): add cards and features",
-      "url": "https://github.com/theeldermillenial/solarathon/pull/2",
-      "date": "2023-11-24T09:17:41Z",
-      "state": "closed",
-      "merged": true
+      "repo": "adagora/wiki-llm-with-markdown-editor",
+      "message": "feat(editor): vendor jot draft workspace",
+      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/be7317164c636a2cf9d2e7488c7bcabec1f7c12b",
+      "date": "2026-05-09T21:53:09Z",
+      "sha": "be73171"
     }
   ]
 }
