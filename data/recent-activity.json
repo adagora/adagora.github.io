@@ -1,6 +1,14 @@
 {
-  "generated": "2026-07-11T18:13:53.491Z",
+  "generated": "2026-07-12T08:14:26.826Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/adagora.github.io",
+      "message": "fix(shipstream): use Events API for activity feed across all repos",
+      "url": "https://github.com/adagora/adagora.github.io/commit/f14108948b9320b6c6e1a34160a4c57fb2fa02c8",
+      "date": "2026-07-11T18:14:04Z",
+      "sha": "f141089"
+    },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
@@ -72,14 +80,6 @@
       "url": "https://github.com/adagora/adagora.github.io/commit/b570e7b712e8443cc7ab97864a5a48176ae69222",
       "date": "2026-07-07T18:48:30Z",
       "sha": "b570e7b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/adagora.github.io",
-      "message": "Fix workflow: use PAT for checkout to bypass branch protection",
-      "url": "https://github.com/adagora/adagora.github.io/commit/1967b2fdb9dada950152f83cacbe49d0f9f0ebd9",
-      "date": "2026-07-07T18:41:39Z",
-      "sha": "1967b2f"
     },
     {
       "type": "commit",
