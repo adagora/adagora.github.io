@@ -1,6 +1,54 @@
 {
-  "generated": "2026-07-12T08:14:26.826Z",
+  "generated": "2026-07-13T09:22:31.215Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "scaffold: specs, ralph loop, beads, token report",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/47db939223fa4ea4654938681d88ff121d58253b",
+      "date": "2026-07-12T18:39:22Z",
+      "sha": "47db939"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "update agents.md, bv remove",
+      "url": "https://github.com/adagora/alike-pintrest/commit/89dd868ba7b5ffd022882f0e589f7f3876aa6591",
+      "date": "2026-07-12T16:39:53Z",
+      "sha": "89dd868"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: update skills, update agents, others",
+      "url": "https://github.com/adagora/alike-pintrest/commit/fc5d15fc11cb26e61d7202f092b0b42bc1b34348",
+      "date": "2026-07-12T16:11:55Z",
+      "sha": "fc5d15f"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(watch): file watcher adapter for hot-folder live ingest (c92.2)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/8593851f9aac7c59f4bdb5d5ae273a394e18d3f4",
+      "date": "2026-07-12T13:10:50Z",
+      "sha": "8593851"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "chore(beads): record c92.1 follow-up doc fix + process note",
+      "url": "https://github.com/adagora/alike-pintrest/commit/fdbf389b378604de8a71b7e035a5c2c545ad93f1",
+      "date": "2026-07-12T11:52:57Z",
+      "sha": "fdbf389"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "docs(ingest): clarify TraceSource.Read must block, not busy-poll",
+      "url": "https://github.com/adagora/alike-pintrest/commit/a85f40d05077ac4b122a9c22a1a47fb65c087aa4",
+      "date": "2026-07-12T11:52:15Z",
+      "sha": "a85f40d"
+    },
     {
       "type": "commit",
       "repo": "adagora/adagora.github.io",
@@ -11,43 +59,11 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat(workbench): SPA shell — layout, hash router, object explorer (bu8.19)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/00fe59b01d4058eea800b7979ddb4a3dfc15ce10",
-      "date": "2026-07-11T14:16:52Z",
-      "sha": "00fe59b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat(conform,snapshot,window,rollout): validate and close five slices (6io.6, bu8.5, bu8.6, 8y5.4, 8y5.5)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/a4fda08016ee7a32a77e34fa1e75cf795bb74939",
-      "date": "2026-07-11T13:04:34Z",
-      "sha": "a4fda08"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat(predict): expose Markov path-conditioned prediction on CLI and HTTP (8y5.7)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/a12007be8f308386ad8bfd594037641f62db6fe4",
-      "date": "2026-07-10T17:19:05Z",
-      "sha": "a12007b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "chore(dx): /bead skill — one-bead-per-session workflow for solo agent runs",
-      "url": "https://github.com/adagora/alike-pintrest/commit/80a5365df5687efc7872a1cdf85b1386f58a72f8",
-      "date": "2026-07-10T05:40:19Z",
-      "sha": "80a5365"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "fix(ingest): truncation-tolerant payload extraction with attributed skips (1lh.10)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/5ce5f7f2e1df44d7bb7dc4b3f6dbb71f483df7d9",
-      "date": "2026-07-10T05:31:01Z",
-      "sha": "5ce5f7f"
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "Create README.md",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/591220aa9406d41bb429714f78ae53f7e336f9e5",
+      "date": "2026-07-09T19:40:45Z",
+      "sha": "591220a"
     },
     {
       "type": "commit",
