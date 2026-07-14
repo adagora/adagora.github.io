@@ -1,6 +1,62 @@
 {
-  "generated": "2026-07-13T09:22:31.215Z",
+  "generated": "2026-07-14T08:00:36.951Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(1lh.6): harden routeseq serve with auth, TLS, timeouts, graceful shutdown",
+      "url": "https://github.com/adagora/alike-pintrest/commit/102fb797ffcda718264e503add3afe57ce8f87ef",
+      "date": "2026-07-13T21:42:30Z",
+      "sha": "102fb79"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(bu8.9): bottleneck & timing heatmap (NodeTimingHeatmap)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/9e731ded4644c59655399a8783a6c167e08e94fd",
+      "date": "2026-07-13T21:30:53Z",
+      "sha": "9e731de"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(1lh.3): fuzz harnesses for timestamp and payload/export parsing",
+      "url": "https://github.com/adagora/alike-pintrest/commit/ec6345c0b1cfadff66c7488d26b630e80e7f69e3",
+      "date": "2026-07-13T21:24:34Z",
+      "sha": "ec6345c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(1lh.4): CI pipeline running the full gate suite",
+      "url": "https://github.com/adagora/alike-pintrest/commit/ad11c13577e5be3cd1944c50cb2bc8d5e130fad3",
+      "date": "2026-07-13T21:13:14Z",
+      "sha": "ad11c13"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "fix(1lh.11): surface TRACE_TYPE and name missing mapping fields",
+      "url": "https://github.com/adagora/alike-pintrest/commit/3f8573a083b3a3e454b8bca5ecec5137ce049a04",
+      "date": "2026-07-13T21:00:39Z",
+      "sha": "3f8573a"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/loop-me-enterprise",
+      "message": "close the loop, load department content at first",
+      "url": "https://github.com/adagora/loop-me-enterprise/commit/e9672ae046b33e0a20df38d7b79c306df13d193d",
+      "date": "2026-07-13T20:49:27Z",
+      "sha": "e9672ae"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/loop-me-enterprise",
+      "message": "add wiki llm",
+      "url": "https://github.com/adagora/loop-me-enterprise/commit/1b4b11e977578608eda8beef29ed2d18a1fe9f60",
+      "date": "2026-07-13T20:42:27Z",
+      "sha": "1b4b11e"
+    },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
@@ -8,46 +64,6 @@
       "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/47db939223fa4ea4654938681d88ff121d58253b",
       "date": "2026-07-12T18:39:22Z",
       "sha": "47db939"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "update agents.md, bv remove",
-      "url": "https://github.com/adagora/alike-pintrest/commit/89dd868ba7b5ffd022882f0e589f7f3876aa6591",
-      "date": "2026-07-12T16:39:53Z",
-      "sha": "89dd868"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: update skills, update agents, others",
-      "url": "https://github.com/adagora/alike-pintrest/commit/fc5d15fc11cb26e61d7202f092b0b42bc1b34348",
-      "date": "2026-07-12T16:11:55Z",
-      "sha": "fc5d15f"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat(watch): file watcher adapter for hot-folder live ingest (c92.2)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/8593851f9aac7c59f4bdb5d5ae273a394e18d3f4",
-      "date": "2026-07-12T13:10:50Z",
-      "sha": "8593851"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "chore(beads): record c92.1 follow-up doc fix + process note",
-      "url": "https://github.com/adagora/alike-pintrest/commit/fdbf389b378604de8a71b7e035a5c2c545ad93f1",
-      "date": "2026-07-12T11:52:57Z",
-      "sha": "fdbf389"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "docs(ingest): clarify TraceSource.Read must block, not busy-poll",
-      "url": "https://github.com/adagora/alike-pintrest/commit/a85f40d05077ac4b122a9c22a1a47fb65c087aa4",
-      "date": "2026-07-12T11:52:15Z",
-      "sha": "a85f40d"
     },
     {
       "type": "commit",
@@ -184,14 +200,6 @@
       "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/393498d9bbea418c12aed17ed591b4b3ca2a0e8b",
       "date": "2026-05-11T18:28:56Z",
       "sha": "393498d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/wiki-llm-with-markdown-editor",
-      "message": "feat(editor): vendor jot draft workspace",
-      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/be7317164c636a2cf9d2e7488c7bcabec1f7c12b",
-      "date": "2026-05-09T21:53:09Z",
-      "sha": "be73171"
     }
   ]
 }
