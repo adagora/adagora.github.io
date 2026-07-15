@@ -1,45 +1,45 @@
 {
-  "generated": "2026-07-14T08:00:36.951Z",
+  "generated": "2026-07-15T08:05:49.102Z",
   "items": [
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(1lh.6): harden routeseq serve with auth, TLS, timeouts, graceful shutdown",
-      "url": "https://github.com/adagora/alike-pintrest/commit/102fb797ffcda718264e503add3afe57ce8f87ef",
-      "date": "2026-07-13T21:42:30Z",
-      "sha": "102fb79"
+      "message": "feat(meta): discovery catalog for nodes, targets, panels (pintrest-llm-chat-2yf.4)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/c6bc8b9cbb8f15100d5e2fde8381fb0bd0ba86f9",
+      "date": "2026-07-14T22:24:07Z",
+      "sha": "c6bc8b9"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(bu8.9): bottleneck & timing heatmap (NodeTimingHeatmap)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/9e731ded4644c59655399a8783a6c167e08e94fd",
-      "date": "2026-07-13T21:30:53Z",
-      "sha": "9e731de"
+      "message": "feat(mcp): curated read-only MCP chat adapter (pintrest-llm-chat-2yf.3)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/bd2968ceacd6ffec2e0efa1a0fe8a3f93ad11945",
+      "date": "2026-07-14T22:05:36Z",
+      "sha": "bd2968c"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(1lh.3): fuzz harnesses for timestamp and payload/export parsing",
-      "url": "https://github.com/adagora/alike-pintrest/commit/ec6345c0b1cfadff66c7488d26b630e80e7f69e3",
-      "date": "2026-07-13T21:24:34Z",
-      "sha": "ec6345c"
+      "message": "docs(chat): prototype study notes for LLM chat tools (pintrest-llm-chat-2yf.1)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/beee4d4b1637e22ce36de40bee450d8c0fc216f5",
+      "date": "2026-07-14T21:24:59Z",
+      "sha": "beee4d4"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(1lh.4): CI pipeline running the full gate suite",
-      "url": "https://github.com/adagora/alike-pintrest/commit/ad11c13577e5be3cd1944c50cb2bc8d5e130fad3",
-      "date": "2026-07-13T21:13:14Z",
-      "sha": "ad11c13"
+      "message": "docs(chat): data governance & redaction policy (pintrest-llm-chat-2yf.2)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/b4b5ba9e2c326e3728fc9b0b9de39c5f3bc2f97c",
+      "date": "2026-07-14T20:57:57Z",
+      "sha": "b4b5ba9"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "fix(1lh.11): surface TRACE_TYPE and name missing mapping fields",
-      "url": "https://github.com/adagora/alike-pintrest/commit/3f8573a083b3a3e454b8bca5ecec5137ce049a04",
-      "date": "2026-07-13T21:00:39Z",
-      "sha": "3f8573a"
+      "message": "feat(digest): shift handoff summary card (pintrest-operational-intelligence-6io.5)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/22bbee84213551b1893994d79736f40d65992737",
+      "date": "2026-07-14T20:52:06Z",
+      "sha": "22bbee8"
     },
     {
       "type": "commit",
