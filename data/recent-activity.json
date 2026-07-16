@@ -1,61 +1,45 @@
 {
-  "generated": "2026-07-15T08:05:49.102Z",
+  "generated": "2026-07-16T08:09:41.729Z",
   "items": [
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(meta): discovery catalog for nodes, targets, panels (pintrest-llm-chat-2yf.4)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/c6bc8b9cbb8f15100d5e2fde8381fb0bd0ba86f9",
-      "date": "2026-07-14T22:24:07Z",
-      "sha": "c6bc8b9"
+      "message": "pintrest-autoresearch-t4h.8: pluggable Evaluator with policy-regret impl",
+      "url": "https://github.com/adagora/alike-pintrest/commit/e451c64fa939858d00404928332393353ca03ebc",
+      "date": "2026-07-15T21:38:23Z",
+      "sha": "e451c64"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(mcp): curated read-only MCP chat adapter (pintrest-llm-chat-2yf.3)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/bd2968ceacd6ffec2e0efa1a0fe8a3f93ad11945",
-      "date": "2026-07-14T22:05:36Z",
-      "sha": "bd2968c"
+      "message": "pintrest-autoresearch-t4h.7: planted-anomaly research benchmark",
+      "url": "https://github.com/adagora/alike-pintrest/commit/cb5a3ddcaa9af699120eba38a81d167039889fbe",
+      "date": "2026-07-15T21:01:32Z",
+      "sha": "cb5a3dd"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "docs(chat): prototype study notes for LLM chat tools (pintrest-llm-chat-2yf.1)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/beee4d4b1637e22ce36de40bee450d8c0fc216f5",
-      "date": "2026-07-14T21:24:59Z",
-      "sha": "beee4d4"
+      "message": "pintrest-autoresearch-t4h.6: holdout-rotation guard for honest campaigns",
+      "url": "https://github.com/adagora/alike-pintrest/commit/bb3a2e631fb35db9656aad6b51928f338b64843a",
+      "date": "2026-07-15T20:31:26Z",
+      "sha": "bb3a2e6"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "docs(chat): data governance & redaction policy (pintrest-llm-chat-2yf.2)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/b4b5ba9e2c326e3728fc9b0b9de39c5f3bc2f97c",
-      "date": "2026-07-14T20:57:57Z",
-      "sha": "b4b5ba9"
+      "message": "pintrest-autoresearch-t4h.5: campaign loop with deterministic search strategies",
+      "url": "https://github.com/adagora/alike-pintrest/commit/b986e240679642264d0f7f4be4267c91bbac2f7b",
+      "date": "2026-07-15T20:02:19Z",
+      "sha": "b986e24"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(digest): shift handoff summary card (pintrest-operational-intelligence-6io.5)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/22bbee84213551b1893994d79736f40d65992737",
-      "date": "2026-07-14T20:52:06Z",
-      "sha": "22bbee8"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/loop-me-enterprise",
-      "message": "close the loop, load department content at first",
-      "url": "https://github.com/adagora/loop-me-enterprise/commit/e9672ae046b33e0a20df38d7b79c306df13d193d",
-      "date": "2026-07-13T20:49:27Z",
-      "sha": "e9672ae"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/loop-me-enterprise",
-      "message": "add wiki llm",
-      "url": "https://github.com/adagora/loop-me-enterprise/commit/1b4b11e977578608eda8beef29ed2d18a1fe9f60",
-      "date": "2026-07-13T20:42:27Z",
-      "sha": "1b4b11e"
+      "message": "pintrest-autoresearch-t4h.4: append-only experiment ledger with dedup and budget",
+      "url": "https://github.com/adagora/alike-pintrest/commit/083f4a91cccaf5d1819ceb323063d82318d9f509",
+      "date": "2026-07-15T19:07:35Z",
+      "sha": "083f4a9"
     },
     {
       "type": "commit",
@@ -112,22 +96,6 @@
       "url": "https://github.com/adagora/adagora.github.io/commit/b570e7b712e8443cc7ab97864a5a48176ae69222",
       "date": "2026-07-07T18:48:30Z",
       "sha": "b570e7b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/loop-me-enterprise",
-      "message": "more attached type, some improvement",
-      "url": "https://github.com/adagora/loop-me-enterprise/commit/f86fd63f4282bdb8001c91d678611bbd3dcf8733",
-      "date": "2026-07-06T18:42:59Z",
-      "sha": "f86fd63"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/loop-me-enterprise",
-      "message": "general improvement",
-      "url": "https://github.com/adagora/loop-me-enterprise/commit/f78d4c411dd07db7c568c0d30b203688c7baaca6",
-      "date": "2026-07-01T22:08:15Z",
-      "sha": "f78d4c4"
     },
     {
       "type": "commit",
@@ -200,6 +168,14 @@
       "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/393498d9bbea418c12aed17ed591b4b3ca2a0e8b",
       "date": "2026-05-11T18:28:56Z",
       "sha": "393498d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/wiki-llm-with-markdown-editor",
+      "message": "feat(editor): vendor jot draft workspace",
+      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/be7317164c636a2cf9d2e7488c7bcabec1f7c12b",
+      "date": "2026-05-09T21:53:09Z",
+      "sha": "be73171"
     }
   ]
 }
