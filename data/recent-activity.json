@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-16T08:09:41.729Z",
+  "generated": "2026-07-17T08:07:25.815Z",
   "items": [
     {
       "type": "commit",
@@ -96,46 +96,6 @@
       "url": "https://github.com/adagora/adagora.github.io/commit/b570e7b712e8443cc7ab97864a5a48176ae69222",
       "date": "2026-07-07T18:48:30Z",
       "sha": "b570e7b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/cad-tools",
-      "message": "add fixes, update models on ui",
-      "url": "https://github.com/adagora/cad-tools/commit/4e6c594f94ce7fd3661d9b7d9ecf45da950c54d3",
-      "date": "2026-06-16T15:20:31Z",
-      "sha": "4e6c594"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/cad-tools",
-      "message": "Retire ROOT_PROMPT.md + the unused MCP/Claude-Desktop path",
-      "url": "https://github.com/adagora/cad-tools/commit/1ff235a9f071dabf56be3d72c7627a460d79bb85",
-      "date": "2026-06-15T16:26:01Z",
-      "sha": "1ff235a"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/cad-tools",
-      "message": "Webapp single-source config: read skill config, drop parallel config.json model",
-      "url": "https://github.com/adagora/cad-tools/commit/7cc09e6723ea6c24b904fdb2e517ecd7380df17d",
-      "date": "2026-06-15T16:16:01Z",
-      "sha": "7cc09e6"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/cad-tools",
-      "message": "Fix bugs found in self-review of this session's code",
-      "url": "https://github.com/adagora/cad-tools/commit/be9c09c7a07ada11066ac051d32a7dd676245b4e",
-      "date": "2026-06-15T15:46:12Z",
-      "sha": "be9c09c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/cad-tools",
-      "message": "Update beads: close W6.3 + W6.4 + EPIC W6 complete (7 of 8 epics)",
-      "url": "https://github.com/adagora/cad-tools/commit/9ff28900b3fb1325bc22b4143c119ef51a02cc34",
-      "date": "2026-06-15T15:24:34Z",
-      "sha": "9ff2890"
     },
     {
       "type": "commit",
