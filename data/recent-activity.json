@@ -1,53 +1,85 @@
 {
-  "generated": "2026-07-17T08:07:25.815Z",
+  "generated": "2026-07-18T07:46:10.991Z",
   "items": [
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-autoresearch-t4h.8: pluggable Evaluator with policy-regret impl",
-      "url": "https://github.com/adagora/alike-pintrest/commit/e451c64fa939858d00404928332393353ca03ebc",
-      "date": "2026-07-15T21:38:23Z",
-      "sha": "e451c64"
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "skillsmd-auto-optimisation-e23: 003 agreed + build guide; 004 draft absorbs borrowed concepts; bead tree decomposed",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/dd5d602784acab760f374078b432602818b91e4f",
+      "date": "2026-07-17T22:30:53Z",
+      "sha": "dd5d602"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "pintrest-autoresearch-t4h.7: planted-anomaly research benchmark",
-      "url": "https://github.com/adagora/alike-pintrest/commit/cb5a3ddcaa9af699120eba38a81d167039889fbe",
-      "date": "2026-07-15T21:01:32Z",
-      "sha": "cb5a3dd"
+      "message": "pintrest-decision-workbench-bu8.12: prediction explainer (stages, support, raw, exclusions)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/5b9fbc9e1bf523f10ba273c09d7be9f71af57792",
+      "date": "2026-07-17T17:35:03Z",
+      "sha": "5b9fbc9"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "pintrest-autoresearch-t4h.6: holdout-rotation guard for honest campaigns",
-      "url": "https://github.com/adagora/alike-pintrest/commit/bb3a2e631fb35db9656aad6b51928f338b64843a",
-      "date": "2026-07-15T20:31:26Z",
-      "sha": "bb3a2e6"
+      "message": "pintrest-hardening-and-dx-1lh.9: real-data validation study (full AWGUIDE export)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/83f3666d58e565f0ff5e8b1410de35c3179c553e",
+      "date": "2026-07-17T16:55:21Z",
+      "sha": "83f3666"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "pintrest-autoresearch-t4h.5: campaign loop with deterministic search strategies",
-      "url": "https://github.com/adagora/alike-pintrest/commit/b986e240679642264d0f7f4be4267c91bbac2f7b",
-      "date": "2026-07-15T20:02:19Z",
-      "sha": "b986e24"
+      "message": "pintrest-decision-workbench-bu8.25: wire panel investigation canvas",
+      "url": "https://github.com/adagora/alike-pintrest/commit/b560cd505af82d9711a9abfa1baa7f01b308c8a1",
+      "date": "2026-07-17T16:48:40Z",
+      "sha": "b560cd5"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "pintrest-autoresearch-t4h.4: append-only experiment ledger with dedup and budget",
-      "url": "https://github.com/adagora/alike-pintrest/commit/083f4a91cccaf5d1819ceb323063d82318d9f509",
-      "date": "2026-07-15T19:07:35Z",
-      "sha": "083f4a9"
+      "message": "pintrest-hardening-and-dx-1lh.13: designed panel-line synth generator",
+      "url": "https://github.com/adagora/alike-pintrest/commit/62e6e3ca7b5fac0f36a3b02352bfe33bfe30d17b",
+      "date": "2026-07-17T16:42:03Z",
+      "sha": "62e6e3c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-decision-workbench-bu8.24: Line Command home overview at #/",
+      "url": "https://github.com/adagora/alike-pintrest/commit/075d382636e48fc414377e2b99a0ded43eabc0ed",
+      "date": "2026-07-17T16:28:41Z",
+      "sha": "075d382"
     },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
-      "message": "scaffold: specs, ralph loop, beads, token report",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/47db939223fa4ea4654938681d88ff121d58253b",
-      "date": "2026-07-12T18:39:22Z",
-      "sha": "47db939"
+      "message": "skillsmd-auto-optimisation-e23: gate on 003 draft — no build",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/04ea06b2c2e7e8aeb8ce7cf3944356a59db37832",
+      "date": "2026-07-16T20:53:09Z",
+      "sha": "04ea06b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "skillsmd-auto-optimisation-e23: 003 gate — Status draft, no build",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/149c90a3a769c3c0b0cf04f8d5e0738286847e6a",
+      "date": "2026-07-16T20:36:27Z",
+      "sha": "149c90a"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "skillsmd-auto-optimisation-e23: note 003 still draft, no build",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/6009357a2e283bef5c5d1c3e2425676119ab33df",
+      "date": "2026-07-16T20:32:19Z",
+      "sha": "6009357"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "skillsmd-auto-optimisation-3ls: 001 weekly report vs baseline (tokens/turn)",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/69fa57acc1b493c1a737090d0a16852d7480e5b1",
+      "date": "2026-07-16T20:31:35Z",
+      "sha": "69fa57a"
     },
     {
       "type": "commit",
@@ -56,14 +88,6 @@
       "url": "https://github.com/adagora/adagora.github.io/commit/f14108948b9320b6c6e1a34160a4c57fb2fa02c8",
       "date": "2026-07-11T18:14:04Z",
       "sha": "f141089"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "Create README.md",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/591220aa9406d41bb429714f78ae53f7e336f9e5",
-      "date": "2026-07-09T19:40:45Z",
-      "sha": "591220a"
     },
     {
       "type": "commit",
