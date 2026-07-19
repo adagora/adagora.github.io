@@ -1,6 +1,46 @@
 {
-  "generated": "2026-07-18T07:46:10.991Z",
+  "generated": "2026-07-19T08:13:39.916Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(workbench): W2.4 operator label presentation standard (pintrest-rics-xfl.3.4)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/63029e54f11e77550ffc5401e14a8542815f8c13",
+      "date": "2026-07-18T23:26:52Z",
+      "sha": "63029e5"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(workbench): W2.3 stream taxonomy + product_type facets (pintrest-rics-xfl.3.3)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/2ad97cc899e44fdd1ffe5bbd5bb958a412a9285b",
+      "date": "2026-07-18T22:54:35Z",
+      "sha": "2ad97cc"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(workbench): W9.3 Ask the Line citation UI (pintrest-rics-xfl.10.3)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/12374701f99b31c65e5f1df0bfddda5e4fd0b6fc",
+      "date": "2026-07-18T22:18:18Z",
+      "sha": "1237470"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(workbench): W1.3 Living Line Map Ops route (pintrest-rics-xfl.2.3)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/76ebb71fe121715733f997484eae48058006f1cf",
+      "date": "2026-07-18T22:10:04Z",
+      "sha": "76ebb71"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "chore(beads): close W0 Foundation epic (pintrest-rics-xfl.1)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/8318a996c1aad0c07b3d956fe052543368cf4677",
+      "date": "2026-07-18T21:58:04Z",
+      "sha": "8318a99"
+    },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
@@ -8,46 +48,6 @@
       "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/dd5d602784acab760f374078b432602818b91e4f",
       "date": "2026-07-17T22:30:53Z",
       "sha": "dd5d602"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-decision-workbench-bu8.12: prediction explainer (stages, support, raw, exclusions)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/5b9fbc9e1bf523f10ba273c09d7be9f71af57792",
-      "date": "2026-07-17T17:35:03Z",
-      "sha": "5b9fbc9"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-hardening-and-dx-1lh.9: real-data validation study (full AWGUIDE export)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/83f3666d58e565f0ff5e8b1410de35c3179c553e",
-      "date": "2026-07-17T16:55:21Z",
-      "sha": "83f3666"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-decision-workbench-bu8.25: wire panel investigation canvas",
-      "url": "https://github.com/adagora/alike-pintrest/commit/b560cd505af82d9711a9abfa1baa7f01b308c8a1",
-      "date": "2026-07-17T16:48:40Z",
-      "sha": "b560cd5"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-hardening-and-dx-1lh.13: designed panel-line synth generator",
-      "url": "https://github.com/adagora/alike-pintrest/commit/62e6e3ca7b5fac0f36a3b02352bfe33bfe30d17b",
-      "date": "2026-07-17T16:42:03Z",
-      "sha": "62e6e3c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-decision-workbench-bu8.24: Line Command home overview at #/",
-      "url": "https://github.com/adagora/alike-pintrest/commit/075d382636e48fc414377e2b99a0ded43eabc0ed",
-      "date": "2026-07-17T16:28:41Z",
-      "sha": "075d382"
     },
     {
       "type": "commit",
