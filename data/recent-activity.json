@@ -1,45 +1,45 @@
 {
-  "generated": "2026-07-19T08:13:39.916Z",
+  "generated": "2026-07-20T08:54:51.886Z",
   "items": [
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(workbench): W2.4 operator label presentation standard (pintrest-rics-xfl.3.4)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/63029e54f11e77550ffc5401e14a8542815f8c13",
-      "date": "2026-07-18T23:26:52Z",
-      "sha": "63029e5"
+      "message": "improve ui and ux",
+      "url": "https://github.com/adagora/alike-pintrest/commit/bef48f7724c8690cee1ad33a0364a707fc63dcb1",
+      "date": "2026-07-20T04:27:26Z",
+      "sha": "bef48f7"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(workbench): W2.3 stream taxonomy + product_type facets (pintrest-rics-xfl.3.3)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/2ad97cc899e44fdd1ffe5bbd5bb958a412a9285b",
-      "date": "2026-07-18T22:54:35Z",
-      "sha": "2ad97cc"
+      "message": "update readme and vite config",
+      "url": "https://github.com/adagora/alike-pintrest/commit/8e5df6e1edca3d5770f581f405d47ecd35fbae30",
+      "date": "2026-07-19T18:26:08Z",
+      "sha": "8e5df6e"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(workbench): W9.3 Ask the Line citation UI (pintrest-rics-xfl.10.3)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/12374701f99b31c65e5f1df0bfddda5e4fd0b6fc",
-      "date": "2026-07-18T22:18:18Z",
-      "sha": "1237470"
+      "message": "chore(beads): close W11 Institutional Memory epic (pintrest-rics-xfl.12)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/2ec015ad6d886948623db45448ec789f858a3dc5",
+      "date": "2026-07-19T15:17:14Z",
+      "sha": "2ec015a"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(workbench): W1.3 Living Line Map Ops route (pintrest-rics-xfl.2.3)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/76ebb71fe121715733f997484eae48058006f1cf",
-      "date": "2026-07-18T22:10:04Z",
-      "sha": "76ebb71"
+      "message": "chore(beads): close W9 Ask the Line epic (pintrest-rics-xfl.10)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/48de3bb5e958d5ad50a61351f3ac7beef4dfddf8",
+      "date": "2026-07-19T15:15:25Z",
+      "sha": "48de3bb"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "chore(beads): close W0 Foundation epic (pintrest-rics-xfl.1)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/8318a996c1aad0c07b3d956fe052543368cf4677",
-      "date": "2026-07-18T21:58:04Z",
-      "sha": "8318a99"
+      "message": "chore(beads): close W7 Research Cockpit epic (pintrest-rics-xfl.8)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/ee4f4417c0783f12d3f91d990f2243868208236a",
+      "date": "2026-07-19T15:03:07Z",
+      "sha": "ee4f441"
     },
     {
       "type": "commit",
@@ -120,46 +120,6 @@
       "url": "https://github.com/adagora/adagora.github.io/commit/b570e7b712e8443cc7ab97864a5a48176ae69222",
       "date": "2026-07-07T18:48:30Z",
       "sha": "b570e7b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/wiki-llm-with-markdown-editor",
-      "message": "improve ingestion, add some example",
-      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/07830111db259b199cad400d2eba3ac80e3709d0",
-      "date": "2026-05-19T20:17:27Z",
-      "sha": "0783011"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/wiki-llm-with-markdown-editor",
-      "message": "add chat ui to jot",
-      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/bd7f72d2a6840de2614ebebf79f636c9d05cfd52",
-      "date": "2026-05-17T16:03:42Z",
-      "sha": "bd7f72d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/wiki-llm-with-markdown-editor",
-      "message": "update kb",
-      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/9903c3c769f1343c559437d1496b2542e21e9224",
-      "date": "2026-05-17T13:58:50Z",
-      "sha": "9903c3c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/wiki-llm-with-markdown-editor",
-      "message": "feat(tables): add table lookup and parameter index drafts",
-      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/393498d9bbea418c12aed17ed591b4b3ca2a0e8b",
-      "date": "2026-05-11T18:28:56Z",
-      "sha": "393498d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/wiki-llm-with-markdown-editor",
-      "message": "feat(editor): vendor jot draft workspace",
-      "url": "https://github.com/adagora/wiki-llm-with-markdown-editor/commit/be7317164c636a2cf9d2e7488c7bcabec1f7c12b",
-      "date": "2026-05-09T21:53:09Z",
-      "sha": "be73171"
     }
   ]
 }
