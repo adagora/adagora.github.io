@@ -1,6 +1,30 @@
 {
-  "generated": "2026-07-20T08:54:51.886Z",
+  "generated": "2026-07-21T08:25:41.356Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "WIP",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/b9bb1f3ba9663f04ccc52509921775ea1b19753e",
+      "date": "2026-07-20T20:29:05Z",
+      "sha": "b9bb1f3"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "skillsmd-auto-optimisation-004-human-gate-guardrail-bxy: agree spec 004 on re-prompt rate",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/3a689171d61181afdf7df81937fd613b9ee11c9e",
+      "date": "2026-07-20T19:51:19Z",
+      "sha": "3a68917"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "update beads, cli claude",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/4803739b9cfc452621aff3bdd70ece5e8352ce2c",
+      "date": "2026-07-20T16:04:57Z",
+      "sha": "4803739"
+    },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
@@ -44,42 +68,18 @@
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
-      "message": "skillsmd-auto-optimisation-e23: 003 agreed + build guide; 004 draft absorbs borrowed concepts; bead tree decomposed",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/dd5d602784acab760f374078b432602818b91e4f",
-      "date": "2026-07-17T22:30:53Z",
-      "sha": "dd5d602"
+      "message": "skillsmd-auto-optimisation-002-verify-deny-lever-o57: 002.v verify deny-list lever against real proxy data",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/566a7d3e0e16456babc99bb048210129bc5abbc8",
+      "date": "2026-07-19T10:56:52Z",
+      "sha": "566a7d3"
     },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
-      "message": "skillsmd-auto-optimisation-e23: gate on 003 draft — no build",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/04ea06b2c2e7e8aeb8ce7cf3944356a59db37832",
-      "date": "2026-07-16T20:53:09Z",
-      "sha": "04ea06b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "skillsmd-auto-optimisation-e23: 003 gate — Status draft, no build",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/149c90a3a769c3c0b0cf04f8d5e0738286847e6a",
-      "date": "2026-07-16T20:36:27Z",
-      "sha": "149c90a"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "skillsmd-auto-optimisation-e23: note 003 still draft, no build",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/6009357a2e283bef5c5d1c3e2425676119ab33df",
-      "date": "2026-07-16T20:32:19Z",
-      "sha": "6009357"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "skillsmd-auto-optimisation-3ls: 001 weekly report vs baseline (tokens/turn)",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/69fa57acc1b493c1a737090d0a16852d7480e5b1",
-      "date": "2026-07-16T20:31:35Z",
-      "sha": "69fa57a"
+      "message": "skillsmd-auto-optimisation-003-6-cli-verify-5qm: 003.6 recommender CLI wiring + partial spec-AC verification",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/9fd92532158a858dc95ba3fab456b0dc22b2ca54",
+      "date": "2026-07-19T10:51:26Z",
+      "sha": "9fd9253"
     },
     {
       "type": "commit",
