@@ -1,6 +1,46 @@
 {
-  "generated": "2026-07-22T08:25:35.723Z",
+  "generated": "2026-07-23T08:26:28.369Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "docs(examples): add MSNBC + BPI2019 pipelines and EXAMPLES_RUN guide",
+      "url": "https://github.com/adagora/alike-pintrest/commit/70ae7c414d714128d3aaa0c89106a057a6a383db",
+      "date": "2026-07-22T18:49:08Z",
+      "sha": "70ae7c4"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "fix(workbench): domain-neutral panel outcome label (pintrest-odqj)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/d4da92e4768e22a22ccb0e3c1eeea3778892ae48",
+      "date": "2026-07-22T18:04:38Z",
+      "sha": "d4da92e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "fix(eval): O(targets) BranchDistribution + single-pass Measure (pintrest-bx4a)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/07d9fe44070b75e1f251e818f74c51ff32dad4d6",
+      "date": "2026-07-22T17:15:15Z",
+      "sha": "07d9fe4"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(ingest): config-driven field vocabulary (pintrest-v5e0)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/546623bcb03327a1af6ccd72aebcdda56d9ba453",
+      "date": "2026-07-22T16:34:38Z",
+      "sha": "546623b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "fix(regret): index node→target rates for O(1) score (pintrest-5cmr)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/885d9120410b8a83c90c23a706d235ce8ff1dde7",
+      "date": "2026-07-21T22:07:10Z",
+      "sha": "885d912"
+    },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
@@ -24,46 +64,6 @@
       "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/4803739b9cfc452621aff3bdd70ece5e8352ce2c",
       "date": "2026-07-20T16:04:57Z",
       "sha": "4803739"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "improve ui and ux",
-      "url": "https://github.com/adagora/alike-pintrest/commit/bef48f7724c8690cee1ad33a0364a707fc63dcb1",
-      "date": "2026-07-20T04:27:26Z",
-      "sha": "bef48f7"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "update readme and vite config",
-      "url": "https://github.com/adagora/alike-pintrest/commit/8e5df6e1edca3d5770f581f405d47ecd35fbae30",
-      "date": "2026-07-19T18:26:08Z",
-      "sha": "8e5df6e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "chore(beads): close W11 Institutional Memory epic (pintrest-rics-xfl.12)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/2ec015ad6d886948623db45448ec789f858a3dc5",
-      "date": "2026-07-19T15:17:14Z",
-      "sha": "2ec015a"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "chore(beads): close W9 Ask the Line epic (pintrest-rics-xfl.10)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/48de3bb5e958d5ad50a61351f3ac7beef4dfddf8",
-      "date": "2026-07-19T15:15:25Z",
-      "sha": "48de3bb"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "chore(beads): close W7 Research Cockpit epic (pintrest-rics-xfl.8)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/ee4f4417c0783f12d3f91d990f2243868208236a",
-      "date": "2026-07-19T15:03:07Z",
-      "sha": "ee4f441"
     },
     {
       "type": "commit",
