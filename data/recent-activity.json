@@ -1,85 +1,85 @@
 {
-  "generated": "2026-07-26T08:23:59.552Z",
+  "generated": "2026-07-27T09:48:14.468Z",
   "items": [
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "chore(beads): close W1.7 Living Line Map hub presentation (pintrest-rics-xfl.2.7)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/2e3c0eaedb40e8cf941aaa98e7d2508d5c69b052",
-      "date": "2026-07-23T16:11:36Z",
-      "sha": "2e3c0ea"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat(workbench): stamp targetKinds on line topology (pintrest-rics-xfl.2.7.7)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/9d2f2dc232df55404c05cab6a0a91dab7f804d94",
-      "date": "2026-07-22T21:56:31Z",
-      "sha": "9d2f2dc"
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "Seed 006 skill-eval bead tree; record DCG install.",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/ef73476b945c34b5057a64513520366bee7e0c16",
+      "date": "2026-07-26T19:13:33Z",
+      "sha": "ef73476"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "chore(beads): close W1.7.6 slice validation (pintrest-rics-xfl.2.7.6)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/e47003b11157392aa5c8dfd186dafdc62ed413f5",
-      "date": "2026-07-22T21:26:15Z",
-      "sha": "e47003b"
+      "message": "feat(docs): update how to run",
+      "url": "https://github.com/adagora/alike-pintrest/commit/ab3d9ca7bcb1339c150445d23ce4f0deae62209e",
+      "date": "2026-07-26T19:09:20Z",
+      "sha": "ab3d9ca"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "docs(workbench): Living Line Map hub presentation (pintrest-rics-xfl.2.7.5)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/a47f97d71c292a7249fe6d9d06a590cf2d4bb4cf",
-      "date": "2026-07-22T21:21:38Z",
-      "sha": "a47f97d"
+      "message": "feat(awguide): bind the two 320R congestion fields that survive truncation",
+      "url": "https://github.com/adagora/alike-pintrest/commit/7220613fb1fee5143a242615644353627c4651ca",
+      "date": "2026-07-26T15:21:36Z",
+      "sha": "7220613"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "reports: weekly token summary 2026-07-26 afternoon (NOTHING READY)",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/d05cbea95a3469b9066b1b16bf0a1f3142a20d69",
+      "date": "2026-07-26T15:10:33Z",
+      "sha": "d05cbea"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat(workbench): wire Living Line Map presentation + Raw DAG toggle (pintrest-rics-xfl.2.7.4)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/ec641b1496833b40e71abe9e5f11d142413a593e",
-      "date": "2026-07-22T21:19:32Z",
-      "sha": "ec641b1"
+      "message": "chore(beads): sync scale-capacity-guard closure",
+      "url": "https://github.com/adagora/alike-pintrest/commit/8170d7d0547673edcc1768addbc602d4b17432c0",
+      "date": "2026-07-26T14:56:03Z",
+      "sha": "8170d7d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "test(scale): pin assemble's complexity class; refresh the rotted capacity doc",
+      "url": "https://github.com/adagora/alike-pintrest/commit/1805d30605487ad9595935288c2943a5113cbd74",
+      "date": "2026-07-26T14:55:53Z",
+      "sha": "1805d30"
     },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
-      "message": "WIP",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/b9bb1f3ba9663f04ccc52509921775ea1b19753e",
-      "date": "2026-07-20T20:29:05Z",
-      "sha": "b9bb1f3"
+      "message": "reports: weekly token summary 2026-07-26 (NOTHING READY)",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/a564955584a77efa16b932b860958aa61ee7aaa2",
+      "date": "2026-07-26T14:21:41Z",
+      "sha": "a564955"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "fix(awguide): restore ADZO/OR decision_case on collapse (pintrest-awguide-label-config-drift-rklf)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/eab1ef918f695f86622639ab4c7c1c12ac88e3e5",
+      "date": "2026-07-26T14:18:07Z",
+      "sha": "eab1ef9"
     },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
-      "message": "skillsmd-auto-optimisation-004-human-gate-guardrail-bxy: agree spec 004 on re-prompt rate",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/3a689171d61181afdf7df81937fd613b9ee11c9e",
-      "date": "2026-07-20T19:51:19Z",
-      "sha": "3a68917"
+      "message": "Ralph: NOTHING READY — append 2026-07-25 weekly token report",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/65e82f2f0ff97206641e6121cd05ef3499b252ca",
+      "date": "2026-07-25T12:24:55Z",
+      "sha": "65e82f2"
     },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
-      "message": "update beads, cli claude",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/4803739b9cfc452621aff3bdd70ece5e8352ce2c",
-      "date": "2026-07-20T16:04:57Z",
-      "sha": "4803739"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "skillsmd-auto-optimisation-002-verify-deny-lever-o57: 002.v verify deny-list lever against real proxy data",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/566a7d3e0e16456babc99bb048210129bc5abbc8",
-      "date": "2026-07-19T10:56:52Z",
-      "sha": "566a7d3"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "skillsmd-auto-optimisation-003-6-cli-verify-5qm: 003.6 recommender CLI wiring + partial spec-AC verification",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/9fd92532158a858dc95ba3fab456b0dc22b2ca54",
-      "date": "2026-07-19T10:51:26Z",
-      "sha": "9fd9253"
+      "message": "Close 003 epic + 004 closed-loop stack; clear Stage-1 blockers.",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/29094fe377bdcf6052928bff535f75147e257912",
+      "date": "2026-07-25T12:20:41Z",
+      "sha": "29094fe"
     },
     {
       "type": "commit",
