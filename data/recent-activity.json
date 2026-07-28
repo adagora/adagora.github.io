@@ -1,6 +1,22 @@
 {
-  "generated": "2026-07-27T09:48:14.468Z",
+  "generated": "2026-07-28T08:30:57.996Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat(workbench): multi-dataset chrome, History journeys, map perf",
+      "url": "https://github.com/adagora/alike-pintrest/commit/5d6a375b1cbe8f823bf3d7cc6a5bb9e4579c045f",
+      "date": "2026-07-27T18:50:09Z",
+      "sha": "5d6a375"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "chore(beads): close pintrest-connector-ingest-default-roles-v75f",
+      "url": "https://github.com/adagora/alike-pintrest/commit/066561b686e3eaca88e09de074393d0fd407531f",
+      "date": "2026-07-27T16:09:22Z",
+      "sha": "066561b"
+    },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
@@ -43,27 +59,11 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "test(scale): pin assemble's complexity class; refresh the rotted capacity doc",
-      "url": "https://github.com/adagora/alike-pintrest/commit/1805d30605487ad9595935288c2943a5113cbd74",
-      "date": "2026-07-26T14:55:53Z",
-      "sha": "1805d30"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
       "message": "reports: weekly token summary 2026-07-26 (NOTHING READY)",
       "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/a564955584a77efa16b932b860958aa61ee7aaa2",
       "date": "2026-07-26T14:21:41Z",
       "sha": "a564955"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "fix(awguide): restore ADZO/OR decision_case on collapse (pintrest-awguide-label-config-drift-rklf)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/eab1ef918f695f86622639ab4c7c1c12ac88e3e5",
-      "date": "2026-07-26T14:18:07Z",
-      "sha": "eab1ef9"
     },
     {
       "type": "commit",
