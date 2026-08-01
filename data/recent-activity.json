@@ -1,6 +1,46 @@
 {
-  "generated": "2026-07-31T08:47:08.997Z",
+  "generated": "2026-08-01T08:17:11.038Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
+      "message": "Fold parity_check.py into check_parity.py and delete it",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/a32e9a50e0917bddb1feef8103cb8888486682a0",
+      "date": "2026-07-31T21:21:11Z",
+      "sha": "a32e9a5"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
+      "message": "Move the citation-snip geometry out of the route handler",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/37fed1f1543027c4a8965606a4c6afa1ef6067ec",
+      "date": "2026-07-31T21:18:23Z",
+      "sha": "37fed1f"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
+      "message": "Say something when the system degrades",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/89a8b572a8c305893461f37a13f9655c82ebabde",
+      "date": "2026-07-31T21:15:44Z",
+      "sha": "89a8b57"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
+      "message": "Extract providers.py: the model backends behind a Reader protocol",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/e94ec365f85cf71b7be89edf20b2e0107b2bdd5b",
+      "date": "2026-07-31T21:13:21Z",
+      "sha": "e94ec36"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
+      "message": "Give the retrieved-page record a type",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/8181237d66dc289c7b2e3bef72633dec8b13ee4f",
+      "date": "2026-07-31T21:06:12Z",
+      "sha": "8181237"
+    },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",

@@ -1,8 +1,7 @@
 {
-  "generated": "2026-07-31T08:47:07.979Z",
-  "total": 1079,
+  "generated": "2026-08-01T08:17:09.952Z",
+  "total": 1087,
   "days": {
-    "2025-07-31": 0,
     "2025-08-01": 3,
     "2025-08-02": 0,
     "2025-08-03": 0,
@@ -365,8 +364,9 @@
     "2026-07-26": 15,
     "2026-07-27": 3,
     "2026-07-28": 21,
-    "2026-07-29": 1,
-    "2026-07-30": 0
+    "2026-07-29": 0,
+    "2026-07-30": 0,
+    "2026-07-31": 9
   },
   "repos": [
     "adagora/---source---",
@@ -521,7 +521,7 @@
     "adagora/trading-inside",
     "adagora/transcript-demo",
     "adagora/trello-clone",
-    "adagora/try_pixelRAG",
+    "adagora/try_pixelRAG_optional_BM25_hybrid",
     "adagora/user-and-enterprise-app-demo",
     "adagora/vercel-deploy-demo",
     "adagora/video-segment-processor",
