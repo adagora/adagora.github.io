@@ -1,6 +1,14 @@
 {
-  "generated": "2026-08-02T08:21:22.975Z",
+  "generated": "2026-08-03T09:40:17.089Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
+      "message": "feat(docs):  update readme",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/c336f5b32d4ba2445033d2c1c65cf6c0d4a33e11",
+      "date": "2026-08-02T18:39:40Z",
+      "sha": "c336f5b"
+    },
     {
       "type": "commit",
       "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
@@ -35,11 +43,19 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
-      "message": "Give the retrieved-page record a type",
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/8181237d66dc289c7b2e3bef72633dec8b13ee4f",
-      "date": "2026-07-31T21:06:12Z",
-      "sha": "8181237"
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "reports: weekly token summary 2026-07-30 (NOTHING READY)",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/e59eb9dcfa7b82fd554c88800e3fde202a037957",
+      "date": "2026-07-30T16:12:32Z",
+      "sha": "e59eb9d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "Close 006 skill-eval epic (skillsmd-auto-optimisation-006-skill-eval-epic-v1h)",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/b168107eeea79bd584bc5c8373d9ad07b71f5f03",
+      "date": "2026-07-30T16:11:28Z",
+      "sha": "b168107"
     },
     {
       "type": "commit",
@@ -64,22 +80,6 @@
       "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/d4ff6190e47e5e15eaa1c6f468eb863a518b1750",
       "date": "2026-07-28T21:01:59Z",
       "sha": "d4ff619"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "006.i2 wire skill install/prune into 004 shadow + live (bead v1h.17, specs 004/006)",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/fdd507b4032a83c6dfce64a038889a52304c7681",
-      "date": "2026-07-28T20:58:55Z",
-      "sha": "fdd507b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "006.i1 recommender P5: prune proposals for negative-ROI skills (bead v1h.16, specs 003/006)",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/45b0854eb624eba5f3b6b6b853c75674415bd8c1",
-      "date": "2026-07-28T20:53:12Z",
-      "sha": "45b0854"
     },
     {
       "type": "commit",

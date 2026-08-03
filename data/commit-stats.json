@@ -1,8 +1,7 @@
 {
-  "generated": "2026-08-02T08:21:22.079Z",
-  "total": 1084,
+  "generated": "2026-08-03T09:40:15.695Z",
+  "total": 1088,
   "days": {
-    "2025-08-02": 0,
     "2025-08-03": 0,
     "2025-08-04": 5,
     "2025-08-05": 2,
@@ -364,9 +363,10 @@
     "2026-07-27": 3,
     "2026-07-28": 21,
     "2026-07-29": 0,
-    "2026-07-30": 0,
+    "2026-07-30": 2,
     "2026-07-31": 9,
-    "2026-08-01": 0
+    "2026-08-01": 0,
+    "2026-08-02": 2
   },
   "repos": [
     "adagora/---source---",
@@ -413,6 +413,7 @@
     "adagora/cardano-token-registry",
     "adagora/charts-custom",
     "adagora/codedb",
+    "adagora/codex-skills",
     "adagora/coin-exchange",
     "adagora/context-hub",
     "adagora/contract-nft-perp",
@@ -426,6 +427,7 @@
     "adagora/extract-keyword-box",
     "adagora/facebook-messenger-clone",
     "adagora/focusflow",
+    "adagora/for-me",
     "adagora/foundry-fund-me",
     "adagora/foundry-smart-contract-lottery",
     "adagora/foundry-stablecoin",
