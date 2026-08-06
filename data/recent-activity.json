@@ -1,6 +1,46 @@
 {
-  "generated": "2026-08-05T08:32:55.362Z",
+  "generated": "2026-08-06T08:32:55.183Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/lerobot-so-arm-100-tool",
+      "message": "beads: record that the hardware now exists, and file the golden-trace bead",
+      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/619b8cca6ddfeb414070109e5ad1a624b155931e",
+      "date": "2026-08-04T20:15:11Z",
+      "sha": "619b8cc"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/lerobot-so-arm-100-tool",
+      "message": "mj3.2.2: implement and test the sign-magnitude codec",
+      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/135cf88803ff6089f08e1c6fbfd5fbbda68e62e0",
+      "date": "2026-08-04T17:15:49Z",
+      "sha": "135cf88"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/lerobot-so-arm-100-tool",
+      "message": "mj3.2.1: implement registers.py — the complete STS3215 control table",
+      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/ac879031c984255686e30edba83c6579a13d9d6e",
+      "date": "2026-08-04T17:09:46Z",
+      "sha": "ac87903"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/lerobot-so-arm-100-tool",
+      "message": "mj3.1.4: fake serial harness — STS3215 chain behind a pyserial port",
+      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/b051398f4a6181c29bf948adce87e3a39d661241",
+      "date": "2026-08-04T17:03:00Z",
+      "sha": "b051398"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/lerobot-so-arm-100-tool",
+      "message": "mj3.1.2: lay down package skeleton and pyproject layout",
+      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/e36873f3bb1ac434b109480ce9f62b6dbd39766e",
+      "date": "2026-08-04T16:51:49Z",
+      "sha": "e36873f"
+    },
     {
       "type": "commit",
       "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
