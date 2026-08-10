@@ -1,6 +1,46 @@
 {
-  "generated": "2026-08-09T06:53:21.824Z",
+  "generated": "2026-08-10T07:28:15.930Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "feat(routeseq): add export script",
+      "url": "https://github.com/adagora/trade/commit/50572bfd8b70d45fd7d8283fde8333f220850cc5",
+      "date": "2026-08-09T20:53:51Z",
+      "sha": "50572bf"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Merge branch 'fix/live-results-remediation'",
+      "url": "https://github.com/adagora/trade/commit/061045eb641774c40c4cbdb975c7a05b4b6a8613",
+      "date": "2026-08-09T20:26:36Z",
+      "sha": "061045e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "feat(ui): calm truth pages and clearer advanced dashboards",
+      "url": "https://github.com/adagora/trade/commit/e8e95802559468e6d7f47e6353f6c853716e3c38",
+      "date": "2026-08-09T20:26:27Z",
+      "sha": "e8e9580"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "feat(storage): durable trade ledger, migrations, and job health",
+      "url": "https://github.com/adagora/trade/commit/d5785dd950f67cc798517dfd5a7aafb4a5676297",
+      "date": "2026-08-09T20:26:27Z",
+      "sha": "d5785dd"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "feat(api): make the chart and activity data usable by a browser",
+      "url": "https://github.com/adagora/trade/commit/ab9770216fb145f070986c622b29f36ded430a2a",
+      "date": "2026-08-09T19:15:02Z",
+      "sha": "ab97702"
+    },
     {
       "type": "commit",
       "repo": "adagora/diff-explain",
@@ -160,46 +200,6 @@
       "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/d4ff6190e47e5e15eaa1c6f468eb863a518b1750",
       "date": "2026-07-28T21:01:59Z",
       "sha": "d4ff619"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat(workbench): multi-dataset chrome, History journeys, map perf",
-      "url": "https://github.com/adagora/alike-pintrest/commit/5d6a375b1cbe8f823bf3d7cc6a5bb9e4579c045f",
-      "date": "2026-07-27T18:50:09Z",
-      "sha": "5d6a375"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "chore(beads): close pintrest-connector-ingest-default-roles-v75f",
-      "url": "https://github.com/adagora/alike-pintrest/commit/066561b686e3eaca88e09de074393d0fd407531f",
-      "date": "2026-07-27T16:09:22Z",
-      "sha": "066561b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat(docs): update how to run",
-      "url": "https://github.com/adagora/alike-pintrest/commit/ab3d9ca7bcb1339c150445d23ce4f0deae62209e",
-      "date": "2026-07-26T19:09:20Z",
-      "sha": "ab3d9ca"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat(awguide): bind the two 320R congestion fields that survive truncation",
-      "url": "https://github.com/adagora/alike-pintrest/commit/7220613fb1fee5143a242615644353627c4651ca",
-      "date": "2026-07-26T15:21:36Z",
-      "sha": "7220613"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "chore(beads): sync scale-capacity-guard closure",
-      "url": "https://github.com/adagora/alike-pintrest/commit/8170d7d0547673edcc1768addbc602d4b17432c0",
-      "date": "2026-07-26T14:56:03Z",
-      "sha": "8170d7d"
     }
   ]
 }
