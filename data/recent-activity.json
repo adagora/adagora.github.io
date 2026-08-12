@@ -1,45 +1,45 @@
 {
-  "generated": "2026-08-11T07:03:48.917Z",
+  "generated": "2026-08-12T07:21:11.648Z",
   "items": [
     {
       "type": "commit",
       "repo": "adagora/trade",
-      "message": "feat(routeseq): add export script",
-      "url": "https://github.com/adagora/trade/commit/50572bfd8b70d45fd7d8283fde8333f220850cc5",
-      "date": "2026-08-09T20:53:51Z",
-      "sha": "50572bf"
+      "message": "Merge branch 'feat/funding-and-oi-signals'",
+      "url": "https://github.com/adagora/trade/commit/e3451a87f51066e30e6d077a70fc750a5d59cd8d",
+      "date": "2026-08-11T20:20:44Z",
+      "sha": "e3451a8"
     },
     {
       "type": "commit",
       "repo": "adagora/trade",
-      "message": "Merge branch 'fix/live-results-remediation'",
-      "url": "https://github.com/adagora/trade/commit/061045eb641774c40c4cbdb975c7a05b4b6a8613",
-      "date": "2026-08-09T20:26:36Z",
-      "sha": "061045e"
+      "message": "chore: untrack Trading pattern.docx",
+      "url": "https://github.com/adagora/trade/commit/2f708c21e324ee7a8045584270faf2650b0900d9",
+      "date": "2026-08-11T20:20:43Z",
+      "sha": "2f708c2"
     },
     {
       "type": "commit",
       "repo": "adagora/trade",
-      "message": "feat(ui): calm truth pages and clearer advanced dashboards",
-      "url": "https://github.com/adagora/trade/commit/e8e95802559468e6d7f47e6353f6c853716e3c38",
-      "date": "2026-08-09T20:26:27Z",
-      "sha": "e8e9580"
+      "message": "feat(scanner): observe candidates instead of trading them",
+      "url": "https://github.com/adagora/trade/commit/64216593265bf3ac52666fb92e0d6c5453dffe26",
+      "date": "2026-08-11T20:18:51Z",
+      "sha": "6421659"
     },
     {
       "type": "commit",
       "repo": "adagora/trade",
-      "message": "feat(storage): durable trade ledger, migrations, and job health",
-      "url": "https://github.com/adagora/trade/commit/d5785dd950f67cc798517dfd5a7aafb4a5676297",
-      "date": "2026-08-09T20:26:27Z",
-      "sha": "d5785dd"
+      "message": "feat(research): apply the protocol by default to unattended evolution",
+      "url": "https://github.com/adagora/trade/commit/a2253d2bf148ac202aad2ecee60f15f98804e8e1",
+      "date": "2026-08-11T20:04:53Z",
+      "sha": "a2253d2"
     },
     {
       "type": "commit",
       "repo": "adagora/trade",
-      "message": "feat(api): make the chart and activity data usable by a browser",
-      "url": "https://github.com/adagora/trade/commit/ab9770216fb145f070986c622b29f36ded430a2a",
-      "date": "2026-08-09T19:15:02Z",
-      "sha": "ab97702"
+      "message": "fix(ui): say on the ML page that no trained model exists",
+      "url": "https://github.com/adagora/trade/commit/8dceca08112c1a1fec5fc8b6d8e8b967eb25e9ca",
+      "date": "2026-08-11T19:51:47Z",
+      "sha": "8dceca0"
     },
     {
       "type": "commit",
