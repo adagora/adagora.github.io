@@ -1,6 +1,30 @@
 {
-  "generated": "2026-08-12T07:21:11.648Z",
+  "generated": "2026-08-13T07:23:40.656Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "fix: import the decision log in one write, after the API is up",
+      "url": "https://github.com/adagora/trade/commit/9253a56e4c9834961d5f33546b30c00a6c617167",
+      "date": "2026-08-12T22:05:18Z",
+      "sha": "9253a56"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "feat: persist a decision log and stop auto-deploying evolution",
+      "url": "https://github.com/adagora/trade/commit/08279a555682a589d5c7e8623dc51a99fb02fbc9",
+      "date": "2026-08-12T22:00:29Z",
+      "sha": "08279a5"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "fix(evolution): cache market history and honor Binance IP bans",
+      "url": "https://github.com/adagora/trade/commit/f836404a6d8911db795eadb213937494f821cf1e",
+      "date": "2026-08-12T15:38:09Z",
+      "sha": "f836404"
+    },
     {
       "type": "commit",
       "repo": "adagora/trade",
@@ -16,30 +40,6 @@
       "url": "https://github.com/adagora/trade/commit/2f708c21e324ee7a8045584270faf2650b0900d9",
       "date": "2026-08-11T20:20:43Z",
       "sha": "2f708c2"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "feat(scanner): observe candidates instead of trading them",
-      "url": "https://github.com/adagora/trade/commit/64216593265bf3ac52666fb92e0d6c5453dffe26",
-      "date": "2026-08-11T20:18:51Z",
-      "sha": "6421659"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "feat(research): apply the protocol by default to unattended evolution",
-      "url": "https://github.com/adagora/trade/commit/a2253d2bf148ac202aad2ecee60f15f98804e8e1",
-      "date": "2026-08-11T20:04:53Z",
-      "sha": "a2253d2"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "fix(ui): say on the ML page that no trained model exists",
-      "url": "https://github.com/adagora/trade/commit/8dceca08112c1a1fec5fc8b6d8e8b967eb25e9ca",
-      "date": "2026-08-11T19:51:47Z",
-      "sha": "8dceca0"
     },
     {
       "type": "commit",
