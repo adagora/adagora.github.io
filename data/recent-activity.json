@@ -1,6 +1,14 @@
 {
-  "generated": "2026-08-13T07:23:40.656Z",
+  "generated": "2026-08-14T07:21:19.812Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "feat: two stategies, new evolve config",
+      "url": "https://github.com/adagora/trade/commit/d2ffc9b0bcf5aa7bf6ce3ea381071d66c288aa24",
+      "date": "2026-08-13T10:04:07Z",
+      "sha": "d2ffc9b"
+    },
     {
       "type": "commit",
       "repo": "adagora/trade",
@@ -32,14 +40,6 @@
       "url": "https://github.com/adagora/trade/commit/e3451a87f51066e30e6d077a70fc750a5d59cd8d",
       "date": "2026-08-11T20:20:44Z",
       "sha": "e3451a8"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "chore: untrack Trading pattern.docx",
-      "url": "https://github.com/adagora/trade/commit/2f708c21e324ee7a8045584270faf2650b0900d9",
-      "date": "2026-08-11T20:20:43Z",
-      "sha": "2f708c2"
     },
     {
       "type": "commit",
