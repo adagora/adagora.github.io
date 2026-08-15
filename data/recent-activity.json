@@ -1,6 +1,22 @@
 {
-  "generated": "2026-08-14T07:21:19.812Z",
+  "generated": "2026-08-15T06:34:35.102Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "fix: stop decisions/summary from 500ing on a locked SQLite",
+      "url": "https://github.com/adagora/trade/commit/ec5de109a4d35087d137c32b719e74dee082a3d2",
+      "date": "2026-08-14T15:46:16Z",
+      "sha": "ec5de10"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "feat: paper/canary/live books, shared entry gates, and a trading desk UI",
+      "url": "https://github.com/adagora/trade/commit/80d2308fda2ad2fd1e50e05718cd2da2b939a5cf",
+      "date": "2026-08-14T14:24:54Z",
+      "sha": "80d2308"
+    },
     {
       "type": "commit",
       "repo": "adagora/trade",
@@ -24,22 +40,6 @@
       "url": "https://github.com/adagora/trade/commit/08279a555682a589d5c7e8623dc51a99fb02fbc9",
       "date": "2026-08-12T22:00:29Z",
       "sha": "08279a5"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "fix(evolution): cache market history and honor Binance IP bans",
-      "url": "https://github.com/adagora/trade/commit/f836404a6d8911db795eadb213937494f821cf1e",
-      "date": "2026-08-12T15:38:09Z",
-      "sha": "f836404"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "Merge branch 'feat/funding-and-oi-signals'",
-      "url": "https://github.com/adagora/trade/commit/e3451a87f51066e30e6d077a70fc750a5d59cd8d",
-      "date": "2026-08-11T20:20:44Z",
-      "sha": "e3451a8"
     },
     {
       "type": "commit",
