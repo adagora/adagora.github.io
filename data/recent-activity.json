@@ -1,6 +1,46 @@
 {
-  "generated": "2026-08-15T06:34:35.102Z",
+  "generated": "2026-08-16T06:35:43.481Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Stop saying \"no job\" next to a ranked extra cost.",
+      "url": "https://github.com/adagora/alike-pintrest/commit/f3141cdb063fe0ab1726ba6c2b8da76c46bc965d",
+      "date": "2026-08-15T20:57:08Z",
+      "sha": "f3141cd"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Prefill the map's prior snapshot, and run examples as a log of generations.",
+      "url": "https://github.com/adagora/alike-pintrest/commit/937e479462ec1ea5ba0a820153e2eb9230c8ccd8",
+      "date": "2026-08-15T14:52:42Z",
+      "sha": "937e479"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Turn the thin-support floor on, and make it flag instead of filter.",
+      "url": "https://github.com/adagora/alike-pintrest/commit/6156aa93778e95c3d1eff7919c0cbf0f87619e85",
+      "date": "2026-08-15T13:14:09Z",
+      "sha": "6156aa9"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Score every target on the same mix, so \"worse\" stops meaning \"harder\".",
+      "url": "https://github.com/adagora/alike-pintrest/commit/442cab1886d90dfd96ce7115dbf0cf8fa1066160",
+      "date": "2026-08-15T12:39:52Z",
+      "sha": "442cab1"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Pin the caveats banner without moving the other nineteen.",
+      "url": "https://github.com/adagora/alike-pintrest/commit/47bbb676b8d8abaf20ae6054124ec364795d8cdf",
+      "date": "2026-08-15T11:09:13Z",
+      "sha": "47bbb67"
+    },
     {
       "type": "commit",
       "repo": "adagora/trade",
@@ -160,46 +200,6 @@
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/e94ec365f85cf71b7be89edf20b2e0107b2bdd5b",
       "date": "2026-07-31T21:13:21Z",
       "sha": "e94ec36"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "reports: weekly token summary 2026-07-30 (NOTHING READY)",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/e59eb9dcfa7b82fd554c88800e3fde202a037957",
-      "date": "2026-07-30T16:12:32Z",
-      "sha": "e59eb9d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "Close 006 skill-eval epic (skillsmd-auto-optimisation-006-skill-eval-epic-v1h)",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/b168107eeea79bd584bc5c8373d9ad07b71f5f03",
-      "date": "2026-07-30T16:11:28Z",
-      "sha": "b168107"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "Close 006.p (skillsmd-auto-optimisation-006-skill-eval-epic-v1h.20): organic 002 composition guidance for skill tax",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/944694500ee72bf47bae8a25a507558523cbee21",
-      "date": "2026-07-28T21:09:40Z",
-      "sha": "9446945"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "006.v e2e: fix-exit-code-1 through offline eval + ROI + survival (spec 006)",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/be9318a7cdf3da11d918679dad221657d0752f43",
-      "date": "2026-07-28T21:06:59Z",
-      "sha": "be9318a"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "006.i3: decision records pin skill ROI + eval report hashes (spec 006)",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/d4ff6190e47e5e15eaa1c6f468eb863a518b1750",
-      "date": "2026-07-28T21:01:59Z",
-      "sha": "d4ff619"
     }
   ]
 }
