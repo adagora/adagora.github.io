@@ -1,6 +1,62 @@
 {
-  "generated": "2026-08-18T06:38:56.663Z",
+  "generated": "2026-08-19T06:39:52.442Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "Add Autoresearcher miner for Claude, Grok, and Codex traces (spec 005).",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/1a3b2b9fc91b31c470dcc0d460ebd4d0cd9dac72",
+      "date": "2026-08-19T00:42:12Z",
+      "sha": "1a3b2b9"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/lerobot-so-arm-100-tool",
+      "message": "mj3.10.11: joint queue, sweep coverage dials, inline re-sweep",
+      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/0d694b99495fa52b295a94ccceac073668317977",
+      "date": "2026-08-18T16:01:59Z",
+      "sha": "0d694b9"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/lerobot-so-arm-100-tool",
+      "message": "mj3.10.10: calibration walkthrough, one phase per screen, hold-to-confirm",
+      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/1a24d0a6a55d9518093aecba7d20c5278d663763",
+      "date": "2026-08-18T15:53:25Z",
+      "sha": "1a24d0a"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/lerobot-so-arm-100-tool",
+      "message": "mj3.10.9: joint identity system and the identify-this-joint action",
+      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/865c0601185792a3e5069876a3704c96c26415f8",
+      "date": "2026-08-18T15:16:25Z",
+      "sha": "865c060"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/lerobot-so-arm-100-tool",
+      "message": "mj3.10.8: travel gauges, state timeline, and the per-joint ring buffer",
+      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/1ec8de3db234942858eb0672eaa62a481aeecdd3",
+      "date": "2026-08-18T15:13:23Z",
+      "sha": "1ec8de3"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/lerobot-so-arm-100-tool",
+      "message": "mj3.10.7: arm silhouette and top-view compass component",
+      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/7ff99bb6f74efe7eb6e77d1dedab0c4bc1209d12",
+      "date": "2026-08-18T15:06:20Z",
+      "sha": "7ff99bb"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "fix: stop leftover perps booking -$20M and unstick canary",
+      "url": "https://github.com/adagora/trade/commit/f23f76af1c2cd1371f3cf98d62051f6e415f9eeb",
+      "date": "2026-08-18T11:36:04Z",
+      "sha": "f23f76a"
+    },
     {
       "type": "commit",
       "repo": "adagora/trade",
@@ -75,14 +131,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/trade",
-      "message": "feat: paper/canary/live books, shared entry gates, and a trading desk UI",
-      "url": "https://github.com/adagora/trade/commit/80d2308fda2ad2fd1e50e05718cd2da2b939a5cf",
-      "date": "2026-08-14T14:24:54Z",
-      "sha": "80d2308"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/diff-explain",
       "message": "docs: replace Go install instructions with TS run instructions",
       "url": "https://github.com/adagora/diff-explain/commit/9bb9e527e6f7668183d0d106ab067ba3e379b929",
@@ -123,46 +171,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/lerobot-so-arm-100-tool",
-      "message": "beads: record that the hardware now exists, and file the golden-trace bead",
-      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/619b8cca6ddfeb414070109e5ad1a624b155931e",
-      "date": "2026-08-04T20:15:11Z",
-      "sha": "619b8cc"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/lerobot-so-arm-100-tool",
-      "message": "mj3.2.2: implement and test the sign-magnitude codec",
-      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/135cf88803ff6089f08e1c6fbfd5fbbda68e62e0",
-      "date": "2026-08-04T17:15:49Z",
-      "sha": "135cf88"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/lerobot-so-arm-100-tool",
-      "message": "mj3.2.1: implement registers.py — the complete STS3215 control table",
-      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/ac879031c984255686e30edba83c6579a13d9d6e",
-      "date": "2026-08-04T17:09:46Z",
-      "sha": "ac87903"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/lerobot-so-arm-100-tool",
-      "message": "mj3.1.4: fake serial harness — STS3215 chain behind a pyserial port",
-      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/b051398f4a6181c29bf948adce87e3a39d661241",
-      "date": "2026-08-04T17:03:00Z",
-      "sha": "b051398"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/lerobot-so-arm-100-tool",
-      "message": "mj3.1.2: lay down package skeleton and pyproject layout",
-      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/e36873f3bb1ac434b109480ce9f62b6dbd39766e",
-      "date": "2026-08-04T16:51:49Z",
-      "sha": "e36873f"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
       "message": "feat(docs):  update readme",
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/c336f5b32d4ba2445033d2c1c65cf6c0d4a33e11",
@@ -192,14 +200,6 @@
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/89a8b572a8c305893461f37a13f9655c82ebabde",
       "date": "2026-07-31T21:15:44Z",
       "sha": "89a8b57"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
-      "message": "Extract providers.py: the model backends behind a Reader protocol",
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/e94ec365f85cf71b7be89edf20b2e0107b2bdd5b",
-      "date": "2026-07-31T21:13:21Z",
-      "sha": "e94ec36"
     }
   ]
 }
