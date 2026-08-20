@@ -1,6 +1,54 @@
 {
-  "generated": "2026-08-19T06:39:52.442Z",
+  "generated": "2026-08-20T06:41:02.156Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "feat: pin isolated margin and size leverage from stop-dollar risk",
+      "url": "https://github.com/adagora/trade/commit/fdcdbaa11bc17675cc46d6bd2d451987b069c966",
+      "date": "2026-08-19T21:25:53Z",
+      "sha": "fdcdbaa"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "fix: catch impulse entries and stop dashboards lying about opens",
+      "url": "https://github.com/adagora/trade/commit/ee26de8206e05d6a25192bbb6880cedc8ff8e1f4",
+      "date": "2026-08-19T18:25:32Z",
+      "sha": "ee26de8"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/diff-explain",
+      "message": "Add a project Agent Skill so Grok, Claude Code, and Codex run meat.",
+      "url": "https://github.com/adagora/diff-explain/commit/2f89da64be4a281823dfbf630552917238cd9bab",
+      "date": "2026-08-19T17:46:05Z",
+      "sha": "2f89da6"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/diff-explain",
+      "message": "Add Grok CLI support via XAI_API_KEY and grok-* model ids.",
+      "url": "https://github.com/adagora/diff-explain/commit/25bb51a6461edc99b49efdb4d2ae1b07ea00e326",
+      "date": "2026-08-19T14:24:06Z",
+      "sha": "25bb51a"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "Ship 007 digest, 008 operator board, and shadow-install read-before-write.",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/ce25cace27167f52ef1fb1d434228ab2d11da00f",
+      "date": "2026-08-19T13:48:08Z",
+      "sha": "ce25cac"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/diff-explain",
+      "message": "Add meat -look: no-model shape, color, and length view of a diff.",
+      "url": "https://github.com/adagora/diff-explain/commit/c90f59fe4b1d50ef5201a6df8150e332b4f85837",
+      "date": "2026-08-19T13:46:18Z",
+      "sha": "c90f59f"
+    },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
@@ -75,14 +123,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/trade",
-      "message": "perf: WAL, SQL-side thinning, and caches to bring API p95 under 300ms",
-      "url": "https://github.com/adagora/trade/commit/65be6875176050c7c444c5dd9c2c02b097772959",
-      "date": "2026-08-17T17:03:29Z",
-      "sha": "65be687"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/alike-pintrest",
       "message": "Stop saying \"no job\" next to a ranked extra cost.",
       "url": "https://github.com/adagora/alike-pintrest/commit/f3141cdb063fe0ab1726ba6c2b8da76c46bc965d",
@@ -123,14 +163,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/trade",
-      "message": "fix: stop decisions/summary from 500ing on a locked SQLite",
-      "url": "https://github.com/adagora/trade/commit/ec5de109a4d35087d137c32b719e74dee082a3d2",
-      "date": "2026-08-14T15:46:16Z",
-      "sha": "ec5de10"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/diff-explain",
       "message": "docs: replace Go install instructions with TS run instructions",
       "url": "https://github.com/adagora/diff-explain/commit/9bb9e527e6f7668183d0d106ab067ba3e379b929",
@@ -144,30 +176,6 @@
       "url": "https://github.com/adagora/diff-explain/commit/45e919887f36836ebc00ac789b65d817a9128f43",
       "date": "2026-08-08T21:05:17Z",
       "sha": "45e9198"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/diff-explain",
-      "message": "finish stage 2",
-      "url": "https://github.com/adagora/diff-explain/commit/efa6f7c1530a8d3ca5b0ee1086d94fabc93b6fc7",
-      "date": "2026-08-07T23:05:57Z",
-      "sha": "efa6f7c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/diff-explain",
-      "message": "wip",
-      "url": "https://github.com/adagora/diff-explain/commit/cd42624e7b5f7aaa9d761c2f7ae0431af39a0ecf",
-      "date": "2026-08-07T04:19:28Z",
-      "sha": "cd42624"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/diff-explain",
-      "message": "init",
-      "url": "https://github.com/adagora/diff-explain/commit/c4057fe4add90310291e4dac368bb1114a2e94f6",
-      "date": "2026-08-05T20:49:42Z",
-      "sha": "c4057fe"
     },
     {
       "type": "commit",
@@ -192,14 +200,6 @@
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/37fed1f1543027c4a8965606a4c6afa1ef6067ec",
       "date": "2026-07-31T21:18:23Z",
       "sha": "37fed1f"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
-      "message": "Say something when the system degrades",
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/89a8b572a8c305893461f37a13f9655c82ebabde",
-      "date": "2026-07-31T21:15:44Z",
-      "sha": "89a8b57"
     }
   ]
 }
