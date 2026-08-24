@@ -1,6 +1,14 @@
 {
-  "generated": "2026-08-23T06:37:22.501Z",
+  "generated": "2026-08-24T06:53:37.259Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "fix: book reconciled closes from REALIZED_PNL, never from an unanswered call",
+      "url": "https://github.com/adagora/trade/commit/fd19c6981bce60cd9c82b411dd1ea8cf79747c12",
+      "date": "2026-08-23T15:52:28Z",
+      "sha": "fd19c69"
+    },
     {
       "type": "commit",
       "repo": "adagora/trade",
@@ -112,14 +120,6 @@
       "url": "https://github.com/adagora/trade/commit/c00d3fe68ce3efcd14ce4a87b572c193f8c57ce0",
       "date": "2026-08-17T19:25:44Z",
       "sha": "c00d3fe"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "fix: stop the rate limiter locking dashboards out, and cover the summary scans",
-      "url": "https://github.com/adagora/trade/commit/1524f0cab4a9342e4ed913cd65334d097cdd347e",
-      "date": "2026-08-17T17:28:45Z",
-      "sha": "1524f0c"
     },
     {
       "type": "commit",
