@@ -1,8 +1,7 @@
 {
-  "generated": "2026-08-27T17:19:29.690Z",
-  "total": 1274,
+  "generated": "2026-08-28T18:12:15.854Z",
+  "total": 1273,
   "days": {
-    "2025-08-27": 1,
     "2025-08-28": 0,
     "2025-08-29": 0,
     "2025-08-30": 0,
@@ -366,7 +365,8 @@
     "2026-08-23": 1,
     "2026-08-24": 0,
     "2026-08-25": 0,
-    "2026-08-26": 0
+    "2026-08-26": 0,
+    "2026-08-27": 0
   },
   "repos": [
     "adagora/---source---",
@@ -509,6 +509,7 @@
     "adagora/stock_report_bot",
     "adagora/streamr-binance-ai-trading-app",
     "adagora/streamr-ml-demo",
+    "adagora/swamp-extensions",
     "adagora/symphony-ts",
     "adagora/t1",
     "adagora/t2",
@@ -524,6 +525,7 @@
     "adagora/track",
     "adagora/trade",
     "adagora/trading-inside",
+    "adagora/trail-mvp",
     "adagora/transcript-demo",
     "adagora/trello-clone",
     "adagora/try_pixelRAG_optional_BM25_hybrid",
