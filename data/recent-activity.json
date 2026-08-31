@@ -1,6 +1,30 @@
 {
-  "generated": "2026-08-30T11:15:25.677Z",
+  "generated": "2026-08-31T12:41:47.608Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "feat(todo): more planning",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/e4a6e75686062ee2d1e5880571c32ee5082a092d",
+      "date": "2026-08-30T16:16:06Z",
+      "sha": "e4a6e75"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trail-mvp",
+      "message": "feat(skills): add map and teach",
+      "url": "https://github.com/adagora/trail-mvp/commit/7ba5a91505ea38720d8ed1ea326875d2a15ddaf4",
+      "date": "2026-08-29T18:42:23Z",
+      "sha": "7ba5a91"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "feat(verify-skills-md): add CLI verification skill and feature map",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/2d06fec89f2ddcdf6f1783676bad410e892e9532",
+      "date": "2026-08-28T21:14:13Z",
+      "sha": "2d06fec"
+    },
     {
       "type": "commit",
       "repo": "adagora/trade",
@@ -176,30 +200,6 @@
       "url": "https://github.com/adagora/diff-explain/commit/45e919887f36836ebc00ac789b65d817a9128f43",
       "date": "2026-08-08T21:05:17Z",
       "sha": "45e9198"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
-      "message": "feat(docs):  update readme",
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/c336f5b32d4ba2445033d2c1c65cf6c0d4a33e11",
-      "date": "2026-08-02T18:39:40Z",
-      "sha": "c336f5b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
-      "message": "Fold parity_check.py into check_parity.py and delete it",
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/a32e9a50e0917bddb1feef8103cb8888486682a0",
-      "date": "2026-07-31T21:21:11Z",
-      "sha": "a32e9a5"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
-      "message": "Move the citation-snip geometry out of the route handler",
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/37fed1f1543027c4a8965606a4c6afa1ef6067ec",
-      "date": "2026-07-31T21:18:23Z",
-      "sha": "37fed1f"
     }
   ]
 }
