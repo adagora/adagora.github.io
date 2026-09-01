@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T12:41:47.608Z",
+  "generated": "2026-09-01T11:05:49.052Z",
   "items": [
     {
       "type": "commit",
@@ -8,14 +8,6 @@
       "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/e4a6e75686062ee2d1e5880571c32ee5082a092d",
       "date": "2026-08-30T16:16:06Z",
       "sha": "e4a6e75"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trail-mvp",
-      "message": "feat(skills): add map and teach",
-      "url": "https://github.com/adagora/trail-mvp/commit/7ba5a91505ea38720d8ed1ea326875d2a15ddaf4",
-      "date": "2026-08-29T18:42:23Z",
-      "sha": "7ba5a91"
     },
     {
       "type": "commit",
@@ -200,6 +192,14 @@
       "url": "https://github.com/adagora/diff-explain/commit/45e919887f36836ebc00ac789b65d817a9128f43",
       "date": "2026-08-08T21:05:17Z",
       "sha": "45e9198"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
+      "message": "feat(docs):  update readme",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/c336f5b32d4ba2445033d2c1c65cf6c0d4a33e11",
+      "date": "2026-08-02T18:39:40Z",
+      "sha": "c336f5b"
     }
   ]
 }
