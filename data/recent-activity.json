@@ -1,6 +1,30 @@
 {
-  "generated": "2026-09-01T11:05:49.052Z",
+  "generated": "2026-09-02T10:37:55.928Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "fix: swap the weakest open position for a stronger signal at capacity",
+      "url": "https://github.com/adagora/trade/commit/db072416d6141b3f1c8512b0ec655a1878066007",
+      "date": "2026-09-01T21:04:32Z",
+      "sha": "db07241"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "feat: lift desk.now chips and point the ticker at that payload",
+      "url": "https://github.com/adagora/trade/commit/50f3e6f8b7ef0b6d5941d459e083a3fbb5e8a695",
+      "date": "2026-09-01T16:34:10Z",
+      "sha": "50f3e6f"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "feat: desk.now as the book of record",
+      "url": "https://github.com/adagora/trade/commit/198ca1800a0cd3b1287593a345217cb039cb9164",
+      "date": "2026-09-01T15:39:43Z",
+      "sha": "198ca18"
+    },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
@@ -32,14 +56,6 @@
       "url": "https://github.com/adagora/trade/commit/fdcdbaa11bc17675cc46d6bd2d451987b069c966",
       "date": "2026-08-19T21:25:53Z",
       "sha": "fdcdbaa"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "fix: catch impulse entries and stop dashboards lying about opens",
-      "url": "https://github.com/adagora/trade/commit/ee26de8206e05d6a25192bbb6880cedc8ff8e1f4",
-      "date": "2026-08-19T18:25:32Z",
-      "sha": "ee26de8"
     },
     {
       "type": "commit",
@@ -123,22 +139,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/trade",
-      "message": "fix: stop leftover perps booking -$20M and unstick canary",
-      "url": "https://github.com/adagora/trade/commit/f23f76af1c2cd1371f3cf98d62051f6e415f9eeb",
-      "date": "2026-08-18T11:36:04Z",
-      "sha": "f23f76a"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "fix: fail-closed SL verification and hold open size until flat",
-      "url": "https://github.com/adagora/trade/commit/c00d3fe68ce3efcd14ce4a87b572c193f8c57ce0",
-      "date": "2026-08-17T19:25:44Z",
-      "sha": "c00d3fe"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/alike-pintrest",
       "message": "Stop saying \"no job\" next to a ranked extra cost.",
       "url": "https://github.com/adagora/alike-pintrest/commit/f3141cdb063fe0ab1726ba6c2b8da76c46bc965d",
@@ -195,11 +195,11 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid",
-      "message": "feat(docs):  update readme",
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid/commit/c336f5b32d4ba2445033d2c1c65cf6c0d4a33e11",
-      "date": "2026-08-02T18:39:40Z",
-      "sha": "c336f5b"
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "reports: weekly token summary 2026-07-30 (NOTHING READY)",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/e59eb9dcfa7b82fd554c88800e3fde202a037957",
+      "date": "2026-07-30T16:12:32Z",
+      "sha": "e59eb9d"
     }
   ]
 }
