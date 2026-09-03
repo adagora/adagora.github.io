@@ -1,6 +1,54 @@
 {
-  "generated": "2026-09-02T10:37:55.928Z",
+  "generated": "2026-09-03T10:40:28.664Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "004.tm2 (bead 2vt): live_mode.resume() forwards decisions_path",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/d369abbc081b04dc6c399e322ad596e643728bc9",
+      "date": "2026-09-02T20:19:15Z",
+      "sha": "d369abb"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "006.s: rename skill_install --mode shadow to probe (004 shadow stays zero-write)",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/563ce7c7005137385da85c06ecaac7250d316eca",
+      "date": "2026-09-02T20:16:49Z",
+      "sha": "563ce7c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "008.u (spec 008): operator board 002 layer requires real composition coverage",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/04e2251745415edc1c42aebea9cdc2a42f40c08a",
+      "date": "2026-09-02T20:09:18Z",
+      "sha": "04e2251"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "005.w: skill_miner --out refuses to wipe golden reports/skill-candidates without --force",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/35c6d2df5b40b6ccf3e8fe0fb0078bb7b8aac33c",
+      "date": "2026-09-02T20:04:21Z",
+      "sha": "35c6d2d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "004.tm (spec 004): wire live_mode.read_tokens_median to token_report --json",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/ec2501f7691d49005bfde4be3749ba8b5136b625",
+      "date": "2026-09-02T19:36:24Z",
+      "sha": "ec2501f"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "fix: no-cache the frontend so a deploy always reaches the browser",
+      "url": "https://github.com/adagora/trade/commit/5fe9e142460a4780070fd6d75bf90ec52267b9f1",
+      "date": "2026-09-02T16:32:08Z",
+      "sha": "5fe9e14"
+    },
     {
       "type": "commit",
       "repo": "adagora/trade",
@@ -8,6 +56,38 @@
       "url": "https://github.com/adagora/trade/commit/db072416d6141b3f1c8512b0ec655a1878066007",
       "date": "2026-09-01T21:04:32Z",
       "sha": "db07241"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "Refresh the routeseq binary.",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/c3827eb3a212ec0325562d3000e9e68c014aea0a",
+      "date": "2026-09-01T18:54:33Z",
+      "sha": "c3827eb"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Refresh the routeseq binary.",
+      "url": "https://github.com/adagora/alike-pintrest/commit/c3827eb3a212ec0325562d3000e9e68c014aea0a",
+      "date": "2026-09-01T18:54:33Z",
+      "sha": "c3827eb"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: timesfm-3",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/d5776a6bc8c8f3e6baa5d94046a2e046ce0b2df8",
+      "date": "2026-09-01T18:43:18Z",
+      "sha": "d5776a6"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: timesfm-3",
+      "url": "https://github.com/adagora/alike-pintrest/commit/d5776a6bc8c8f3e6baa5d94046a2e046ce0b2df8",
+      "date": "2026-09-01T18:43:18Z",
+      "sha": "d5776a6"
     },
     {
       "type": "commit",
@@ -27,19 +107,51 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "feat(todo): more planning",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/e4a6e75686062ee2d1e5880571c32ee5082a092d",
-      "date": "2026-08-30T16:16:06Z",
-      "sha": "e4a6e75"
+      "repo": "adagora/manufacturing-tool",
+      "message": "Lead Ops with the next action, not the data lesson.",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/75573a8a70dfcdd1afdadfe5647c23c052d1fb2c",
+      "date": "2026-08-26T21:21:08Z",
+      "sha": "75573a8"
     },
     {
       "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "feat(verify-skills-md): add CLI verification skill and feature map",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/2d06fec89f2ddcdf6f1783676bad410e892e9532",
-      "date": "2026-08-28T21:14:13Z",
-      "sha": "2d06fec"
+      "repo": "adagora/alike-pintrest",
+      "message": "Lead Ops with the next action, not the data lesson.",
+      "url": "https://github.com/adagora/alike-pintrest/commit/75573a8a70dfcdd1afdadfe5647c23c052d1fb2c",
+      "date": "2026-08-26T21:21:08Z",
+      "sha": "75573a8"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "Ship dataset research packs so AutoResearch is a copyable recipe, not a flag puzzle.",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/290e2126148ab95e5e2a9d3d8321aaec3439bb89",
+      "date": "2026-08-26T20:20:08Z",
+      "sha": "290e212"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Ship dataset research packs so AutoResearch is a copyable recipe, not a flag puzzle.",
+      "url": "https://github.com/adagora/alike-pintrest/commit/290e2126148ab95e5e2a9d3d8321aaec3439bb89",
+      "date": "2026-08-26T20:20:08Z",
+      "sha": "290e212"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "Three coherence repairs: the handoff composes itself, the wall tells one",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/a1f71f827a97afad31ed032d492a1b8f436e70e0",
+      "date": "2026-08-26T04:53:48Z",
+      "sha": "a1f71f8"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Three coherence repairs: the handoff composes itself, the wall tells one",
+      "url": "https://github.com/adagora/alike-pintrest/commit/a1f71f827a97afad31ed032d492a1b8f436e70e0",
+      "date": "2026-08-26T04:53:48Z",
+      "sha": "a1f71f8"
     },
     {
       "type": "commit",
@@ -48,14 +160,6 @@
       "url": "https://github.com/adagora/trade/commit/fd19c6981bce60cd9c82b411dd1ea8cf79747c12",
       "date": "2026-08-23T15:52:28Z",
       "sha": "fd19c69"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "feat: pin isolated margin and size leverage from stop-dollar risk",
-      "url": "https://github.com/adagora/trade/commit/fdcdbaa11bc17675cc46d6bd2d451987b069c966",
-      "date": "2026-08-19T21:25:53Z",
-      "sha": "fdcdbaa"
     },
     {
       "type": "commit",
@@ -75,27 +179,11 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "Ship 007 digest, 008 operator board, and shadow-install read-before-write.",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/ce25cace27167f52ef1fb1d434228ab2d11da00f",
-      "date": "2026-08-19T13:48:08Z",
-      "sha": "ce25cac"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/diff-explain",
       "message": "Add meat -look: no-model shape, color, and length view of a diff.",
       "url": "https://github.com/adagora/diff-explain/commit/c90f59fe4b1d50ef5201a6df8150e332b4f85837",
       "date": "2026-08-19T13:46:18Z",
       "sha": "c90f59f"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "Add Autoresearcher miner for Claude, Grok, and Codex traces (spec 005).",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/1a3b2b9fc91b31c470dcc0d460ebd4d0cd9dac72",
-      "date": "2026-08-19T00:42:12Z",
-      "sha": "1a3b2b9"
     },
     {
       "type": "commit",
@@ -112,94 +200,6 @@
       "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/1a24d0a6a55d9518093aecba7d20c5278d663763",
       "date": "2026-08-18T15:53:25Z",
       "sha": "1a24d0a"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/lerobot-so-arm-100-tool",
-      "message": "mj3.10.9: joint identity system and the identify-this-joint action",
-      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/865c0601185792a3e5069876a3704c96c26415f8",
-      "date": "2026-08-18T15:16:25Z",
-      "sha": "865c060"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/lerobot-so-arm-100-tool",
-      "message": "mj3.10.8: travel gauges, state timeline, and the per-joint ring buffer",
-      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/1ec8de3db234942858eb0672eaa62a481aeecdd3",
-      "date": "2026-08-18T15:13:23Z",
-      "sha": "1ec8de3"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/lerobot-so-arm-100-tool",
-      "message": "mj3.10.7: arm silhouette and top-view compass component",
-      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/7ff99bb6f74efe7eb6e77d1dedab0c4bc1209d12",
-      "date": "2026-08-18T15:06:20Z",
-      "sha": "7ff99bb"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Stop saying \"no job\" next to a ranked extra cost.",
-      "url": "https://github.com/adagora/alike-pintrest/commit/f3141cdb063fe0ab1726ba6c2b8da76c46bc965d",
-      "date": "2026-08-15T20:57:08Z",
-      "sha": "f3141cd"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Prefill the map's prior snapshot, and run examples as a log of generations.",
-      "url": "https://github.com/adagora/alike-pintrest/commit/937e479462ec1ea5ba0a820153e2eb9230c8ccd8",
-      "date": "2026-08-15T14:52:42Z",
-      "sha": "937e479"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Turn the thin-support floor on, and make it flag instead of filter.",
-      "url": "https://github.com/adagora/alike-pintrest/commit/6156aa93778e95c3d1eff7919c0cbf0f87619e85",
-      "date": "2026-08-15T13:14:09Z",
-      "sha": "6156aa9"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Score every target on the same mix, so \"worse\" stops meaning \"harder\".",
-      "url": "https://github.com/adagora/alike-pintrest/commit/442cab1886d90dfd96ce7115dbf0cf8fa1066160",
-      "date": "2026-08-15T12:39:52Z",
-      "sha": "442cab1"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Pin the caveats banner without moving the other nineteen.",
-      "url": "https://github.com/adagora/alike-pintrest/commit/47bbb676b8d8abaf20ae6054124ec364795d8cdf",
-      "date": "2026-08-15T11:09:13Z",
-      "sha": "47bbb67"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/diff-explain",
-      "message": "docs: replace Go install instructions with TS run instructions",
-      "url": "https://github.com/adagora/diff-explain/commit/9bb9e527e6f7668183d0d106ab067ba3e379b929",
-      "date": "2026-08-08T21:15:19Z",
-      "sha": "9bb9e52"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/diff-explain",
-      "message": "finish stage 3: TypeScript port of meat",
-      "url": "https://github.com/adagora/diff-explain/commit/45e919887f36836ebc00ac789b65d817a9128f43",
-      "date": "2026-08-08T21:05:17Z",
-      "sha": "45e9198"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "reports: weekly token summary 2026-07-30 (NOTHING READY)",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/e59eb9dcfa7b82fd554c88800e3fde202a037957",
-      "date": "2026-07-30T16:12:32Z",
-      "sha": "e59eb9d"
     }
   ]
 }
