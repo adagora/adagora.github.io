@@ -1,6 +1,86 @@
 {
-  "generated": "2026-09-03T10:40:28.664Z",
+  "generated": "2026-09-04T10:35:54.528Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Refresh tool outputs: acceptance-mutation artifacts for rate-interval and spc-control-chart",
+      "url": "https://github.com/adagora/alike-pintrest/commit/68524a60bdf5bfe4c74a5c73e74917111ecf4ef2",
+      "date": "2026-09-03T20:42:54Z",
+      "sha": "68524a6"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "Refresh tool outputs: acceptance-mutation artifacts for rate-interval and spc-control-chart",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/68524a60bdf5bfe4c74a5c73e74917111ecf4ef2",
+      "date": "2026-09-03T20:42:54Z",
+      "sha": "68524a6"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-xrqj.3: conform board gates on measured capability, empty state names the fix",
+      "url": "https://github.com/adagora/alike-pintrest/commit/309b560a7865684a58022c29a8378bfeea7a4758",
+      "date": "2026-09-03T20:42:38Z",
+      "sha": "309b560"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-xrqj.3: conform board gates on measured capability, empty state names the fix",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/309b560a7865684a58022c29a8378bfeea7a4758",
+      "date": "2026-09-03T20:42:38Z",
+      "sha": "309b560"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-xrqj.2: time presets + refresh on workbench scrubber",
+      "url": "https://github.com/adagora/alike-pintrest/commit/1e41bf5f0322fae8b67df0f18cba8ad8b2059d24",
+      "date": "2026-09-03T20:26:33Z",
+      "sha": "1e41bf5"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-xrqj.2: time presets + refresh on workbench scrubber",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/1e41bf5f0322fae8b67df0f18cba8ad8b2059d24",
+      "date": "2026-09-03T20:26:33Z",
+      "sha": "1e41bf5"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-xrqj.1: shareable URL view-state encodes time window in workbench hash",
+      "url": "https://github.com/adagora/alike-pintrest/commit/fb341bf75ca8a927e348b137ce5216af6608d57b",
+      "date": "2026-09-03T20:17:49Z",
+      "sha": "fb341bf"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-xrqj.1: shareable URL view-state encodes time window in workbench hash",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/fb341bf75ca8a927e348b137ce5216af6608d57b",
+      "date": "2026-09-03T20:17:49Z",
+      "sha": "fb341bf"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Close rate-interval bead pintrest-rate-interval-twle; logbook; refresh binary and tool outputs.",
+      "url": "https://github.com/adagora/alike-pintrest/commit/f2a9fed4e580a5839e297f35235b87fd33b77bc2",
+      "date": "2026-09-03T19:56:58Z",
+      "sha": "f2a9fed"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "Close rate-interval bead pintrest-rate-interval-twle; logbook; refresh binary and tool outputs.",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/f2a9fed4e580a5839e297f35235b87fd33b77bc2",
+      "date": "2026-09-03T19:56:58Z",
+      "sha": "f2a9fed"
+    },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
@@ -59,38 +139,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "Refresh the routeseq binary.",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/c3827eb3a212ec0325562d3000e9e68c014aea0a",
-      "date": "2026-09-01T18:54:33Z",
-      "sha": "c3827eb"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Refresh the routeseq binary.",
-      "url": "https://github.com/adagora/alike-pintrest/commit/c3827eb3a212ec0325562d3000e9e68c014aea0a",
-      "date": "2026-09-01T18:54:33Z",
-      "sha": "c3827eb"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: timesfm-3",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/d5776a6bc8c8f3e6baa5d94046a2e046ce0b2df8",
-      "date": "2026-09-01T18:43:18Z",
-      "sha": "d5776a6"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: timesfm-3",
-      "url": "https://github.com/adagora/alike-pintrest/commit/d5776a6bc8c8f3e6baa5d94046a2e046ce0b2df8",
-      "date": "2026-09-01T18:43:18Z",
-      "sha": "d5776a6"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/trade",
       "message": "feat: lift desk.now chips and point the ticker at that payload",
       "url": "https://github.com/adagora/trade/commit/50f3e6f8b7ef0b6d5941d459e083a3fbb5e8a695",
@@ -104,54 +152,6 @@
       "url": "https://github.com/adagora/trade/commit/198ca1800a0cd3b1287593a345217cb039cb9164",
       "date": "2026-09-01T15:39:43Z",
       "sha": "198ca18"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "Lead Ops with the next action, not the data lesson.",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/75573a8a70dfcdd1afdadfe5647c23c052d1fb2c",
-      "date": "2026-08-26T21:21:08Z",
-      "sha": "75573a8"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Lead Ops with the next action, not the data lesson.",
-      "url": "https://github.com/adagora/alike-pintrest/commit/75573a8a70dfcdd1afdadfe5647c23c052d1fb2c",
-      "date": "2026-08-26T21:21:08Z",
-      "sha": "75573a8"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "Ship dataset research packs so AutoResearch is a copyable recipe, not a flag puzzle.",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/290e2126148ab95e5e2a9d3d8321aaec3439bb89",
-      "date": "2026-08-26T20:20:08Z",
-      "sha": "290e212"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Ship dataset research packs so AutoResearch is a copyable recipe, not a flag puzzle.",
-      "url": "https://github.com/adagora/alike-pintrest/commit/290e2126148ab95e5e2a9d3d8321aaec3439bb89",
-      "date": "2026-08-26T20:20:08Z",
-      "sha": "290e212"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "Three coherence repairs: the handoff composes itself, the wall tells one",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/a1f71f827a97afad31ed032d492a1b8f436e70e0",
-      "date": "2026-08-26T04:53:48Z",
-      "sha": "a1f71f8"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Three coherence repairs: the handoff composes itself, the wall tells one",
-      "url": "https://github.com/adagora/alike-pintrest/commit/a1f71f827a97afad31ed032d492a1b8f436e70e0",
-      "date": "2026-08-26T04:53:48Z",
-      "sha": "a1f71f8"
     },
     {
       "type": "commit",
