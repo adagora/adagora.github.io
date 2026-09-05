@@ -1,85 +1,125 @@
 {
-  "generated": "2026-09-04T10:35:54.528Z",
+  "generated": "2026-09-05T09:57:24.493Z",
   "items": [
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Refresh tool outputs: acceptance-mutation artifacts for rate-interval and spc-control-chart",
-      "url": "https://github.com/adagora/alike-pintrest/commit/68524a60bdf5bfe4c74a5c73e74917111ecf4ef2",
-      "date": "2026-09-03T20:42:54Z",
-      "sha": "68524a6"
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "Close 6 human gates: specs 001/006/009/012/014 agreed, 015 declined",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/87e6b7a68e048c51689256607b895d7d4c984e9f",
+      "date": "2026-09-05T08:10:48Z",
+      "sha": "87e6b7a"
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "Refresh tool outputs: acceptance-mutation artifacts for rate-interval and spc-control-chart",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/68524a60bdf5bfe4c74a5c73e74917111ecf4ef2",
-      "date": "2026-09-03T20:42:54Z",
-      "sha": "68524a6"
+      "repo": "adagora/trail-mvp",
+      "message": "feat(skill): update verify skill",
+      "url": "https://github.com/adagora/trail-mvp/commit/4b284f09d8144fde90323c50389aaffbd516a902",
+      "date": "2026-09-04T19:56:08Z",
+      "sha": "4b284f0"
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-xrqj.3: conform board gates on measured capability, empty state names the fix",
-      "url": "https://github.com/adagora/alike-pintrest/commit/309b560a7865684a58022c29a8378bfeea7a4758",
-      "date": "2026-09-03T20:42:38Z",
-      "sha": "309b560"
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "idle: append weekly token report + skill digest (spec 007)",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/b0341007495bf1bf2de2a748f83971cd927c0f1b",
+      "date": "2026-09-04T18:48:57Z",
+      "sha": "b034100"
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-xrqj.3: conform board gates on measured capability, empty state names the fix",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/309b560a7865684a58022c29a8378bfeea7a4758",
-      "date": "2026-09-03T20:42:38Z",
-      "sha": "309b560"
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "013.4 (spec 003): recommender header shouts UNCOVERED on k=1.0 fallback",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/9a4106f38dadf062aa5164fe4085f206add310af",
+      "date": "2026-09-04T18:48:12Z",
+      "sha": "9a4106f"
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-xrqj.2: time presets + refresh on workbench scrubber",
-      "url": "https://github.com/adagora/alike-pintrest/commit/1e41bf5f0322fae8b67df0f18cba8ad8b2059d24",
-      "date": "2026-09-03T20:26:33Z",
-      "sha": "1e41bf5"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-xrqj.2: time presets + refresh on workbench scrubber",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/1e41bf5f0322fae8b67df0f18cba8ad8b2059d24",
-      "date": "2026-09-03T20:26:33Z",
-      "sha": "1e41bf5"
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "013.1 (spec 002): attribution proxy print-env launcher",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/568a076e7cb8ee15e2a139af47ba4e2c49ebfb41",
+      "date": "2026-09-04T18:33:30Z",
+      "sha": "568a076"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "pintrest-xrqj.1: shareable URL view-state encodes time window in workbench hash",
-      "url": "https://github.com/adagora/alike-pintrest/commit/fb341bf75ca8a927e348b137ce5216af6608d57b",
-      "date": "2026-09-03T20:17:49Z",
-      "sha": "fb341bf"
+      "message": "Bead ukzw.1: watch status sidecar",
+      "url": "https://github.com/adagora/alike-pintrest/commit/7a3d2d5ada0591298f9f74c7ea26363ec135bdcc",
+      "date": "2026-09-04T16:53:08Z",
+      "sha": "7a3d2d5"
     },
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-xrqj.1: shareable URL view-state encodes time window in workbench hash",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/fb341bf75ca8a927e348b137ce5216af6608d57b",
-      "date": "2026-09-03T20:17:49Z",
-      "sha": "fb341bf"
+      "message": "Bead ukzw.1: watch status sidecar",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/7a3d2d5ada0591298f9f74c7ea26363ec135bdcc",
+      "date": "2026-09-04T16:53:08Z",
+      "sha": "7a3d2d5"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "Close rate-interval bead pintrest-rate-interval-twle; logbook; refresh binary and tool outputs.",
-      "url": "https://github.com/adagora/alike-pintrest/commit/f2a9fed4e580a5839e297f35235b87fd33b77bc2",
-      "date": "2026-09-03T19:56:58Z",
-      "sha": "f2a9fed"
+      "message": "pintrest-ukzw.1: watch status sidecar end to end",
+      "url": "https://github.com/adagora/alike-pintrest/commit/4f731b133491a76c56fc1365df47442d60a39485",
+      "date": "2026-09-04T16:17:32Z",
+      "sha": "4f731b1"
     },
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
-      "message": "Close rate-interval bead pintrest-rate-interval-twle; logbook; refresh binary and tool outputs.",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/f2a9fed4e580a5839e297f35235b87fd33b77bc2",
-      "date": "2026-09-03T19:56:58Z",
-      "sha": "f2a9fed"
+      "message": "pintrest-ukzw.1: watch status sidecar end to end",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/4f731b133491a76c56fc1365df47442d60a39485",
+      "date": "2026-09-04T16:17:32Z",
+      "sha": "4f731b1"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-lru8.3 + epic close: alert history trail, Slice 3 complete",
+      "url": "https://github.com/adagora/alike-pintrest/commit/a95d51e2befba888b16d4e3cd69fc4a46dc6ff46",
+      "date": "2026-09-04T15:44:00Z",
+      "sha": "a95d51e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-lru8.3 + epic close: alert history trail, Slice 3 complete",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/a95d51e2befba888b16d4e3cd69fc4a46dc6ff46",
+      "date": "2026-09-04T15:44:00Z",
+      "sha": "a95d51e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-lru8.2: offer-set-aware mix comparison (D26 follow-up, D30)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/b161325380db326e6689760b5aca86cd1f7854e8",
+      "date": "2026-09-04T15:28:59Z",
+      "sha": "b161325"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-lru8.2: offer-set-aware mix comparison (D26 follow-up, D30)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/b161325380db326e6689760b5aca86cd1f7854e8",
+      "date": "2026-09-04T15:28:59Z",
+      "sha": "b161325"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-lru8.1: scorer recall trend strip on Model Lab rail",
+      "url": "https://github.com/adagora/alike-pintrest/commit/13862be6091f33969932b4d1e5b44e612f996c7f",
+      "date": "2026-09-04T14:45:42Z",
+      "sha": "13862be"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-lru8.1: scorer recall trend strip on Model Lab rail",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/13862be6091f33969932b4d1e5b44e612f996c7f",
+      "date": "2026-09-04T14:45:42Z",
+      "sha": "13862be"
     },
     {
       "type": "commit",
@@ -88,38 +128,6 @@
       "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/d369abbc081b04dc6c399e322ad596e643728bc9",
       "date": "2026-09-02T20:19:15Z",
       "sha": "d369abb"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "006.s: rename skill_install --mode shadow to probe (004 shadow stays zero-write)",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/563ce7c7005137385da85c06ecaac7250d316eca",
-      "date": "2026-09-02T20:16:49Z",
-      "sha": "563ce7c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "008.u (spec 008): operator board 002 layer requires real composition coverage",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/04e2251745415edc1c42aebea9cdc2a42f40c08a",
-      "date": "2026-09-02T20:09:18Z",
-      "sha": "04e2251"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "005.w: skill_miner --out refuses to wipe golden reports/skill-candidates without --force",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/35c6d2df5b40b6ccf3e8fe0fb0078bb7b8aac33c",
-      "date": "2026-09-02T20:04:21Z",
-      "sha": "35c6d2d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "004.tm (spec 004): wire live_mode.read_tokens_median to token_report --json",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/ec2501f7691d49005bfde4be3749ba8b5136b625",
-      "date": "2026-09-02T19:36:24Z",
-      "sha": "ec2501f"
     },
     {
       "type": "commit",
@@ -192,14 +200,6 @@
       "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/0d694b99495fa52b295a94ccceac073668317977",
       "date": "2026-08-18T16:01:59Z",
       "sha": "0d694b9"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/lerobot-so-arm-100-tool",
-      "message": "mj3.10.10: calibration walkthrough, one phase per screen, hold-to-confirm",
-      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/1a24d0a6a55d9518093aecba7d20c5278d663763",
-      "date": "2026-08-18T15:53:25Z",
-      "sha": "1a24d0a"
     }
   ]
 }
