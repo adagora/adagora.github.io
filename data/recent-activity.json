@@ -1,13 +1,125 @@
 {
-  "generated": "2026-09-05T09:57:24.493Z",
+  "generated": "2026-09-06T10:15:49.888Z",
   "items": [
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
-      "message": "Close 6 human gates: specs 001/006/009/012/014 agreed, 015 declined",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/87e6b7a68e048c51689256607b895d7d4c984e9f",
-      "date": "2026-09-05T08:10:48Z",
-      "sha": "87e6b7a"
+      "message": "Board (spec 008.b/d): HMI rebuild — shift instruction, review cards, PV/SP trend, andon alarms",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/2b859746984907996d128d9196476b4747bd047b",
+      "date": "2026-09-06T07:06:19Z",
+      "sha": "2b85974"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "Board: expandable skill bodies via native details (path-confined)",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/d1b169cc24cc60dbaa73e1d7dd8620af848dbb67",
+      "date": "2026-09-05T22:38:03Z",
+      "sha": "d1b169c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "Board refresh (spec 008): Grafana-style panels, loadout + token trend",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/4528698c3e0d174ef9b0d0cbaf334191c79f7cc1",
+      "date": "2026-09-05T22:23:24Z",
+      "sha": "4528698"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "Close 009/010/011/012/014 epics: all children green",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/34fcba09982837662b942c2f6dfefa603356d82c",
+      "date": "2026-09-05T22:18:18Z",
+      "sha": "34fcba0"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/skills.md-auto-optimisation",
+      "message": "014.6 (spec 014): loadout budget/omit/pointer tests",
+      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/9de68d4b0c0cda9cb5cf4f336bc7bd6a09258327",
+      "date": "2026-09-05T22:15:42Z",
+      "sha": "9de68d4"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: working on alert",
+      "url": "https://github.com/adagora/alike-pintrest/commit/0c7c77bca769e1d60bc6ec9d6a634e07498e7198",
+      "date": "2026-09-05T13:30:28Z",
+      "sha": "0c7c77b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: working on alert",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/0c7c77bca769e1d60bc6ec9d6a634e07498e7198",
+      "date": "2026-09-05T13:30:28Z",
+      "sha": "0c7c77b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-vsv5.3 + epic close: alert-rules matches endpoint, Slice 5 complete",
+      "url": "https://github.com/adagora/alike-pintrest/commit/247f53367ec51ee71b48bde4b3da2255e460cccf",
+      "date": "2026-09-05T11:52:53Z",
+      "sha": "247f533"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-vsv5.3 + epic close: alert-rules matches endpoint, Slice 5 complete",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/247f53367ec51ee71b48bde4b3da2255e460cccf",
+      "date": "2026-09-05T11:52:53Z",
+      "sha": "247f533"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-vsv5.2A: alert rules with per-rule contacts",
+      "url": "https://github.com/adagora/alike-pintrest/commit/ab660ddd3248a0f2f7c5afef35080d52624d180d",
+      "date": "2026-09-05T11:31:15Z",
+      "sha": "ab660dd"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-vsv5.2A: alert rules with per-rule contacts",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/ab660ddd3248a0f2f7c5afef35080d52624d180d",
+      "date": "2026-09-05T11:31:15Z",
+      "sha": "ab660dd"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-vsv5.1: hybrid recency predictor (blend, D32)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/45bdab23cf02a6714e4ae126d0e3b91f08be9921",
+      "date": "2026-09-05T09:10:58Z",
+      "sha": "45bdab2"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-vsv5.1: hybrid recency predictor (blend, D32)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/45bdab23cf02a6714e4ae126d0e3b91f08be9921",
+      "date": "2026-09-05T09:10:58Z",
+      "sha": "45bdab2"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-ukzw.3 + epic close: quarantine for poison files, Slice 4 complete",
+      "url": "https://github.com/adagora/alike-pintrest/commit/472240d81ee18a8993de9f1c3c050ce65c4b27eb",
+      "date": "2026-09-05T08:04:59Z",
+      "sha": "472240d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-ukzw.3 + epic close: quarantine for poison files, Slice 4 complete",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/472240d81ee18a8993de9f1c3c050ce65c4b27eb",
+      "date": "2026-09-05T08:04:59Z",
+      "sha": "472240d"
     },
     {
       "type": "commit",
@@ -16,118 +128,6 @@
       "url": "https://github.com/adagora/trail-mvp/commit/4b284f09d8144fde90323c50389aaffbd516a902",
       "date": "2026-09-04T19:56:08Z",
       "sha": "4b284f0"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "idle: append weekly token report + skill digest (spec 007)",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/b0341007495bf1bf2de2a748f83971cd927c0f1b",
-      "date": "2026-09-04T18:48:57Z",
-      "sha": "b034100"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "013.4 (spec 003): recommender header shouts UNCOVERED on k=1.0 fallback",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/9a4106f38dadf062aa5164fe4085f206add310af",
-      "date": "2026-09-04T18:48:12Z",
-      "sha": "9a4106f"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "013.1 (spec 002): attribution proxy print-env launcher",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/568a076e7cb8ee15e2a139af47ba4e2c49ebfb41",
-      "date": "2026-09-04T18:33:30Z",
-      "sha": "568a076"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Bead ukzw.1: watch status sidecar",
-      "url": "https://github.com/adagora/alike-pintrest/commit/7a3d2d5ada0591298f9f74c7ea26363ec135bdcc",
-      "date": "2026-09-04T16:53:08Z",
-      "sha": "7a3d2d5"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "Bead ukzw.1: watch status sidecar",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/7a3d2d5ada0591298f9f74c7ea26363ec135bdcc",
-      "date": "2026-09-04T16:53:08Z",
-      "sha": "7a3d2d5"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-ukzw.1: watch status sidecar end to end",
-      "url": "https://github.com/adagora/alike-pintrest/commit/4f731b133491a76c56fc1365df47442d60a39485",
-      "date": "2026-09-04T16:17:32Z",
-      "sha": "4f731b1"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-ukzw.1: watch status sidecar end to end",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/4f731b133491a76c56fc1365df47442d60a39485",
-      "date": "2026-09-04T16:17:32Z",
-      "sha": "4f731b1"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-lru8.3 + epic close: alert history trail, Slice 3 complete",
-      "url": "https://github.com/adagora/alike-pintrest/commit/a95d51e2befba888b16d4e3cd69fc4a46dc6ff46",
-      "date": "2026-09-04T15:44:00Z",
-      "sha": "a95d51e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-lru8.3 + epic close: alert history trail, Slice 3 complete",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/a95d51e2befba888b16d4e3cd69fc4a46dc6ff46",
-      "date": "2026-09-04T15:44:00Z",
-      "sha": "a95d51e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-lru8.2: offer-set-aware mix comparison (D26 follow-up, D30)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/b161325380db326e6689760b5aca86cd1f7854e8",
-      "date": "2026-09-04T15:28:59Z",
-      "sha": "b161325"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-lru8.2: offer-set-aware mix comparison (D26 follow-up, D30)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/b161325380db326e6689760b5aca86cd1f7854e8",
-      "date": "2026-09-04T15:28:59Z",
-      "sha": "b161325"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-lru8.1: scorer recall trend strip on Model Lab rail",
-      "url": "https://github.com/adagora/alike-pintrest/commit/13862be6091f33969932b4d1e5b44e612f996c7f",
-      "date": "2026-09-04T14:45:42Z",
-      "sha": "13862be"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-lru8.1: scorer recall trend strip on Model Lab rail",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/13862be6091f33969932b4d1e5b44e612f996c7f",
-      "date": "2026-09-04T14:45:42Z",
-      "sha": "13862be"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "004.tm2 (bead 2vt): live_mode.resume() forwards decisions_path",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/d369abbc081b04dc6c399e322ad596e643728bc9",
-      "date": "2026-09-02T20:19:15Z",
-      "sha": "d369abb"
     },
     {
       "type": "commit",
