@@ -1,6 +1,54 @@
 {
-  "generated": "2026-09-07T11:34:49.737Z",
+  "generated": "2026-09-08T10:34:44.065Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/diff-explain",
+      "message": "feat: add show me complementary skill and cli support",
+      "url": "https://github.com/adagora/diff-explain/commit/b012aa52e2a070a9e50f0dc0e59f87ae90d41d74",
+      "date": "2026-09-07T17:22:54Z",
+      "sha": "b012aa5"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Add scripts/live-check.sh runbook regression (45 checks green)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/dcec2aef0f9bcf5e68f43eff7724225d9702d152",
+      "date": "2026-09-07T15:34:40Z",
+      "sha": "dcec2ae"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "Roadmap: COLMINA program epic (pintrest-0lvc) + 17 detailed child beads",
+      "url": "https://github.com/adagora/alike-pintrest/commit/e05cfab428bb7ab655bc7cfa603341fe6db6dcd7",
+      "date": "2026-09-07T14:53:43Z",
+      "sha": "e05cfab"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-tspn: sync bead close state",
+      "url": "https://github.com/adagora/alike-pintrest/commit/ad43a94f757af7fb8b04d060fb97c1f2080d3550",
+      "date": "2026-09-07T14:46:25Z",
+      "sha": "ad43a94"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-tspn: forecast projection strip with twin overrun glow",
+      "url": "https://github.com/adagora/alike-pintrest/commit/19c9fc9b9992db17254079d8e3a07a12a81570ed",
+      "date": "2026-09-07T14:46:14Z",
+      "sha": "19c9fc9"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-0xcd: fleet line card + floorplan twin (COLMINA slice)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/462e87dea904bfd4a0a35cbb5266d445025c87fb",
+      "date": "2026-09-07T14:18:44Z",
+      "sha": "462e87d"
+    },
     {
       "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
@@ -51,25 +99,9 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: working on alert",
-      "url": "https://github.com/adagora/alike-pintrest/commit/0c7c77bca769e1d60bc6ec9d6a634e07498e7198",
-      "date": "2026-09-05T13:30:28Z",
-      "sha": "0c7c77b"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/manufacturing-tool",
       "message": "pintrest-vsv5.3 + epic close: alert-rules matches endpoint, Slice 5 complete",
       "url": "https://github.com/adagora/manufacturing-tool/commit/247f53367ec51ee71b48bde4b3da2255e460cccf",
-      "date": "2026-09-05T11:52:53Z",
-      "sha": "247f533"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-vsv5.3 + epic close: alert-rules matches endpoint, Slice 5 complete",
-      "url": "https://github.com/adagora/alike-pintrest/commit/247f53367ec51ee71b48bde4b3da2255e460cccf",
       "date": "2026-09-05T11:52:53Z",
       "sha": "247f533"
     },
@@ -83,14 +115,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-vsv5.2A: alert rules with per-rule contacts",
-      "url": "https://github.com/adagora/alike-pintrest/commit/ab660ddd3248a0f2f7c5afef35080d52624d180d",
-      "date": "2026-09-05T11:31:15Z",
-      "sha": "ab660dd"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/manufacturing-tool",
       "message": "pintrest-vsv5.1: hybrid recency predictor (blend, D32)",
       "url": "https://github.com/adagora/manufacturing-tool/commit/45bdab23cf02a6714e4ae126d0e3b91f08be9921",
@@ -99,25 +123,9 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-vsv5.1: hybrid recency predictor (blend, D32)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/45bdab23cf02a6714e4ae126d0e3b91f08be9921",
-      "date": "2026-09-05T09:10:58Z",
-      "sha": "45bdab2"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/manufacturing-tool",
       "message": "pintrest-ukzw.3 + epic close: quarantine for poison files, Slice 4 complete",
       "url": "https://github.com/adagora/manufacturing-tool/commit/472240d81ee18a8993de9f1c3c050ce65c4b27eb",
-      "date": "2026-09-05T08:04:59Z",
-      "sha": "472240d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-ukzw.3 + epic close: quarantine for poison files, Slice 4 complete",
-      "url": "https://github.com/adagora/alike-pintrest/commit/472240d81ee18a8993de9f1c3c050ce65c4b27eb",
       "date": "2026-09-05T08:04:59Z",
       "sha": "472240d"
     },
@@ -192,14 +200,6 @@
       "url": "https://github.com/adagora/diff-explain/commit/c90f59fe4b1d50ef5201a6df8150e332b4f85837",
       "date": "2026-08-19T13:46:18Z",
       "sha": "c90f59f"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/lerobot-so-arm-100-tool",
-      "message": "mj3.10.11: joint queue, sweep coverage dials, inline re-sweep",
-      "url": "https://github.com/adagora/lerobot-so-arm-100-tool/commit/0d694b99495fa52b295a94ccceac073668317977",
-      "date": "2026-08-18T16:01:59Z",
-      "sha": "0d694b9"
     }
   ]
 }
