@@ -1,6 +1,102 @@
 {
-  "generated": "2026-09-08T10:34:44.065Z",
+  "generated": "2026-09-09T10:45:41.863Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
+      "date": "2026-09-08T21:20:11Z",
+      "sha": "3431dd2"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
+      "url": "https://github.com/adagora/alike-pintrest/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
+      "date": "2026-09-08T21:20:11Z",
+      "sha": "3431dd2"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trail-mvp",
+      "message": "feat(ai): feed reviewer History into the next translation prompt",
+      "url": "https://github.com/adagora/trail-mvp/commit/c2fab4d6aa9f1c1d05333275713dbccd6d7cb5de",
+      "date": "2026-09-08T19:54:53Z",
+      "sha": "c2fab4d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-c4hc.3.3: account LLM proposals and enforce campaign cancellation",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/d24c457c0080e8899d6387f3782455b34ad8f3eb",
+      "date": "2026-09-08T19:21:16Z",
+      "sha": "d24c457"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-c4hc.3.3: account LLM proposals and enforce campaign cancellation",
+      "url": "https://github.com/adagora/alike-pintrest/commit/d24c457c0080e8899d6387f3782455b34ad8f3eb",
+      "date": "2026-09-08T19:21:16Z",
+      "sha": "d24c457"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trail-mvp",
+      "message": "feat(architecture): isolate IO-free policy and audit import creates",
+      "url": "https://github.com/adagora/trail-mvp/commit/b782c4b6ecb6efea594466152688ac13ba6a57ad",
+      "date": "2026-09-08T18:59:15Z",
+      "sha": "b782c4b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-c4hc.3.2: freeze experiment identity and isolate holdout",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/de6148c0e490e435e3bdb9b9323408a438aaa7c6",
+      "date": "2026-09-08T18:26:32Z",
+      "sha": "de6148c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-c4hc.3.2: freeze experiment identity and isolate holdout",
+      "url": "https://github.com/adagora/alike-pintrest/commit/de6148c0e490e435e3bdb9b9323408a438aaa7c6",
+      "date": "2026-09-08T18:26:32Z",
+      "sha": "de6148c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-0lvc.15: usable Ask the Line with prompts and citations",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/8da290b7767a00a7027cb4dae0b26ca42b774a3d",
+      "date": "2026-09-08T18:01:12Z",
+      "sha": "8da290b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-0lvc.15: usable Ask the Line with prompts and citations",
+      "url": "https://github.com/adagora/alike-pintrest/commit/8da290b7767a00a7027cb4dae0b26ca42b774a3d",
+      "date": "2026-09-08T18:01:12Z",
+      "sha": "8da290b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-c4hc.1.8: bounded MCP/HTTP chat tools",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/e808e970d2a14f5037dbfc8908a32b9ad563c3da",
+      "date": "2026-09-08T17:50:11Z",
+      "sha": "e808e97"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-c4hc.1.8: bounded MCP/HTTP chat tools",
+      "url": "https://github.com/adagora/alike-pintrest/commit/e808e970d2a14f5037dbfc8908a32b9ad563c3da",
+      "date": "2026-09-08T17:50:11Z",
+      "sha": "e808e97"
+    },
     {
       "type": "commit",
       "repo": "adagora/diff-explain",
@@ -8,46 +104,6 @@
       "url": "https://github.com/adagora/diff-explain/commit/b012aa52e2a070a9e50f0dc0e59f87ae90d41d74",
       "date": "2026-09-07T17:22:54Z",
       "sha": "b012aa5"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Add scripts/live-check.sh runbook regression (45 checks green)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/dcec2aef0f9bcf5e68f43eff7724225d9702d152",
-      "date": "2026-09-07T15:34:40Z",
-      "sha": "dcec2ae"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "Roadmap: COLMINA program epic (pintrest-0lvc) + 17 detailed child beads",
-      "url": "https://github.com/adagora/alike-pintrest/commit/e05cfab428bb7ab655bc7cfa603341fe6db6dcd7",
-      "date": "2026-09-07T14:53:43Z",
-      "sha": "e05cfab"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-tspn: sync bead close state",
-      "url": "https://github.com/adagora/alike-pintrest/commit/ad43a94f757af7fb8b04d060fb97c1f2080d3550",
-      "date": "2026-09-07T14:46:25Z",
-      "sha": "ad43a94"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-tspn: forecast projection strip with twin overrun glow",
-      "url": "https://github.com/adagora/alike-pintrest/commit/19c9fc9b9992db17254079d8e3a07a12a81570ed",
-      "date": "2026-09-07T14:46:14Z",
-      "sha": "19c9fc9"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-0xcd: fleet line card + floorplan twin (COLMINA slice)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/462e87dea904bfd4a0a35cbb5266d445025c87fb",
-      "date": "2026-09-07T14:18:44Z",
-      "sha": "462e87d"
     },
     {
       "type": "commit",
@@ -88,46 +144,6 @@
       "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/9de68d4b0c0cda9cb5cf4f336bc7bd6a09258327",
       "date": "2026-09-05T22:15:42Z",
       "sha": "9de68d4"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: working on alert",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/0c7c77bca769e1d60bc6ec9d6a634e07498e7198",
-      "date": "2026-09-05T13:30:28Z",
-      "sha": "0c7c77b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-vsv5.3 + epic close: alert-rules matches endpoint, Slice 5 complete",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/247f53367ec51ee71b48bde4b3da2255e460cccf",
-      "date": "2026-09-05T11:52:53Z",
-      "sha": "247f533"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-vsv5.2A: alert rules with per-rule contacts",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/ab660ddd3248a0f2f7c5afef35080d52624d180d",
-      "date": "2026-09-05T11:31:15Z",
-      "sha": "ab660dd"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-vsv5.1: hybrid recency predictor (blend, D32)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/45bdab23cf02a6714e4ae126d0e3b91f08be9921",
-      "date": "2026-09-05T09:10:58Z",
-      "sha": "45bdab2"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-ukzw.3 + epic close: quarantine for poison files, Slice 4 complete",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/472240d81ee18a8993de9f1c3c050ce65c4b27eb",
-      "date": "2026-09-05T08:04:59Z",
-      "sha": "472240d"
     },
     {
       "type": "commit",
@@ -184,22 +200,6 @@
       "url": "https://github.com/adagora/diff-explain/commit/2f89da64be4a281823dfbf630552917238cd9bab",
       "date": "2026-08-19T17:46:05Z",
       "sha": "2f89da6"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/diff-explain",
-      "message": "Add Grok CLI support via XAI_API_KEY and grok-* model ids.",
-      "url": "https://github.com/adagora/diff-explain/commit/25bb51a6461edc99b49efdb4d2ae1b07ea00e326",
-      "date": "2026-08-19T14:24:06Z",
-      "sha": "25bb51a"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/diff-explain",
-      "message": "Add meat -look: no-model shape, color, and length view of a diff.",
-      "url": "https://github.com/adagora/diff-explain/commit/c90f59fe4b1d50ef5201a6df8150e332b4f85837",
-      "date": "2026-08-19T13:46:18Z",
-      "sha": "c90f59f"
     }
   ]
 }
