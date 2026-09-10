@@ -1,19 +1,19 @@
 {
-  "generated": "2026-09-09T10:45:41.863Z",
+  "generated": "2026-09-10T10:37:05.862Z",
   "items": [
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
-      "date": "2026-09-08T21:20:11Z",
-      "sha": "3431dd2"
-    },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
       "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
       "url": "https://github.com/adagora/alike-pintrest/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
+      "date": "2026-09-08T21:20:11Z",
+      "sha": "3431dd2"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
       "date": "2026-09-08T21:20:11Z",
       "sha": "3431dd2"
     },
@@ -27,17 +27,17 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
+      "repo": "adagora/alike-pintrest",
       "message": "pintrest-c4hc.3.3: account LLM proposals and enforce campaign cancellation",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/d24c457c0080e8899d6387f3782455b34ad8f3eb",
+      "url": "https://github.com/adagora/alike-pintrest/commit/d24c457c0080e8899d6387f3782455b34ad8f3eb",
       "date": "2026-09-08T19:21:16Z",
       "sha": "d24c457"
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
+      "repo": "adagora/manufacturing-tool",
       "message": "pintrest-c4hc.3.3: account LLM proposals and enforce campaign cancellation",
-      "url": "https://github.com/adagora/alike-pintrest/commit/d24c457c0080e8899d6387f3782455b34ad8f3eb",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/d24c457c0080e8899d6387f3782455b34ad8f3eb",
       "date": "2026-09-08T19:21:16Z",
       "sha": "d24c457"
     },
@@ -51,14 +51,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-c4hc.3.2: freeze experiment identity and isolate holdout",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/de6148c0e490e435e3bdb9b9323408a438aaa7c6",
-      "date": "2026-09-08T18:26:32Z",
-      "sha": "de6148c"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/alike-pintrest",
       "message": "pintrest-c4hc.3.2: freeze experiment identity and isolate holdout",
       "url": "https://github.com/adagora/alike-pintrest/commit/de6148c0e490e435e3bdb9b9323408a438aaa7c6",
@@ -68,10 +60,10 @@
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-0lvc.15: usable Ask the Line with prompts and citations",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/8da290b7767a00a7027cb4dae0b26ca42b774a3d",
-      "date": "2026-09-08T18:01:12Z",
-      "sha": "8da290b"
+      "message": "pintrest-c4hc.3.2: freeze experiment identity and isolate holdout",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/de6148c0e490e435e3bdb9b9323408a438aaa7c6",
+      "date": "2026-09-08T18:26:32Z",
+      "sha": "de6148c"
     },
     {
       "type": "commit",
@@ -84,16 +76,24 @@
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-c4hc.1.8: bounded MCP/HTTP chat tools",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/e808e970d2a14f5037dbfc8908a32b9ad563c3da",
-      "date": "2026-09-08T17:50:11Z",
-      "sha": "e808e97"
+      "message": "pintrest-0lvc.15: usable Ask the Line with prompts and citations",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/8da290b7767a00a7027cb4dae0b26ca42b774a3d",
+      "date": "2026-09-08T18:01:12Z",
+      "sha": "8da290b"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
       "message": "pintrest-c4hc.1.8: bounded MCP/HTTP chat tools",
       "url": "https://github.com/adagora/alike-pintrest/commit/e808e970d2a14f5037dbfc8908a32b9ad563c3da",
+      "date": "2026-09-08T17:50:11Z",
+      "sha": "e808e97"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-c4hc.1.8: bounded MCP/HTTP chat tools",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/e808e970d2a14f5037dbfc8908a32b9ad563c3da",
       "date": "2026-09-08T17:50:11Z",
       "sha": "e808e97"
     },
