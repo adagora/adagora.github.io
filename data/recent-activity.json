@@ -1,19 +1,99 @@
 {
-  "generated": "2026-09-10T10:37:05.862Z",
+  "generated": "2026-09-11T10:36:38.304Z",
   "items": [
     {
       "type": "commit",
+      "repo": "adagora/try_mini_game",
+      "message": "Add GitHub Pages deployment workflow",
+      "url": "https://github.com/adagora/try_mini_game/commit/1ea392d9bff5b650711861dc327411ff31d84685",
+      "date": "2026-09-10T21:29:22Z",
+      "sha": "1ea392d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_mini_game",
+      "message": "first commit",
+      "url": "https://github.com/adagora/try_mini_game/commit/b5f928e4d3a7d627ddb8243e718c8308eaec7620",
+      "date": "2026-09-10T21:22:29Z",
+      "sha": "b5f928e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
+      "date": "2026-09-10T14:36:37Z",
+      "sha": "99c551d"
+    },
+    {
+      "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
-      "url": "https://github.com/adagora/alike-pintrest/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
-      "date": "2026-09-08T21:20:11Z",
-      "sha": "3431dd2"
+      "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
+      "date": "2026-09-10T14:36:37Z",
+      "sha": "99c551d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: preserve offer evidence provenance (pintrest-c4hc.2.2)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/815ecc0dc52f7a9b7f4a9ac613d02c911e7f924e",
+      "date": "2026-09-09T18:14:51Z",
+      "sha": "815ecc0"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: preserve offer evidence provenance (pintrest-c4hc.2.2)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/815ecc0dc52f7a9b7f4a9ac613d02c911e7f924e",
+      "date": "2026-09-09T18:14:51Z",
+      "sha": "815ecc0"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: reproduce exact research candidates (pintrest-c4hc.3.9)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/653c0c7451a9203124e58cffb63b0b8ea86ddd24",
+      "date": "2026-09-09T17:40:36Z",
+      "sha": "653c0c7"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: reproduce exact research candidates (pintrest-c4hc.3.9)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/653c0c7451a9203124e58cffb63b0b8ea86ddd24",
+      "date": "2026-09-09T17:40:36Z",
+      "sha": "653c0c7"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat:pintrest-c4hc.3.5",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/c2f680047c3b431b73db4b6b32876c5fd66a3fd8",
+      "date": "2026-09-09T15:13:05Z",
+      "sha": "c2f6800"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat:pintrest-c4hc.3.5",
+      "url": "https://github.com/adagora/alike-pintrest/commit/c2f680047c3b431b73db4b6b32876c5fd66a3fd8",
+      "date": "2026-09-09T15:13:05Z",
+      "sha": "c2f6800"
     },
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
       "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
       "url": "https://github.com/adagora/manufacturing-tool/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
+      "date": "2026-09-08T21:20:11Z",
+      "sha": "3431dd2"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
+      "url": "https://github.com/adagora/alike-pintrest/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
       "date": "2026-09-08T21:20:11Z",
       "sha": "3431dd2"
     },
@@ -27,75 +107,11 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-c4hc.3.3: account LLM proposals and enforce campaign cancellation",
-      "url": "https://github.com/adagora/alike-pintrest/commit/d24c457c0080e8899d6387f3782455b34ad8f3eb",
-      "date": "2026-09-08T19:21:16Z",
-      "sha": "d24c457"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-c4hc.3.3: account LLM proposals and enforce campaign cancellation",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/d24c457c0080e8899d6387f3782455b34ad8f3eb",
-      "date": "2026-09-08T19:21:16Z",
-      "sha": "d24c457"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/trail-mvp",
       "message": "feat(architecture): isolate IO-free policy and audit import creates",
       "url": "https://github.com/adagora/trail-mvp/commit/b782c4b6ecb6efea594466152688ac13ba6a57ad",
       "date": "2026-09-08T18:59:15Z",
       "sha": "b782c4b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-c4hc.3.2: freeze experiment identity and isolate holdout",
-      "url": "https://github.com/adagora/alike-pintrest/commit/de6148c0e490e435e3bdb9b9323408a438aaa7c6",
-      "date": "2026-09-08T18:26:32Z",
-      "sha": "de6148c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-c4hc.3.2: freeze experiment identity and isolate holdout",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/de6148c0e490e435e3bdb9b9323408a438aaa7c6",
-      "date": "2026-09-08T18:26:32Z",
-      "sha": "de6148c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-0lvc.15: usable Ask the Line with prompts and citations",
-      "url": "https://github.com/adagora/alike-pintrest/commit/8da290b7767a00a7027cb4dae0b26ca42b774a3d",
-      "date": "2026-09-08T18:01:12Z",
-      "sha": "8da290b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-0lvc.15: usable Ask the Line with prompts and citations",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/8da290b7767a00a7027cb4dae0b26ca42b774a3d",
-      "date": "2026-09-08T18:01:12Z",
-      "sha": "8da290b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-c4hc.1.8: bounded MCP/HTTP chat tools",
-      "url": "https://github.com/adagora/alike-pintrest/commit/e808e970d2a14f5037dbfc8908a32b9ad563c3da",
-      "date": "2026-09-08T17:50:11Z",
-      "sha": "e808e97"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-c4hc.1.8: bounded MCP/HTTP chat tools",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/e808e970d2a14f5037dbfc8908a32b9ad563c3da",
-      "date": "2026-09-08T17:50:11Z",
-      "sha": "e808e97"
     },
     {
       "type": "commit",
@@ -184,22 +200,6 @@
       "url": "https://github.com/adagora/trade/commit/198ca1800a0cd3b1287593a345217cb039cb9164",
       "date": "2026-09-01T15:39:43Z",
       "sha": "198ca18"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "fix: book reconciled closes from REALIZED_PNL, never from an unanswered call",
-      "url": "https://github.com/adagora/trade/commit/fd19c6981bce60cd9c82b411dd1ea8cf79747c12",
-      "date": "2026-08-23T15:52:28Z",
-      "sha": "fd19c69"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/diff-explain",
-      "message": "Add a project Agent Skill so Grok, Claude Code, and Codex run meat.",
-      "url": "https://github.com/adagora/diff-explain/commit/2f89da64be4a281823dfbf630552917238cd9bab",
-      "date": "2026-08-19T17:46:05Z",
-      "sha": "2f89da6"
     }
   ]
 }
