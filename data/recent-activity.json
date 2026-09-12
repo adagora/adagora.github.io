@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T10:36:38.304Z",
+  "generated": "2026-09-12T10:05:38.382Z",
   "items": [
     {
       "type": "commit",
@@ -19,14 +19,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
-      "date": "2026-09-10T14:36:37Z",
-      "sha": "99c551d"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/alike-pintrest",
       "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
       "url": "https://github.com/adagora/alike-pintrest/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
@@ -36,10 +28,10 @@
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
-      "message": "feat: preserve offer evidence provenance (pintrest-c4hc.2.2)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/815ecc0dc52f7a9b7f4a9ac613d02c911e7f924e",
-      "date": "2026-09-09T18:14:51Z",
-      "sha": "815ecc0"
+      "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
+      "date": "2026-09-10T14:36:37Z",
+      "sha": "99c551d"
     },
     {
       "type": "commit",
@@ -52,10 +44,10 @@
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
-      "message": "feat: reproduce exact research candidates (pintrest-c4hc.3.9)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/653c0c7451a9203124e58cffb63b0b8ea86ddd24",
-      "date": "2026-09-09T17:40:36Z",
-      "sha": "653c0c7"
+      "message": "feat: preserve offer evidence provenance (pintrest-c4hc.2.2)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/815ecc0dc52f7a9b7f4a9ac613d02c911e7f924e",
+      "date": "2026-09-09T18:14:51Z",
+      "sha": "815ecc0"
     },
     {
       "type": "commit",
@@ -68,10 +60,10 @@
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
-      "message": "feat:pintrest-c4hc.3.5",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/c2f680047c3b431b73db4b6b32876c5fd66a3fd8",
-      "date": "2026-09-09T15:13:05Z",
-      "sha": "c2f6800"
+      "message": "feat: reproduce exact research candidates (pintrest-c4hc.3.9)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/653c0c7451a9203124e58cffb63b0b8ea86ddd24",
+      "date": "2026-09-09T17:40:36Z",
+      "sha": "653c0c7"
     },
     {
       "type": "commit",
@@ -84,16 +76,24 @@
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
-      "date": "2026-09-08T21:20:11Z",
-      "sha": "3431dd2"
+      "message": "feat:pintrest-c4hc.3.5",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/c2f680047c3b431b73db4b6b32876c5fd66a3fd8",
+      "date": "2026-09-09T15:13:05Z",
+      "sha": "c2f6800"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
       "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
       "url": "https://github.com/adagora/alike-pintrest/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
+      "date": "2026-09-08T21:20:11Z",
+      "sha": "3431dd2"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
       "date": "2026-09-08T21:20:11Z",
       "sha": "3431dd2"
     },
