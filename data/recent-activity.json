@@ -1,6 +1,78 @@
 {
-  "generated": "2026-09-16T10:51:01.733Z",
+  "generated": "2026-09-17T10:57:51.790Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Give every authorized write a receipt, and make the stops tell the truth",
+      "url": "https://github.com/adagora/trade/commit/e5bbf7961c71908784803be781808bbf9dc4073a",
+      "date": "2026-09-16T20:06:13Z",
+      "sha": "e5bbf79"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: inspector object cards for targets, edges, campaigns, and incidents (pintrest-0lvc.2)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/ae33616b49a702ee1d74dcc5aa346316824024ec",
+      "date": "2026-09-16T18:24:03Z",
+      "sha": "ae33616"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: inspector object cards for targets, edges, campaigns, and incidents (pintrest-0lvc.2)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/ae33616b49a702ee1d74dcc5aa346316824024ec",
+      "date": "2026-09-16T18:24:03Z",
+      "sha": "ae33616"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: two-row shell, command palette, and honest alert bell (pintrest-0lvc.1)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/441d51e8e604cfa6fa55a4b9e96cc3111bf617fd",
+      "date": "2026-09-16T17:47:03Z",
+      "sha": "441d51e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: two-row shell, command palette, and honest alert bell (pintrest-0lvc.1)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/441d51e8e604cfa6fa55a4b9e96cc3111bf617fd",
+      "date": "2026-09-16T17:47:03Z",
+      "sha": "441d51e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: focused local check entrypoint (pintrest-c4hc.9)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/61d92a5f96fb39c20c4ceaa9d406fc622e28c70e",
+      "date": "2026-09-16T17:00:25Z",
+      "sha": "61d92a5"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: focused local check entrypoint (pintrest-c4hc.9)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/61d92a5f96fb39c20c4ceaa9d406fc622e28c70e",
+      "date": "2026-09-16T17:00:25Z",
+      "sha": "61d92a5"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: eval-card reopen and pending evidence contracts (pintrest-c4hc.3.10)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/aafb7905e37cec2ae20e4b6ff9d2809a4ac911bb",
+      "date": "2026-09-16T16:39:30Z",
+      "sha": "aafb790"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: eval-card reopen and pending evidence contracts (pintrest-c4hc.3.10)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/aafb7905e37cec2ae20e4b6ff9d2809a4ac911bb",
+      "date": "2026-09-16T16:39:30Z",
+      "sha": "aafb790"
+    },
     {
       "type": "commit",
       "repo": "adagora/try_mini_game",
@@ -19,14 +91,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
-      "date": "2026-09-10T14:36:37Z",
-      "sha": "99c551d"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/manufacturing-tool",
       "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
       "url": "https://github.com/adagora/manufacturing-tool/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
@@ -36,66 +100,10 @@
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat: preserve offer evidence provenance (pintrest-c4hc.2.2)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/815ecc0dc52f7a9b7f4a9ac613d02c911e7f924e",
-      "date": "2026-09-09T18:14:51Z",
-      "sha": "815ecc0"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: preserve offer evidence provenance (pintrest-c4hc.2.2)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/815ecc0dc52f7a9b7f4a9ac613d02c911e7f924e",
-      "date": "2026-09-09T18:14:51Z",
-      "sha": "815ecc0"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: reproduce exact research candidates (pintrest-c4hc.3.9)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/653c0c7451a9203124e58cffb63b0b8ea86ddd24",
-      "date": "2026-09-09T17:40:36Z",
-      "sha": "653c0c7"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: reproduce exact research candidates (pintrest-c4hc.3.9)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/653c0c7451a9203124e58cffb63b0b8ea86ddd24",
-      "date": "2026-09-09T17:40:36Z",
-      "sha": "653c0c7"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat:pintrest-c4hc.3.5",
-      "url": "https://github.com/adagora/alike-pintrest/commit/c2f680047c3b431b73db4b6b32876c5fd66a3fd8",
-      "date": "2026-09-09T15:13:05Z",
-      "sha": "c2f6800"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat:pintrest-c4hc.3.5",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/c2f680047c3b431b73db4b6b32876c5fd66a3fd8",
-      "date": "2026-09-09T15:13:05Z",
-      "sha": "c2f6800"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
-      "url": "https://github.com/adagora/alike-pintrest/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
-      "date": "2026-09-08T21:20:11Z",
-      "sha": "3431dd2"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "pintrest-c4hc.3.4: question-based AutoResearch recipes with server preflight",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/3431dd259bd1385fd4201b3f73855c13a172670e",
-      "date": "2026-09-08T21:20:11Z",
-      "sha": "3431dd2"
+      "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
+      "date": "2026-09-10T14:36:37Z",
+      "sha": "99c551d"
     },
     {
       "type": "commit",
@@ -120,6 +128,22 @@
       "url": "https://github.com/adagora/diff-explain/commit/b012aa52e2a070a9e50f0dc0e59f87ae90d41d74",
       "date": "2026-09-07T17:22:54Z",
       "sha": "b012aa5"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Record verified Oracle quant deployment",
+      "url": "https://github.com/adagora/trade/commit/4d896607a1c7c758b69752c133bc2027065343c9",
+      "date": "2026-09-06T13:54:40Z",
+      "sha": "4d89660"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Add archival inspection and bounded portfolio replay with parity evidence",
+      "url": "https://github.com/adagora/trade/commit/a4c48a81dd060c057d012b3d0fa31a64e145ce31",
+      "date": "2026-09-06T13:49:15Z",
+      "sha": "a4c48a8"
     },
     {
       "type": "commit",
@@ -176,30 +200,6 @@
       "url": "https://github.com/adagora/trade/commit/5fe9e142460a4780070fd6d75bf90ec52267b9f1",
       "date": "2026-09-02T16:32:08Z",
       "sha": "5fe9e14"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "fix: swap the weakest open position for a stronger signal at capacity",
-      "url": "https://github.com/adagora/trade/commit/db072416d6141b3f1c8512b0ec655a1878066007",
-      "date": "2026-09-01T21:04:32Z",
-      "sha": "db07241"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "feat: lift desk.now chips and point the ticker at that payload",
-      "url": "https://github.com/adagora/trade/commit/50f3e6f8b7ef0b6d5941d459e083a3fbb5e8a695",
-      "date": "2026-09-01T16:34:10Z",
-      "sha": "50f3e6f"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "feat: desk.now as the book of record",
-      "url": "https://github.com/adagora/trade/commit/198ca1800a0cd3b1287593a345217cb039cb9164",
-      "date": "2026-09-01T15:39:43Z",
-      "sha": "198ca18"
     }
   ]
 }
