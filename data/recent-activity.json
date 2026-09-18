@@ -1,6 +1,14 @@
 {
-  "generated": "2026-09-17T10:57:51.790Z",
+  "generated": "2026-09-18T10:34:43.373Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
+      "message": "feat(retrieval): named retrieval modes, a comparison UI, and a Jev answerability gate",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/fa00711b48e87e372ab03f6d8bcfabdeaba8dc28",
+      "date": "2026-09-17T21:56:30Z",
+      "sha": "fa00711"
+    },
     {
       "type": "commit",
       "repo": "adagora/trade",
@@ -192,14 +200,6 @@
       "url": "https://github.com/adagora/trail-mvp/commit/4b284f09d8144fde90323c50389aaffbd516a902",
       "date": "2026-09-04T19:56:08Z",
       "sha": "4b284f0"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "fix: no-cache the frontend so a deploy always reaches the browser",
-      "url": "https://github.com/adagora/trade/commit/5fe9e142460a4780070fd6d75bf90ec52267b9f1",
-      "date": "2026-09-02T16:32:08Z",
-      "sha": "5fe9e14"
     }
   ]
 }

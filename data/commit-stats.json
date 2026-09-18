@@ -1,9 +1,8 @@
 {
-  "generated": "2026-09-17T10:57:50.832Z",
-  "total": 2126,
+  "generated": "2026-09-18T10:34:41.935Z",
+  "total": 2124,
   "days": {
-    "2025-09-17": 1,
-    "2025-09-18": 5,
+    "2025-09-18": 3,
     "2025-09-19": 0,
     "2025-09-20": 0,
     "2025-09-21": 0,
@@ -366,7 +365,8 @@
     "2026-09-13": 0,
     "2026-09-14": 0,
     "2026-09-15": 0,
-    "2026-09-16": 9
+    "2026-09-16": 9,
+    "2026-09-17": 1
   },
   "repos": [
     "adagora/---source---",
@@ -498,6 +498,7 @@
     "adagora/ragflow",
     "adagora/ragflowteams",
     "adagora/react-redux-typescript-guide",
+    "adagora/roast",
     "adagora/rust-example",
     "adagora/rustlings",
     "adagora/scaffold-eth",
@@ -530,7 +531,7 @@
     "adagora/transcript-demo",
     "adagora/trello-clone",
     "adagora/try_mini_game",
-    "adagora/try_pixelRAG_optional_BM25_hybrid",
+    "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
     "adagora/user-and-enterprise-app-demo",
     "adagora/vercel-deploy-demo",
     "adagora/video-segment-processor",
