@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19T10:18:41.296Z",
+  "generated": "2026-09-20T10:37:36.424Z",
   "items": [
     {
       "type": "commit",
@@ -19,14 +19,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: inspector object cards for targets, edges, campaigns, and incidents (pintrest-0lvc.2)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/ae33616b49a702ee1d74dcc5aa346316824024ec",
-      "date": "2026-09-16T18:24:03Z",
-      "sha": "ae33616"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/alike-pintrest",
       "message": "feat: inspector object cards for targets, edges, campaigns, and incidents (pintrest-0lvc.2)",
       "url": "https://github.com/adagora/alike-pintrest/commit/ae33616b49a702ee1d74dcc5aa346316824024ec",
@@ -36,10 +28,10 @@
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
-      "message": "feat: two-row shell, command palette, and honest alert bell (pintrest-0lvc.1)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/441d51e8e604cfa6fa55a4b9e96cc3111bf617fd",
-      "date": "2026-09-16T17:47:03Z",
-      "sha": "441d51e"
+      "message": "feat: inspector object cards for targets, edges, campaigns, and incidents (pintrest-0lvc.2)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/ae33616b49a702ee1d74dcc5aa346316824024ec",
+      "date": "2026-09-16T18:24:03Z",
+      "sha": "ae33616"
     },
     {
       "type": "commit",
@@ -52,10 +44,10 @@
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
-      "message": "feat: focused local check entrypoint (pintrest-c4hc.9)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/61d92a5f96fb39c20c4ceaa9d406fc622e28c70e",
-      "date": "2026-09-16T17:00:25Z",
-      "sha": "61d92a5"
+      "message": "feat: two-row shell, command palette, and honest alert bell (pintrest-0lvc.1)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/441d51e8e604cfa6fa55a4b9e96cc3111bf617fd",
+      "date": "2026-09-16T17:47:03Z",
+      "sha": "441d51e"
     },
     {
       "type": "commit",
@@ -68,16 +60,24 @@
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
-      "message": "feat: eval-card reopen and pending evidence contracts (pintrest-c4hc.3.10)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/aafb7905e37cec2ae20e4b6ff9d2809a4ac911bb",
-      "date": "2026-09-16T16:39:30Z",
-      "sha": "aafb790"
+      "message": "feat: focused local check entrypoint (pintrest-c4hc.9)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/61d92a5f96fb39c20c4ceaa9d406fc622e28c70e",
+      "date": "2026-09-16T17:00:25Z",
+      "sha": "61d92a5"
     },
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
       "message": "feat: eval-card reopen and pending evidence contracts (pintrest-c4hc.3.10)",
       "url": "https://github.com/adagora/alike-pintrest/commit/aafb7905e37cec2ae20e4b6ff9d2809a4ac911bb",
+      "date": "2026-09-16T16:39:30Z",
+      "sha": "aafb790"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: eval-card reopen and pending evidence contracts (pintrest-c4hc.3.10)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/aafb7905e37cec2ae20e4b6ff9d2809a4ac911bb",
       "date": "2026-09-16T16:39:30Z",
       "sha": "aafb790"
     },
@@ -99,17 +99,17 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
+      "repo": "adagora/alike-pintrest",
       "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
+      "url": "https://github.com/adagora/alike-pintrest/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
       "date": "2026-09-10T14:36:37Z",
       "sha": "99c551d"
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
+      "repo": "adagora/manufacturing-tool",
       "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
       "date": "2026-09-10T14:36:37Z",
       "sha": "99c551d"
     },
