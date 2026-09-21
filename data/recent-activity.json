@@ -1,6 +1,70 @@
 {
-  "generated": "2026-09-20T10:37:36.424Z",
+  "generated": "2026-09-21T11:59:58.779Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/jev-experiments",
+      "message": "feat: look before spending, resume after failing",
+      "url": "https://github.com/adagora/jev-experiments/commit/34f01effd5be8bd9d8747b518f011b1f3ded1926",
+      "date": "2026-09-21T05:14:07Z",
+      "sha": "34f01ef"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/jev-experiments",
+      "message": "feat(translate-audit): mine a glossary from existing translations, audit against it consistency",
+      "url": "https://github.com/adagora/jev-experiments/commit/51edd8b5f45704d43931cf52cd182a8c7a5e6275",
+      "date": "2026-09-20T19:35:36Z",
+      "sha": "51edd8b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/jev-experiments",
+      "message": "init",
+      "url": "https://github.com/adagora/jev-experiments/commit/368e8b23fadd757b140499a5504bb23ff2085941",
+      "date": "2026-09-20T17:39:20Z",
+      "sha": "368e8b2"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "The reset now clears the check that tripped",
+      "url": "https://github.com/adagora/trade/commit/52ce027f12118569917c07bd340480e6b51071e4",
+      "date": "2026-09-20T16:12:13Z",
+      "sha": "52ce027"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Stage the risk-baseline fix",
+      "url": "https://github.com/adagora/trade/commit/332fd960b49c3ac7f8ef6ab513634fef78871288",
+      "date": "2026-09-20T16:01:09Z",
+      "sha": "332fd96"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Make the circuit-breaker reset reach the check that tripped",
+      "url": "https://github.com/adagora/trade/commit/d050e1d7c6df8075b2d81f16b2450fc845f8e249",
+      "date": "2026-09-20T15:58:26Z",
+      "sha": "d050e1d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Equity curve follows the real account again",
+      "url": "https://github.com/adagora/trade/commit/10685bf8cb5e9caff489fd770003fae84337a7bb",
+      "date": "2026-09-20T15:41:19Z",
+      "sha": "10685bf"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Stage the equity-step fix",
+      "url": "https://github.com/adagora/trade/commit/e735f2394b79474b1c35104a494908876dd52e6a",
+      "date": "2026-09-20T15:36:20Z",
+      "sha": "e735f23"
+    },
     {
       "type": "commit",
       "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
@@ -8,22 +72,6 @@
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/fa00711b48e87e372ab03f6d8bcfabdeaba8dc28",
       "date": "2026-09-17T21:56:30Z",
       "sha": "fa00711"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "Give every authorized write a receipt, and make the stops tell the truth",
-      "url": "https://github.com/adagora/trade/commit/e5bbf7961c71908784803be781808bbf9dc4073a",
-      "date": "2026-09-16T20:06:13Z",
-      "sha": "e5bbf79"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: inspector object cards for targets, edges, campaigns, and incidents (pintrest-0lvc.2)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/ae33616b49a702ee1d74dcc5aa346316824024ec",
-      "date": "2026-09-16T18:24:03Z",
-      "sha": "ae33616"
     },
     {
       "type": "commit",
@@ -36,10 +84,10 @@
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat: two-row shell, command palette, and honest alert bell (pintrest-0lvc.1)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/441d51e8e604cfa6fa55a4b9e96cc3111bf617fd",
-      "date": "2026-09-16T17:47:03Z",
-      "sha": "441d51e"
+      "message": "feat: inspector object cards for targets, edges, campaigns, and incidents (pintrest-0lvc.2)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/ae33616b49a702ee1d74dcc5aa346316824024ec",
+      "date": "2026-09-16T18:24:03Z",
+      "sha": "ae33616"
     },
     {
       "type": "commit",
@@ -52,10 +100,10 @@
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat: focused local check entrypoint (pintrest-c4hc.9)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/61d92a5f96fb39c20c4ceaa9d406fc622e28c70e",
-      "date": "2026-09-16T17:00:25Z",
-      "sha": "61d92a5"
+      "message": "feat: two-row shell, command palette, and honest alert bell (pintrest-0lvc.1)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/441d51e8e604cfa6fa55a4b9e96cc3111bf617fd",
+      "date": "2026-09-16T17:47:03Z",
+      "sha": "441d51e"
     },
     {
       "type": "commit",
@@ -68,16 +116,24 @@
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat: eval-card reopen and pending evidence contracts (pintrest-c4hc.3.10)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/aafb7905e37cec2ae20e4b6ff9d2809a4ac911bb",
-      "date": "2026-09-16T16:39:30Z",
-      "sha": "aafb790"
+      "message": "feat: focused local check entrypoint (pintrest-c4hc.9)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/61d92a5f96fb39c20c4ceaa9d406fc622e28c70e",
+      "date": "2026-09-16T17:00:25Z",
+      "sha": "61d92a5"
     },
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
       "message": "feat: eval-card reopen and pending evidence contracts (pintrest-c4hc.3.10)",
       "url": "https://github.com/adagora/manufacturing-tool/commit/aafb7905e37cec2ae20e4b6ff9d2809a4ac911bb",
+      "date": "2026-09-16T16:39:30Z",
+      "sha": "aafb790"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: eval-card reopen and pending evidence contracts (pintrest-c4hc.3.10)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/aafb7905e37cec2ae20e4b6ff9d2809a4ac911bb",
       "date": "2026-09-16T16:39:30Z",
       "sha": "aafb790"
     },
@@ -99,17 +155,17 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/alike-pintrest",
+      "repo": "adagora/manufacturing-tool",
       "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
       "date": "2026-09-10T14:36:37Z",
       "sha": "99c551d"
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
+      "repo": "adagora/alike-pintrest",
       "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
+      "url": "https://github.com/adagora/alike-pintrest/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
       "date": "2026-09-10T14:36:37Z",
       "sha": "99c551d"
     },
@@ -139,67 +195,11 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/trade",
-      "message": "Record verified Oracle quant deployment",
-      "url": "https://github.com/adagora/trade/commit/4d896607a1c7c758b69752c133bc2027065343c9",
-      "date": "2026-09-06T13:54:40Z",
-      "sha": "4d89660"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "Add archival inspection and bounded portfolio replay with parity evidence",
-      "url": "https://github.com/adagora/trade/commit/a4c48a81dd060c057d012b3d0fa31a64e145ce31",
-      "date": "2026-09-06T13:49:15Z",
-      "sha": "a4c48a8"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/skills.md-auto-optimisation",
       "message": "Board (spec 008.b/d): HMI rebuild — shift instruction, review cards, PV/SP trend, andon alarms",
       "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/2b859746984907996d128d9196476b4747bd047b",
       "date": "2026-09-06T07:06:19Z",
       "sha": "2b85974"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "Board: expandable skill bodies via native details (path-confined)",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/d1b169cc24cc60dbaa73e1d7dd8620af848dbb67",
-      "date": "2026-09-05T22:38:03Z",
-      "sha": "d1b169c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "Board refresh (spec 008): Grafana-style panels, loadout + token trend",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/4528698c3e0d174ef9b0d0cbaf334191c79f7cc1",
-      "date": "2026-09-05T22:23:24Z",
-      "sha": "4528698"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "Close 009/010/011/012/014 epics: all children green",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/34fcba09982837662b942c2f6dfefa603356d82c",
-      "date": "2026-09-05T22:18:18Z",
-      "sha": "34fcba0"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "014.6 (spec 014): loadout budget/omit/pointer tests",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/9de68d4b0c0cda9cb5cf4f336bc7bd6a09258327",
-      "date": "2026-09-05T22:15:42Z",
-      "sha": "9de68d4"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trail-mvp",
-      "message": "feat(skill): update verify skill",
-      "url": "https://github.com/adagora/trail-mvp/commit/4b284f09d8144fde90323c50389aaffbd516a902",
-      "date": "2026-09-04T19:56:08Z",
-      "sha": "4b284f0"
     }
   ]
 }
