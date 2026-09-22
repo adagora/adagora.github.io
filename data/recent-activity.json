@@ -1,6 +1,126 @@
 {
-  "generated": "2026-09-21T11:59:58.779Z",
+  "generated": "2026-09-22T10:58:44.796Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/project_x",
+      "message": "Structure Jev RAG judgment criteria and record evaluation",
+      "url": "https://github.com/adagora/project_x/commit/f9b133d41d3710d63a4a6216dbc70477718bb1b7",
+      "date": "2026-09-21T20:34:16Z",
+      "sha": "f9b133d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "A selected pick can no longer vanish, and the docs must match the code",
+      "url": "https://github.com/adagora/trade/commit/3397a1c4ba67a9859ffa0aafaedbcf5bfeb3e3f4",
+      "date": "2026-09-21T19:47:06Z",
+      "sha": "3397a1c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Preserve the 21 September evidence: selected, and nothing happened",
+      "url": "https://github.com/adagora/trade/commit/c8ea04d0c5137bcffc82478d6dac5d2542839e13",
+      "date": "2026-09-21T19:46:53Z",
+      "sha": "c8ea04d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/project_x",
+      "message": "jev: podpięcie warstwy sądów do zwykłego RAG-u",
+      "url": "https://github.com/adagora/project_x/commit/ce2299cff90ae5c7fcb521de9cc28d3960e43103",
+      "date": "2026-09-21T17:09:38Z",
+      "sha": "ce2299c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/jev-experiments",
+      "message": "Merge branch 'docs/architecture-report'",
+      "url": "https://github.com/adagora/jev-experiments/commit/70479bbff03f905f27603729e600e6f21076b0f1",
+      "date": "2026-09-21T16:49:36Z",
+      "sha": "70479bb"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/jev-experiments",
+      "message": "docs(translate-audit): a technical architecture report",
+      "url": "https://github.com/adagora/jev-experiments/commit/699d59df5df0d14511edd5183023eafd862edea5",
+      "date": "2026-09-21T16:49:32Z",
+      "sha": "699d59d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/jev-experiments",
+      "message": "feat(translate-audit): the review app under test, one glossary shape, a check panel",
+      "url": "https://github.com/adagora/jev-experiments/commit/0dac88075853ccf47e18836b3f191d6d7229335b",
+      "date": "2026-09-21T16:36:20Z",
+      "sha": "0dac880"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
+      "message": "chore: keep agent skills on disk and out of the history",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/6aeaccf8236285215aa711bacec21fc8e501261a",
+      "date": "2026-09-21T12:31:41Z",
+      "sha": "6aeaccf"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
+      "message": "docs: re-measure every number, and say which ones a small set could not support",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/b19740964ad1007aed6af159be7895cb6fb087d0",
+      "date": "2026-09-21T12:02:33Z",
+      "sha": "b197409"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
+      "message": "feat(eval): 114 questions, and a re-sweep that reverses two conclusions",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/50d7d515ca4cf811ee5792b5d1ade060e5ba8037",
+      "date": "2026-09-21T12:02:12Z",
+      "sha": "50d7d51"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
+      "message": "feat(bench): error bars, and the only comparison two rows can support",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/0f326bda5729108598e1c58cacbb7335847f7375",
+      "date": "2026-09-21T12:01:59Z",
+      "sha": "0f326bd"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
+      "message": "fix: retire a dead evaluator and repoint the ones that still work",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/a4d22be62531db0630eb8dc5a8b98a945170d236",
+      "date": "2026-09-21T12:01:51Z",
+      "sha": "a4d22be"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/project_x",
+      "message": "auth: furtka deweloperska dla localhost (AUTH_DEV_BYPASS)",
+      "url": "https://github.com/adagora/project_x/commit/5cb81cadd5ecfe6ba50fcdafff10c6baa325d2dd",
+      "date": "2026-09-21T11:16:31Z",
+      "sha": "5cb81ca"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/project_x",
+      "message": "jev: panel statystyk i przełącznik trybu w interfejsie",
+      "url": "https://github.com/adagora/project_x/commit/c6194e0cc2236ebefc05be17f1d22c5aa807143b",
+      "date": "2026-09-21T11:15:27Z",
+      "sha": "c6194e0"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/project_x",
+      "message": "jev: warstwa sądów TypeSafe po stronie serwera",
+      "url": "https://github.com/adagora/project_x/commit/d7844961d92cc14f53a0439e687e9aa20c4fdd0d",
+      "date": "2026-09-21T11:15:18Z",
+      "sha": "d784496"
+    },
     {
       "type": "commit",
       "repo": "adagora/jev-experiments",
@@ -16,14 +136,6 @@
       "url": "https://github.com/adagora/jev-experiments/commit/51edd8b5f45704d43931cf52cd182a8c7a5e6275",
       "date": "2026-09-20T19:35:36Z",
       "sha": "51edd8b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/jev-experiments",
-      "message": "init",
-      "url": "https://github.com/adagora/jev-experiments/commit/368e8b23fadd757b140499a5504bb23ff2085941",
-      "date": "2026-09-20T17:39:20Z",
-      "sha": "368e8b2"
     },
     {
       "type": "commit",
@@ -51,27 +163,11 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/trade",
-      "message": "Equity curve follows the real account again",
-      "url": "https://github.com/adagora/trade/commit/10685bf8cb5e9caff489fd770003fae84337a7bb",
-      "date": "2026-09-20T15:41:19Z",
-      "sha": "10685bf"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "Stage the equity-step fix",
-      "url": "https://github.com/adagora/trade/commit/e735f2394b79474b1c35104a494908876dd52e6a",
-      "date": "2026-09-20T15:36:20Z",
-      "sha": "e735f23"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
-      "message": "feat(retrieval): named retrieval modes, a comparison UI, and a Jev answerability gate",
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/fa00711b48e87e372ab03f6d8bcfabdeaba8dc28",
-      "date": "2026-09-17T21:56:30Z",
-      "sha": "fa00711"
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: inspector object cards for targets, edges, campaigns, and incidents (pintrest-0lvc.2)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/ae33616b49a702ee1d74dcc5aa346316824024ec",
+      "date": "2026-09-16T18:24:03Z",
+      "sha": "ae33616"
     },
     {
       "type": "commit",
@@ -84,10 +180,10 @@
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat: inspector object cards for targets, edges, campaigns, and incidents (pintrest-0lvc.2)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/ae33616b49a702ee1d74dcc5aa346316824024ec",
-      "date": "2026-09-16T18:24:03Z",
-      "sha": "ae33616"
+      "message": "feat: two-row shell, command palette, and honest alert bell (pintrest-0lvc.1)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/441d51e8e604cfa6fa55a4b9e96cc3111bf617fd",
+      "date": "2026-09-16T17:47:03Z",
+      "sha": "441d51e"
     },
     {
       "type": "commit",
@@ -100,106 +196,10 @@
     {
       "type": "commit",
       "repo": "adagora/alike-pintrest",
-      "message": "feat: two-row shell, command palette, and honest alert bell (pintrest-0lvc.1)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/441d51e8e604cfa6fa55a4b9e96cc3111bf617fd",
-      "date": "2026-09-16T17:47:03Z",
-      "sha": "441d51e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: focused local check entrypoint (pintrest-c4hc.9)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/61d92a5f96fb39c20c4ceaa9d406fc622e28c70e",
-      "date": "2026-09-16T17:00:25Z",
-      "sha": "61d92a5"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
       "message": "feat: focused local check entrypoint (pintrest-c4hc.9)",
       "url": "https://github.com/adagora/alike-pintrest/commit/61d92a5f96fb39c20c4ceaa9d406fc622e28c70e",
       "date": "2026-09-16T17:00:25Z",
       "sha": "61d92a5"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: eval-card reopen and pending evidence contracts (pintrest-c4hc.3.10)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/aafb7905e37cec2ae20e4b6ff9d2809a4ac911bb",
-      "date": "2026-09-16T16:39:30Z",
-      "sha": "aafb790"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: eval-card reopen and pending evidence contracts (pintrest-c4hc.3.10)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/aafb7905e37cec2ae20e4b6ff9d2809a4ac911bb",
-      "date": "2026-09-16T16:39:30Z",
-      "sha": "aafb790"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/try_mini_game",
-      "message": "Add GitHub Pages deployment workflow",
-      "url": "https://github.com/adagora/try_mini_game/commit/1ea392d9bff5b650711861dc327411ff31d84685",
-      "date": "2026-09-10T21:29:22Z",
-      "sha": "1ea392d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/try_mini_game",
-      "message": "first commit",
-      "url": "https://github.com/adagora/try_mini_game/commit/b5f928e4d3a7d627ddb8243e718c8308eaec7620",
-      "date": "2026-09-10T21:22:29Z",
-      "sha": "b5f928e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
-      "date": "2026-09-10T14:36:37Z",
-      "sha": "99c551d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: reconstruct bounded process state evidence (pintrest-c4hc.2.4)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/99c551d6cfe7cc7cfc0a27515da46964b0b3a23d",
-      "date": "2026-09-10T14:36:37Z",
-      "sha": "99c551d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trail-mvp",
-      "message": "feat(ai): feed reviewer History into the next translation prompt",
-      "url": "https://github.com/adagora/trail-mvp/commit/c2fab4d6aa9f1c1d05333275713dbccd6d7cb5de",
-      "date": "2026-09-08T19:54:53Z",
-      "sha": "c2fab4d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trail-mvp",
-      "message": "feat(architecture): isolate IO-free policy and audit import creates",
-      "url": "https://github.com/adagora/trail-mvp/commit/b782c4b6ecb6efea594466152688ac13ba6a57ad",
-      "date": "2026-09-08T18:59:15Z",
-      "sha": "b782c4b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/diff-explain",
-      "message": "feat: add show me complementary skill and cli support",
-      "url": "https://github.com/adagora/diff-explain/commit/b012aa52e2a070a9e50f0dc0e59f87ae90d41d74",
-      "date": "2026-09-07T17:22:54Z",
-      "sha": "b012aa5"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/skills.md-auto-optimisation",
-      "message": "Board (spec 008.b/d): HMI rebuild — shift instruction, review cards, PV/SP trend, andon alarms",
-      "url": "https://github.com/adagora/skills.md-auto-optimisation/commit/2b859746984907996d128d9196476b4747bd047b",
-      "date": "2026-09-06T07:06:19Z",
-      "sha": "2b85974"
     }
   ]
 }
