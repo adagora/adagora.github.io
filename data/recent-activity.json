@@ -1,6 +1,110 @@
 {
-  "generated": "2026-09-22T10:58:44.796Z",
+  "generated": "2026-09-23T10:46:33.706Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "fix: point dataset peers at the live Render URLs",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/5ab99e3bc303026d9b42e2009ed1b0679ef40fce",
+      "date": "2026-09-22T20:25:00Z",
+      "sha": "5ab99e3"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "fix: point dataset peers at the live Render URLs",
+      "url": "https://github.com/adagora/alike-pintrest/commit/5ab99e3bc303026d9b42e2009ed1b0679ef40fce",
+      "date": "2026-09-22T20:25:00Z",
+      "sha": "5ab99e3"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: run a selected research recipe from Config search (pintrest-c4hc.3.12)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/2eedc75e5219917c2d88844484a58ddfa645d783",
+      "date": "2026-09-22T20:24:29Z",
+      "sha": "2eedc75"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: run a selected research recipe from Config search (pintrest-c4hc.3.12)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/2eedc75e5219917c2d88844484a58ddfa645d783",
+      "date": "2026-09-22T20:24:29Z",
+      "sha": "2eedc75"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: label ties and separate scores in workbench answers (pintrest-c4hc.1.9, pintrest-c4hc.1.10, pintrest-c4hc.1.11, pintrest-c4hc.1.12)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/360bbd3075f200ee6a66075099a5e654c2506f8f",
+      "date": "2026-09-22T19:48:36Z",
+      "sha": "360bbd3"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: label ties and separate scores in workbench answers (pintrest-c4hc.1.9, pintrest-c4hc.1.10, pintrest-c4hc.1.11, pintrest-c4hc.1.12)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/360bbd3075f200ee6a66075099a5e654c2506f8f",
+      "date": "2026-09-22T19:48:36Z",
+      "sha": "360bbd3"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/project_x",
+      "message": "feat: improve jev implementation",
+      "url": "https://github.com/adagora/project_x/commit/f2a891ed6793efe5ba2f8111f5689b5baa387c14",
+      "date": "2026-09-22T18:13:53Z",
+      "sha": "f2a891e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "test: reject unobserved first-pass lookups (pintrest-0lvc.17)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/809c14052ba30f54ed7e941acd13646af3b17410",
+      "date": "2026-09-22T18:06:33Z",
+      "sha": "809c140"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "test: reject unobserved first-pass lookups (pintrest-0lvc.17)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/809c14052ba30f54ed7e941acd13646af3b17410",
+      "date": "2026-09-22T18:06:33Z",
+      "sha": "809c140"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: SPC control room over frozen baselines (pintrest-0lvc.5)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/6ef3911257473a26882e9d466584d5000aa9859c",
+      "date": "2026-09-22T17:38:53Z",
+      "sha": "6ef3911"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: SPC control room over frozen baselines (pintrest-0lvc.5)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/6ef3911257473a26882e9d466584d5000aa9859c",
+      "date": "2026-09-22T17:38:53Z",
+      "sha": "6ef3911"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "The 21 September release is verified on Oracle, and the docs now say so",
+      "url": "https://github.com/adagora/trade/commit/ffad628fc29eeb3afe902001dfa45633cad5ba66",
+      "date": "2026-09-22T17:22:20Z",
+      "sha": "ffad628"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Replace the stale Book OS beads with the 22 September reality check",
+      "url": "https://github.com/adagora/trade/commit/4547c2806b33446695ab1753fbe3f23fa0f3b727",
+      "date": "2026-09-22T17:16:09Z",
+      "sha": "4547c28"
+    },
     {
       "type": "commit",
       "repo": "adagora/project_x",
@@ -96,110 +200,6 @@
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/a4d22be62531db0630eb8dc5a8b98a945170d236",
       "date": "2026-09-21T12:01:51Z",
       "sha": "a4d22be"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/project_x",
-      "message": "auth: furtka deweloperska dla localhost (AUTH_DEV_BYPASS)",
-      "url": "https://github.com/adagora/project_x/commit/5cb81cadd5ecfe6ba50fcdafff10c6baa325d2dd",
-      "date": "2026-09-21T11:16:31Z",
-      "sha": "5cb81ca"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/project_x",
-      "message": "jev: panel statystyk i przełącznik trybu w interfejsie",
-      "url": "https://github.com/adagora/project_x/commit/c6194e0cc2236ebefc05be17f1d22c5aa807143b",
-      "date": "2026-09-21T11:15:27Z",
-      "sha": "c6194e0"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/project_x",
-      "message": "jev: warstwa sądów TypeSafe po stronie serwera",
-      "url": "https://github.com/adagora/project_x/commit/d7844961d92cc14f53a0439e687e9aa20c4fdd0d",
-      "date": "2026-09-21T11:15:18Z",
-      "sha": "d784496"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/jev-experiments",
-      "message": "feat: look before spending, resume after failing",
-      "url": "https://github.com/adagora/jev-experiments/commit/34f01effd5be8bd9d8747b518f011b1f3ded1926",
-      "date": "2026-09-21T05:14:07Z",
-      "sha": "34f01ef"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/jev-experiments",
-      "message": "feat(translate-audit): mine a glossary from existing translations, audit against it consistency",
-      "url": "https://github.com/adagora/jev-experiments/commit/51edd8b5f45704d43931cf52cd182a8c7a5e6275",
-      "date": "2026-09-20T19:35:36Z",
-      "sha": "51edd8b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "The reset now clears the check that tripped",
-      "url": "https://github.com/adagora/trade/commit/52ce027f12118569917c07bd340480e6b51071e4",
-      "date": "2026-09-20T16:12:13Z",
-      "sha": "52ce027"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "Stage the risk-baseline fix",
-      "url": "https://github.com/adagora/trade/commit/332fd960b49c3ac7f8ef6ab513634fef78871288",
-      "date": "2026-09-20T16:01:09Z",
-      "sha": "332fd96"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "Make the circuit-breaker reset reach the check that tripped",
-      "url": "https://github.com/adagora/trade/commit/d050e1d7c6df8075b2d81f16b2450fc845f8e249",
-      "date": "2026-09-20T15:58:26Z",
-      "sha": "d050e1d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: inspector object cards for targets, edges, campaigns, and incidents (pintrest-0lvc.2)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/ae33616b49a702ee1d74dcc5aa346316824024ec",
-      "date": "2026-09-16T18:24:03Z",
-      "sha": "ae33616"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: inspector object cards for targets, edges, campaigns, and incidents (pintrest-0lvc.2)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/ae33616b49a702ee1d74dcc5aa346316824024ec",
-      "date": "2026-09-16T18:24:03Z",
-      "sha": "ae33616"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: two-row shell, command palette, and honest alert bell (pintrest-0lvc.1)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/441d51e8e604cfa6fa55a4b9e96cc3111bf617fd",
-      "date": "2026-09-16T17:47:03Z",
-      "sha": "441d51e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: two-row shell, command palette, and honest alert bell (pintrest-0lvc.1)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/441d51e8e604cfa6fa55a4b9e96cc3111bf617fd",
-      "date": "2026-09-16T17:47:03Z",
-      "sha": "441d51e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: focused local check entrypoint (pintrest-c4hc.9)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/61d92a5f96fb39c20c4ceaa9d406fc622e28c70e",
-      "date": "2026-09-16T17:00:25Z",
-      "sha": "61d92a5"
     }
   ]
 }
