@@ -1,6 +1,94 @@
 {
-  "generated": "2026-09-23T10:46:33.706Z",
+  "generated": "2026-09-24T11:07:12.775Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/trail-mvp",
+      "message": "Build corpus-backed terminology pool and Jev consistency checks",
+      "url": "https://github.com/adagora/trail-mvp/commit/079597764b9c86d2facef8279df2f6b58cbe0408",
+      "date": "2026-09-24T04:26:16Z",
+      "sha": "0795977"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Manifest for the pre-arm release: per-host park, freeze guard, fade switch",
+      "url": "https://github.com/adagora/trade/commit/c6add695531c5168436ec7992f8b2dfe6419776f",
+      "date": "2026-09-24T03:54:14Z",
+      "sha": "c6add69"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/trade",
+      "message": "Fade-B: a switch that lets the FADE book take a counter-trend entry",
+      "url": "https://github.com/adagora/trade/commit/be8e7aef869c6f375c553315f42e811a054a0aa6",
+      "date": "2026-09-24T03:52:55Z",
+      "sha": "be8e7ae"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: score delay warnings with episode false alerts (pintrest-c4hc.4.3)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/f9e6b314471574025810edf84bd77f771b56928f",
+      "date": "2026-09-23T20:54:47Z",
+      "sha": "f9e6b31"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: score delay warnings with episode false alerts (pintrest-c4hc.4.3)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/f9e6b314471574025810edf84bd77f771b56928f",
+      "date": "2026-09-23T20:54:47Z",
+      "sha": "f9e6b31"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: build leakage-free delay examples (pintrest-c4hc.4.2)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/23a546dba5de1e79cf10561ed7ba177b54754003",
+      "date": "2026-09-23T19:57:59Z",
+      "sha": "23a546d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: build leakage-free delay examples (pintrest-c4hc.4.2)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/23a546dba5de1e79cf10561ed7ba177b54754003",
+      "date": "2026-09-23T19:57:59Z",
+      "sha": "23a546d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: preregister version-0 delay labels (pintrest-c4hc.4.1)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/0cfe139e5c12f52686def3d3ada67e7a71ba1a1a",
+      "date": "2026-09-23T18:03:05Z",
+      "sha": "0cfe139"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: preregister version-0 delay labels (pintrest-c4hc.4.1)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/0cfe139e5c12f52686def3d3ada67e7a71ba1a1a",
+      "date": "2026-09-23T18:03:05Z",
+      "sha": "0cfe139"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: add Route Map flyover (pintrest-y76a)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/6ed6bb63fa2b32252ef047b83411c257a3991cae",
+      "date": "2026-09-22T20:54:17Z",
+      "sha": "6ed6bb6"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/alike-pintrest",
+      "message": "feat: add Route Map flyover (pintrest-y76a)",
+      "url": "https://github.com/adagora/alike-pintrest/commit/6ed6bb63fa2b32252ef047b83411c257a3991cae",
+      "date": "2026-09-22T20:54:17Z",
+      "sha": "6ed6bb6"
+    },
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
@@ -19,38 +107,6 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: run a selected research recipe from Config search (pintrest-c4hc.3.12)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/2eedc75e5219917c2d88844484a58ddfa645d783",
-      "date": "2026-09-22T20:24:29Z",
-      "sha": "2eedc75"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: run a selected research recipe from Config search (pintrest-c4hc.3.12)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/2eedc75e5219917c2d88844484a58ddfa645d783",
-      "date": "2026-09-22T20:24:29Z",
-      "sha": "2eedc75"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: label ties and separate scores in workbench answers (pintrest-c4hc.1.9, pintrest-c4hc.1.10, pintrest-c4hc.1.11, pintrest-c4hc.1.12)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/360bbd3075f200ee6a66075099a5e654c2506f8f",
-      "date": "2026-09-22T19:48:36Z",
-      "sha": "360bbd3"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: label ties and separate scores in workbench answers (pintrest-c4hc.1.9, pintrest-c4hc.1.10, pintrest-c4hc.1.11, pintrest-c4hc.1.12)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/360bbd3075f200ee6a66075099a5e654c2506f8f",
-      "date": "2026-09-22T19:48:36Z",
-      "sha": "360bbd3"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/project_x",
       "message": "feat: improve jev implementation",
       "url": "https://github.com/adagora/project_x/commit/f2a891ed6793efe5ba2f8111f5689b5baa387c14",
@@ -59,51 +115,27 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "test: reject unobserved first-pass lookups (pintrest-0lvc.17)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/809c14052ba30f54ed7e941acd13646af3b17410",
-      "date": "2026-09-22T18:06:33Z",
-      "sha": "809c140"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "test: reject unobserved first-pass lookups (pintrest-0lvc.17)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/809c14052ba30f54ed7e941acd13646af3b17410",
-      "date": "2026-09-22T18:06:33Z",
-      "sha": "809c140"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: SPC control room over frozen baselines (pintrest-0lvc.5)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/6ef3911257473a26882e9d466584d5000aa9859c",
-      "date": "2026-09-22T17:38:53Z",
-      "sha": "6ef3911"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: SPC control room over frozen baselines (pintrest-0lvc.5)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/6ef3911257473a26882e9d466584d5000aa9859c",
-      "date": "2026-09-22T17:38:53Z",
-      "sha": "6ef3911"
+      "repo": "adagora/trade",
+      "message": "A release can no longer silently fail an armed paper session",
+      "url": "https://github.com/adagora/trade/commit/48b764e38c33b4496a401aafa3eaf83a8045b50d",
+      "date": "2026-09-22T18:04:46Z",
+      "sha": "48b764e"
     },
     {
       "type": "commit",
       "repo": "adagora/trade",
-      "message": "The 21 September release is verified on Oracle, and the docs now say so",
-      "url": "https://github.com/adagora/trade/commit/ffad628fc29eeb3afe902001dfa45633cad5ba66",
-      "date": "2026-09-22T17:22:20Z",
-      "sha": "ffad628"
+      "message": "Keep scoring while only the execution host is parked",
+      "url": "https://github.com/adagora/trade/commit/8bac7da5bbabe125465443a2b061555f182317da",
+      "date": "2026-09-22T18:00:54Z",
+      "sha": "8bac7da"
     },
     {
       "type": "commit",
       "repo": "adagora/trade",
-      "message": "Replace the stale Book OS beads with the 22 September reality check",
-      "url": "https://github.com/adagora/trade/commit/4547c2806b33446695ab1753fbe3f23fa0f3b727",
-      "date": "2026-09-22T17:16:09Z",
-      "sha": "4547c28"
+      "message": "One REST park per host: a testnet edge ban no longer parks mainnet",
+      "url": "https://github.com/adagora/trade/commit/a8dfc69ea25fb3ec0394fff1ebf41b08f0c98b24",
+      "date": "2026-09-22T17:54:09Z",
+      "sha": "a8dfc69"
     },
     {
       "type": "commit",
@@ -112,22 +144,6 @@
       "url": "https://github.com/adagora/project_x/commit/f9b133d41d3710d63a4a6216dbc70477718bb1b7",
       "date": "2026-09-21T20:34:16Z",
       "sha": "f9b133d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "A selected pick can no longer vanish, and the docs must match the code",
-      "url": "https://github.com/adagora/trade/commit/3397a1c4ba67a9859ffa0aafaedbcf5bfeb3e3f4",
-      "date": "2026-09-21T19:47:06Z",
-      "sha": "3397a1c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "Preserve the 21 September evidence: selected, and nothing happened",
-      "url": "https://github.com/adagora/trade/commit/c8ea04d0c5137bcffc82478d6dac5d2542839e13",
-      "date": "2026-09-21T19:46:53Z",
-      "sha": "c8ea04d"
     },
     {
       "type": "commit",
@@ -184,22 +200,6 @@
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/50d7d515ca4cf811ee5792b5d1ade060e5ba8037",
       "date": "2026-09-21T12:02:12Z",
       "sha": "50d7d51"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
-      "message": "feat(bench): error bars, and the only comparison two rows can support",
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/0f326bda5729108598e1c58cacbb7335847f7375",
-      "date": "2026-09-21T12:01:59Z",
-      "sha": "0f326bd"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
-      "message": "fix: retire a dead evaluator and repoint the ones that still work",
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/a4d22be62531db0630eb8dc5a8b98a945170d236",
-      "date": "2026-09-21T12:01:51Z",
-      "sha": "a4d22be"
     }
   ]
 }
