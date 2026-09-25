@@ -1,14 +1,6 @@
 {
-  "generated": "2026-09-24T11:07:12.775Z",
+  "generated": "2026-09-25T11:08:46.510Z",
   "items": [
-    {
-      "type": "commit",
-      "repo": "adagora/trail-mvp",
-      "message": "Build corpus-backed terminology pool and Jev consistency checks",
-      "url": "https://github.com/adagora/trail-mvp/commit/079597764b9c86d2facef8279df2f6b58cbe0408",
-      "date": "2026-09-24T04:26:16Z",
-      "sha": "0795977"
-    },
     {
       "type": "commit",
       "repo": "adagora/trade",
@@ -200,6 +192,14 @@
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/50d7d515ca4cf811ee5792b5d1ade060e5ba8037",
       "date": "2026-09-21T12:02:12Z",
       "sha": "50d7d51"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
+      "message": "feat(bench): error bars, and the only comparison two rows can support",
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/0f326bda5729108598e1c58cacbb7335847f7375",
+      "date": "2026-09-21T12:01:59Z",
+      "sha": "0f326bd"
     }
   ]
 }
