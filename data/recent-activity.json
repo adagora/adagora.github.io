@@ -1,6 +1,86 @@
 {
-  "generated": "2026-09-25T11:08:46.510Z",
+  "generated": "2026-09-26T10:49:07.784Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/cairn",
+      "message": "feat: one-command robot-fleet demo (scripts/robot-demo.sh)",
+      "url": "https://github.com/adagora/cairn/commit/6cd3b19e9066d049b7451e4fee5a87364cb4037f",
+      "date": "2026-09-25T21:09:43Z",
+      "sha": "6cd3b19"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: one-command robot-fleet demo (scripts/robot-demo.sh)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/6cd3b19e9066d049b7451e4fee5a87364cb4037f",
+      "date": "2026-09-25T21:09:43Z",
+      "sha": "6cd3b19"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/cairn",
+      "message": "feat: VDA 5050 fleet recordings -> measured robot load (pintrest-cairn-pqvy.15)",
+      "url": "https://github.com/adagora/cairn/commit/292609ed8ba17c7b709926f95f27b7f11ba35de2",
+      "date": "2026-09-25T20:44:02Z",
+      "sha": "292609e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: VDA 5050 fleet recordings -> measured robot load (pintrest-cairn-pqvy.15)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/292609ed8ba17c7b709926f95f27b7f11ba35de2",
+      "date": "2026-09-25T20:44:02Z",
+      "sha": "292609e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/cairn",
+      "message": "feat: robot-fleet dispatch testbed with planted faults (pintrest-cairn-pqvy.14)",
+      "url": "https://github.com/adagora/cairn/commit/5d15d5ffd1c679dd16712b2875cbd3b096843b60",
+      "date": "2026-09-25T20:40:37Z",
+      "sha": "5d15d5f"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: robot-fleet dispatch testbed with planted faults (pintrest-cairn-pqvy.14)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/5d15d5ffd1c679dd16712b2875cbd3b096843b60",
+      "date": "2026-09-25T20:40:37Z",
+      "sha": "5d15d5f"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/cairn",
+      "message": "feat: measured robot and machine load from lifecycle times (pintrest-cairn-pqvy.12, D55)",
+      "url": "https://github.com/adagora/cairn/commit/9a7fcc7c5fad61773224f4c3730d04d8c8f0924e",
+      "date": "2026-09-25T20:35:06Z",
+      "sha": "9a7fcc7"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "feat: measured robot and machine load from lifecycle times (pintrest-cairn-pqvy.12, D55)",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/9a7fcc7c5fad61773224f4c3730d04d8c8f0924e",
+      "date": "2026-09-25T20:35:06Z",
+      "sha": "9a7fcc7"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/cairn",
+      "message": "docs: Trier resources are planned per BPMN task, not chosen at run time",
+      "url": "https://github.com/adagora/cairn/commit/16c30bc401ffb3ee04983ccd51350339c6ce20f0",
+      "date": "2026-09-25T17:39:10Z",
+      "sha": "16c30bc"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/manufacturing-tool",
+      "message": "docs: Trier resources are planned per BPMN task, not chosen at run time",
+      "url": "https://github.com/adagora/manufacturing-tool/commit/16c30bc401ffb3ee04983ccd51350339c6ce20f0",
+      "date": "2026-09-25T17:39:10Z",
+      "sha": "16c30bc"
+    },
     {
       "type": "commit",
       "repo": "adagora/trade",
@@ -16,86 +96,6 @@
       "url": "https://github.com/adagora/trade/commit/be8e7aef869c6f375c553315f42e811a054a0aa6",
       "date": "2026-09-24T03:52:55Z",
       "sha": "be8e7ae"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: score delay warnings with episode false alerts (pintrest-c4hc.4.3)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/f9e6b314471574025810edf84bd77f771b56928f",
-      "date": "2026-09-23T20:54:47Z",
-      "sha": "f9e6b31"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: score delay warnings with episode false alerts (pintrest-c4hc.4.3)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/f9e6b314471574025810edf84bd77f771b56928f",
-      "date": "2026-09-23T20:54:47Z",
-      "sha": "f9e6b31"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: build leakage-free delay examples (pintrest-c4hc.4.2)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/23a546dba5de1e79cf10561ed7ba177b54754003",
-      "date": "2026-09-23T19:57:59Z",
-      "sha": "23a546d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: build leakage-free delay examples (pintrest-c4hc.4.2)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/23a546dba5de1e79cf10561ed7ba177b54754003",
-      "date": "2026-09-23T19:57:59Z",
-      "sha": "23a546d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: preregister version-0 delay labels (pintrest-c4hc.4.1)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/0cfe139e5c12f52686def3d3ada67e7a71ba1a1a",
-      "date": "2026-09-23T18:03:05Z",
-      "sha": "0cfe139"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: preregister version-0 delay labels (pintrest-c4hc.4.1)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/0cfe139e5c12f52686def3d3ada67e7a71ba1a1a",
-      "date": "2026-09-23T18:03:05Z",
-      "sha": "0cfe139"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: add Route Map flyover (pintrest-y76a)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/6ed6bb63fa2b32252ef047b83411c257a3991cae",
-      "date": "2026-09-22T20:54:17Z",
-      "sha": "6ed6bb6"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "feat: add Route Map flyover (pintrest-y76a)",
-      "url": "https://github.com/adagora/alike-pintrest/commit/6ed6bb63fa2b32252ef047b83411c257a3991cae",
-      "date": "2026-09-22T20:54:17Z",
-      "sha": "6ed6bb6"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "fix: point dataset peers at the live Render URLs",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/5ab99e3bc303026d9b42e2009ed1b0679ef40fce",
-      "date": "2026-09-22T20:25:00Z",
-      "sha": "5ab99e3"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/alike-pintrest",
-      "message": "fix: point dataset peers at the live Render URLs",
-      "url": "https://github.com/adagora/alike-pintrest/commit/5ab99e3bc303026d9b42e2009ed1b0679ef40fce",
-      "date": "2026-09-22T20:25:00Z",
-      "sha": "5ab99e3"
     },
     {
       "type": "commit",
