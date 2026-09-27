@@ -10,16 +10,16 @@
     "asciiName": "Adrian Gora",
     "label": "AI Engineer",
     "headline": {
-      "en": "AI Engineer · LLM apps, RAG and agents · TypeScript / Python · manufacturing and engineering data",
-      "pl": "AI Engineer · aplikacje LLM, RAG i agenci · TypeScript / Python · dane produkcyjne i inżynierskie"
+      "en": "AI Engineer | LLM apps, RAG and AI agents for manufacturing | TypeScript, Python",
+      "pl": "AI Engineer | aplikacje LLM, RAG i agenci AI dla produkcji | TypeScript, Python"
     },
     "tagline": {
       "en": "I build AI tools for manufacturing teams: document search that cites its sources, meeting and translation pipelines, and quoting from CAD models. Six years in software and three and a half in automotive CAD engineering.",
       "pl": "Buduję narzędzia AI dla zespołów produkcyjnych: wyszukiwanie w dokumentach z cytowaniem źródeł, pipeline'y spotkań i tłumaczeń oraz wycenę z modeli CAD. Sześć lat w oprogramowaniu i trzy i pół roku projektowania CAD w motoryzacji."
     },
     "summary": {
-      "en": "AI engineer building internal AI tools at an industrial manufacturer since February 2025: a company-wide RAG assistant, a Microsoft Teams meeting pipeline, an AI translation portal and process-route analytics. Before that, four years of TypeScript and React in fintech and web3, and three and a half years of automotive CAD engineering in CATIA V5.",
-      "pl": "Od lutego 2025 buduję wewnętrzne narzędzia AI u producenta przemysłowego: firmowego asystenta RAG, pipeline spotkań Microsoft Teams, portal tłumaczeń z AI i analitykę marszrut produkcyjnych. Wcześniej cztery lata TypeScript i React w fintech i web3 oraz trzy i pół roku projektowania CAD w motoryzacji (CATIA V5)."
+      "en": "Since February 2025 I have been building internal AI tools at an industrial manufacturer: a company-wide RAG assistant, a Teams meeting pipeline, an AI translation portal and production-route analytics. Before that I spent four years on TypeScript and React in fintech and web3, and three and a half years designing car parts in CATIA V5.",
+      "pl": "Od lutego 2025 buduję wewnętrzne narzędzia AI u producenta przemysłowego: firmowego asystenta RAG, pipeline spotkań Teams, portal tłumaczeń z AI i analitykę marszrut. Wcześniej przez cztery lata pisałem w TypeScript i React (fintech, web3), a przez trzy i pół roku projektowałem części samochodowe w CATIA V5."
     },
     "email": "adrian.gora14@gmail.com",
     "url": "https://adagora.github.io/",
@@ -34,7 +34,7 @@
       "text": { "en": "Available from 1 November 2026, no notice period", "pl": "Dostępny od 1 listopada 2026, bez okresu wypowiedzenia" },
       "short": { "en": "Available from 1 Nov 2026", "pl": "Dostępny od 1.11.2026" }
     },
-    "workMode": { "en": "Remote or hybrid; open to remote roles in the EU and worldwide", "pl": "Zdalnie lub hybrydowo; także zdalnie dla firm z UE i spoza niej" },
+    "workMode": { "en": "Remote or hybrid, also open to remote roles in the EU and worldwide", "pl": "Zdalnie lub hybrydowo, także zdalnie dla firm z UE i spoza niej" },
     "contract": { "en": "B2B or employment contract", "pl": "B2B lub umowa o pracę" },
     "titleBlock": [
       { "label": "Role", "value": "AI Engineer" },
@@ -89,8 +89,8 @@
           "tags": ["rag", "deployment", "llm"],
           "title": { "en": "Company-wide RAG assistant", "pl": "Firmowy asystent RAG" },
           "text": {
-            "en": "Deployed RAGFlow on a Linux server with telemetry and monitoring, connected to Open WebUI through a custom pipeline as the chat front end; 90% answer accuracy.",
-            "pl": "Wdrożyłem RAGFlow na serwerze Linux z telemetrią i monitoringiem, podłączony do Open WebUI przez własny pipeline jako front czatu; 90% trafności odpowiedzi."
+            "en": "Deployed RAGFlow on a Linux server with telemetry and monitoring, and connected it to Open WebUI as the company chat. 90% answer accuracy.",
+            "pl": "Wdrożyłem RAGFlow na serwerze Linux z telemetrią i monitoringiem i podłączyłem go do Open WebUI jako firmowy czat. 90% trafnych odpowiedzi."
           },
           "stack": ["RAGFlow", "Open WebUI", "Linux", "Telemetry"]
         },
@@ -98,8 +98,8 @@
           "tags": ["pipelines", "llm", "integration", "automation"],
           "title": { "en": "Microsoft Teams meeting pipeline", "pl": "Pipeline spotkań Microsoft Teams" },
           "text": {
-            "en": "Scans one group's meetings in on-premises Outlook and turns on automatic recording; transcripts and recordings then arrive through Microsoft Graph (webhooks plus polling), are converted from VTT and analysed by an LLM into structured JSON reports.",
-            "pl": "Skanuje spotkania jednej grupy w lokalnym (on-premises) Outlooku i włącza automatyczne nagrywanie; transkrypcje i nagrania pobierane są przez Microsoft Graph (webhooki i polling), konwertowane z VTT i analizowane przez LLM do ustrukturyzowanych raportów JSON."
+            "en": "Scans one group's meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.",
+            "pl": "Skanuje spotkania jednej grupy w lokalnym (on-premises) Outlooku i włącza automatyczne nagrywanie. Transkrypcje i nagrania przychodzą przez Microsoft Graph (webhooki i polling), a LLM zamienia je w raporty JSON."
           },
           "stack": ["Microsoft Graph", "Outlook on-prem", "TypeScript", "Node.js", "LLM"]
         },
@@ -107,8 +107,8 @@
           "tags": ["fullstack", "llm", "product"],
           "title": { "en": "AI translation portal", "pl": "Portal tłumaczeń z AI" },
           "text": {
-            "en": "Designed and shipped an internal portal built to replace lokalise.com: Gemini pre-translates each key, translators accept or correct, missed keys are detected, and every decision is logged so the AI acceptance rate is measurable.",
-            "pl": "Zaprojektowałem i wdrożyłem wewnętrzny portal, który zastępuje lokalise.com: Gemini wstępnie tłumaczy klucze, tłumacze akceptują lub poprawiają, brakujące klucze są wykrywane, a każda decyzja jest logowana, więc widać skuteczność AI (acceptance rate)."
+            "en": "Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. Every decision is logged, so we can see how often the AI gets it right.",
+            "pl": "Zbudowałem wewnętrzny portal zamiast lokalise.com. Gemini wstępnie tłumaczy każdy klucz, tłumacze akceptują albo poprawiają, a brakujące klucze są oznaczane. Każda decyzja jest logowana, więc widać, jak często AI trafia."
           },
           "stack": ["TypeScript", "Gemini", "OpenAI", "Redis"]
         },
@@ -116,8 +116,8 @@
           "tags": ["manufacturing", "data", "llm"],
           "title": { "en": "Process-route analytics", "pl": "Analityka marszrut" },
           "text": {
-            "en": "Prototyping analytics on process-route data: chat over historical production traces, tests of new settings and suggested routing paths.",
-            "pl": "Prototypuję analitykę na danych marszrut: czat nad historycznymi przebiegami produkcji, testy nowych ustawień i propozycje ścieżek."
+            "en": "Working on a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes.",
+            "pl": "Rozwijam prototyp, w którym technolog rozmawia z historią przebiegów produkcji, testuje nowe ustawienia i dostaje propozycje marszrut."
           },
           "stack": ["Go", "Python", "LLM"]
         },
@@ -125,8 +125,8 @@
           "tags": ["agents", "product", "llm", "knowledge"],
           "title": { "en": "AI interviews for process improvement", "pl": "Wywiady AI o usprawnieniach" },
           "text": {
-            "en": "Built on the Gemini managed-agents sandbox. A 15-minute voice or text interview about an employee's daily work produces an automation report, adds what it learned to an LLM-maintained knowledge wiki that grows with each interview, and turns repeatable workflows into SKILL.md files for agents.",
-            "pl": "Działa na sandboxie Gemini managed agents. Każdy 15-minutowy wywiad (głos lub tekst) o codziennej pracy pracownika kończy się raportem możliwości automatyzacji, dopisuje wiedzę do wiki prowadzonego przez LLM, które rośnie z każdym wywiadem, i zamienia powtarzalne procesy w pliki SKILL.md dla agentów."
+            "en": "Runs on the Gemini managed-agents sandbox. After a 15-minute voice or text interview about someone's daily work, it writes an automation report, adds what it learned to an LLM wiki, and turns repeatable tasks into SKILL.md files for agents.",
+            "pl": "Działa na sandboxie Gemini managed agents. Po 15-minutowym wywiadzie (głos lub tekst) o codziennej pracy pisze raport z pomysłami na automatyzację, dopisuje wiedzę do wiki prowadzonego przez LLM i zamienia powtarzalne zadania w pliki SKILL.md dla agentów."
           },
           "stack": ["Gemini managed agents", "TypeScript", "LLM wiki", "SKILL.md"]
         }
@@ -143,8 +143,8 @@
         {
           "tags": ["ml", "prototyping", "frontend"],
           "text": {
-            "en": "Prototyped AI tools (predictive models, chat over documents) to validate product ideas and shipped a staking app UI for web and mobile (TypeScript, React, ethers); 2nd place at the LearnWeb3 AI Hackathon.",
-            "pl": "Prototypowałem narzędzia AI (modele predykcyjne, czat nad dokumentami) do walidacji pomysłów i dostarczyłem interfejs aplikacji stakingowej na web i mobile (TypeScript, React, ethers); 2. miejsce w LearnWeb3 AI Hackathon."
+            "en": "Prototyped AI tools (predictive models, chat over documents) to test product ideas, and shipped a staking app UI for web and mobile (TypeScript, React, ethers). Took 2nd place at the LearnWeb3 AI Hackathon.",
+            "pl": "Prototypowałem narzędzia AI (modele predykcyjne, czat nad dokumentami) do testowania pomysłów i dostarczyłem interfejs aplikacji stakingowej na web i mobile (TypeScript, React, ethers). 2. miejsce w LearnWeb3 AI Hackathon."
           }
         }
       ]
@@ -177,8 +177,8 @@
         {
           "tags": ["frontend", "backend", "web3"],
           "text": {
-            "en": "Delivered the front-end MVP of an NFT perpetual trading platform and a real-time Node.js + PostgreSQL watcher for on-chain transactions; reviewed the Solidity contracts.",
-            "pl": "Dostarczyłem MVP frontendu platformy do handlu kontraktami perpetual na NFT oraz watcher transakcji on-chain w czasie rzeczywistym (Node.js + PostgreSQL); analizowałem kontrakty Solidity."
+            "en": "Delivered the front-end MVP of an NFT perpetual trading platform and a real-time Node.js + PostgreSQL watcher for on-chain transactions. Also reviewed the Solidity contracts.",
+            "pl": "Dostarczyłem MVP frontendu platformy do handlu kontraktami perpetual na NFT oraz watcher transakcji on-chain w czasie rzeczywistym (Node.js + PostgreSQL). Analizowałem też kontrakty Solidity."
           }
         }
       ]
@@ -230,8 +230,8 @@
         {
           "tags": ["cad", "manufacturing"],
           "text": {
-            "en": "Designed front and rear lamp components in CATIA V5: concept, fixing, feasibility, simulation and test results, tooling requests, BOM and GD&T drawings; worked with the Czech R&D team.",
-            "pl": "Projektowałem elementy lamp przednich i tylnych w CATIA V5: koncepcja, mocowania, wykonalność, wyniki symulacji i testów, zapytania narzędziowe, BOM i rysunki z GD&T; współpraca z działem R&D w Czechach."
+            "en": "Designed front and rear lamp components in CATIA V5: concept, fixing, feasibility, simulation and test results, tooling requests, BOM and GD&T drawings. Worked with the Czech R&D team.",
+            "pl": "Projektowałem elementy lamp przednich i tylnych w CATIA V5: koncepcja, mocowania, wykonalność, wyniki symulacji i testów, zapytania narzędziowe, BOM i rysunki z GD&T. Współpraca z działem R&D w Czechach."
           }
         }
       ]
@@ -278,6 +278,7 @@
   "projects": [
     {
       "id": "visual-rag",
+      "cvSummary": { "en": "Search for technical PDFs and product catalogues that looks at the page image (drawings, tables, dimensions), then answers with a vision model and cites the page. With keyword search added to the visual search, the right page came first for 84% of test questions, up from 55%.", "pl": "Wyszukiwarka dla dokumentacji PDF i katalogów, która analizuje obraz strony (rysunki, tabele, wymiary), a potem odpowiada modelem wizyjnym i podaje stronę. Po dodaniu wyszukiwania po słowach kluczowych właściwa strona była pierwsza w 84% pytań testowych zamiast 55%." },
       "tier": "featured",
       "visibility": "public",
       "name": { "en": "Visual RAG for technical PDFs", "pl": "Visual RAG dla dokumentacji technicznej" },
@@ -303,6 +304,7 @@
     },
     {
       "id": "cad-quote",
+      "cvSummary": { "en": "Prices a machined part from its STEP file for a tool shop. The code calculates geometry and cost, and the AI only reviews technology and risks, like a shop manager would. Includes a web app for estimators and automated tests.", "pl": "Wycenia detal obrabiany na podstawie pliku STEP dla narzędziowni. Geometrię i koszt liczy kod, a AI ocenia tylko technologię i ryzyka, jak kierownik narzędziowni. Ma aplikację web dla osób od wycen i testy automatyczne." },
       "tier": "featured",
       "visibility": "public",
       "name": { "en": "CAD quoting engine for machined parts", "pl": "Wycena detali obrabianych z modelu CAD" },
@@ -327,6 +329,7 @@
     },
     {
       "id": "translate-audit",
+      "cvSummary": { "en": "Checks terminology across 7,040 translation keys in 8 languages. An LLM judge made 99,933 decisions in 3 minutes, and translators approve the results in a small review app.", "pl": "Sprawdza terminologię w 7 040 kluczach tłumaczeń w 8 językach. Sędzia LLM podjął 99 933 decyzji w 3 minuty, a tłumacze zatwierdzają wyniki w prostej aplikacji." },
       "tier": "featured",
       "visibility": "public",
       "name": { "en": "LLM-judged translation audit", "pl": "Audyt tłumaczeń z sędzią LLM" },

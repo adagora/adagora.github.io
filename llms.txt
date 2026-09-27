@@ -1,6 +1,6 @@
 # Adrian Góra
 
-> AI Engineer in Poland building LLM applications, RAG and agents for manufacturing and engineering data. TypeScript, Python, Go. Available from 1 November 2026, no notice period. Remote or hybrid; open to remote roles in the EU and worldwide. B2B or employment contract.
+> AI Engineer in Poland building LLM applications, RAG and agents for manufacturing and engineering data. TypeScript, Python, Go. Available from 1 November 2026, no notice period. Remote or hybrid, also open to remote roles in the EU and worldwide. B2B or employment contract.
 
 Key facts:
 

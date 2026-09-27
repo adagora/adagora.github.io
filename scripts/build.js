@@ -384,10 +384,10 @@ function cvHtml(p, lang, variant) {
   const rest = p.work.slice(1).filter((w) => w.group !== 'cad');
   const cad = p.work.filter((w) => w.group === 'cad');
   const projects = sortByFocus(cvProjects(p, variant), focus);
-  // github.com/o/repo/tree/<branch>/a/b → "github.com/o/repo › a/b"
+  // github.com/o/repo/tree/<branch>/a/b → "github.com/o/repo (a/b)"
   const linkText = (u) => {
     const m = strip(u).match(/^(github\.com\/[^/]+\/[^/]+)\/tree\/.*\/([^/]+\/[^/]+)$/);
-    return m ? `${m[1]} › ${m[2]}` : strip(u);
+    return m ? `${m[1]} (${m[2]})` : strip(u);
   };
 
   const job = (w, bullets) => `<div class="job">
@@ -416,12 +416,12 @@ ${css}</style>
       <h1>${esc(b.name)}</h1>
       <p class="headline">${esc(t(b.headline, lang))}</p>
       <p class="contact">
-        <a href="mailto:${esc(b.email)}">${esc(b.email)}</a>${b.phone ? ` · ${esc(b.phone)}` : ''} ·
-        <a href="${esc(b.url)}">${esc(strip(b.url))}</a> ·
-        <a href="${esc(byNet.LinkedIn)}">${esc(strip(byNet.LinkedIn))}</a> ·
+        <a href="mailto:${esc(b.email)}">${esc(b.email)}</a>${b.phone ? ` | ${esc(b.phone)}` : ''} |
+        <a href="${esc(b.url)}">${esc(strip(b.url))}</a> |
+        <a href="${esc(byNet.LinkedIn)}">${esc(strip(byNet.LinkedIn))}</a> |
         <a href="${esc(byNet.GitHub)}">${esc(strip(byNet.GitHub))}</a>
       </p>
-      <p class="avail">${esc(t(b.availability.text, lang))} · ${esc(t(b.location.region, lang))} · ${esc(t(b.workMode, lang))} · ${esc(t(b.contract, lang))}</p>
+      <p class="avail">${esc(t(b.availability.text, lang))} | ${esc(t(b.location.region, lang))}, ${esc(t(b.workMode, lang)).replace(/^./, (c) => c.toLowerCase())} | ${esc(t(b.contract, lang))}</p>
     </div>
     ${photo ? `<img class="photo" src="${photo}" alt="${esc(b.name)}" />` : ''}
   </header>
@@ -444,7 +444,7 @@ ${css}</style>
     <h2>${L.projects}</h2>
     ${projects.map((pr) => `<div class="proj">
       <h3>${esc(t(pr.name, lang))}${pr.links?.[0] ? ` <a href="${esc(pr.links[0].url)}">${esc(linkText(pr.links[0].url))}</a>` : ''}</h3>
-      <p>${esc(t(pr.summary, lang))}${pr.metrics ? ` <span class="metric">${esc(pr.metrics.map((m) => `${m.value}: ${m.label}`).join('; '))}.</span>` : ''}</p>
+      <p>${pr.cvSummary ? esc(t(pr.cvSummary, lang)) : `${esc(t(pr.summary, lang))}${pr.metrics ? ` <span class="metric">${esc(pr.metrics.map((m) => `${m.value}: ${m.label}`).join('; '))}.</span>` : ''}`}</p>
     </div>`).join('\n    ')}
     <p class="more">${L.allProjects}: <a href="${esc(b.url)}#projects">${esc(strip(b.url))}/#projects</a></p>
   </section>

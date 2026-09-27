@@ -1,19 +1,19 @@
 # Adrian Góra
 
-AI Engineer · aplikacje LLM, RAG i agenci · TypeScript / Python · dane produkcyjne i inżynierskie
+AI Engineer | aplikacje LLM, RAG i agenci AI dla produkcji | TypeScript, Python
 
 - Email: adrian.gora14@gmail.com
 - Portfolio: https://adagora.github.io/
 - GitHub: https://github.com/adagora
 - LinkedIn: https://www.linkedin.com/in/adrian-gora/
-- Lokalizacja: Polska · Zdalnie lub hybrydowo; także zdalnie dla firm z UE i spoza niej
+- Lokalizacja: Polska · Zdalnie lub hybrydowo, także zdalnie dla firm z UE i spoza niej
 - Dostępność: Dostępny od 1 listopada 2026, bez okresu wypowiedzenia
 - Forma współpracy: B2B lub umowa o pracę
 - Szukane role: AI Engineer, LLM Engineer, Generative AI Engineer, AI Solutions Engineer, Forward Deployed Engineer, Full-stack Engineer (TypeScript / Python), AI focus
 
 ## Profil
 
-Od lutego 2025 buduję wewnętrzne narzędzia AI u producenta przemysłowego: firmowego asystenta RAG, pipeline spotkań Microsoft Teams, portal tłumaczeń z AI i analitykę marszrut produkcyjnych. Wcześniej cztery lata TypeScript i React w fintech i web3 oraz trzy i pół roku projektowania CAD w motoryzacji (CATIA V5).
+Od lutego 2025 buduję wewnętrzne narzędzia AI u producenta przemysłowego: firmowego asystenta RAG, pipeline spotkań Teams, portal tłumaczeń z AI i analitykę marszrut. Wcześniej przez cztery lata pisałem w TypeScript i React (fintech, web3), a przez trzy i pół roku projektowałem części samochodowe w CATIA V5.
 
 ## Doświadczenie
 
@@ -21,11 +21,11 @@ Od lutego 2025 buduję wewnętrzne narzędzia AI u producenta przemysłowego: fi
 
 Stanowisko formalne: Specjalista ds. AI. Wewnętrzne narzędzia AI dla polskiego producenta bram, drzwi i ogrodzeń.
 
-- **Firmowy asystent RAG:** Wdrożyłem RAGFlow na serwerze Linux z telemetrią i monitoringiem, podłączony do Open WebUI przez własny pipeline jako front czatu; 90% trafności odpowiedzi.
-- **Pipeline spotkań Microsoft Teams:** Skanuje spotkania jednej grupy w lokalnym (on-premises) Outlooku i włącza automatyczne nagrywanie; transkrypcje i nagrania pobierane są przez Microsoft Graph (webhooki i polling), konwertowane z VTT i analizowane przez LLM do ustrukturyzowanych raportów JSON.
-- **Portal tłumaczeń z AI:** Zaprojektowałem i wdrożyłem wewnętrzny portal, który zastępuje lokalise.com: Gemini wstępnie tłumaczy klucze, tłumacze akceptują lub poprawiają, brakujące klucze są wykrywane, a każda decyzja jest logowana, więc widać skuteczność AI (acceptance rate).
-- **Analityka marszrut:** Prototypuję analitykę na danych marszrut: czat nad historycznymi przebiegami produkcji, testy nowych ustawień i propozycje ścieżek.
-- **Wywiady AI o usprawnieniach:** Działa na sandboxie Gemini managed agents. Każdy 15-minutowy wywiad (głos lub tekst) o codziennej pracy pracownika kończy się raportem możliwości automatyzacji, dopisuje wiedzę do wiki prowadzonego przez LLM, które rośnie z każdym wywiadem, i zamienia powtarzalne procesy w pliki SKILL.md dla agentów.
+- **Firmowy asystent RAG:** Wdrożyłem RAGFlow na serwerze Linux z telemetrią i monitoringiem i podłączyłem go do Open WebUI jako firmowy czat. 90% trafnych odpowiedzi.
+- **Pipeline spotkań Microsoft Teams:** Skanuje spotkania jednej grupy w lokalnym (on-premises) Outlooku i włącza automatyczne nagrywanie. Transkrypcje i nagrania przychodzą przez Microsoft Graph (webhooki i polling), a LLM zamienia je w raporty JSON.
+- **Portal tłumaczeń z AI:** Zbudowałem wewnętrzny portal zamiast lokalise.com. Gemini wstępnie tłumaczy każdy klucz, tłumacze akceptują albo poprawiają, a brakujące klucze są oznaczane. Każda decyzja jest logowana, więc widać, jak często AI trafia.
+- **Analityka marszrut:** Rozwijam prototyp, w którym technolog rozmawia z historią przebiegów produkcji, testuje nowe ustawienia i dostaje propozycje marszrut.
+- **Wywiady AI o usprawnieniach:** Działa na sandboxie Gemini managed agents. Po 15-minutowym wywiadzie (głos lub tekst) o codziennej pracy pisze raport z pomysłami na automatyzację, dopisuje wiedzę do wiki prowadzonego przez LLM i zamienia powtarzalne zadania w pliki SKILL.md dla agentów.
 
 ## Wybrane projekty
 
@@ -92,7 +92,7 @@ Code: https://github.com/adagora/streamr-ml-demo
 
 ### Software Engineer · Freelance (08.2023 – 01.2025)
 
-- Prototypowałem narzędzia AI (modele predykcyjne, czat nad dokumentami) do walidacji pomysłów i dostarczyłem interfejs aplikacji stakingowej na web i mobile (TypeScript, React, ethers); 2. miejsce w LearnWeb3 AI Hackathon.
+- Prototypowałem narzędzia AI (modele predykcyjne, czat nad dokumentami) do testowania pomysłów i dostarczyłem interfejs aplikacji stakingowej na web i mobile (TypeScript, React, ethers). 2. miejsce w LearnWeb3 AI Hackathon.
 
 ### Full-Stack Engineer · Playdate App Limited (06.2023 – 08.2023)
 
@@ -100,7 +100,7 @@ Code: https://github.com/adagora/streamr-ml-demo
 
 ### Software Engineer · Ariable (12.2022 – 06.2023)
 
-- Dostarczyłem MVP frontendu platformy do handlu kontraktami perpetual na NFT oraz watcher transakcji on-chain w czasie rzeczywistym (Node.js + PostgreSQL); analizowałem kontrakty Solidity.
+- Dostarczyłem MVP frontendu platformy do handlu kontraktami perpetual na NFT oraz watcher transakcji on-chain w czasie rzeczywistym (Node.js + PostgreSQL). Analizowałem też kontrakty Solidity.
 
 ### Frontend Engineer · BlockchainWares Software (12.2020 – 12.2022)
 
@@ -112,7 +112,7 @@ Code: https://github.com/adagora/streamr-ml-demo
 
 ### Product Engineer · Varroc Lighting Systems, Kraków (06.2018 – 07.2020)
 
-- Projektowałem elementy lamp przednich i tylnych w CATIA V5: koncepcja, mocowania, wykonalność, wyniki symulacji i testów, zapytania narzędziowe, BOM i rysunki z GD&T; współpraca z działem R&D w Czechach.
+- Projektowałem elementy lamp przednich i tylnych w CATIA V5: koncepcja, mocowania, wykonalność, wyniki symulacji i testów, zapytania narzędziowe, BOM i rysunki z GD&T. Współpraca z działem R&D w Czechach.
 
 ### CAD Designer · Auto Design, Bielsko-Biała (09.2017 – 02.2018)
 
