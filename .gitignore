@@ -1,2 +1,14 @@
 node_modules
 .DS_Store
+
+# Job search material: offers, tailored CVs, application log
+private/
+
+# Local originals that carry the phone number; the site serves the generated cv/*.pdf
+Profile.pdf
+Adrian_Gora_CV.pdf
+certyfikaty.md
+githublinks.md
+
+# Third-party skill installed locally
+.claude/skills/

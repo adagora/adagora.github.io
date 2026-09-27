@@ -76,7 +76,7 @@ async function generateCommitStats(repoList) {
 
 /* ─── Shipstream: recent activity feed ─── */
 
-async function generateShipstream() {
+async function generateShipstream(privateRepos) {
   const items = [];
 
   // Events API for discovery, then repo API for commit details (PushEvents strip commits).
@@ -98,7 +98,8 @@ async function generateShipstream() {
         type: 'pr',
         repo: event.repo?.name || '',
         title: pr.title,
-        url: pr.html_url,
+        url: privateRepos.has(event.repo?.name) ? null : pr.html_url,
+        private: privateRepos.has(event.repo?.name),
         date: pr.updated_at || event.created_at,
         state: 'closed',
         merged: true,
@@ -116,7 +117,9 @@ async function generateShipstream() {
             type: 'commit',
             repo: fullName,
             message: c.commit.message ? c.commit.message.split('\n')[0] : '',
-            url: c.html_url || `https://github.com/${fullName}/commit/${c.sha}`,
+            // Private commit pages 404 for visitors, so they get no link.
+            url: privateRepos.has(fullName) ? null : c.html_url || `https://github.com/${fullName}/commit/${c.sha}`,
+            private: privateRepos.has(fullName),
             date: c.commit.author.date,
             sha: c.sha ? c.sha.slice(0, 7) : '',
           });
@@ -129,8 +132,10 @@ async function generateShipstream() {
   const seen = new Set();
   const unique = [];
   for (const item of items) {
-    if (seen.has(item.url)) continue;
-    seen.add(item.url);
+    // Mirrored repos push the same commit twice; the sha identifies it once.
+    const key = item.sha ? `sha:${item.sha}` : item.url || `${item.repo}@${item.title}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
     unique.push(item);
   }
   unique.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -143,6 +148,7 @@ async function generateShipstream() {
 async function main() {
   const repos = await apiPaginate('/user/repos?type=all&sort=pushed');
   const ownerRepoSet = new Set();
+  const privateRepos = new Set(repos.filter((r) => r.private).map((r) => r.full_name));
 
   for (const r of repos) {
     if (r.owner && r.owner.type === 'Organization') {
@@ -158,12 +164,13 @@ async function main() {
   // Commit stats
   const { days, total } = await generateCommitStats(repoList);
   fs.writeFileSync('data/commit-stats.json', JSON.stringify({
-    generated: new Date().toISOString(), total, days, repos: repoList,
+    // Only the count is published: private repo names stay private.
+    generated: new Date().toISOString(), total, days, repoCount: repoList.length,
   }, null, 2));
   console.log(`${total} commits → data/commit-stats.json`);
 
   // Shipstream activity feed — uses Events API, no per-repo iteration needed
-  const feed = await generateShipstream();
+  const feed = await generateShipstream(privateRepos);
   fs.writeFileSync('data/recent-activity.json', JSON.stringify({
     generated: new Date().toISOString(), items: feed,
   }, null, 2));

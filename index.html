@@ -3,511 +3,493 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adrian Gora — Full Stack / AI Engineer</title>
-  <meta name="description" content="Adrian Gora — Full Stack Engineer building AI tools, web applications, and everything in between. CV, portfolio, and project ship log." />
-  <meta name="theme-color" content="#08080c" />
-
-  <!-- Fonts: Syne + DM Sans -->
+  <!-- Content between build markers is generated from data/profile.json by scripts/build.js. Edit the data, not these regions. -->
+  <!-- build:head -->
+  <title>Adrian Góra · AI Engineer (LLM, RAG, agents) · Poland</title>
+  <meta name="description" content="AI Engineer · LLM apps, RAG and agents · TypeScript / Python · manufacturing and engineering data. Available from 1 November 2026, no notice period." />
+  <meta name="author" content="Adrian Góra" />
+  <link rel="canonical" href="https://adagora.github.io/" />
+  <link rel="alternate" type="text/markdown" href="cv.md" title="CV (Markdown)" />
+  <link rel="alternate" type="application/json" href="resume.json" title="JSON Resume" />
+  <link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Adrian Góra · AI Engineer (LLM, RAG, agents) · Poland" />
+  <meta property="og:description" content="AI Engineer · LLM apps, RAG and agents · TypeScript / Python · manufacturing and engineering data. Available from 1 November 2026, no notice period." />
+  <meta property="og:url" content="https://adagora.github.io/" />
+  <meta property="og:image" content="https://adagora.github.io/assets/img/adrian-gora.jpg" />
+  <meta property="profile:first_name" content="Adrian" />
+  <meta property="profile:last_name" content="Góra" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfilePage","@id":"https://adagora.github.io/#page","url":"https://adagora.github.io/","name":"Adrian Góra · AI Engineer (LLM, RAG, agents) · Poland","inLanguage":"en","dateModified":"2026-09-27","mainEntity":{"@id":"https://adagora.github.io/#person"}},{"@type":"Person","@id":"https://adagora.github.io/#person","name":"Adrian Góra","alternateName":"Adrian Gora","jobTitle":"AI Engineer","description":"AI engineer building internal AI tools at an industrial manufacturer since February 2025: a company-wide RAG assistant, a Microsoft Teams meeting pipeline, an AI translation portal and process-route analytics. Before that, four years of TypeScript and React in fintech and web3, and three and a half years of automotive CAD engineering in CATIA V5.","url":"https://adagora.github.io/","email":"mailto:adrian.gora14@gmail.com","image":"https://adagora.github.io/assets/img/adrian-gora.jpg","sameAs":["https://github.com/adagora","https://www.linkedin.com/in/adrian-gora/"],"address":{"@type":"PostalAddress","addressCountry":"PL"},"worksFor":{"@type":"Organization","name":"Wiśniowski"},"hasOccupation":{"@type":"Occupation","name":"AI Engineer","skills":"RAG (hybrid BM25 + vector, reranking, citations), Visual RAG over PDFs, Agents and tool calling, LLM-as-judge, Structured extraction, Evaluation and benchmarks, Prompt engineering, Claude, Gemini, OpenAI, Vercel AI SDK, RAGFlow, Open WebUI, FAISS, Microsoft Graph, TypeScript, Python, Go, JavaScript, SQL, Node.js, Bun, Express, NestJS, FastAPI, PostgreSQL, Prisma, Redis, Linux servers, GitHub Actions, AWS Elastic Beanstalk, Telemetry and monitoring"},"knowsAbout":["RAG (hybrid BM25 + vector, reranking, citations)","Visual RAG over PDFs","Agents and tool calling","LLM-as-judge","Structured extraction","Evaluation and benchmarks","Prompt engineering","Claude","Gemini","OpenAI","Vercel AI SDK","RAGFlow","Open WebUI","FAISS","Microsoft Graph","TypeScript","Python","Go","JavaScript","SQL","Node.js","Bun","Express","NestJS","FastAPI","PostgreSQL","Prisma","Redis","Linux servers","GitHub Actions","AWS Elastic Beanstalk","Telemetry and monitoring","React","Next.js","React Native","React Query","Material-UI","Storybook","Cypress","D3","CATIA V5 (advanced)","Siemens NX","AutoCAD","GD&T","BOM","D-FMEA","Plastics","OpenCASCADE / build123d","STEP and DXF","Claude Code","Codex","Agent skills","AGENTS.md","Solidity","Foundry","ethers.js","Cardano"],"knowsLanguage":[{"@type":"Language","name":"Polish"},{"@type":"Language","name":"English"},{"@type":"Language","name":"German"}],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Silesian University of Technology, Gliwice"},{"@type":"CollegeOrUniversity","name":"TU Bergakademie Freiberg, Germany"},{"@type":"CollegeOrUniversity","name":"Universidad de Oviedo, Spain"}],"award":["2nd place, LearnWeb3 AI Hackathon"]},{"@type":"ItemList","@id":"https://adagora.github.io/#projects","name":"Selected projects","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"SoftwareSourceCode","name":"Visual RAG for technical PDFs","description":"Finds the right page in product catalogues and technical PDFs by how the page looks (drawings, tables, dimension callouts), then answers from the page images with a vision model and cites the page.","codeRepository":"https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV","programmingLanguage":"Python","author":{"@id":"https://adagora.github.io/#person"}}},{"@type":"ListItem","position":2,"item":{"@type":"SoftwareSourceCode","name":"CAD quoting engine for machined parts","description":"Quotes a machined part from its STEP model for a tool shop. Code measures the geometry and computes the price; the language model reviews technology and risks the way a shop manager would.","codeRepository":"https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena","programmingLanguage":"Python","author":{"@id":"https://adagora.github.io/#person"}}},{"@type":"ListItem","position":3,"item":{"@type":"SoftwareSourceCode","name":"LLM-judged translation audit","description":"Finds inconsistent terminology in a translation corpus that never had a glossary. Code mines the disagreements across 7,040 keys and an LLM judge settles each one.","codeRepository":"https://github.com/adagora/jev-experiments","programmingLanguage":"TypeScript","author":{"@id":"https://adagora.github.io/#person"}}},{"@type":"ListItem","position":4,"item":{"@type":"SoftwareSourceCode","name":"Multi-agent pricing playground","description":"Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE.","codeRepository":"https://github.com/adagora/calc-price-agent","programmingLanguage":"TypeScript","author":{"@id":"https://adagora.github.io/#person"}}},{"@type":"ListItem","position":5,"item":{"@type":"SoftwareSourceCode","name":"Streaming ML demo, hackathon 2nd place","description":"Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon.","codeRepository":"https://github.com/adagora/streamr-ml-demo","programmingLanguage":"Node.js","author":{"@id":"https://adagora.github.io/#person"}}}]}]}</script>
+  <!-- /build:head -->
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0a0e13" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f4f5f0" media="(prefers-color-scheme: light)" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link href="css/styles.css" rel="stylesheet" />
-
-  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Mobile nav toggle -->
-  <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Adrian Góra, back to top"><span class="brand-mark">AG</span><span class="brand-name">Adrian Góra</span></a>
+    <nav class="topnav" id="topnav" aria-label="Sections">
+      <a href="#delivery">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#activity">Activity</a>
+      <a href="#recruiters">For recruiters</a>
+    </nav>
+    <a class="btn btn-primary btn-sm topbar-cv" href="cv/Adrian-Gora-CV-EN.pdf" download>CV <span class="btn-note">PDF</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="topnav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
-  <!-- ─── Navigation ─── -->
-  <nav class="nav" role="navigation">
-    <a href="#hero" class="nav-brand">Adrian<span>Gora</span></a>
-    <div class="nav-sub">Full Stack / AI Engineer</div>
-    <ul class="nav-links">
-      <li><a href="#hero">About</a></li>
-      <li><a href="#activity">Activity</a></li>
-      <li><a href="#shipstream">Shipstream</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-    </ul>
-    <div class="nav-social">
-      <a href="https://github.com/adagora" target="_blank" rel="noopener" aria-label="GitHub">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/adrian-gora/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      </a>
-      <a href="mailto:adrian.gora14@gmail.com" aria-label="Email">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      </a>
-    </div>
-  </nav>
-
-  <!-- ─── Main Content ─── -->
-  <div class="main">
-
-    <!-- ── Hero ── -->
-    <section id="hero" class="hero">
-      <h1 class="hero-name animate-in">Adrian&nbsp;<span>Gora</span></h1>
-      <p class="hero-title animate-in delay-1">Full Stack Engineer &middot; AI Tooling</p>
-      <p class="hero-tagline animate-in delay-2">
-        Full-stack engineer specialising in AI tooling for industry. I take products
-        end to end, RAG platforms, automation pipelines, internal MVPs, picking whichever
-        stack each problem calls for. Backed by six years in software and three years
-        designing parts in the automotive industry.
-      </p>
-      <div class="hero-links animate-in delay-3">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#activity" class="btn-secondary">Commit Activity</a>
-        <a href="mailto:adrian.gora14@gmail.com" class="btn-secondary">Contact</a>
-      </div>
-      <div class="hero-stats animate-in delay-4">
-        <div>
-          <div class="hero-stat-value" id="stat-repos">17+</div>
-          <div class="hero-stat-label">Public Repos</div>
+  <main id="main">
+    <!-- build:hero -->
+    <section id="top" class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="status"><span class="pulse" aria-hidden="true"></span>Available from 1 Nov 2026 · Poland · remote or hybrid</p>
+          <h1 class="hero-name">Adrian Góra</h1>
+          <p class="hero-role">AI Engineer <span>for manufacturing and engineering data</span></p>
+          <p class="hero-tagline">I build AI tools for manufacturing teams: document search that cites its sources, meeting and translation pipelines, and quoting from CAD models. Six years in software and three and a half in automotive CAD engineering.</p>
+          <div class="dimline" role="img" aria-label="Career: three and a half years of automotive CAD engineering, then six years of software and AI">
+            <div class="dim-seg" style="--w:3.5">2017–2020 · automotive CAD</div>
+            <div class="dim-seg dim-seg--accent" style="--w:6">2020–now · software → AI</div>
+          </div>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="cv/Adrian-Gora-CV-EN.pdf" download>Download CV <span class="btn-note">PDF</span></a>
+            <a class="btn" href="mailto:adrian.gora14@gmail.com">Email me</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/adrian-gora/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="https://github.com/adagora" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-alt">CV po polsku: <a href="cv/Adrian-Gora-CV-PL.pdf" download>PDF</a> · <a href="cv/pl.html">wersja web</a></p>
         </div>
-        <div>
-          <div class="hero-stat-value" id="stat-years">6+</div>
-          <div class="hero-stat-label">Years Coding</div>
-        </div>
-        <div>
-          <div class="hero-stat-value" id="stat-projects">18</div>
-          <div class="hero-stat-label">Shipped Projects</div>
-        </div>
+        <aside class="titleblock" aria-label="Profile at a glance">
+          <div class="tb-photo"><img src="assets/img/adrian-gora.jpg" alt="Portrait of Adrian Góra" width="600" height="800" /></div>
+          <dl class="tb">
+            <div><dt>Role</dt><dd>AI Engineer</dd></div>
+            <div><dt>Focus</dt><dd>LLM apps · RAG · agents · evals</dd></div>
+            <div><dt>Stack</dt><dd>TypeScript · Python · Go</dd></div>
+            <div><dt>Domain</dt><dd>Manufacturing · CAD · documents</dd></div>
+            <div><dt>Based in</dt><dd>Poland</dd></div>
+            <div><dt>Mode</dt><dd>Remote or hybrid</dd></div>
+            <div><dt>Contract</dt><dd>B2B or employment</dd></div>
+            <div><dt>Available</dt><dd>1 Nov 2026</dd></div>
+            <div><dt>Languages</dt><dd>PL native · EN B2 · DE B1</dd></div>
+          </dl>
+          <div class="tb-foot"><span>ADAGORA.GITHUB.IO</span><span>REV 2026-09-27</span><span>SHEET 1/1</span></div>
+        </aside>
       </div>
     </section>
+    <!-- /build:hero -->
 
-    <!-- ── Commit Activity ── -->
-    <section id="activity" class="activity-section reveal">
-      <p class="section-label">Metrics</p>
-      <h2 class="section-title">Commit Activity</h2>
+    <!-- build:proof -->
+    <section class="proof" aria-label="Results in numbers">
+      <a class="proof-item" href="#project-visual-rag"><span class="proof-value">55% → 84%</span><span class="proof-label">top-1 page retrieval after adding hybrid search to visual RAG</span></a>
+      <a class="proof-item" href="#project-translate-audit"><span class="proof-value">99,933</span><span class="proof-label">LLM judgments in 3 minutes over 7,040 translation keys</span></a>
+      <a class="proof-item" href="#activity"><span class="proof-value" data-live="commits">2,200+</span><span class="proof-label">commits in the last 12 months, most of them in private repos</span></a>
+      <a class="proof-item" href="#delivery"><span class="proof-value">5</span><span class="proof-label">internal AI tools built at a manufacturer since February 2025</span></a>
+    </section>
+    <!-- /build:proof -->
 
-      <div class="graph-wrapper">
+    <!-- build:delivery -->
+    <section id="delivery" class="section">
+      <header class="section-head">
+        <p class="kicker"><span class="sheet">01</span>Current role</p>
+        <h2>Shipped at Wiśniowski</h2>
+        <p class="lede">AI Engineer (official title: Specjalista ds. AI), Feb 2025 – present. Internal AI tools for a Polish manufacturer of industrial doors, gates and fences. The code is private; I can walk through any of it in an interview.</p>
+      </header>
+      <ol class="callouts">
+        <li class="callout">
+          <span class="balloon" aria-hidden="true">1</span>
+          <h3>Company-wide RAG assistant</h3>
+          <p>Deployed RAGFlow on a Linux server with telemetry and monitoring, connected to Open WebUI through a custom pipeline as the chat front end; 90% answer accuracy.</p>
+          <ul class="chips"><li>RAGFlow</li><li>Open WebUI</li><li>Linux</li><li>Telemetry</li></ul>
+        </li>
+        <li class="callout">
+          <span class="balloon" aria-hidden="true">2</span>
+          <h3>Microsoft Teams meeting pipeline</h3>
+          <p>Scans one group&#39;s meetings in on-premises Outlook and turns on automatic recording; transcripts and recordings then arrive through Microsoft Graph (webhooks plus polling), are converted from VTT and analysed by an LLM into structured JSON reports.</p>
+          <ul class="chips"><li>Microsoft Graph</li><li>Outlook on-prem</li><li>TypeScript</li><li>Node.js</li><li>LLM</li></ul>
+        </li>
+        <li class="callout">
+          <span class="balloon" aria-hidden="true">3</span>
+          <h3>AI translation portal</h3>
+          <p>Designed and shipped an internal portal built to replace lokalise.com: Gemini pre-translates each key, translators accept or correct, missed keys are detected, and every decision is logged so the AI acceptance rate is measurable.</p>
+          <ul class="chips"><li>TypeScript</li><li>Gemini</li><li>OpenAI</li><li>Redis</li></ul>
+        </li>
+        <li class="callout">
+          <span class="balloon" aria-hidden="true">4</span>
+          <h3>Process-route analytics</h3>
+          <p>Prototyping analytics on process-route data: chat over historical production traces, tests of new settings and suggested routing paths.</p>
+          <ul class="chips"><li>Go</li><li>Python</li><li>LLM</li></ul>
+        </li>
+        <li class="callout">
+          <span class="balloon" aria-hidden="true">5</span>
+          <h3>AI interviews for process improvement</h3>
+          <p>Built on the Gemini managed-agents sandbox. A 15-minute voice or text interview about an employee&#39;s daily work produces an automation report, adds what it learned to an LLM-maintained knowledge wiki that grows with each interview, and turns repeatable workflows into SKILL.md files for agents.</p>
+          <ul class="chips"><li>Gemini managed agents</li><li>TypeScript</li><li>LLM wiki</li><li>SKILL.md</li></ul>
+        </li>
+      </ol>
+    </section>
+    <!-- /build:delivery -->
+
+    <!-- build:projects -->
+    <section id="projects" class="section">
+      <header class="section-head">
+        <p class="kicker"><span class="sheet">02</span>Selected projects</p>
+        <h2>Projects with code you can read</h2>
+        <p class="lede">Public repositories first, each with a link to the code. The private ones below them I can show on a call.</p>
+      </header>
+      <div class="projects-featured">
+        <article id="project-visual-rag" class="project project--xl">
+          <div class="project-head">
+            <span class="badge badge--public">Public code</span>
+            <h3>Visual RAG for technical PDFs</h3>
+          </div>
+          <p class="project-summary">Finds the right page in product catalogues and technical PDFs by how the page looks (drawings, tables, dimension callouts), then answers from the page images with a vision model and cites the page.</p>
+          <dl class="metrics"><div><dt>55% → 84%</dt><dd>top-1 page, visual-only vs hybrid</dd></div><div><dt>100%</dt><dd>recall with LLM page reranking</dd></div><div><dt>p = 0.001</dt><dd>hybrid beats visual 11–0 where they disagree</dd></div></dl>
+          <ul class="bullets"><li>Benchmarked 7 retrieval modes on 38 questions whose gold page is verified by string match (114 in the full set), with Wilson intervals and an exact McNemar test for every pair.</li><li>Hybrid search (pixel index + BM25, fused with reciprocal rank fusion) raised top-1 from 55% to 84%. The same benchmark showed that a paid query-expansion stage added nothing, so the default mode skips it.</li><li>Web UI and API with a per-question retrieval mode, page citations and an answerability score.</li></ul>
+          <p class="credit">Thin layer over PixelRAG (StarTrail): retrieval modes, hybrid search, evaluation and UI are mine.</p>
+          <div class="project-foot">
+            <ul class="chips"><li>Python</li><li>FAISS</li><li>BM25 + RRF</li><li>PixelRAG</li><li>Gemini</li><li>Claude</li></ul>
+            <a class="link-arrow" href="https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV" target="_blank" rel="noopener">Code and benchmark <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article id="project-cad-quote" class="project project--xl">
+          <div class="project-head">
+            <span class="badge badge--public">Public code</span>
+            <h3>CAD quoting engine for machined parts</h3>
+          </div>
+          <p class="project-summary">Quotes a machined part from its STEP model for a tool shop. Code measures the geometry and computes the price; the language model reviews technology and risks the way a shop manager would.</p>
+          <dl class="metrics"><div><dt>STEP → PLN</dt><dd>geometry from OpenCASCADE, price from shop rates</dd></div><div><dt>3 states</dt><dd>pass, fail or need-info on every check, each citing its source</dd></div></dl>
+          <ul class="bullets"><li>Volume, mass, envelope and cost-driving features come from OpenCASCADE. Price is machining time × shop rate, and a physics-based floor on cutting time stops the model from inventing hours.</li><li>Preflight marks each check pass, fail or need-info with a cited source (ISO 2768, ISO 286, material data). Any fail or missing input makes the quote non-binding.</li><li>Web app for estimators who don&#39;t program: 3D preview, 2D drawing input, editable rates, print to PDF and a make-or-buy check against SendCutSend. Covered by 8 test modules.</li></ul>
+          <p class="credit">My <code>wycena</code> skill inside a fork of the MIT-licensed text-to-cad library.</p>
+          <div class="project-foot">
+            <ul class="chips"><li>Python</li><li>OpenCASCADE</li><li>build123d</li><li>trimesh</li><li>ezdxf</li><li>Claude / OpenAI</li></ul>
+            <a class="link-arrow" href="https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article id="project-translate-audit" class="project project--md">
+          <div class="project-head">
+            <span class="badge badge--public">Public code</span>
+            <h3>LLM-judged translation audit</h3>
+          </div>
+          <p class="project-summary">Finds inconsistent terminology in a translation corpus that never had a glossary. Code mines the disagreements across 7,040 keys and an LLM judge settles each one.</p>
+          <dl class="metrics"><div><dt>99,933</dt><dd>judgments in 3 minutes</dd></div><div><dt>~300 ms</dt><dd>check on every edit in the review app</dd></div></dl>
+          <ul class="bullets"><li>Exports an Excel workbook for sign-off and a keyboard-driven review app where translators curate the glossary; decided terms are never re-arbitrated.</li><li>Sibling demo judge-sheets: type a column header such as Urgency and 300 rows fill with semantic predictions in about 3.5 s, as =JUDGE, =PICK and =RATE formulas you can inspect in the formula bar.</li></ul>
+          
+          <div class="project-foot">
+            <ul class="chips"><li>TypeScript</li><li>TypeSafe Jev</li><li>Excel</li></ul>
+            <a class="link-arrow" href="https://github.com/adagora/jev-experiments" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article id="project-agent-playground" class="project project--md">
+          <div class="project-head">
+            <span class="badge badge--public">Public code</span>
+            <h3>Multi-agent pricing playground</h3>
+          </div>
+          <p class="project-summary">Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE.</p>
+          
+          
+          
+          <div class="project-foot">
+            <ul class="chips"><li>TypeScript</li><li>Bun</li><li>Vercel AI SDK</li><li>Claude</li><li>OpenAI</li><li>eBay API</li></ul>
+            <a class="link-arrow" href="https://github.com/adagora/calc-price-agent" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article id="project-streamr-hackathon" class="project project--md">
+          <div class="project-head">
+            <span class="badge badge--public">Public code</span>
+            <h3>Streaming ML demo, hackathon 2nd place</h3>
+          </div>
+          <p class="project-summary">Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon.</p>
+          
+          
+          
+          <div class="project-foot">
+            <ul class="chips"><li>Node.js</li><li>Streamr</li><li>ARIMA</li></ul>
+            <a class="link-arrow" href="https://github.com/adagora/streamr-ml-demo" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+      <h3 class="subhead">Private repositories</h3>
+      <div class="projects-private">
+        <article id="project-cairn" class="project project--sm">
+          <div class="project-head">
+            <span class="badge badge--private">Private repo</span>
+            <h3>Cairn: evidence CLI for process routing</h3>
+          </div>
+          <p class="project-summary">Answers where work waits, where it loops back and which routing choice succeeded more often with the work mix held fixed. Each claim carries its sample size, basis and whether it may be quoted, and findings can be re-proved on new data. Output is one JSON envelope per call, built for AI agents first. Includes a robot-fleet dispatch testbed (VDA 5050).</p>
+          
+          
+          
+          <div class="project-foot">
+            <ul class="chips"><li>Go</li><li>BPMN</li><li>VDA 5050</li></ul>
+            
+          </div>
+        </article>
+        <article id="project-pdf-wiki" class="project project--sm">
+          <div class="project-head">
+            <span class="badge badge--private">Private repo</span>
+            <h3>PDF wiki</h3>
+          </div>
+          <p class="project-summary">Local-first knowledge base: drop in a PDF, run ingest, get a cross-linked Markdown wiki with semantic search. Claude vision describes every figure.</p>
+          
+          
+          
+          <div class="project-foot">
+            <ul class="chips"><li>TypeScript</li><li>Claude</li><li>qmd</li></ul>
+            
+          </div>
+        </article>
+        <article id="project-robot-arm" class="project project--sm">
+          <div class="project-head">
+            <span class="badge badge--private">Private repo</span>
+            <h3>Robot arm control in the browser</h3>
+          </div>
+          <p class="project-summary">Calibration and daily control of a LeRobot SO-ARM100 from a laptop or phone: keyboard and gamepad input, an e-stop, and a single owner for the serial port.</p>
+          
+          
+          
+          <div class="project-foot">
+            <ul class="chips"><li>Python</li><li>LeRobot</li><li>WebSockets</li></ul>
+            
+          </div>
+        </article>
+        <article id="project-har" class="project project--sm">
+          <div class="project-head">
+            <span class="badge badge--private">Private repo</span>
+            <h3>HAR to API brief</h3>
+          </div>
+          <p class="project-summary">Record browser traffic once and get a brief for rebuilding the API outside the browser: auth, endpoints, body shapes and curl templates.</p>
+          
+          
+          
+          <div class="project-foot">
+            <ul class="chips"><li>Python</li></ul>
+            
+          </div>
+        </article>
+        <article id="project-meat" class="project project--sm">
+          <div class="project-head">
+            <span class="badge badge--private">Private repo</span>
+            <h3>meat: reading diffs</h3>
+          </div>
+          <p class="project-summary">Turns a large code diff into a smaller reading diff focused on the consequential changes. TypeScript CLI, migrated from Go.</p>
+          
+          
+          
+          <div class="project-foot">
+            <ul class="chips"><li>TypeScript</li><li>Go</li></ul>
+            
+          </div>
+        </article>
+      </div>
+      <h3 class="subhead">Earlier experiments</h3>
+      <ul class="earlier">
+        <li><a href="https://github.com/adagora/loop-coding-agent" target="_blank" rel="noopener">Ralph loop for coding agents</a><span class="earlier-sum">Plan and build prompt loop with AGENTS.md and specs, for Claude Code, opencode and Kilo Code.</span><span class="earlier-stack">Shell</span></li>
+        <li><a href="https://github.com/adagora/experiment-with-roaming-RAG" target="_blank" rel="noopener">Roaming RAG</a><span class="earlier-sum">Collapses a long Markdown document to its headings and lets the model expand only the sections it needs.</span><span class="earlier-stack">Python</span></li>
+        <li><a href="https://github.com/adagora/book-ai-chat" target="_blank" rel="noopener">MiCA regulation Q&amp;A</a><span class="earlier-sum">Answers questions about the EU crypto-asset regulation (MiCA) from the regulation text, with PostgresML for semantic search. A 2024 project, still live; the free hosting tier can take a minute to wake up. <a class="" href="https://cryptoregulationtalk.onrender.com/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a></span><span class="earlier-stack">Node.js · PostgresML · OpenAI</span></li>
+        <li><a href="https://github.com/adagora/voice-to-text-research" target="_blank" rel="noopener">Say: speech to text in the browser</a><span class="earlier-sum">Voice notes transcribed locally with Whisper on Transformers.js, with a rich-text editor.</span><span class="earlier-stack">React · Transformers.js · Whisper</span></li>
+        <li><a href="https://github.com/adagora/llm-video-extract-frames" target="_blank" rel="noopener">Video frames analyzer</a><span class="earlier-sum">Extracts frames from video, analyses them with Gemini, tracks cost and skips duplicate work.</span><span class="earlier-stack">TypeScript · Gemini</span></li>
+        <li><a href="https://github.com/adagora/mediapipe-for-fun" target="_blank" rel="noopener">Hand-tracking interaction experiments</a><span class="earlier-sum">Human-computer interaction prototypes with MediaPipe.</span><span class="earlier-stack">Python · MediaPipe</span></li>
+        <li><a href="https://github.com/adagora/eboombox" target="_blank" rel="noopener">Eboombox</a><span class="earlier-sum">Turns Cardano transactions into sound.</span><span class="earlier-stack">Next.js · Cardano</span></li>
+      </ul>
+    </section>
+    <!-- /build:projects -->
+
+    <!-- build:principles -->
+    <section id="principles" class="section">
+      <header class="section-head">
+        <p class="kicker"><span class="sheet">03</span>How I work</p>
+        <h2>Engineering principles</h2>
+      </header>
+      <div class="principles">
+        <div class="principle"><span class="pnum">P1</span><h3>Code computes, the model judges</h3><p>In the quoting engine, geometry and price come from code and the LLM reviews technology and risk. Any number a model could guess is computed instead.</p></div>
+        <div class="principle"><span class="pnum">P2</span><h3>Measure before claiming</h3><p>Retrieval modes ship with a benchmark, confidence intervals and significance tests. When two rows can&#39;t support a conclusion, the README says so.</p></div>
+        <div class="principle"><span class="pnum">P3</span><h3>Build for the person at the desk</h3><p>Translators accept or correct AI proposals and every decision is logged. Estimators get a web app with editable rates and a printable quote.</p></div>
+        <div class="principle"><span class="pnum">P4</span><h3>Tools agents can use</h3><p>CLIs return one JSON envelope with the answer, caveats and the next calls to make. My recent repos include an AGENTS.md for coding agents.</p></div>
+      </div>
+    </section>
+    <!-- /build:principles -->
+
+    <!-- build:experience -->
+    <section id="experience" class="section">
+      <header class="section-head">
+        <p class="kicker"><span class="sheet">04</span>Career</p>
+        <h2>Experience</h2>
+      </header>
+      <ol class="timeline">
+        <li class="tl-item tl-item--now">
+          <div class="tl-when">Feb 2025 – present</div>
+          <div class="tl-body">
+            <h3>AI Engineer <span class="at">Wiśniowski</span></h3>
+            <p class="tl-note">Official title: Specjalista ds. AI. Internal AI tools for a Polish manufacturer of industrial doors, gates and fences. Five internal AI tools, described in <a href="#delivery">Shipped at Wiśniowski</a>.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-when">Aug 2023 – Jan 2025</div>
+          <div class="tl-body">
+            <h3>Software Engineer <span class="at">Freelance</span></h3>
+            <ul><li>Prototyped AI tools (predictive models, chat over documents) to validate product ideas and shipped a staking app UI for web and mobile (TypeScript, React, ethers); 2nd place at the LearnWeb3 AI Hackathon.</li></ul>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-when">Jun 2023 – Aug 2023</div>
+          <div class="tl-body">
+            <h3>Full-Stack Engineer <span class="at">Playdate App Limited</span></h3>
+            <ul><li>Built release version control so users on outdated iOS and Android builds could be migrated, fixed a critical Android onboarding bug and owned CI/CD on AWS Elastic Beanstalk (React Native, Django).</li></ul>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-when">Dec 2022 – Jun 2023</div>
+          <div class="tl-body">
+            <h3>Software Engineer <span class="at">Ariable</span></h3>
+            <ul><li>Delivered the front-end MVP of an NFT perpetual trading platform and a real-time Node.js + PostgreSQL watcher for on-chain transactions; reviewed the Solidity contracts.</li></ul>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-when">Dec 2020 – Dec 2022</div>
+          <div class="tl-body">
+            <h3>Frontend Engineer <span class="at">BlockchainWares Software</span></h3>
+            <ul><li>Built balance, contacts and sanction-screening features for a regulated financial application (React, TypeScript, React Query), a Material-UI component library in Storybook and the Cypress E2E suite.</li></ul>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-when">Dec 2021 – May 2022</div>
+          <div class="tl-body">
+            <h3>Web Developer (part-time, in parallel) <span class="at">Nervos Network</span></h3>
+            <ul><li>Contributed to a DAO voting app and built a bridge UI for onboarding to the network.</li></ul>
+          </div>
+        </li>
+        <li class="tl-item tl-item--cad">
+          <div class="tl-when">Jan 2017 – Jul 2020</div>
+          <div class="tl-body">
+            <h3>Product and CAD engineering <span class="at">Varroc Lighting Systems · Auto Design · Alpha Technology</span></h3>
+            <p class="tl-note">Three and a half years in the automotive supply chain: CATIA V5, NX, GD&amp;T, BOM and D-FMEA.</p>
+            <ul><li><strong>Product Engineer, Varroc Lighting Systems (Kraków), Jun 2018 – Jul 2020.</strong> Designed front and rear lamp components in CATIA V5: concept, fixing, feasibility, simulation and test results, tooling requests, BOM and GD&amp;T drawings; worked with the Czech R&amp;D team.</li><li><strong>CAD Designer, Auto Design (Bielsko-Biała), Sep 2017 – Feb 2018.</strong> Designed interior parts (instrument panel, door trim) for Audi and ported parts from CATIA V5 to NX 11.</li><li><strong>Project Engineer, Alpha Technology, Jan 2017 – Aug 2017.</strong> Prepared technical inquiries for the VW Group, worked in the D-FMEA team and trained staff on plastics processes.</li></ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <!-- /build:experience -->
+
+    <!-- build:skills -->
+    <section id="skills" class="section">
+      <header class="section-head">
+        <p class="kicker"><span class="sheet">05</span>Toolbox</p>
+        <h2>Skills</h2>
+      </header>
+      <div class="skill-groups">
+        <div class="skill-group"><h3>LLM applications</h3><ul class="chips"><li>RAG (hybrid BM25 + vector, reranking, citations)</li><li>Visual RAG over PDFs</li><li>Agents and tool calling</li><li>LLM-as-judge</li><li>Structured extraction</li><li>Evaluation and benchmarks</li><li>Prompt engineering</li></ul></div>
+        <div class="skill-group"><h3>Models and platforms</h3><ul class="chips"><li>Claude</li><li>Gemini</li><li>OpenAI</li><li>Vercel AI SDK</li><li>RAGFlow</li><li>Open WebUI</li><li>FAISS</li><li>Microsoft Graph</li></ul></div>
+        <div class="skill-group"><h3>Languages</h3><ul class="chips"><li>TypeScript</li><li>Python</li><li>Go</li><li>JavaScript</li><li>SQL</li></ul></div>
+        <div class="skill-group"><h3>Backend and infrastructure</h3><ul class="chips"><li>Node.js</li><li>Bun</li><li>Express</li><li>NestJS</li><li>FastAPI</li><li>PostgreSQL</li><li>Prisma</li><li>Redis</li><li>Linux servers</li><li>GitHub Actions</li><li>AWS Elastic Beanstalk</li><li>Telemetry and monitoring</li></ul></div>
+        <div class="skill-group"><h3>Frontend</h3><ul class="chips"><li>React</li><li>Next.js</li><li>React Native</li><li>React Query</li><li>Material-UI</li><li>Storybook</li><li>Cypress</li><li>D3</li></ul></div>
+        <div class="skill-group"><h3>Engineering and CAD</h3><ul class="chips"><li>CATIA V5 (advanced)</li><li>Siemens NX</li><li>AutoCAD</li><li>GD&amp;T</li><li>BOM</li><li>D-FMEA</li><li>Plastics</li><li>OpenCASCADE / build123d</li><li>STEP and DXF</li></ul></div>
+        <div class="skill-group"><h3>AI-assisted development</h3><ul class="chips"><li>Claude Code</li><li>Codex</li><li>Agent skills</li><li>AGENTS.md</li></ul></div>
+        <div class="skill-group"><h3>Earlier: web3</h3><ul class="chips"><li>Solidity</li><li>Foundry</li><li>ethers.js</li><li>Cardano</li></ul></div>
+      </div>
+    </section>
+    <!-- /build:skills -->
+
+    <section id="activity" class="section">
+      <header class="section-head">
+        <p class="kicker"><span class="sheet">06</span>Proof of work</p>
+        <h2>Commit activity</h2>
+        <p class="lede">Every commit across public and private repositories over the last 12 months, refreshed daily by a GitHub Action. Private repos contribute counts and commit titles only.</p>
+      </header>
+      <div class="panel graph-panel">
         <div class="graph-header">
           <span class="graph-title">365-day commit log</span>
-          <span class="graph-total" id="graph-total">
-            <strong>0</strong> contributions in the last year
-          </span>
+          <span class="graph-total" id="graph-total"><strong>2,200+</strong> commits in the last year</span>
         </div>
-        <div class="graph-container">
-          <canvas id="activity-graph"></canvas>
-        </div>
+        <div class="graph-container"><canvas id="activity-graph" aria-label="Commit activity heatmap for the last 12 months" role="img"></canvas></div>
         <div class="graph-legend">
           <span>Less</span>
-          <span class="graph-legend-swatch l0"></span>
-          <span class="graph-legend-swatch l1"></span>
-          <span class="graph-legend-swatch l2"></span>
-          <span class="graph-legend-swatch l3"></span>
-          <span class="graph-legend-swatch l4"></span>
+          <span class="swatch l0"></span><span class="swatch l1"></span><span class="swatch l2"></span><span class="swatch l3"></span><span class="swatch l4"></span>
           <span>More</span>
-        </div>
-        <div class="graph-source" id="graph-source">
-          Private repos included (commit counts only, no code)
+          <span class="graph-source" id="graph-source"></span>
         </div>
       </div>
-    </section>
-
-    <!-- ── Shipstream ── -->
-    <section id="shipstream" class="shipstream-section reveal">
-      <p class="section-label">Live Feed</p>
-      <h2 class="section-title">Shipstream</h2>
-      <p class="shipstream-subtitle">Merged PRs and recent commits across all repositories — updated daily. Proof of active shipping.</p>
-      <div class="shipstream-feed" id="shipstream-feed">
-        <div class="shipstream-empty">Loading activity feed...</div>
-      </div>
-      <div class="shipstream-footer" id="shipstream-footer"></div>
-    </section>
-
-    <!-- ── Projects ── -->
-    <section id="projects" class="reveal">
-      <p class="section-label">Portfolio</p>
-      <h2 class="section-title">Shipped Projects</h2>
-      <div class="projects-grid" id="projects-grid"></div>
-    </section>
-
-    <!-- ── Experience ── -->
-    <section id="experience" class="reveal">
-      <p class="section-label">Career</p>
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline" id="timeline"></div>
-    </section>
-
-    <!-- ── Skills ── -->
-    <section id="skills" class="skills-section reveal">
-      <p class="section-label">Toolbox</p>
-      <h2 class="section-title">Skills &amp; Technologies</h2>
-
-      <div class="skills-category">
-        <p class="skills-category-title">AI &amp; LLM Systems</p>
-        <div class="skills-grid">
-          <span class="skill-chip">RAG &amp; Vector Search</span>
-          <span class="skill-chip">Claude / Gemini API</span>
-          <span class="skill-chip">LLM Agents &amp; Automation</span>
-          <span class="skill-chip">Prompt Engineering</span>
-          <span class="skill-chip">NLP &amp; Information Extraction</span>
-          <span class="skill-chip">Semantic Search</span>
+      <div class="panel shipstream">
+        <div class="shipstream-head">
+          <h3>Shipstream</h3>
+          <span class="shipstream-footer" id="shipstream-footer"></span>
         </div>
-      </div>
-
-      <div class="skills-category">
-        <p class="skills-category-title">Backend &amp; Infrastructure</p>
-        <div class="skills-grid">
-          <span class="skill-chip">Node.js / Bun</span>
-          <span class="skill-chip">Python (FastAPI)</span>
-          <span class="skill-chip">Go</span>
-          <span class="skill-chip">PostgreSQL / Prisma</span>
-          <span class="skill-chip">REST &amp; GraphQL APIs</span>
-          <span class="skill-chip">Linux / CI/CD</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <p class="skills-category-title">Frontend &amp; Visualization</p>
-        <div class="skills-grid">
-          <span class="skill-chip">TypeScript</span>
-          <span class="skill-chip">React / Next.js</span>
-          <span class="skill-chip">Data Visualization (D3)</span>
-          <span class="skill-chip">React Native</span>
-          <span class="skill-chip">Storybook</span>
-          <span class="skill-chip">Cypress</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <p class="skills-category-title">Blockchain &amp; Web3</p>
-        <div class="skills-grid">
-          <span class="skill-chip">Solidity / Foundry</span>
-          <span class="skill-chip">ethers.js / useDapp</span>
-          <span class="skill-chip">Cardano</span>
-          <span class="skill-chip">Smart Contracts</span>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <p class="skills-category-title">CAD &amp; Manufacturing Engineering</p>
-        <div class="skills-grid">
-          <span class="skill-chip">CATIA V5 / NX</span>
-          <span class="skill-chip">GD&amp;T &amp; Technical Drawing</span>
-          <span class="skill-chip">Plastics &amp; Machining</span>
-          <span class="skill-chip">OpenCASCADE / STEP</span>
-          <span class="skill-chip">Manufacturing Process</span>
+        <div class="shipstream-feed" id="shipstream-feed">
+          <div class="shipstream-empty">Loading recent commits…</div>
         </div>
       </div>
     </section>
 
-  </div>
+    <!-- build:background -->
+    <section id="background" class="section">
+      <header class="section-head">
+        <p class="kicker"><span class="sheet">07</span>Background</p>
+        <h2>Education, languages, certificates</h2>
+      </header>
+      <div class="bg-grid">
+        <div><h3>Education</h3><ul class="plain"><li><strong>Silesian University of Technology, Gliwice</strong><span>MSc Eng., Materials Engineering (surface engineering and heat treatment) · 2010–2016</span></li><li><strong>TU Bergakademie Freiberg, Germany</strong><span>Exchange, Forming technology (Umformtechnik) · 2014–2015</span></li><li><strong>Universidad de Oviedo, Spain</strong><span>Exchange, Materials science · 2013</span></li></ul></div>
+        <div><h3>Languages</h3><ul class="plain"><li><strong>Polish</strong><span>Native</span></li><li><strong>English</strong><span>Professional working (B2)</span></li><li><strong>German</strong><span>Limited working (B1, DSH-2 certificate)</span></li></ul></div>
+        <div><h3>Certificates</h3><ul class="plain"><li><strong>CATIA V5, advanced level</strong><span>CADSOL Design Poland, 2018</span></li><li><strong>AutoCAD, levels 1 and 2</strong><span>Autodesk, 2015</span></li><li><strong>Generative AI Essentials for Software Developers</strong></li><li><strong>Algorithmic Trading &amp; Technical Analysis</strong></li><li><strong>Ethereum 101</strong></li><li><strong>Blockchain &amp; Bitcoin 101</strong></li></ul></div>
+        <div><h3>Awards and publications</h3><ul class="plain"><li><strong>2nd place, LearnWeb3 AI Hackathon</strong><span>2023</span></li><li><strong>Laser surface treatment technologies: laser ablation</strong><span>Co-author</span></li></ul></div>
+      </div>
+    </section>
+    <!-- /build:background -->
 
-  <!-- ─── Footer ─── -->
+    <!-- build:recruiters -->
+    <section id="recruiters" class="section">
+      <header class="section-head">
+        <p class="kicker"><span class="sheet">08</span>For recruiters</p>
+        <h2>Quick facts</h2>
+        <p class="lede">Everything a screening call usually asks, in one place.</p>
+      </header>
+      <div class="recruit-grid">
+        <dl class="facts">
+          <div><dt>Target roles</dt><dd>AI Engineer · LLM Engineer · Generative AI Engineer · AI Solutions Engineer · Forward Deployed Engineer · Full-stack Engineer (TypeScript / Python), AI focus</dd></div>
+          <div><dt>Availability</dt><dd>Available from 1 November 2026, no notice period</dd></div>
+          <div><dt>Location and mode</dt><dd>Poland · Remote or hybrid; open to remote roles in the EU and worldwide</dd></div>
+          <div><dt>Contract</dt><dd>B2B or employment contract</dd></div>
+          <div><dt>Languages</dt><dd>Polish Native · English B2 · German B1, DSH-2 certificate</dd></div>
+          <div><dt>Contact</dt><dd><a href="mailto:adrian.gora14@gmail.com">adrian.gora14@gmail.com</a> · <a href="https://www.linkedin.com/in/adrian-gora/" target="_blank" rel="noopener">LinkedIn</a></dd></div>
+        </dl>
+        <div class="machine">
+          <h3>Machine-readable versions</h3>
+          <p>The same profile as files, for applicant tracking systems and AI assistants.</p>
+          <ul class="files">
+            <li><a href="cv.md"><code>/cv.md</code></a><span>Full CV in Markdown</span></li>
+            <li><a href="cv.pl.md"><code>/cv.pl.md</code></a><span>CV po polsku, Markdown</span></li>
+            <li><a href="resume.json"><code>/resume.json</code></a><span>JSON Resume 1.0 schema</span></li>
+            <li><a href="llms.txt"><code>/llms.txt</code></a><span>Summary for language models</span></li>
+            <li><a href="cv/Adrian-Gora-CV-EN.pdf" download><code>CV-EN.pdf</code></a><span>Print CV, English</span></li>
+            <li><a href="cv/Adrian-Gora-CV-PL.pdf" download><code>CV-PL.pdf</code></a><span>Print CV, Polish</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cta-band">
+        <p>If you are hiring for an AI engineering role, write to me and I will send a short walkthrough of the work that fits it.</p>
+        <a class="btn btn-primary" href="mailto:adrian.gora14@gmail.com">Email me</a>
+      </div>
+    </section>
+    <!-- /build:recruiters -->
+  </main>
+
+  <!-- build:footer -->
   <footer class="footer">
-    <span>&copy; 2026 Adrian Gora</span>
-    <div class="footer-links">
-      <a href="https://github.com/adagora" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/adrian-gora/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:adrian.gora14@gmail.com">Email</a>
-    </div>
+    <span>© 2026 Adrian Góra · generated from <a href="https://github.com/adagora/adagora.github.io/blob/master/data/profile.json" target="_blank" rel="noopener">data/profile.json</a> · updated 2026-09-27</span>
+    <span class="footer-links"><a href="mailto:adrian.gora14@gmail.com">Email</a><a class="" href="https://github.com/adagora" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a><a class="" href="https://www.linkedin.com/in/adrian-gora/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></span>
   </footer>
+  <!-- /build:footer -->
 
-  <!-- ─── Scripts ─── -->
-  <script>
-    /* Experience data */
-    const EXPERIENCE = [
-      {
-        role: 'AI Engineer',
-        company: 'Wiśniowski',
-        date: 'Feb 2025 — Present',
-        items: [
-          'Prototyping and implementing AI solutions tailored to business needs — RAG systems, meeting pipelines, and translation infrastructure.',
-          'Deployed enterprise RAG (RAGFlow) on Linux with telemetry and monitoring; integrated with Open-WebUI.',
-          'Built MS Teams transcript pipeline: webhook-driven ingestion with ~90% extraction accuracy for enterprise compliance.',
-          'Shipped full-stack translation platform MVP — background AI translation, missed-key detection, human verification loop.',
-          'Prototyping manufacturing-intelligence tool on process-route data for routing optimisation.',
-        ],
-      },
-      {
-        role: 'Software Developer',
-        company: 'Freelance / Self-employed',
-        date: 'Aug 2023 — Jan 2025',
-        items: [
-          'Designed and implemented UI and application logic for a staking dApp (TypeScript, React, ethers).',
-          'Tested functionality across multiple platforms, identifying and reporting bugs with improvement suggestions.',
-          'Actively engaged in learning and prototyping AI applications to validate product ideas.',
-        ],
-      },
-      {
-        role: 'Full Stack Engineer',
-        company: 'Playdate App Limited',
-        date: 'Jun 2023 — Aug 2023',
-        items: [
-          'Implemented version-control system for mobile app updates across both iOS and Android platforms.',
-          'Worked with legacy code — contributed fixes, wrote tests, and shipped updates to both app stores.',
-          'Owned CI/CD pipeline on AWS Elastic Beanstalk; React Native for frontend, Django for backend.',
-        ],
-      },
-      {
-        role: 'Web Developer',
-        company: 'Ariable',
-        date: 'Dec 2022 — Jun 2023',
-        items: [
-          'Contributed to NFT perpetual trading platform — designed the frontend and built a real-time backend watcher (Node.js, PostgreSQL).',
-          'Analysed Solidity contracts and supporting blockchain infrastructure.',
-        ],
-      },
-      {
-        role: 'Frontend Developer',
-        company: 'BlockchainWares Software',
-        date: 'Dec 2020 — Dec 2022',
-        items: [
-          'Built financial applications using React, TypeScript, React Query — contact lists, balance views, and sanction-screening features.',
-          'Designed and documented a custom component library based on Material-UI in Storybook.',
-          'Set up Cypress E2E test suite covering critical flows (2FA disable, IMAP, login by UI).',
-          'Worked closely with QA testers and maintained a keen interest in regulatory compliance for fintech.',
-        ],
-      },
-      {
-        role: 'Web Developer',
-        company: 'Nervos Network',
-        date: 'Dec 2021 — May 2022',
-        items: [
-          'Contributed to a DAO voting application on the Nervos blockchain.',
-          'Developed bridge UI for better user onboarding to the network.',
-        ],
-      },
-      {
-        role: 'Product / CAD Engineer',
-        company: 'Varroc · Auto Design · Alpha Technology',
-        date: 'Jan 2017 — Jul 2020',
-        featured: true,
-        items: [
-          'Designed rear and front lamp components at Varroc Lighting Systems — concept feasibility, GD&T drawings, tooling BOM, and cross-functional cooperation with the Czech R&D team.',
-          'Developed interior parts (Instrument Panel, Door Trim) for Audi at Auto Design; ported parts between CATIA V5 and Siemens NX 11.',
-          'Prepared technical inquiries for the VW Group at Alpha Technology; participated in D-FMEA teams, project planning, and employee training on plastics manufacturing.',
-        ],
-      },
-    ];
-
-    /* Projects data (also in data/projects.json) */
-    const PROJECTS = [
-      /* ══ AI projects ══ */
-      {
-        title: 'PDF Wiki',
-        url: 'https://github.com/adagora/pdf-wiki',
-        summary: 'Local-first knowledge base from PDFs. Drop a PDF, run ingest, get a cross-linked markdown wiki with semantic search. Two extraction paths: Anthropic API key (fast, no page limit) or Claude Code subscription (zero config, ≤60pp). Claude Sonnet vision describes every figure as > [!figure] blocks. Optional PNG extraction via Poppler for high-fidelity figure references. Configurable via pdfwiki.config.yaml. Pre-commit gate, CI, and a review-changes workflow for collaborative knowledge curation.',
-        category: 'AI',
-        tags: ['TypeScript', 'Node.js', 'AI', 'RAG', 'Claude'],
-      },
-      {
-        title: 'Lokalise (Translation Platform)',
-        url: 'https://github.com/adagora/lokalise',
-        summary: 'Full-stack translation platform inspired by Lokalise — background AI translation across multiple languages, missed-key detection that flags untranslated strings, and a human verification loop for quality control. Supports manual translation workflow alongside AI suggestions.',
-        category: 'AI',
-        tags: ['TypeScript', 'Node.js', 'AI', 'Full Stack'],
-      },
-      {
-        title: 'Loop-me Enterprise',
-        url: 'https://github.com/adagora/loop-me-enterprise',
-        summary: 'An AI-powered interview system using Google Gemini agents — conducts structured conversations, takes notes, and writes reports with full context persistence across sessions.',
-        category: 'AI',
-        tags: ['TypeScript', 'Node.js', 'Gemini AI'],
-      },
-      {
-        title: 'PII Anonymization Research',
-        url: 'https://github.com/adagora/anonimizacja-research',
-        summary: 'Benchmarked LLMs, NLP models, and Microsoft Presidio for detecting and removing personal information from text. Built comparison framework across 10+ methods.',
-        category: 'AI',
-        tags: ['Python', 'AI/ML', 'NLP'],
-      },
-      {
-        title: 'Adaptive Retrieval',
-        url: 'https://github.com/adagora/adaptive-retrieval',
-        summary: 'Smarter RAG: the model self-checks if retrieved information is sufficient. If not, it escalates for deep research — reducing hallucinations without extra latency on easy questions.',
-        category: 'AI',
-        tags: ['Python', 'RAG', 'Deep Research'],
-      },
-      {
-        title: 'Teams Transcript Processor',
-        url: 'https://github.com/adagora/msteams-transcript-processor',
-        summary: 'Automated pipeline ingesting MS Teams meeting recordings via webhooks, analyzing with AI, and storing structured reports. Two-server architecture for enterprise compliance.',
-        category: 'AI',
-        tags: ['TypeScript', 'Node.js', 'Microsoft Graph'],
-      },
-      {
-        title: 'Math Tool / Pricing Agent',
-        url: 'https://github.com/adagora/math-tool',
-        summary: 'Multi-agent playground built on the Vercel AI SDK and Bun. Four workspaces: arithmetic CLI agent, interactive code REPL, eBay pricing agent that searches live listings and computes quotes, and a web server exposing all agents over SSE with a static UI.',
-        category: 'AI',
-        tags: ['TypeScript', 'Bun', 'AI SDK', 'Full Stack'],
-      },
-      {
-        title: 'Streamr ML Trading',
-        url: 'https://github.com/adagora/streamr-ml-demo',
-        summary: 'Hackathon project: real-time data streaming + ML for crypto trading signals. Won 2nd place at LearnWeb3 AI Hackathon.',
-        category: 'AI',
-        tags: ['Node.js', 'ML', 'Hackathon', 'Web3'],
-      },
-      {
-        title: 'Book AI Chat (PDF RAG)',
-        url: 'https://cryptoregulationtalk.onrender.com/',
-        summary: 'Upload a PDF and ask questions with AI. PostgresML powers semantic search over document text.',
-        category: 'AI',
-        tags: ['Node.js', 'PostgresML', 'RAG'],
-      },
-      /* ══ New projects ══ */
-      {
-        title: 'CAD Pricing Tool',
-        url: 'https://github.com/adagora/cad-tools',
-        summary: 'Deterministic pricing engine for machined parts from STEP files. Reads 3D geometry via OpenCASCADE, computes machining time from volume and features, applies workshop rates, and generates an interactive HTML quote — no guessing, no hallucinations.',
-        category: 'CAD/Manufacturing',
-        tags: ['Python', 'CAD', 'OpenCASCADE', 'Manufacturing'],
-      },
-      {
-        title: 'Manufacturing Route Analysis',
-        url: 'https://github.com/adagora/manufacturing-tool',
-        summary: 'Auditable analysis tool for factory routing decisions. Parses PLC telemetry into structured datasets, scores every gate decision, detects counterfactual opportunities, and generates three standalone HTML dashboards — architecture map, scoring report, and interactive Q&A chat.',
-        category: 'CAD/Manufacturing',
-        tags: ['Python', 'Data', 'Manufacturing', 'AI'],
-      },
-      {
-        title: 'Crypto Trading Monitor',
-        url: 'https://github.com/adagora/trading',
-        summary: 'Real-time cryptocurrency monitoring system with multi-exchange support (Binance, Kraken, KuCoin). Routes symbols to the correct exchange automatically, tracks market data, and supports autonomous execution strategies for paper trading.',
-        category: 'Trading',
-        tags: ['Python', 'FastAPI', 'Web3', 'Trading'],
-      },
-      /* ══ Fintech & Backend ══ */
-      {
-        title: 'Currency Manager',
-        url: 'https://transfer.reputeme.com/',
-        summary: 'Financial application for fiat and crypto transfers. Built for regulated fintech with sanction screening and compliance features.',
-        category: 'Fintech',
-        tags: ['React', 'TypeScript', 'Cypress', 'Fintech'],
-      },
-      {
-        title: 'Alike (Ranking Engine)',
-        url: 'https://github.com/adagora/alike-pintrest',
-        summary: 'Manufacturing part similarity and ranking engine inspired by Pinterest\u2019s ranking algorithms. Learns which parts, materials, and processes are related and ranks them by relevance to the query \u2014 a "you might also like" for workshop inventories and supplier catalogs.',
-        category: 'CAD/Manufacturing',
-        tags: ['Go', 'Algorithms', 'Manufacturing'],
-      },
-      /* ══ Web3 ══ */
-      {
-        title: 'Eboombox',
-        url: 'https://eboombox.vercel.app/',
-        summary: 'Sound visualization for Cardano blockchain (EUTXO model). Turns on-chain transactions into audio — making blockchain data explorable through sound.',
-        category: 'Web3',
-        tags: ['Next.js', 'Web3', 'Cardano'],
-      },
-      {
-        title: 'ZKFloki Staking dApp',
-        url: 'https://github.com/adagora/adagora.github.io/blob/master/assets/img/zkFloki.png',
-        summary: 'Staking application on zkSync layer 2. Users lock tokens and earn rewards — designed and shipped with a friend in 5 days.',
-        category: 'Web3',
-        tags: ['React', 'Web3', 'useDapp'],
-      },
-      {
-        title: 'NFT Perpetual Trading',
-        url: 'https://frontend-eneftis.vercel.app/',
-        summary: 'Trading platform giving exposure to NFT floor prices without owning the NFTs. Full stack — frontend, backend watcher, PostgreSQL.',
-        category: 'Web3',
-        tags: ['React', 'GraphQL', 'PostgreSQL', 'Web3'],
-      },
-      {
-        title: 'Smart Contract Collection',
-        url: 'https://github.com/adagora/foundry-stablecoin',
-        summary: 'Stablecoin, lottery, and fundraising contracts in Solidity with Foundry. Demonstrates Ethereum development and formal testing practices.',
-        category: 'Web3',
-        tags: ['Solidity', 'Foundry', 'Smart Contracts'],
-      },
-      {
-        title: 'Cardano Token Minting',
-        url: 'https://github.com/adagora/minting-on-Cardano-blockchain/tree/master/minting',
-        summary: 'Toolkit for minting tokens and NFTs on Cardano. Includes on-chain NFT reconstruction guide.',
-        category: 'Web3',
-        tags: ['Python', 'Cardano', 'Blockchain'],
-      },
-      /* ══ Full Stack & Frontend & Data ══ */
-      {
-        title: 'Table CRUD (Prisma)',
-        url: 'https://codesandbox.io/p/github/adagora/task-nextjs-prisma',
-        summary: 'Full-stack user management app with Next.js and Prisma ORM. Clean UI for create, read, update, delete operations.',
-        category: 'Full Stack',
-        tags: ['Next.js', 'Prisma', 'Full Stack'],
-      },
-      {
-        title: 'News Aggregator',
-        url: 'https://github.com/adagora/gnNews-redux-toolkit-rtk-query-mui',
-        summary: 'News feed aggregator from NewsAPI — state management with Redux Toolkit and RTK Query.',
-        category: 'Frontend',
-        tags: ['React', 'Redux', 'TypeScript'],
-      },
-      {
-        title: 'Printu SVG Bounding Box',
-        url: 'https://printu-demo.vercel.app/',
-        summary: 'Interactive tool creating bounding boxes around SVG elements. Demonstrates geometric computation and canvas manipulation.',
-        category: 'Frontend',
-        tags: ['React', 'SVG', 'TypeScript'],
-      },
-      {
-        title: 'Custom Charts (D3)',
-        url: 'https://github.com/adagora/charts-custom',
-        summary: 'Custom graph components with Recharts and D3.js — bar charts, line charts, interactive plots for data visualization.',
-        category: 'Data',
-        tags: ['Next.js', 'D3', 'Data Viz'],
-      },
-    ];
-
-    /* Category color map */
-    const CAT_COLORS = {
-      'AI': '#18efb1',
-      'Web3': '#58a6ff',
-      'Fintech': '#e8b341',
-      'Backend': '#3ecf8e',
-      'Frontend': '#f0883e',
-      'Full Stack': '#a371f7',
-      'Data': '#db61a2',
-      'CAD/Manufacturing': '#d4872b',
-      'Trading': '#e84a5f',
-    };
-
-    /* Render experience timeline */
-    (function renderTimeline() {
-      const el = document.getElementById('timeline');
-      if (!el) return;
-      el.innerHTML = EXPERIENCE.map(exp => `
-        <div class="timeline-item${exp.featured ? ' timeline-item--featured' : ''}">
-          <div class="timeline-date">${exp.date}</div>
-          <div class="timeline-role">${exp.role}</div>
-          <div class="timeline-company">${exp.company}</div>
-          <div class="timeline-desc">
-            <ul>${exp.items.map(i => `<li>${i}</li>`).join('')}</ul>
-          </div>
-        </div>
-      `).join('');
-    })();
-
-    /* Render projects */
-    (function renderProjects() {
-      const el = document.getElementById('projects-grid');
-      if (!el) return;
-      el.innerHTML = PROJECTS.map(p => {
-        const catColor = CAT_COLORS[p.category] || '#8888a0';
-        return `
-        <div class="project-card">
-          <span class="project-category" style="--cat-color: ${catColor}">${p.category}</span>
-          <h3 class="project-card-title"><a href="${p.url}" target="_blank" rel="noopener">${p.title}</a></h3>
-          <p class="project-card-summary">${p.summary}</p>
-          <div class="project-card-tags">
-            ${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}
-          </div>
-        </div>`;
-      }).join('');
-    })();
-  </script>
-
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

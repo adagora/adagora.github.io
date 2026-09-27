@@ -1,0 +1,35 @@
+# Adrian Góra
+
+> AI Engineer in Poland building LLM applications, RAG and agents for manufacturing and engineering data. TypeScript, Python, Go. Available from 1 November 2026, no notice period. Remote or hybrid; open to remote roles in the EU and worldwide. B2B or employment contract.
+
+Key facts:
+
+- Current role: AI Engineer (official title: Specjalista ds. AI) at Wiśniowski since Feb 2025. Internal AI tools for a Polish manufacturer of industrial doors, gates and fences.
+- Built there: Company-wide RAG assistant; Microsoft Teams meeting pipeline; AI translation portal; Process-route analytics; AI interviews for process improvement.
+- Earlier: four years of TypeScript and React (fintech, web3, React Native), three and a half years of automotive CAD engineering (CATIA V5, NX, GD&T, D-FMEA).
+- Measured results: 55% → 84% (top-1 page retrieval after adding hybrid search to visual RAG); 99,933 (LLM judgments in 3 minutes over 7,040 translation keys); 5 (internal AI tools built at a manufacturer since February 2025).
+- Languages: Polish: Native; English: Professional working (B2); German: Limited working (B1, DSH-2 certificate).
+- Target roles: AI Engineer, LLM Engineer, Generative AI Engineer, AI Solutions Engineer, Forward Deployed Engineer, Full-stack Engineer (TypeScript / Python), AI focus.
+- Contact: adrian.gora14@gmail.com · https://github.com/adagora · https://www.linkedin.com/in/adrian-gora/
+
+## CV
+
+- [CV in Markdown, English](https://adagora.github.io/cv.md): full experience, projects, skills, education
+- [CV in Markdown, Polish](https://adagora.github.io/cv.pl.md): the same CV in Polish
+- [JSON Resume](https://adagora.github.io/resume.json): structured data, JSON Resume 1.0 schema
+- [CV PDF, English](https://adagora.github.io/cv/Adrian-Gora-CV-EN.pdf)
+- [CV PDF, Polish](https://adagora.github.io/cv/Adrian-Gora-CV-PL.pdf)
+
+## Public projects
+
+- [Visual RAG for technical PDFs](https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV): Finds the right page in product catalogues and technical PDFs by how the page looks (drawings, tables, dimension callouts), then answers from the page images with a vision model and cites the page. Results: 55% → 84% (top-1 page, visual-only vs hybrid); 100% (recall with LLM page reranking); p = 0.001 (hybrid beats visual 11–0 where they disagree).
+- [CAD quoting engine for machined parts](https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena): Quotes a machined part from its STEP model for a tool shop. Code measures the geometry and computes the price; the language model reviews technology and risks the way a shop manager would. Results: STEP → PLN (geometry from OpenCASCADE, price from shop rates); 3 states (pass, fail or need-info on every check, each citing its source).
+- [LLM-judged translation audit](https://github.com/adagora/jev-experiments): Finds inconsistent terminology in a translation corpus that never had a glossary. Code mines the disagreements across 7,040 keys and an LLM judge settles each one. Results: 99,933 (judgments in 3 minutes); ~300 ms (check on every edit in the review app).
+- [Multi-agent pricing playground](https://github.com/adagora/calc-price-agent): Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE.
+- [Streaming ML demo, hackathon 2nd place](https://github.com/adagora/streamr-ml-demo): Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon.
+
+## Optional
+
+- [Portfolio page](https://adagora.github.io/): the same content as a web page, with a live commit graph
+- [GitHub](https://github.com/adagora)
+- [LinkedIn](https://www.linkedin.com/in/adrian-gora/)

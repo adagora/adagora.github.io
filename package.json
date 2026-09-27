@@ -1,9 +1,14 @@
 {
   "name": "adagora.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Adrian Gora — CV, portfolio, and commit activity log.",
+  "description": "Adrian Góra: portfolio, CVs and machine-readable profile generated from data/profile.json.",
   "scripts": {
+    "build": "node scripts/build.js",
+    "check": "node scripts/build.js --check",
+    "check:links": "node scripts/build.js --check --links",
+    "cv:pdf": "node scripts/cv-pdf.js",
+    "serve": "python3 -m http.server 8080",
     "stats": "node scripts/generate-commit-stats.js"
   }
 }

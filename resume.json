@@ -1,0 +1,430 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Adrian Góra",
+    "label": "AI Engineer · LLM apps, RAG and agents · TypeScript / Python · manufacturing and engineering data",
+    "image": "https://adagora.github.io/assets/img/adrian-gora.jpg",
+    "email": "adrian.gora14@gmail.com",
+    "url": "https://adagora.github.io/",
+    "summary": "AI engineer building internal AI tools at an industrial manufacturer since February 2025: a company-wide RAG assistant, a Microsoft Teams meeting pipeline, an AI translation portal and process-route analytics. Before that, four years of TypeScript and React in fintech and web3, and three and a half years of automotive CAD engineering in CATIA V5.",
+    "location": {
+      "countryCode": "PL",
+      "region": "Poland"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "adagora",
+        "url": "https://github.com/adagora"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "adrian-gora",
+        "url": "https://www.linkedin.com/in/adrian-gora/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Wiśniowski",
+      "position": "AI Engineer (Specjalista ds. AI)",
+      "startDate": "2025-02",
+      "summary": "Internal AI tools for a Polish manufacturer of industrial doors, gates and fences.",
+      "highlights": [
+        "Deployed RAGFlow on a Linux server with telemetry and monitoring, connected to Open WebUI through a custom pipeline as the chat front end; 90% answer accuracy.",
+        "Scans one group's meetings in on-premises Outlook and turns on automatic recording; transcripts and recordings then arrive through Microsoft Graph (webhooks plus polling), are converted from VTT and analysed by an LLM into structured JSON reports.",
+        "Designed and shipped an internal portal built to replace lokalise.com: Gemini pre-translates each key, translators accept or correct, missed keys are detected, and every decision is logged so the AI acceptance rate is measurable.",
+        "Prototyping analytics on process-route data: chat over historical production traces, tests of new settings and suggested routing paths.",
+        "Built on the Gemini managed-agents sandbox. A 15-minute voice or text interview about an employee's daily work produces an automation report, adds what it learned to an LLM-maintained knowledge wiki that grows with each interview, and turns repeatable workflows into SKILL.md files for agents."
+      ]
+    },
+    {
+      "name": "Freelance",
+      "position": "Software Engineer",
+      "startDate": "2023-08",
+      "endDate": "2025-01",
+      "highlights": [
+        "Prototyped AI tools (predictive models, chat over documents) to validate product ideas and shipped a staking app UI for web and mobile (TypeScript, React, ethers); 2nd place at the LearnWeb3 AI Hackathon."
+      ]
+    },
+    {
+      "name": "Playdate App Limited",
+      "position": "Full-Stack Engineer",
+      "startDate": "2023-06",
+      "endDate": "2023-08",
+      "highlights": [
+        "Built release version control so users on outdated iOS and Android builds could be migrated, fixed a critical Android onboarding bug and owned CI/CD on AWS Elastic Beanstalk (React Native, Django)."
+      ]
+    },
+    {
+      "name": "Ariable",
+      "position": "Software Engineer",
+      "startDate": "2022-12",
+      "endDate": "2023-06",
+      "highlights": [
+        "Delivered the front-end MVP of an NFT perpetual trading platform and a real-time Node.js + PostgreSQL watcher for on-chain transactions; reviewed the Solidity contracts."
+      ]
+    },
+    {
+      "name": "BlockchainWares Software",
+      "position": "Frontend Engineer",
+      "startDate": "2020-12",
+      "endDate": "2022-12",
+      "highlights": [
+        "Built balance, contacts and sanction-screening features for a regulated financial application (React, TypeScript, React Query), a Material-UI component library in Storybook and the Cypress E2E suite."
+      ]
+    },
+    {
+      "name": "Nervos Network",
+      "position": "Web Developer (part-time, in parallel)",
+      "startDate": "2021-12",
+      "endDate": "2022-05",
+      "highlights": [
+        "Contributed to a DAO voting app and built a bridge UI for onboarding to the network."
+      ]
+    },
+    {
+      "name": "Varroc Lighting Systems",
+      "position": "Product Engineer",
+      "location": "Kraków",
+      "startDate": "2018-06",
+      "endDate": "2020-07",
+      "highlights": [
+        "Designed front and rear lamp components in CATIA V5: concept, fixing, feasibility, simulation and test results, tooling requests, BOM and GD&T drawings; worked with the Czech R&D team."
+      ]
+    },
+    {
+      "name": "Auto Design",
+      "position": "CAD Designer",
+      "location": "Bielsko-Biała",
+      "startDate": "2017-09",
+      "endDate": "2018-02",
+      "highlights": [
+        "Designed interior parts (instrument panel, door trim) for Audi and ported parts from CATIA V5 to NX 11."
+      ]
+    },
+    {
+      "name": "Alpha Technology",
+      "position": "Project Engineer",
+      "startDate": "2017-01",
+      "endDate": "2017-08",
+      "highlights": [
+        "Prepared technical inquiries for the VW Group, worked in the D-FMEA team and trained staff on plastics processes."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Silesian University of Technology, Gliwice",
+      "area": "Materials Engineering (surface engineering and heat treatment)",
+      "studyType": "MSc Eng.",
+      "startDate": "2010",
+      "endDate": "2016"
+    },
+    {
+      "institution": "TU Bergakademie Freiberg, Germany",
+      "area": "Forming technology (Umformtechnik)",
+      "studyType": "Exchange",
+      "startDate": "2014",
+      "endDate": "2015"
+    },
+    {
+      "institution": "Universidad de Oviedo, Spain",
+      "area": "Materials science",
+      "studyType": "Exchange",
+      "startDate": "2013",
+      "endDate": "2013"
+    }
+  ],
+  "awards": [
+    {
+      "title": "2nd place, LearnWeb3 AI Hackathon",
+      "date": "2023"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "CATIA V5, advanced level",
+      "issuer": "CADSOL Design Poland",
+      "date": "2018"
+    },
+    {
+      "name": "AutoCAD, levels 1 and 2",
+      "issuer": "Autodesk",
+      "date": "2015"
+    },
+    {
+      "name": "Generative AI Essentials for Software Developers"
+    },
+    {
+      "name": "Algorithmic Trading & Technical Analysis"
+    },
+    {
+      "name": "Ethereum 101"
+    },
+    {
+      "name": "Blockchain & Bitcoin 101"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Laser surface treatment technologies: laser ablation"
+    }
+  ],
+  "skills": [
+    {
+      "name": "LLM applications",
+      "keywords": [
+        "RAG (hybrid BM25 + vector, reranking, citations)",
+        "Visual RAG over PDFs",
+        "Agents and tool calling",
+        "LLM-as-judge",
+        "Structured extraction",
+        "Evaluation and benchmarks",
+        "Prompt engineering"
+      ]
+    },
+    {
+      "name": "Models and platforms",
+      "keywords": [
+        "Claude",
+        "Gemini",
+        "OpenAI",
+        "Vercel AI SDK",
+        "RAGFlow",
+        "Open WebUI",
+        "FAISS",
+        "Microsoft Graph"
+      ]
+    },
+    {
+      "name": "Languages",
+      "keywords": [
+        "TypeScript",
+        "Python",
+        "Go",
+        "JavaScript",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Backend and infrastructure",
+      "keywords": [
+        "Node.js",
+        "Bun",
+        "Express",
+        "NestJS",
+        "FastAPI",
+        "PostgreSQL",
+        "Prisma",
+        "Redis",
+        "Linux servers",
+        "GitHub Actions",
+        "AWS Elastic Beanstalk",
+        "Telemetry and monitoring"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "keywords": [
+        "React",
+        "Next.js",
+        "React Native",
+        "React Query",
+        "Material-UI",
+        "Storybook",
+        "Cypress",
+        "D3"
+      ]
+    },
+    {
+      "name": "Engineering and CAD",
+      "keywords": [
+        "CATIA V5 (advanced)",
+        "Siemens NX",
+        "AutoCAD",
+        "GD&T",
+        "BOM",
+        "D-FMEA",
+        "Plastics",
+        "OpenCASCADE / build123d",
+        "STEP and DXF"
+      ]
+    },
+    {
+      "name": "AI-assisted development",
+      "keywords": [
+        "Claude Code",
+        "Codex",
+        "Agent skills",
+        "AGENTS.md"
+      ]
+    },
+    {
+      "name": "Earlier: web3",
+      "keywords": [
+        "Solidity",
+        "Foundry",
+        "ethers.js",
+        "Cardano"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Polish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working (B2)"
+    },
+    {
+      "language": "German",
+      "fluency": "Limited working (B1, DSH-2 certificate)"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Visual RAG for technical PDFs",
+      "description": "Finds the right page in product catalogues and technical PDFs by how the page looks (drawings, tables, dimension callouts), then answers from the page images with a vision model and cites the page.",
+      "highlights": [
+        "Benchmarked 7 retrieval modes on 38 questions whose gold page is verified by string match (114 in the full set), with Wilson intervals and an exact McNemar test for every pair.",
+        "Hybrid search (pixel index + BM25, fused with reciprocal rank fusion) raised top-1 from 55% to 84%. The same benchmark showed that a paid query-expansion stage added nothing, so the default mode skips it.",
+        "Web UI and API with a per-question retrieval mode, page citations and an answerability score."
+      ],
+      "keywords": [
+        "Python",
+        "FAISS",
+        "BM25 + RRF",
+        "PixelRAG",
+        "Gemini",
+        "Claude"
+      ],
+      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
+      "type": "public repository"
+    },
+    {
+      "name": "CAD quoting engine for machined parts",
+      "description": "Quotes a machined part from its STEP model for a tool shop. Code measures the geometry and computes the price; the language model reviews technology and risks the way a shop manager would.",
+      "highlights": [
+        "Volume, mass, envelope and cost-driving features come from OpenCASCADE. Price is machining time × shop rate, and a physics-based floor on cutting time stops the model from inventing hours.",
+        "Preflight marks each check pass, fail or need-info with a cited source (ISO 2768, ISO 286, material data). Any fail or missing input makes the quote non-binding.",
+        "Web app for estimators who don't program: 3D preview, 2D drawing input, editable rates, print to PDF and a make-or-buy check against SendCutSend. Covered by 8 test modules."
+      ],
+      "keywords": [
+        "Python",
+        "OpenCASCADE",
+        "build123d",
+        "trimesh",
+        "ezdxf",
+        "Claude / OpenAI"
+      ],
+      "url": "https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena",
+      "type": "public repository"
+    },
+    {
+      "name": "LLM-judged translation audit",
+      "description": "Finds inconsistent terminology in a translation corpus that never had a glossary. Code mines the disagreements across 7,040 keys and an LLM judge settles each one.",
+      "highlights": [
+        "Exports an Excel workbook for sign-off and a keyboard-driven review app where translators curate the glossary; decided terms are never re-arbitrated.",
+        "Sibling demo judge-sheets: type a column header such as Urgency and 300 rows fill with semantic predictions in about 3.5 s, as =JUDGE, =PICK and =RATE formulas you can inspect in the formula bar."
+      ],
+      "keywords": [
+        "TypeScript",
+        "TypeSafe Jev",
+        "Excel"
+      ],
+      "url": "https://github.com/adagora/jev-experiments",
+      "type": "public repository"
+    },
+    {
+      "name": "Multi-agent pricing playground",
+      "description": "Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE.",
+      "keywords": [
+        "TypeScript",
+        "Bun",
+        "Vercel AI SDK",
+        "Claude",
+        "OpenAI",
+        "eBay API"
+      ],
+      "url": "https://github.com/adagora/calc-price-agent",
+      "type": "public repository"
+    },
+    {
+      "name": "Streaming ML demo, hackathon 2nd place",
+      "description": "Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon.",
+      "keywords": [
+        "Node.js",
+        "Streamr",
+        "ARIMA"
+      ],
+      "url": "https://github.com/adagora/streamr-ml-demo",
+      "type": "public repository"
+    },
+    {
+      "name": "Cairn: evidence CLI for process routing",
+      "description": "Answers where work waits, where it loops back and which routing choice succeeded more often with the work mix held fixed. Each claim carries its sample size, basis and whether it may be quoted, and findings can be re-proved on new data. Output is one JSON envelope per call, built for AI agents first. Includes a robot-fleet dispatch testbed (VDA 5050).",
+      "keywords": [
+        "Go",
+        "BPMN",
+        "VDA 5050"
+      ],
+      "type": "private repository"
+    },
+    {
+      "name": "PDF wiki",
+      "description": "Local-first knowledge base: drop in a PDF, run ingest, get a cross-linked Markdown wiki with semantic search. Claude vision describes every figure.",
+      "keywords": [
+        "TypeScript",
+        "Claude",
+        "qmd"
+      ],
+      "type": "private repository"
+    },
+    {
+      "name": "Robot arm control in the browser",
+      "description": "Calibration and daily control of a LeRobot SO-ARM100 from a laptop or phone: keyboard and gamepad input, an e-stop, and a single owner for the serial port.",
+      "keywords": [
+        "Python",
+        "LeRobot",
+        "WebSockets"
+      ],
+      "type": "private repository"
+    },
+    {
+      "name": "HAR to API brief",
+      "description": "Record browser traffic once and get a brief for rebuilding the API outside the browser: auth, endpoints, body shapes and curl templates.",
+      "keywords": [
+        "Python"
+      ],
+      "type": "private repository"
+    },
+    {
+      "name": "meat: reading diffs",
+      "description": "Turns a large code diff into a smaller reading diff focused on the consequential changes. TypeScript CLI, migrated from Go.",
+      "keywords": [
+        "TypeScript",
+        "Go"
+      ],
+      "type": "private repository"
+    }
+  ],
+  "meta": {
+    "canonical": "https://adagora.github.io/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2026-09-27",
+    "availability": "Available from 1 November 2026, no notice period",
+    "workMode": "Remote or hybrid; open to remote roles in the EU and worldwide",
+    "contract": "B2B or employment contract",
+    "targetRoles": [
+      "AI Engineer",
+      "LLM Engineer",
+      "Generative AI Engineer",
+      "AI Solutions Engineer",
+      "Forward Deployed Engineer",
+      "Full-stack Engineer (TypeScript / Python), AI focus"
+    ]
+  }
+}

@@ -5,145 +5,163 @@
       "type": "commit",
       "repo": "adagora/cairn",
       "message": "feat: one-command robot-fleet demo (scripts/robot-demo.sh)",
-      "url": "https://github.com/adagora/cairn/commit/6cd3b19e9066d049b7451e4fee5a87364cb4037f",
+      "url": null,
       "date": "2026-09-25T21:09:43Z",
-      "sha": "6cd3b19"
+      "sha": "6cd3b19",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
       "message": "feat: one-command robot-fleet demo (scripts/robot-demo.sh)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/6cd3b19e9066d049b7451e4fee5a87364cb4037f",
+      "url": null,
       "date": "2026-09-25T21:09:43Z",
-      "sha": "6cd3b19"
+      "sha": "6cd3b19",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/cairn",
       "message": "feat: VDA 5050 fleet recordings -> measured robot load (pintrest-cairn-pqvy.15)",
-      "url": "https://github.com/adagora/cairn/commit/292609ed8ba17c7b709926f95f27b7f11ba35de2",
+      "url": null,
       "date": "2026-09-25T20:44:02Z",
-      "sha": "292609e"
+      "sha": "292609e",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
       "message": "feat: VDA 5050 fleet recordings -> measured robot load (pintrest-cairn-pqvy.15)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/292609ed8ba17c7b709926f95f27b7f11ba35de2",
+      "url": null,
       "date": "2026-09-25T20:44:02Z",
-      "sha": "292609e"
+      "sha": "292609e",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/cairn",
       "message": "feat: robot-fleet dispatch testbed with planted faults (pintrest-cairn-pqvy.14)",
-      "url": "https://github.com/adagora/cairn/commit/5d15d5ffd1c679dd16712b2875cbd3b096843b60",
+      "url": null,
       "date": "2026-09-25T20:40:37Z",
-      "sha": "5d15d5f"
+      "sha": "5d15d5f",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
       "message": "feat: robot-fleet dispatch testbed with planted faults (pintrest-cairn-pqvy.14)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/5d15d5ffd1c679dd16712b2875cbd3b096843b60",
+      "url": null,
       "date": "2026-09-25T20:40:37Z",
-      "sha": "5d15d5f"
+      "sha": "5d15d5f",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/cairn",
       "message": "feat: measured robot and machine load from lifecycle times (pintrest-cairn-pqvy.12, D55)",
-      "url": "https://github.com/adagora/cairn/commit/9a7fcc7c5fad61773224f4c3730d04d8c8f0924e",
+      "url": null,
       "date": "2026-09-25T20:35:06Z",
-      "sha": "9a7fcc7"
+      "sha": "9a7fcc7",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
       "message": "feat: measured robot and machine load from lifecycle times (pintrest-cairn-pqvy.12, D55)",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/9a7fcc7c5fad61773224f4c3730d04d8c8f0924e",
+      "url": null,
       "date": "2026-09-25T20:35:06Z",
-      "sha": "9a7fcc7"
+      "sha": "9a7fcc7",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/cairn",
       "message": "docs: Trier resources are planned per BPMN task, not chosen at run time",
-      "url": "https://github.com/adagora/cairn/commit/16c30bc401ffb3ee04983ccd51350339c6ce20f0",
+      "url": null,
       "date": "2026-09-25T17:39:10Z",
-      "sha": "16c30bc"
+      "sha": "16c30bc",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/manufacturing-tool",
       "message": "docs: Trier resources are planned per BPMN task, not chosen at run time",
-      "url": "https://github.com/adagora/manufacturing-tool/commit/16c30bc401ffb3ee04983ccd51350339c6ce20f0",
+      "url": null,
       "date": "2026-09-25T17:39:10Z",
-      "sha": "16c30bc"
+      "sha": "16c30bc",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/trade",
       "message": "Manifest for the pre-arm release: per-host park, freeze guard, fade switch",
-      "url": "https://github.com/adagora/trade/commit/c6add695531c5168436ec7992f8b2dfe6419776f",
+      "url": null,
       "date": "2026-09-24T03:54:14Z",
-      "sha": "c6add69"
+      "sha": "c6add69",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/trade",
       "message": "Fade-B: a switch that lets the FADE book take a counter-trend entry",
-      "url": "https://github.com/adagora/trade/commit/be8e7aef869c6f375c553315f42e811a054a0aa6",
+      "url": null,
       "date": "2026-09-24T03:52:55Z",
-      "sha": "be8e7ae"
+      "sha": "be8e7ae",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/project_x",
       "message": "feat: improve jev implementation",
-      "url": "https://github.com/adagora/project_x/commit/f2a891ed6793efe5ba2f8111f5689b5baa387c14",
+      "url": null,
       "date": "2026-09-22T18:13:53Z",
-      "sha": "f2a891e"
+      "sha": "f2a891e",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/trade",
       "message": "A release can no longer silently fail an armed paper session",
-      "url": "https://github.com/adagora/trade/commit/48b764e38c33b4496a401aafa3eaf83a8045b50d",
+      "url": null,
       "date": "2026-09-22T18:04:46Z",
-      "sha": "48b764e"
+      "sha": "48b764e",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/trade",
       "message": "Keep scoring while only the execution host is parked",
-      "url": "https://github.com/adagora/trade/commit/8bac7da5bbabe125465443a2b061555f182317da",
+      "url": null,
       "date": "2026-09-22T18:00:54Z",
-      "sha": "8bac7da"
+      "sha": "8bac7da",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/trade",
       "message": "One REST park per host: a testnet edge ban no longer parks mainnet",
-      "url": "https://github.com/adagora/trade/commit/a8dfc69ea25fb3ec0394fff1ebf41b08f0c98b24",
+      "url": null,
       "date": "2026-09-22T17:54:09Z",
-      "sha": "a8dfc69"
+      "sha": "a8dfc69",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/project_x",
       "message": "Structure Jev RAG judgment criteria and record evaluation",
-      "url": "https://github.com/adagora/project_x/commit/f9b133d41d3710d63a4a6216dbc70477718bb1b7",
+      "url": null,
       "date": "2026-09-21T20:34:16Z",
-      "sha": "f9b133d"
+      "sha": "f9b133d",
+      "private": true
     },
     {
       "type": "commit",
       "repo": "adagora/project_x",
       "message": "jev: podpięcie warstwy sądów do zwykłego RAG-u",
-      "url": "https://github.com/adagora/project_x/commit/ce2299cff90ae5c7fcb521de9cc28d3960e43103",
+      "url": null,
       "date": "2026-09-21T17:09:38Z",
-      "sha": "ce2299c"
+      "sha": "ce2299c",
+      "private": true
     },
     {
       "type": "commit",
@@ -151,7 +169,8 @@
       "message": "Merge branch 'docs/architecture-report'",
       "url": "https://github.com/adagora/jev-experiments/commit/70479bbff03f905f27603729e600e6f21076b0f1",
       "date": "2026-09-21T16:49:36Z",
-      "sha": "70479bb"
+      "sha": "70479bb",
+      "private": false
     },
     {
       "type": "commit",
@@ -159,7 +178,8 @@
       "message": "docs(translate-audit): a technical architecture report",
       "url": "https://github.com/adagora/jev-experiments/commit/699d59df5df0d14511edd5183023eafd862edea5",
       "date": "2026-09-21T16:49:32Z",
-      "sha": "699d59d"
+      "sha": "699d59d",
+      "private": false
     },
     {
       "type": "commit",
@@ -167,7 +187,8 @@
       "message": "feat(translate-audit): the review app under test, one glossary shape, a check panel",
       "url": "https://github.com/adagora/jev-experiments/commit/0dac88075853ccf47e18836b3f191d6d7229335b",
       "date": "2026-09-21T16:36:20Z",
-      "sha": "0dac880"
+      "sha": "0dac880",
+      "private": false
     },
     {
       "type": "commit",
@@ -175,7 +196,8 @@
       "message": "chore: keep agent skills on disk and out of the history",
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/6aeaccf8236285215aa711bacec21fc8e501261a",
       "date": "2026-09-21T12:31:41Z",
-      "sha": "6aeaccf"
+      "sha": "6aeaccf",
+      "private": false
     },
     {
       "type": "commit",
@@ -183,7 +205,8 @@
       "message": "docs: re-measure every number, and say which ones a small set could not support",
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/b19740964ad1007aed6af159be7895cb6fb087d0",
       "date": "2026-09-21T12:02:33Z",
-      "sha": "b197409"
+      "sha": "b197409",
+      "private": false
     },
     {
       "type": "commit",
@@ -191,7 +214,8 @@
       "message": "feat(eval): 114 questions, and a re-sweep that reverses two conclusions",
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/50d7d515ca4cf811ee5792b5d1ade060e5ba8037",
       "date": "2026-09-21T12:02:12Z",
-      "sha": "50d7d51"
+      "sha": "50d7d51",
+      "private": false
     },
     {
       "type": "commit",
@@ -199,7 +223,8 @@
       "message": "feat(bench): error bars, and the only comparison two rows can support",
       "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/0f326bda5729108598e1c58cacbb7335847f7375",
       "date": "2026-09-21T12:01:59Z",
-      "sha": "0f326bd"
+      "sha": "0f326bd",
+      "private": false
     }
   ]
 }
