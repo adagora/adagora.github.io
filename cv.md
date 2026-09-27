@@ -21,10 +21,10 @@ Since February 2025 I have been building internal AI tools at an industrial manu
 
 Official title: Specjalista ds. AI. Internal AI tools for a Polish manufacturer of industrial doors, gates and fences.
 
-- **Company-wide RAG assistant:** Deployed RAGFlow on a Linux server with telemetry and monitoring, and connected it to Open WebUI as the company chat. 90% answer accuracy.
+- **Company-wide RAG assistant:** Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from a large set of complex technical PDFs. Telemetry and monitoring are built for EU AI Act compliance.
 - **Microsoft Teams meeting pipeline:** Scans one group's meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.
-- **AI translation portal:** Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. Every decision is logged, so we can see how often the AI gets it right.
-- **Process-route analytics:** Working on a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes.
+- **AI translation portal:** Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. Our texts exist in many languages and must stay consistent, so I added statistics, helpers for translators and an automatically generated starting glossary. Every decision is logged, so we can see how often the AI gets it right.
+- **Process-route analytics:** Working on a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.
 - **AI interviews for process improvement:** Runs on the Gemini managed-agents sandbox. After a 15-minute voice or text interview about someone's daily work, it writes an automation report, adds what it learned to an LLM wiki, and turns repeatable tasks into SKILL.md files for agents.
 
 ## Selected projects

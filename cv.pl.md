@@ -21,10 +21,10 @@ Od lutego 2025 buduję wewnętrzne narzędzia AI u producenta przemysłowego: fi
 
 Stanowisko formalne: Specjalista ds. AI. Wewnętrzne narzędzia AI dla polskiego producenta bram, drzwi i ogrodzeń.
 
-- **Firmowy asystent RAG:** Wdrożyłem RAGFlow na serwerze Linux z telemetrią i monitoringiem i podłączyłem go do Open WebUI jako firmowy czat. 90% trafnych odpowiedzi.
+- **Firmowy asystent RAG:** Wdrożyłem RAGFlow na serwerze Linux i podłączyłem go do Open WebUI jako firmowy czat. Odpowiada na podstawie wielu złożonych dokumentów PDF. Telemetria i monitoring są przygotowane pod zgodność z unijnym AI Act.
 - **Pipeline spotkań Microsoft Teams:** Skanuje spotkania jednej grupy w lokalnym (on-premises) Outlooku i włącza automatyczne nagrywanie. Transkrypcje i nagrania przychodzą przez Microsoft Graph (webhooki i polling), a LLM zamienia je w raporty JSON.
-- **Portal tłumaczeń z AI:** Zbudowałem wewnętrzny portal zamiast lokalise.com. Gemini wstępnie tłumaczy każdy klucz, tłumacze akceptują albo poprawiają, a brakujące klucze są oznaczane. Każda decyzja jest logowana, więc widać, jak często AI trafia.
-- **Analityka marszrut:** Rozwijam prototyp, w którym technolog rozmawia z historią przebiegów produkcji, testuje nowe ustawienia i dostaje propozycje marszrut.
+- **Portal tłumaczeń z AI:** Zbudowałem wewnętrzny portal zamiast lokalise.com. Gemini wstępnie tłumaczy każdy klucz, tłumacze akceptują albo poprawiają, a brakujące klucze są oznaczane. Nasze teksty są w wielu językach i muszą być spójne, więc dodałem statystyki, pomocniki dla tłumaczy i automatycznie tworzony glosariusz startowy. Każda decyzja jest logowana, więc widać, jak często AI trafia.
+- **Analityka marszrut:** Rozwijam prototyp, w którym technolog rozmawia z historią przebiegów produkcji, testuje nowe ustawienia i dostaje propozycje marszrut. Deterministyczny rdzeń liczy statystyki, a eksperymentalne moduły dodają LLM i autoresearch.
 - **Wywiady AI o usprawnieniach:** Działa na sandboxie Gemini managed agents. Po 15-minutowym wywiadzie (głos lub tekst) o codziennej pracy pisze raport z pomysłami na automatyzację, dopisuje wiedzę do wiki prowadzonego przez LLM i zamienia powtarzalne zadania w pliki SKILL.md dla agentów.
 
 ## Wybrane projekty

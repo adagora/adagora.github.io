@@ -89,10 +89,10 @@
           "tags": ["rag", "deployment", "llm"],
           "title": { "en": "Company-wide RAG assistant", "pl": "Firmowy asystent RAG" },
           "text": {
-            "en": "Deployed RAGFlow on a Linux server with telemetry and monitoring, and connected it to Open WebUI as the company chat. 90% answer accuracy.",
-            "pl": "Wdrożyłem RAGFlow na serwerze Linux z telemetrią i monitoringiem i podłączyłem go do Open WebUI jako firmowy czat. 90% trafnych odpowiedzi."
+            "en": "Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from a large set of complex technical PDFs. Telemetry and monitoring are built for EU AI Act compliance.",
+            "pl": "Wdrożyłem RAGFlow na serwerze Linux i podłączyłem go do Open WebUI jako firmowy czat. Odpowiada na podstawie wielu złożonych dokumentów PDF. Telemetria i monitoring są przygotowane pod zgodność z unijnym AI Act."
           },
-          "stack": ["RAGFlow", "Open WebUI", "Linux", "Telemetry"]
+          "stack": ["RAGFlow", "Open WebUI", "Linux", "Telemetry", "EU AI Act"]
         },
         {
           "tags": ["pipelines", "llm", "integration", "automation"],
@@ -107,8 +107,8 @@
           "tags": ["fullstack", "llm", "product"],
           "title": { "en": "AI translation portal", "pl": "Portal tłumaczeń z AI" },
           "text": {
-            "en": "Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. Every decision is logged, so we can see how often the AI gets it right.",
-            "pl": "Zbudowałem wewnętrzny portal zamiast lokalise.com. Gemini wstępnie tłumaczy każdy klucz, tłumacze akceptują albo poprawiają, a brakujące klucze są oznaczane. Każda decyzja jest logowana, więc widać, jak często AI trafia."
+            "en": "Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. Our texts exist in many languages and must stay consistent, so I added statistics, helpers for translators and an automatically generated starting glossary. Every decision is logged, so we can see how often the AI gets it right.",
+            "pl": "Zbudowałem wewnętrzny portal zamiast lokalise.com. Gemini wstępnie tłumaczy każdy klucz, tłumacze akceptują albo poprawiają, a brakujące klucze są oznaczane. Nasze teksty są w wielu językach i muszą być spójne, więc dodałem statystyki, pomocniki dla tłumaczy i automatycznie tworzony glosariusz startowy. Każda decyzja jest logowana, więc widać, jak często AI trafia."
           },
           "stack": ["TypeScript", "Gemini", "OpenAI", "Redis"]
         },
@@ -116,10 +116,10 @@
           "tags": ["manufacturing", "data", "llm"],
           "title": { "en": "Process-route analytics", "pl": "Analityka marszrut" },
           "text": {
-            "en": "Working on a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes.",
-            "pl": "Rozwijam prototyp, w którym technolog rozmawia z historią przebiegów produkcji, testuje nowe ustawienia i dostaje propozycje marszrut."
+            "en": "Working on a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.",
+            "pl": "Rozwijam prototyp, w którym technolog rozmawia z historią przebiegów produkcji, testuje nowe ustawienia i dostaje propozycje marszrut. Deterministyczny rdzeń liczy statystyki, a eksperymentalne moduły dodają LLM i autoresearch."
           },
-          "stack": ["Go", "Python", "LLM"]
+          "stack": ["Go", "Python", "LLM", "Autoresearch"]
         },
         {
           "tags": ["agents", "product", "llm", "knowledge"],
