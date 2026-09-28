@@ -15,7 +15,7 @@
 :root { --ink: #111820; --ink-2: #37434f; --muted: #66727d; --accent: #0a7a5a; --rule: #d6dcd8; }
 * { box-sizing: border-box; }
 html { background: #e9ece8; }
-body { margin: 0; color: var(--ink); font: 400 9.3pt/1.42 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; color: var(--ink); font: 400 9.3pt/1.47 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 a { color: var(--accent); text-decoration: none; }
 .sheet { max-width: 210mm; margin: 24px auto; padding: 13mm 14mm; background: #fff; box-shadow: 0 10px 40px -20px rgba(0, 0, 0, 0.35); }
 @media print { html { background: #fff; } .sheet { margin: 0; padding: 0; max-width: none; box-shadow: none; } }
@@ -27,22 +27,22 @@ a { color: var(--accent); text-decoration: none; }
 .avail { margin: 4px 0 0; font: 500 8.2pt/1.35 'IBM Plex Mono', Menlo, monospace; color: var(--ink-2); }
 .photo { width: 25mm; height: 32mm; object-fit: cover; object-position: 50% 28%; border: 1px solid var(--rule); flex: none; }
 
-section { margin-top: 11px; }
+section { margin-top: 14px; }
 h2 { margin: 0 0 6px; padding-bottom: 3px; border-bottom: 1px solid var(--rule); font: 600 7.6pt/1.2 'IBM Plex Mono', Menlo, monospace; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
 h3 { margin: 0; font-size: 9.8pt; font-weight: 600; }
 h3 span { color: var(--ink-2); font-weight: 500; }
 .summary { margin: 0; color: var(--ink-2); }
 
-.job { margin-top: 7px; break-inside: avoid; }
+.job { margin-top: 8px; break-inside: avoid; }
 .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
 .when { flex: none; font: 500 8pt/1 'IBM Plex Mono', Menlo, monospace; color: var(--muted); }
 .job-sum { margin: 2px 0 0; color: var(--muted); font-style: italic; font-size: 8.6pt; }
 .job ul { margin: 3px 0 0; padding-left: 13px; }
-.job li { margin: 1.5px 0; color: var(--ink-2); }
+.job li { margin: 2.5px 0; color: var(--ink-2); }
 .job li::marker { color: var(--accent); }
 .job li strong { color: var(--ink); font-weight: 600; }
 
-.proj { margin-top: 5px; break-inside: avoid; }
+.proj { margin-top: 7px; break-inside: avoid; }
 .proj h3 a { margin-left: 6px; font: 400 7.8pt 'IBM Plex Mono', Menlo, monospace; }
 .proj p { margin: 1px 0 0; color: var(--ink-2); }
 .metric { color: var(--accent); font-weight: 500; }
@@ -89,7 +89,7 @@ h3 span { color: var(--ink-2); font-weight: 500; }
     <div class="job">
       <div class="job-head"><h3>AI Engineer <span>· Wiśniowski</span></h3><span class="when">Feb 2025 – present</span></div>
       <p class="job-sum">Internal AI tools for a Polish manufacturer of industrial doors, gates and fences. Official title: Specjalista ds. AI.</p>
-      <ul><li><strong>Company-wide RAG assistant:</strong> Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from a large set of complex technical PDFs. Telemetry and monitoring are built for EU AI Act compliance.</li><li><strong>Microsoft Teams meeting pipeline:</strong> Scans one group&#39;s meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.</li><li><strong>AI translation portal:</strong> Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. Our texts exist in many languages and must stay consistent, so I added statistics, helpers for translators and an automatically generated starting glossary. Every decision is logged, so we can see how often the AI gets it right.</li><li><strong>Process-route analytics:</strong> Working on a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.</li><li><strong>AI interviews for process improvement:</strong> Runs on the Gemini managed-agents sandbox. After a 15-minute voice or text interview about someone&#39;s daily work, it writes an automation report, adds what it learned to an LLM wiki, and turns repeatable tasks into SKILL.md files for agents.</li></ul>
+      <ul><li><strong>Company-wide RAG assistant:</strong> Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from the company&#39;s technical PDFs. Telemetry and monitoring are built for EU AI Act compliance.</li><li><strong>Microsoft Teams meeting pipeline:</strong> Scans one group&#39;s meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.</li><li><strong>AI translation portal:</strong> Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. To keep terms consistent across languages, I added statistics, translator helpers and a generated starting glossary. Every decision is logged, which shows how often the AI is right.</li><li><strong>Process-route analytics:</strong> Working on a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.</li><li><strong>AI interviews for process improvement:</strong> After a 15-minute voice or text interview about someone&#39;s daily work, it writes an automation report, adds what it learned to an LLM wiki and turns repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox.</li></ul>
     </div>
   </section>
 

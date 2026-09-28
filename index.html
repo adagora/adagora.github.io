@@ -110,7 +110,7 @@
         <li class="callout">
           <span class="balloon" aria-hidden="true">1</span>
           <h3>Company-wide RAG assistant</h3>
-          <p>Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from a large set of complex technical PDFs. Telemetry and monitoring are built for EU AI Act compliance.</p>
+          <p>Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from the company&#39;s technical PDFs. Telemetry and monitoring are built for EU AI Act compliance.</p>
           <ul class="chips"><li>RAGFlow</li><li>Open WebUI</li><li>Linux</li><li>Telemetry</li><li>EU AI Act</li></ul>
         </li>
         <li class="callout">
@@ -122,7 +122,7 @@
         <li class="callout">
           <span class="balloon" aria-hidden="true">3</span>
           <h3>AI translation portal</h3>
-          <p>Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. Our texts exist in many languages and must stay consistent, so I added statistics, helpers for translators and an automatically generated starting glossary. Every decision is logged, so we can see how often the AI gets it right.</p>
+          <p>Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. To keep terms consistent across languages, I added statistics, translator helpers and a generated starting glossary. Every decision is logged, which shows how often the AI is right.</p>
           <ul class="chips"><li>TypeScript</li><li>Gemini</li><li>OpenAI</li><li>Redis</li></ul>
         </li>
         <li class="callout">
@@ -134,7 +134,7 @@
         <li class="callout">
           <span class="balloon" aria-hidden="true">5</span>
           <h3>AI interviews for process improvement</h3>
-          <p>Runs on the Gemini managed-agents sandbox. After a 15-minute voice or text interview about someone&#39;s daily work, it writes an automation report, adds what it learned to an LLM wiki, and turns repeatable tasks into SKILL.md files for agents.</p>
+          <p>After a 15-minute voice or text interview about someone&#39;s daily work, it writes an automation report, adds what it learned to an LLM wiki and turns repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox.</p>
           <ul class="chips"><li>Gemini managed agents</li><li>TypeScript</li><li>LLM wiki</li><li>SKILL.md</li></ul>
         </li>
       </ol>
@@ -146,7 +146,7 @@
       <header class="section-head">
         <p class="kicker"><span class="sheet">02</span>Selected projects</p>
         <h2>Projects with code you can read</h2>
-        <p class="lede">Public repositories first, each with a link to the code. The private ones below them I can show on a call.</p>
+        <p class="lede">Each one links to its code. Private repositories and earlier experiments are folded below.</p>
       </header>
       <div class="projects-featured">
         <article id="project-visual-rag" class="project project--xl">
@@ -156,8 +156,7 @@
           </div>
           <p class="project-summary">Finds the right page in product catalogues and technical PDFs by how the page looks (drawings, tables, dimension callouts), then answers from the page images with a vision model and cites the page.</p>
           <dl class="metrics"><div><dt>55% → 84%</dt><dd>top-1 page, visual-only vs hybrid</dd></div><div><dt>100%</dt><dd>recall with LLM page reranking</dd></div><div><dt>p = 0.001</dt><dd>hybrid beats visual 11–0 where they disagree</dd></div></dl>
-          <ul class="bullets"><li>Benchmarked 7 retrieval modes on 38 questions whose gold page is verified by string match (114 in the full set), with Wilson intervals and an exact McNemar test for every pair.</li><li>Hybrid search (pixel index + BM25, fused with reciprocal rank fusion) raised top-1 from 55% to 84%. The same benchmark showed that a paid query-expansion stage added nothing, so the default mode skips it.</li><li>Web UI and API with a per-question retrieval mode, page citations and an answerability score.</li></ul>
-          <p class="credit">Thin layer over PixelRAG (StarTrail): retrieval modes, hybrid search, evaluation and UI are mine.</p>
+          <details class="fold"><summary>How it works</summary><ul class="bullets"><li>Benchmarked 7 retrieval modes on 38 questions whose gold page is verified by string match (114 in the full set), with Wilson intervals and an exact McNemar test for every pair.</li><li>Hybrid search (pixel index + BM25, fused with reciprocal rank fusion) raised top-1 from 55% to 84%. The same benchmark showed that a paid query-expansion stage added nothing, so the default mode skips it.</li><li>Web UI and API with a per-question retrieval mode, page citations and an answerability score.</li></ul><p class="credit">Thin layer over PixelRAG (StarTrail): retrieval modes, hybrid search, evaluation and UI are mine.</p></details>
           <div class="project-foot">
             <ul class="chips"><li>Python</li><li>FAISS</li><li>BM25 + RRF</li><li>PixelRAG</li><li>Gemini</li><li>Claude</li></ul>
             <a class="link-arrow" href="https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV" target="_blank" rel="noopener">Code and benchmark <span aria-hidden="true">↗</span></a>
@@ -170,8 +169,7 @@
           </div>
           <p class="project-summary">Quotes a machined part from its STEP model for a tool shop. Code measures the geometry and computes the price; the language model reviews technology and risks the way a shop manager would.</p>
           <dl class="metrics"><div><dt>STEP → PLN</dt><dd>geometry from OpenCASCADE, price from shop rates</dd></div><div><dt>3 states</dt><dd>pass, fail or need-info on every check, each citing its source</dd></div></dl>
-          <ul class="bullets"><li>Volume, mass, envelope and cost-driving features come from OpenCASCADE. Price is machining time × shop rate, and a physics-based floor on cutting time stops the model from inventing hours.</li><li>Preflight marks each check pass, fail or need-info with a cited source (ISO 2768, ISO 286, material data). Any fail or missing input makes the quote non-binding.</li><li>Web app for estimators who don&#39;t program: 3D preview, 2D drawing input, editable rates, print to PDF and a make-or-buy check against SendCutSend. Covered by 8 test modules.</li></ul>
-          <p class="credit">My <code>wycena</code> skill inside a fork of the MIT-licensed text-to-cad library.</p>
+          <details class="fold"><summary>How it works</summary><ul class="bullets"><li>Volume, mass, envelope and cost-driving features come from OpenCASCADE. Price is machining time × shop rate, and a physics-based floor on cutting time stops the model from inventing hours.</li><li>Preflight marks each check pass, fail or need-info with a cited source (ISO 2768, ISO 286, material data). Any fail or missing input makes the quote non-binding.</li><li>Web app for estimators who don&#39;t program: 3D preview, 2D drawing input, editable rates, print to PDF and a make-or-buy check against SendCutSend. Covered by 8 test modules.</li></ul><p class="credit">My <code>wycena</code> skill inside a fork of the MIT-licensed text-to-cad library.</p></details>
           <div class="project-foot">
             <ul class="chips"><li>Python</li><li>OpenCASCADE</li><li>build123d</li><li>trimesh</li><li>ezdxf</li><li>Claude / OpenAI</li></ul>
             <a class="link-arrow" href="https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
@@ -184,8 +182,7 @@
           </div>
           <p class="project-summary">Finds inconsistent terminology in a translation corpus that never had a glossary. Code mines the disagreements across 7,040 keys and an LLM judge settles each one.</p>
           <dl class="metrics"><div><dt>99,933</dt><dd>judgments in 3 minutes</dd></div><div><dt>~300 ms</dt><dd>check on every edit in the review app</dd></div></dl>
-          <ul class="bullets"><li>Exports an Excel workbook for sign-off and a keyboard-driven review app where translators curate the glossary; decided terms are never re-arbitrated.</li><li>Sibling demo judge-sheets: type a column header such as Urgency and 300 rows fill with semantic predictions in about 3.5 s, as =JUDGE, =PICK and =RATE formulas you can inspect in the formula bar.</li></ul>
-          
+          <details class="fold"><summary>How it works</summary><ul class="bullets"><li>Exports an Excel workbook for sign-off and a keyboard-driven review app where translators curate the glossary; decided terms are never re-arbitrated.</li><li>Sibling demo judge-sheets: type a column header such as Urgency and 300 rows fill with semantic predictions in about 3.5 s, as =JUDGE, =PICK and =RATE formulas you can inspect in the formula bar.</li></ul></details>
           <div class="project-foot">
             <ul class="chips"><li>TypeScript</li><li>TypeSafe Jev</li><li>Excel</li></ul>
             <a class="link-arrow" href="https://github.com/adagora/jev-experiments" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
@@ -197,7 +194,6 @@
             <h3>Multi-agent pricing playground</h3>
           </div>
           <p class="project-summary">Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE.</p>
-          
           
           
           <div class="project-foot">
@@ -213,16 +209,17 @@
           <p class="project-summary">Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon.</p>
           
           
-          
           <div class="project-foot">
             <ul class="chips"><li>Node.js</li><li>Streamr</li><li>ARIMA</li></ul>
             <a class="link-arrow" href="https://github.com/adagora/streamr-ml-demo" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>
-      <h3 class="subhead">Private repositories</h3>
-      <div class="projects-private">
-        <article id="project-cairn" class="project project--sm">
+      <details class="more-projects">
+        <summary><span class="more-title">More projects</span><span class="more-meta">5 private repositories · 7 earlier experiments</span></summary>
+        <h3 class="subhead">Private repositories, shown on a call</h3>
+        <div class="projects-private">
+          <article id="project-cairn" class="project project--sm">
           <div class="project-head">
             <span class="badge badge--private">Private repo</span>
             <h3>Cairn: evidence CLI for process routing</h3>
@@ -230,13 +227,12 @@
           <p class="project-summary">Answers where work waits, where it loops back and which routing choice succeeded more often with the work mix held fixed. Each claim carries its sample size, basis and whether it may be quoted, and findings can be re-proved on new data. Output is one JSON envelope per call, built for AI agents first. Includes a robot-fleet dispatch testbed (VDA 5050).</p>
           
           
-          
           <div class="project-foot">
             <ul class="chips"><li>Go</li><li>BPMN</li><li>VDA 5050</li></ul>
             
           </div>
         </article>
-        <article id="project-pdf-wiki" class="project project--sm">
+          <article id="project-pdf-wiki" class="project project--sm">
           <div class="project-head">
             <span class="badge badge--private">Private repo</span>
             <h3>PDF wiki</h3>
@@ -244,13 +240,12 @@
           <p class="project-summary">Local-first knowledge base: drop in a PDF, run ingest, get a cross-linked Markdown wiki with semantic search. Claude vision describes every figure.</p>
           
           
-          
           <div class="project-foot">
             <ul class="chips"><li>TypeScript</li><li>Claude</li><li>qmd</li></ul>
             
           </div>
         </article>
-        <article id="project-robot-arm" class="project project--sm">
+          <article id="project-robot-arm" class="project project--sm">
           <div class="project-head">
             <span class="badge badge--private">Private repo</span>
             <h3>Robot arm control in the browser</h3>
@@ -258,13 +253,12 @@
           <p class="project-summary">Calibration and daily control of a LeRobot SO-ARM100 from a laptop or phone: keyboard and gamepad input, an e-stop, and a single owner for the serial port.</p>
           
           
-          
           <div class="project-foot">
             <ul class="chips"><li>Python</li><li>LeRobot</li><li>WebSockets</li></ul>
             
           </div>
         </article>
-        <article id="project-har" class="project project--sm">
+          <article id="project-har" class="project project--sm">
           <div class="project-head">
             <span class="badge badge--private">Private repo</span>
             <h3>HAR to API brief</h3>
@@ -272,13 +266,12 @@
           <p class="project-summary">Record browser traffic once and get a brief for rebuilding the API outside the browser: auth, endpoints, body shapes and curl templates.</p>
           
           
-          
           <div class="project-foot">
             <ul class="chips"><li>Python</li></ul>
             
           </div>
         </article>
-        <article id="project-meat" class="project project--sm">
+          <article id="project-meat" class="project project--sm">
           <div class="project-head">
             <span class="badge badge--private">Private repo</span>
             <h3>meat: reading diffs</h3>
@@ -286,45 +279,31 @@
           <p class="project-summary">Turns a large code diff into a smaller reading diff focused on the consequential changes. TypeScript CLI, migrated from Go.</p>
           
           
-          
           <div class="project-foot">
             <ul class="chips"><li>TypeScript</li><li>Go</li></ul>
             
           </div>
         </article>
-      </div>
-      <h3 class="subhead">Earlier experiments</h3>
-      <ul class="earlier">
-        <li><a href="https://github.com/adagora/loop-coding-agent" target="_blank" rel="noopener">Ralph loop for coding agents</a><span class="earlier-sum">Plan and build prompt loop with AGENTS.md and specs, for Claude Code, opencode and Kilo Code.</span><span class="earlier-stack">Shell</span></li>
-        <li><a href="https://github.com/adagora/experiment-with-roaming-RAG" target="_blank" rel="noopener">Roaming RAG</a><span class="earlier-sum">Collapses a long Markdown document to its headings and lets the model expand only the sections it needs.</span><span class="earlier-stack">Python</span></li>
-        <li><a href="https://github.com/adagora/book-ai-chat" target="_blank" rel="noopener">MiCA regulation Q&amp;A</a><span class="earlier-sum">Answers questions about the EU crypto-asset regulation (MiCA) from the regulation text, with PostgresML for semantic search. A 2024 project, still live; the free hosting tier can take a minute to wake up. <a class="" href="https://cryptoregulationtalk.onrender.com/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a></span><span class="earlier-stack">Node.js · PostgresML · OpenAI</span></li>
-        <li><a href="https://github.com/adagora/voice-to-text-research" target="_blank" rel="noopener">Say: speech to text in the browser</a><span class="earlier-sum">Voice notes transcribed locally with Whisper on Transformers.js, with a rich-text editor.</span><span class="earlier-stack">React · Transformers.js · Whisper</span></li>
-        <li><a href="https://github.com/adagora/llm-video-extract-frames" target="_blank" rel="noopener">Video frames analyzer</a><span class="earlier-sum">Extracts frames from video, analyses them with Gemini, tracks cost and skips duplicate work.</span><span class="earlier-stack">TypeScript · Gemini</span></li>
-        <li><a href="https://github.com/adagora/mediapipe-for-fun" target="_blank" rel="noopener">Hand-tracking interaction experiments</a><span class="earlier-sum">Human-computer interaction prototypes with MediaPipe.</span><span class="earlier-stack">Python · MediaPipe</span></li>
-        <li><a href="https://github.com/adagora/eboombox" target="_blank" rel="noopener">Eboombox</a><span class="earlier-sum">Turns Cardano transactions into sound.</span><span class="earlier-stack">Next.js · Cardano</span></li>
-      </ul>
+        </div>
+        <h3 class="subhead">Earlier experiments</h3>
+        <ul class="earlier">
+          <li><a href="https://github.com/adagora/loop-coding-agent" target="_blank" rel="noopener">Ralph loop for coding agents</a><span class="earlier-sum">A plan-and-build prompt loop driven by AGENTS.md and specs, for Claude Code, opencode and Kilo Code.</span><span class="earlier-stack">Shell</span></li>
+          <li><a href="https://github.com/adagora/experiment-with-roaming-RAG" target="_blank" rel="noopener">Roaming RAG</a><span class="earlier-sum">Collapses a long Markdown document to its headings and lets the model expand only the sections it needs.</span><span class="earlier-stack">Python</span></li>
+          <li><a href="https://github.com/adagora/book-ai-chat" target="_blank" rel="noopener">MiCA regulation Q&amp;A</a><span class="earlier-sum">Answers questions about the EU crypto-asset regulation (MiCA) from the regulation text, with PostgresML for semantic search. A 2024 project, still live; the free hosting tier can take a minute to wake up. <a class="" href="https://cryptoregulationtalk.onrender.com/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a></span><span class="earlier-stack">Node.js · PostgresML · OpenAI</span></li>
+          <li><a href="https://github.com/adagora/voice-to-text-research" target="_blank" rel="noopener">Say: speech to text in the browser</a><span class="earlier-sum">Voice notes transcribed locally with Whisper on Transformers.js, with a rich-text editor.</span><span class="earlier-stack">React · Transformers.js · Whisper</span></li>
+          <li><a href="https://github.com/adagora/llm-video-extract-frames" target="_blank" rel="noopener">Video frames analyzer</a><span class="earlier-sum">Extracts frames from video, analyses them with Gemini, tracks cost and skips duplicate work.</span><span class="earlier-stack">TypeScript · Gemini</span></li>
+          <li><a href="https://github.com/adagora/mediapipe-for-fun" target="_blank" rel="noopener">Hand-tracking interaction experiments</a><span class="earlier-sum">Human-computer interaction prototypes with MediaPipe.</span><span class="earlier-stack">Python · MediaPipe</span></li>
+          <li><a href="https://github.com/adagora/eboombox" target="_blank" rel="noopener">Eboombox</a><span class="earlier-sum">Turns Cardano transactions into sound.</span><span class="earlier-stack">Next.js · Cardano</span></li>
+        </ul>
+      </details>
     </section>
     <!-- /build:projects -->
 
-    <!-- build:principles -->
-    <section id="principles" class="section">
-      <header class="section-head">
-        <p class="kicker"><span class="sheet">03</span>How I work</p>
-        <h2>Engineering principles</h2>
-      </header>
-      <div class="principles">
-        <div class="principle"><span class="pnum">P1</span><h3>Code computes, the model judges</h3><p>In the quoting engine, geometry and price come from code and the LLM reviews technology and risk. Any number a model could guess is computed instead.</p></div>
-        <div class="principle"><span class="pnum">P2</span><h3>Measure before claiming</h3><p>Retrieval modes ship with a benchmark, confidence intervals and significance tests. When two rows can&#39;t support a conclusion, the README says so.</p></div>
-        <div class="principle"><span class="pnum">P3</span><h3>Build for the person at the desk</h3><p>Translators accept or correct AI proposals and every decision is logged. Estimators get a web app with editable rates and a printable quote.</p></div>
-        <div class="principle"><span class="pnum">P4</span><h3>Tools agents can use</h3><p>CLIs return one JSON envelope with the answer, caveats and the next calls to make. My recent repos include an AGENTS.md for coding agents.</p></div>
-      </div>
-    </section>
-    <!-- /build:principles -->
 
     <!-- build:experience -->
     <section id="experience" class="section">
       <header class="section-head">
-        <p class="kicker"><span class="sheet">04</span>Career</p>
+        <p class="kicker"><span class="sheet">03</span>Career</p>
         <h2>Experience</h2>
       </header>
       <ol class="timeline">
@@ -385,7 +364,7 @@
     <!-- build:skills -->
     <section id="skills" class="section">
       <header class="section-head">
-        <p class="kicker"><span class="sheet">05</span>Toolbox</p>
+        <p class="kicker"><span class="sheet">04</span>Toolbox</p>
         <h2>Skills</h2>
       </header>
       <div class="skill-groups">
@@ -403,7 +382,7 @@
 
     <section id="activity" class="section">
       <header class="section-head">
-        <p class="kicker"><span class="sheet">06</span>Proof of work</p>
+        <p class="kicker"><span class="sheet">05</span>Proof of work</p>
         <h2>Commit activity</h2>
         <p class="lede">Every commit across public and private repositories over the last 12 months, refreshed daily by a GitHub Action. Private repos contribute counts and commit titles only.</p>
       </header>
@@ -434,13 +413,13 @@
     <!-- build:background -->
     <section id="background" class="section">
       <header class="section-head">
-        <p class="kicker"><span class="sheet">07</span>Background</p>
+        <p class="kicker"><span class="sheet">06</span>Background</p>
         <h2>Education, languages, certificates</h2>
       </header>
       <div class="bg-grid">
         <div><h3>Education</h3><ul class="plain"><li><strong>Silesian University of Technology, Gliwice</strong><span>MSc Eng., Materials Engineering (surface engineering and heat treatment) · 2010–2016</span></li><li><strong>TU Bergakademie Freiberg, Germany</strong><span>Exchange, Forming technology (Umformtechnik) · 2014–2015</span></li><li><strong>Universidad de Oviedo, Spain</strong><span>Exchange, Materials science · 2013</span></li></ul></div>
         <div><h3>Languages</h3><ul class="plain"><li><strong>Polish</strong><span>Native</span></li><li><strong>English</strong><span>Professional working (B2)</span></li><li><strong>German</strong><span>Limited working (B1, DSH-2 certificate)</span></li></ul></div>
-        <div><h3>Certificates</h3><ul class="plain"><li><strong>CATIA V5, advanced level</strong><span>CADSOL Design Poland, 2018</span></li><li><strong>AutoCAD, levels 1 and 2</strong><span>Autodesk, 2015</span></li><li><strong>Generative AI Essentials for Software Developers</strong></li><li><strong>Algorithmic Trading &amp; Technical Analysis</strong></li><li><strong>Ethereum 101</strong></li><li><strong>Blockchain &amp; Bitcoin 101</strong></li></ul></div>
+        <div><h3>Certificates</h3><ul class="plain"><li><strong>CATIA V5, advanced level</strong><span>CADSOL Design Poland, 2018</span></li><li><strong>AutoCAD, levels 1 and 2</strong><span>Autodesk, 2015</span></li><li><strong>Generative AI Essentials for Software Developers</strong></li></ul></div>
         <div><h3>Awards and publications</h3><ul class="plain"><li><strong>2nd place, LearnWeb3 AI Hackathon</strong><span>2023</span></li><li><strong>Laser surface treatment technologies: laser ablation</strong><span>Co-author</span></li></ul></div>
       </div>
     </section>
@@ -449,7 +428,7 @@
     <!-- build:recruiters -->
     <section id="recruiters" class="section">
       <header class="section-head">
-        <p class="kicker"><span class="sheet">08</span>For recruiters</p>
+        <p class="kicker"><span class="sheet">07</span>For recruiters</p>
         <h2>Quick facts</h2>
         <p class="lede">Everything a screening call usually asks, in one place.</p>
       </header>

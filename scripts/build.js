@@ -218,51 +218,50 @@ function siteRegions(p) {
       </ol>
     </section>`;
 
-  const projectCard = (pr, size) => `<article id="project-${pr.id}" class="project project--${size}">
+  // Bullets and credit fold behind a toggle so a card reads as summary, numbers, stack, link.
+  const projectCard = (pr, size) => {
+    const bullets = pr.bullets ? `<ul class="bullets">${pr.bullets.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
+    const credit = pr.credit ? `<p class="credit">${esc(pr.credit).replace(/`([^`]+)`/g, '<code>$1</code>')}</p>` : '';
+    return `<article id="project-${pr.id}" class="project project--${size}">
           <div class="project-head">
             <span class="badge badge--${pr.visibility}">${pr.visibility === 'public' ? 'Public code' : 'Private repo'}</span>
             <h3>${esc(t(pr.name))}</h3>
           </div>
           <p class="project-summary">${esc(t(pr.summary))}</p>
           ${pr.metrics ? `<dl class="metrics">${pr.metrics.map((m) => `<div><dt>${esc(m.value)}</dt><dd>${esc(m.label)}</dd></div>`).join('')}</dl>` : ''}
-          ${pr.bullets ? `<ul class="bullets">${pr.bullets.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
-          ${pr.credit ? `<p class="credit">${esc(pr.credit).replace(/`([^`]+)`/g, '<code>$1</code>')}</p>` : ''}
+          ${bullets ? `<details class="fold"><summary>How it works</summary>${bullets}${credit}</details>` : credit}
           <div class="project-foot">
             ${chips(pr.stack)}
             ${(pr.links || []).map((l) => external(l.url, l.label)).join('')}
           </div>
         </article>`;
+  };
 
   const projects = `
     <section id="projects" class="section">
       ${sectionHead('02', 'Selected projects', 'Projects with code you can read',
-        'Public repositories first, each with a link to the code. The private ones below them I can show on a call.')}
+        'Each one links to its code. Private repositories and earlier experiments are folded below.')}
       <div class="projects-featured">
         ${featured.map((pr, i) => projectCard(pr, i < 2 ? 'xl' : 'md')).join('\n        ')}
       </div>
-      <h3 class="subhead">Private repositories</h3>
-      <div class="projects-private">
-        ${priv.map((pr) => projectCard(pr, 'sm')).join('\n        ')}
-      </div>
-      <h3 class="subhead">Earlier experiments</h3>
-      <ul class="earlier">
-        ${earlier.map((pr) => `<li><a href="${esc(pr.links[0].url)}" target="_blank" rel="noopener">${esc(t(pr.name))}</a><span class="earlier-sum">${esc(t(pr.summary))}${pr.links.slice(1).map((l) => ` ${external(l.url, l.label, '')}`).join('')}</span><span class="earlier-stack">${esc(pr.stack.join(' · '))}</span></li>`).join('\n        ')}
-      </ul>
-    </section>`;
-
-  const principles = `
-    <section id="principles" class="section">
-      ${sectionHead('03', 'How I work', 'Engineering principles')}
-      <div class="principles">
-        ${p.principles.map((x, i) => `<div class="principle"><span class="pnum">P${i + 1}</span><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></div>`).join('\n        ')}
-      </div>
+      <details class="more-projects">
+        <summary><span class="more-title">More projects</span><span class="more-meta">${priv.length} private repositories · ${earlier.length} earlier experiments</span></summary>
+        <h3 class="subhead">Private repositories, shown on a call</h3>
+        <div class="projects-private">
+          ${priv.map((pr) => projectCard(pr, 'sm')).join('\n          ')}
+        </div>
+        <h3 class="subhead">Earlier experiments</h3>
+        <ul class="earlier">
+          ${earlier.map((pr) => `<li><a href="${esc(pr.links[0].url)}" target="_blank" rel="noopener">${esc(t(pr.name))}</a><span class="earlier-sum">${esc(t(pr.summary))}${pr.links.slice(1).map((l) => ` ${external(l.url, l.label, '')}`).join('')}</span><span class="earlier-stack">${esc(pr.stack.join(' · '))}</span></li>`).join('\n          ')}
+        </ul>
+      </details>
     </section>`;
 
   const others = p.work.slice(1).filter((w) => w.group !== 'cad');
   const cad = p.work.filter((w) => w.group === 'cad');
   const experience = `
     <section id="experience" class="section">
-      ${sectionHead('04', 'Career', 'Experience')}
+      ${sectionHead('03', 'Career', 'Experience')}
       <ol class="timeline">
         <li class="tl-item tl-item--now">
           <div class="tl-when">${esc(range(current.startDate, current.endDate, 'en', L))}</div>
@@ -291,7 +290,7 @@ function siteRegions(p) {
 
   const skills = `
     <section id="skills" class="section">
-      ${sectionHead('05', 'Toolbox', 'Skills')}
+      ${sectionHead('04', 'Toolbox', 'Skills')}
       <div class="skill-groups">
         ${p.skills.map((s) => `<div class="skill-group"><h3>${esc(t(s.name))}</h3>${chips(s.keywords)}</div>`).join('\n        ')}
       </div>
@@ -299,7 +298,7 @@ function siteRegions(p) {
 
   const background = `
     <section id="background" class="section">
-      ${sectionHead('07', 'Background', 'Education, languages, certificates')}
+      ${sectionHead('06', 'Background', 'Education, languages, certificates')}
       <div class="bg-grid">
         <div><h3>${L.education}</h3><ul class="plain">${p.education.map((e) => `<li><strong>${esc(t(e.institution))}</strong><span>${esc(t(e.studyType))}, ${esc(t(e.area))} · ${esc(e.startDate === e.endDate ? e.startDate : `${e.startDate}–${e.endDate}`)}</span></li>`).join('')}</ul></div>
         <div><h3>${L.languages}</h3><ul class="plain">${p.languages.map((l) => `<li><strong>${esc(t(l.language))}</strong><span>${esc(t(l.fluency))}</span></li>`).join('')}</ul></div>
@@ -310,7 +309,7 @@ function siteRegions(p) {
 
   const recruiters = `
     <section id="recruiters" class="section">
-      ${sectionHead('08', 'For recruiters', 'Quick facts', 'Everything a screening call usually asks, in one place.')}
+      ${sectionHead('07', 'For recruiters', 'Quick facts', 'Everything a screening call usually asks, in one place.')}
       <div class="recruit-grid">
         <dl class="facts">
           <div><dt>Target roles</dt><dd>${esc(b.targetRoles.join(' · '))}</dd></div>
@@ -345,7 +344,7 @@ function siteRegions(p) {
     <span class="footer-links"><a href="${mail}">Email</a>${b.profiles.map((x) => external(x.url, x.network, '')).join('')}</span>
   </footer>`;
 
-  return { head, hero, proof, delivery, projects, principles, experience, skills, background, recruiters, footer };
+  return { head, hero, proof, delivery, projects, experience, skills, background, recruiters, footer };
 }
 
 function fillRegions(html, regions) {

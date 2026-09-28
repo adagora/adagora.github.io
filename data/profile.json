@@ -64,12 +64,6 @@
     { "id": "tools", "value": "5", "label": "internal AI tools built at a manufacturer since February 2025", "href": "#delivery" }
   ],
 
-  "principles": [
-    { "title": "Code computes, the model judges", "text": "In the quoting engine, geometry and price come from code and the LLM reviews technology and risk. Any number a model could guess is computed instead." },
-    { "title": "Measure before claiming", "text": "Retrieval modes ship with a benchmark, confidence intervals and significance tests. When two rows can't support a conclusion, the README says so." },
-    { "title": "Build for the person at the desk", "text": "Translators accept or correct AI proposals and every decision is logged. Estimators get a web app with editable rates and a printable quote." },
-    { "title": "Tools agents can use", "text": "CLIs return one JSON envelope with the answer, caveats and the next calls to make. My recent repos include an AGENTS.md for coding agents." }
-  ],
 
   "work": [
     {
@@ -89,8 +83,8 @@
           "tags": ["rag", "deployment", "llm"],
           "title": { "en": "Company-wide RAG assistant", "pl": "Firmowy asystent RAG" },
           "text": {
-            "en": "Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from a large set of complex technical PDFs. Telemetry and monitoring are built for EU AI Act compliance.",
-            "pl": "Wdrożyłem RAGFlow na serwerze Linux i podłączyłem go do Open WebUI jako firmowy czat. Odpowiada na podstawie wielu złożonych dokumentów PDF. Telemetria i monitoring są przygotowane pod zgodność z unijnym AI Act."
+            "en": "Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from the company's technical PDFs. Telemetry and monitoring are built for EU AI Act compliance.",
+            "pl": "Wdrożyłem RAGFlow na serwerze Linux i podłączyłem go do Open WebUI jako firmowy czat. Odpowiada na podstawie firmowej dokumentacji technicznej w PDF. Telemetria i monitoring są przygotowane pod zgodność z unijnym AI Act."
           },
           "stack": ["RAGFlow", "Open WebUI", "Linux", "Telemetry", "EU AI Act"]
         },
@@ -107,8 +101,8 @@
           "tags": ["fullstack", "llm", "product"],
           "title": { "en": "AI translation portal", "pl": "Portal tłumaczeń z AI" },
           "text": {
-            "en": "Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. Our texts exist in many languages and must stay consistent, so I added statistics, helpers for translators and an automatically generated starting glossary. Every decision is logged, so we can see how often the AI gets it right.",
-            "pl": "Zbudowałem wewnętrzny portal zamiast lokalise.com. Gemini wstępnie tłumaczy każdy klucz, tłumacze akceptują albo poprawiają, a brakujące klucze są oznaczane. Nasze teksty są w wielu językach i muszą być spójne, więc dodałem statystyki, pomocniki dla tłumaczy i automatycznie tworzony glosariusz startowy. Każda decyzja jest logowana, więc widać, jak często AI trafia."
+            "en": "Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. To keep terms consistent across languages, I added statistics, translator helpers and a generated starting glossary. Every decision is logged, which shows how often the AI is right.",
+            "pl": "Zbudowałem wewnętrzny portal zamiast lokalise.com. Gemini wstępnie tłumaczy każdy klucz, tłumacze akceptują albo poprawiają, a brakujące klucze są oznaczane. Żeby terminy były spójne między językami, dodałem statystyki, podpowiedzi dla tłumaczy i automatycznie tworzony glosariusz startowy. Każda decyzja jest logowana, więc widać, jak często AI trafia."
           },
           "stack": ["TypeScript", "Gemini", "OpenAI", "Redis"]
         },
@@ -125,8 +119,8 @@
           "tags": ["agents", "product", "llm", "knowledge"],
           "title": { "en": "AI interviews for process improvement", "pl": "Wywiady AI o usprawnieniach" },
           "text": {
-            "en": "Runs on the Gemini managed-agents sandbox. After a 15-minute voice or text interview about someone's daily work, it writes an automation report, adds what it learned to an LLM wiki, and turns repeatable tasks into SKILL.md files for agents.",
-            "pl": "Działa na sandboxie Gemini managed agents. Po 15-minutowym wywiadzie (głos lub tekst) o codziennej pracy pisze raport z pomysłami na automatyzację, dopisuje wiedzę do wiki prowadzonego przez LLM i zamienia powtarzalne zadania w pliki SKILL.md dla agentów."
+            "en": "After a 15-minute voice or text interview about someone's daily work, it writes an automation report, adds what it learned to an LLM wiki and turns repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox.",
+            "pl": "Po 15-minutowym wywiadzie (głos lub tekst) o codziennej pracy pisze raport z pomysłami na automatyzację, dopisuje wiedzę do wiki prowadzonego przez LLM i zamienia powtarzalne zadania w pliki SKILL.md dla agentów. Działa na sandboxie Gemini managed agents."
           },
           "stack": ["Gemini managed agents", "TypeScript", "LLM wiki", "SKILL.md"]
         }
@@ -448,7 +442,7 @@
       "tier": "earlier",
       "visibility": "public",
       "name": "Ralph loop for coding agents",
-      "summary": "Plan and build prompt loop with AGENTS.md and specs, for Claude Code, opencode and Kilo Code.",
+      "summary": "A plan-and-build prompt loop driven by AGENTS.md and specs, for Claude Code, opencode and Kilo Code.",
       "stack": ["Shell"],
       "links": [{ "label": "Code", "url": "https://github.com/adagora/loop-coding-agent" }]
     },
@@ -555,10 +549,7 @@
   "certificates": [
     { "name": "CATIA V5, advanced level", "issuer": "CADSOL Design Poland", "date": "2018" },
     { "name": "AutoCAD, levels 1 and 2", "issuer": "Autodesk", "date": "2015" },
-    { "name": "Generative AI Essentials for Software Developers" },
-    { "name": "Algorithmic Trading & Technical Analysis", "cv": false },
-    { "name": "Ethereum 101", "cv": false },
-    { "name": "Blockchain & Bitcoin 101", "cv": false }
+    { "name": "Generative AI Essentials for Software Developers" }
   ],
 
   "awards": [
