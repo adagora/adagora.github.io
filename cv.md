@@ -21,7 +21,7 @@ Since February 2025 I have been building internal AI tools at an industrial manu
 
 Official title: Specjalista ds. AI. Internal AI tools for a Polish manufacturer of industrial doors, gates and fences.
 
-- **Company-wide RAG assistant:** Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from the company's technical PDFs. Telemetry and monitoring are built for EU AI Act compliance.
+- **Company-wide RAG assistant:** Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from the company's technical PDFs with complex layouts. Telemetry and monitoring are built for EU AI Act compliance.
 - **Microsoft Teams meeting pipeline:** Scans one group's meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.
 - **AI translation portal:** Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. To keep terms consistent across languages, I added statistics, translator helpers and a generated starting glossary. Every decision is logged, which shows how often the AI is right.
 - **Process-route analytics:** Working on a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.
@@ -31,24 +31,22 @@ Official title: Specjalista ds. AI. Internal AI tools for a Polish manufacturer 
 
 ### Visual RAG for technical PDFs
 
-Finds the right page in product catalogues and technical PDFs by how the page looks (drawings, tables, dimension callouts), then answers from the page images with a vision model and cites the page.
+Search and Q&A over product catalogues and technical PDFs with complex layouts: drawings, tables and dimension callouts. It finds the right page by how it looks, answers from the page image with a vision model and cites the page.
 
-Results: 55% → 84% (top-1 page, visual-only vs hybrid); 100% (recall with LLM page reranking); p = 0.001 (hybrid beats visual 11–0 where they disagree).
+- Searches page images and the PDF text together; adding the text search finds the right page more often than image search alone.
+- Seven search modes were compared on test questions with known answer pages. A paid query-rewriting step did not help, so it is off by default.
+- Web UI and API: choose a search mode per question, and every answer cites its page.
 
-- Benchmarked 7 retrieval modes on 38 questions whose gold page is verified by string match (114 in the full set), with Wilson intervals and an exact McNemar test for every pair.
-- Hybrid search (pixel index + BM25, fused with reciprocal rank fusion) raised top-1 from 55% to 84%. The same benchmark showed that a paid query-expansion stage added nothing, so the default mode skips it.
-- Web UI and API with a per-question retrieval mode, page citations and an answerability score.
-
-Credit: Thin layer over PixelRAG (StarTrail): retrieval modes, hybrid search, evaluation and UI are mine.
+Credit: Thin layer over PixelRAG (StarTrail): the search modes, combined image and text search, testing and UI are mine.
 
 Stack: Python, FAISS, BM25 + RRF, PixelRAG, Gemini, Claude
 Code: https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV
 
 ### CAD quoting engine for machined parts
 
-Quotes a machined part from its STEP model for a tool shop. Code measures the geometry and computes the price; the language model reviews technology and risks the way a shop manager would.
+Quotes a machined part from its STEP file (a 3D CAD model) for a tool shop. Code measures the part and computes the price; an AI model reviews the machining process and risks the way a shop manager would.
 
-Results: STEP → PLN (geometry from OpenCASCADE, price from shop rates); 3 states (pass, fail or need-info on every check, each citing its source).
+Results: STEP file → price (a 3D CAD model goes in, a quote in PLN comes out, based on the shop's own rates).
 
 - Volume, mass, envelope and cost-driving features come from OpenCASCADE. Price is machining time × shop rate, and a physics-based floor on cutting time stops the model from inventing hours.
 - Preflight marks each check pass, fail or need-info with a cited source (ISO 2768, ISO 286, material data). Any fail or missing input makes the quote non-binding.
@@ -61,9 +59,9 @@ Code: https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wyce
 
 ### LLM-judged translation audit
 
-Finds inconsistent terminology in a translation corpus that never had a glossary. Code mines the disagreements across 7,040 keys and an LLM judge settles each one.
+Finds inconsistent terms in translations that never had a glossary. Code finds the disagreements across 7,040 texts, and an AI model decides each one.
 
-Results: 99,933 (judgments in 3 minutes); ~300 ms (check on every edit in the review app).
+Results: 99,933 (AI decisions in 3 minutes); ~300 ms (to re-check a text after each edit in the review app).
 
 - Exports an Excel workbook for sign-off and a keyboard-driven review app where translators curate the glossary; decided terms are never re-arbitrated.
 - Sibling demo judge-sheets: type a column header such as Urgency and 300 rows fill with semantic predictions in about 3.5 s, as =JUDGE, =PICK and =RATE formulas you can inspect in the formula bar.

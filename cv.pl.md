@@ -21,7 +21,7 @@ Od lutego 2025 buduję wewnętrzne narzędzia AI u producenta przemysłowego: fi
 
 Stanowisko formalne: Specjalista ds. AI. Wewnętrzne narzędzia AI dla polskiego producenta bram, drzwi i ogrodzeń.
 
-- **Firmowy asystent RAG:** Wdrożyłem RAGFlow na serwerze Linux i podłączyłem go do Open WebUI jako firmowy czat. Odpowiada na podstawie firmowej dokumentacji technicznej w PDF. Telemetria i monitoring są przygotowane pod zgodność z unijnym AI Act.
+- **Firmowy asystent RAG:** Wdrożyłem RAGFlow na serwerze Linux i podłączyłem go do Open WebUI jako firmowy czat. Odpowiada na podstawie firmowej dokumentacji technicznej PDF o złożonym układzie. Telemetria i monitoring są przygotowane pod zgodność z unijnym AI Act.
 - **Pipeline spotkań Microsoft Teams:** Skanuje spotkania jednej grupy w lokalnym (on-premises) Outlooku i włącza automatyczne nagrywanie. Transkrypcje i nagrania przychodzą przez Microsoft Graph (webhooki i polling), a LLM zamienia je w raporty JSON.
 - **Portal tłumaczeń z AI:** Zbudowałem wewnętrzny portal zamiast lokalise.com. Gemini wstępnie tłumaczy każdy klucz, tłumacze akceptują albo poprawiają, a brakujące klucze są oznaczane. Żeby terminy były spójne między językami, dodałem statystyki, podpowiedzi dla tłumaczy i automatycznie tworzony glosariusz startowy. Każda decyzja jest logowana, więc widać, jak często AI trafia.
 - **Analityka marszrut:** Rozwijam prototyp, w którym technolog rozmawia z historią przebiegów produkcji, testuje nowe ustawienia i dostaje propozycje marszrut. Deterministyczny rdzeń liczy statystyki, a eksperymentalne moduły dodają LLM i autoresearch.
@@ -31,27 +31,25 @@ Stanowisko formalne: Specjalista ds. AI. Wewnętrzne narzędzia AI dla polskiego
 
 ### Visual RAG dla dokumentacji technicznej
 
-Znajduje właściwą stronę w katalogach i dokumentacji PDF po tym, jak strona wygląda (rysunki, tabele, wymiary), a potem odpowiada z obrazów stron modelem wizyjnym i cytuje stronę.
-
-Results: 55% → 84% (top-1 page, visual-only vs hybrid); 100% (recall with LLM page reranking); p = 0.001 (hybrid beats visual 11–0 where they disagree).
+Wyszukiwanie i odpowiedzi na pytania w katalogach i dokumentacji technicznej PDF o złożonym układzie: rysunki, tabele i wymiary. Znajduje właściwą stronę po tym, jak wygląda, odpowiada z obrazu strony modelem wizyjnym i cytuje stronę.
 
 Stack: Python, FAISS, BM25 + RRF, PixelRAG, Gemini, Claude
 Code: https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV
 
 ### Wycena detali obrabianych z modelu CAD
 
-Wycenia detal obrabiany mechanicznie na podstawie modelu STEP dla narzędziowni. Geometrię i cenę liczy kod, a model językowy ocenia technologię i ryzyka jak kierownik narzędziowni.
+Wycenia detal obrabiany mechanicznie na podstawie pliku STEP (model 3D CAD) dla narzędziowni. Wymiary i cenę liczy kod, a model AI ocenia technologię i ryzyka jak kierownik narzędziowni.
 
-Results: STEP → PLN (geometry from OpenCASCADE, price from shop rates); 3 states (pass, fail or need-info on every check, each citing its source).
+Results: STEP file → price (a 3D CAD model goes in, a quote in PLN comes out, based on the shop's own rates).
 
 Stack: Python, OpenCASCADE, build123d, trimesh, ezdxf, Claude / OpenAI
 Code: https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena
 
 ### Audyt tłumaczeń z sędzią LLM
 
-Wykrywa niespójną terminologię w korpusie tłumaczeń bez glosariusza. Kod wydobywa rozbieżności z 7 040 kluczy, a sędzia LLM rozstrzyga każdą z nich.
+Wykrywa niespójne terminy w tłumaczeniach, które nigdy nie miały glosariusza. Kod wyszukuje rozbieżności w 7 040 tekstach, a model AI rozstrzyga każdą z nich.
 
-Results: 99,933 (judgments in 3 minutes); ~300 ms (check on every edit in the review app).
+Results: 99,933 (AI decisions in 3 minutes); ~300 ms (to re-check a text after each edit in the review app).
 
 Stack: TypeScript, TypeSafe Jev, Excel
 Code: https://github.com/adagora/jev-experiments
