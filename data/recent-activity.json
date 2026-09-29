@@ -1,6 +1,24 @@
 {
-  "generated": "2026-09-28T12:54:44.617Z",
+  "generated": "2026-09-29T12:08:08.337Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/adagora.github.io",
+      "message": "content: plain-language project numbers for non-technical readers",
+      "url": "https://github.com/adagora/adagora.github.io/commit/31846969c220adbe6a2730e333e947d1d12ec436",
+      "private": false,
+      "date": "2026-09-28T20:06:54Z",
+      "sha": "3184696"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/adagora.github.io",
+      "message": "feat: fold project details and trim the portfolio page",
+      "url": "https://github.com/adagora/adagora.github.io/commit/fb680f29478e783d9c95e8026ff2b325b634b40e",
+      "private": false,
+      "date": "2026-09-28T19:51:55Z",
+      "sha": "fb680f2"
+    },
     {
       "type": "commit",
       "repo": "adagora/rocket-simulator",
@@ -207,24 +225,6 @@
       "private": true,
       "date": "2026-09-21T16:49:32Z",
       "sha": "699d59d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/jev-experiments",
-      "message": "feat(translate-audit): the review app under test, one glossary shape, a check panel",
-      "url": "https://github.com/adagora/jev-experiments/commit/0dac88075853ccf47e18836b3f191d6d7229335b",
-      "private": false,
-      "date": "2026-09-21T16:36:20Z",
-      "sha": "0dac880"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
-      "message": "chore: keep agent skills on disk and out of the history",
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV/commit/6aeaccf8236285215aa711bacec21fc8e501261a",
-      "private": false,
-      "date": "2026-09-21T12:31:41Z",
-      "sha": "6aeaccf"
     }
   ]
 }
