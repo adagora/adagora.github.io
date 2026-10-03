@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T11:53:08.636Z",
+  "generated": "2026-10-03T11:06:05.999Z",
   "items": [
     {
       "type": "commit",
@@ -84,7 +84,7 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
+      "repo": "adagora/cairn",
       "message": "feat: one-command robot-fleet demo (scripts/robot-demo.sh)",
       "url": null,
       "private": true,
@@ -93,7 +93,7 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
+      "repo": "adagora/cairn",
       "message": "feat: VDA 5050 fleet recordings -> measured robot load (pintrest-cairn-pqvy.15)",
       "url": null,
       "private": true,
@@ -102,7 +102,7 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
+      "repo": "adagora/cairn",
       "message": "feat: robot-fleet dispatch testbed with planted faults (pintrest-cairn-pqvy.14)",
       "url": null,
       "private": true,
@@ -111,7 +111,7 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
+      "repo": "adagora/cairn",
       "message": "feat: measured robot and machine load from lifecycle times (pintrest-cairn-pqvy.12, D55)",
       "url": null,
       "private": true,
@@ -120,7 +120,7 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/manufacturing-tool",
+      "repo": "adagora/cairn",
       "message": "docs: Trier resources are planned per BPMN task, not chosen at run time",
       "url": null,
       "private": true,
