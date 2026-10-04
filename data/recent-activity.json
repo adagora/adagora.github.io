@@ -1,6 +1,51 @@
 {
-  "generated": "2026-10-03T11:06:05.999Z",
+  "generated": "2026-10-04T11:47:41.134Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "Merge realism-campaign-2: rewind and photo mode, footpads, sea, twilight, AO, shocks, path-traced stills, native GPU renderer",
+      "url": null,
+      "private": true,
+      "date": "2026-10-03T23:07:49Z",
+      "sha": "a86ab1e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "Close the realism campaign beads with the native GPU shortfalls recorded",
+      "url": null,
+      "private": true,
+      "date": "2026-10-03T23:07:37Z",
+      "sha": "ecd56d6"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "Face hand-made near-horizontal faces up and drop the two-sided exception: pad 56 FPS, browser SSIM 0.81",
+      "url": null,
+      "private": true,
+      "date": "2026-10-03T22:37:33Z",
+      "sha": "5a0b030"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "Native GPU measurements and parity at f1f58b8",
+      "url": null,
+      "private": true,
+      "date": "2026-10-03T21:55:10Z",
+      "sha": "85b6529"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "Native GPU renderer in Bend (ADR-0039): one bang over a cell tree, parity exact, 52/62/96 FPS on pad/ascent/descent",
+      "url": null,
+      "private": true,
+      "date": "2026-10-03T21:53:33Z",
+      "sha": "f1f58b8"
+    },
     {
       "type": "commit",
       "repo": "adagora/adagora.github.io",
@@ -18,24 +63,6 @@
       "private": false,
       "date": "2026-09-28T19:51:55Z",
       "sha": "fb680f2"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Grand Tour: fly Voyager from Jupiter to Neptune on gravity assists",
-      "url": null,
-      "private": true,
-      "date": "2026-09-28T01:44:07Z",
-      "sha": "dcd22ec"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Super Rocker Boss 3D: a Bend rocket simulator from the pad to Proxima b",
-      "url": null,
-      "private": true,
-      "date": "2026-09-27T21:39:49Z",
-      "sha": "4b9fdf4"
     },
     {
       "type": "commit",
@@ -198,33 +225,6 @@
       "private": true,
       "date": "2026-09-21T17:33:54Z",
       "sha": "9ee2431"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/project_x",
-      "message": "jev: podpięcie warstwy sądów do zwykłego RAG-u",
-      "url": null,
-      "private": true,
-      "date": "2026-09-21T17:09:38Z",
-      "sha": "ce2299c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/translate-app",
-      "message": "Merge branch 'docs/architecture-report'",
-      "url": null,
-      "private": true,
-      "date": "2026-09-21T16:49:36Z",
-      "sha": "70479bb"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/translate-app",
-      "message": "docs(translate-audit): a technical architecture report",
-      "url": null,
-      "private": true,
-      "date": "2026-09-21T16:49:32Z",
-      "sha": "699d59d"
     }
   ]
 }
