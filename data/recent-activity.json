@@ -1,6 +1,51 @@
 {
-  "generated": "2026-10-05T13:36:30.276Z",
+  "generated": "2026-10-06T12:45:32.214Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/PDF-Insight",
+      "message": "chore: record public verification and monitor analysis failures",
+      "url": "https://github.com/adagora/PDF-Insight/commit/d3571d79d72facbd612b91b718255f44976e7970",
+      "private": false,
+      "date": "2026-10-06T10:14:30Z",
+      "sha": "d3571d7"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/PDF-Insight",
+      "message": "fix: decode large PDF strings without overflowing the stack",
+      "url": "https://github.com/adagora/PDF-Insight/commit/fbf13151bd729fe05b417e899dd7258a1c234813",
+      "private": false,
+      "date": "2026-10-06T09:50:01Z",
+      "sha": "fbf1315"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/PDF-Insight",
+      "message": "test: retain inline image fixtures for decoder failures",
+      "url": "https://github.com/adagora/PDF-Insight/commit/ce72dcab9338b2a80e227ed4a9c5e445e74c23f6",
+      "private": false,
+      "date": "2026-10-06T09:41:04Z",
+      "sha": "ce72dca"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/PDF-Insight",
+      "message": "ci: test the production preview before Pages publication",
+      "url": "https://github.com/adagora/PDF-Insight/commit/13daef685a632e339718cd511ee3544872a914b5",
+      "private": false,
+      "date": "2026-10-06T09:28:48Z",
+      "sha": "13daef6"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/PDF-Insight",
+      "message": "ci: publish Pages with documented checks and availability monitoring",
+      "url": "https://github.com/adagora/PDF-Insight/commit/39f49c2fc3f551986302b8d4567d940590c5c13d",
+      "private": false,
+      "date": "2026-10-06T08:28:10Z",
+      "sha": "39f49c2"
+    },
     {
       "type": "commit",
       "repo": "adagora/rocket-simulator",
@@ -180,51 +225,6 @@
       "private": true,
       "date": "2026-09-22T18:13:53Z",
       "sha": "f2a891e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "A release can no longer silently fail an armed paper session",
-      "url": null,
-      "private": true,
-      "date": "2026-09-22T18:04:46Z",
-      "sha": "48b764e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "Keep scoring while only the execution host is parked",
-      "url": null,
-      "private": true,
-      "date": "2026-09-22T18:00:54Z",
-      "sha": "8bac7da"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/trade",
-      "message": "One REST park per host: a testnet edge ban no longer parks mainnet",
-      "url": null,
-      "private": true,
-      "date": "2026-09-22T17:54:09Z",
-      "sha": "a8dfc69"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/project_x",
-      "message": "Structure Jev RAG judgment criteria and record evaluation",
-      "url": null,
-      "private": true,
-      "date": "2026-09-21T20:34:16Z",
-      "sha": "f9b133d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/translate-app",
-      "message": "chore: back up pipeline artifacts and local skills to private remote",
-      "url": null,
-      "private": true,
-      "date": "2026-09-21T17:33:54Z",
-      "sha": "9ee2431"
     }
   ]
 }
