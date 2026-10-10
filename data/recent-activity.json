@@ -1,6 +1,51 @@
 {
-  "generated": "2026-10-09T12:34:52.249Z",
+  "generated": "2026-10-10T11:55:21.028Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "Fix compaction bounds, recovery, shutdown, and lossless imports",
+      "url": null,
+      "private": true,
+      "date": "2026-10-09T21:54:38Z",
+      "sha": "7aca0e3"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/quatation-transport",
+      "message": "Plan 2026-10-09: European deliveries (customer data, private)",
+      "url": null,
+      "private": true,
+      "date": "2026-10-09T21:42:05Z",
+      "sha": "29d7472"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/quatation-transport",
+      "message": "Transport planner: import, 3D loading, routing, audit (PL/EN)",
+      "url": null,
+      "private": true,
+      "date": "2026-10-09T21:42:04Z",
+      "sha": "d55d3ce"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/quatation-transport",
+      "message": "first commit",
+      "url": null,
+      "private": true,
+      "date": "2026-10-09T18:14:39Z",
+      "sha": "0da450e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "Harden storage and transport, clarify CLI help, enforce layering",
+      "url": null,
+      "private": true,
+      "date": "2026-10-09T12:21:32Z",
+      "sha": "6af720a"
+    },
     {
       "type": "commit",
       "repo": "adagora/EternalChat",
@@ -180,51 +225,6 @@
       "private": true,
       "date": "2026-09-27T16:21:44Z",
       "sha": "d442167"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/adagora.github.io",
-      "message": "content: EU AI Act telemetry, translation consistency tools, deterministic core in route analytics",
-      "url": "https://github.com/adagora/adagora.github.io/commit/2df99b713a09d613525a5407d3955e81a05c77f4",
-      "private": false,
-      "date": "2026-09-27T14:00:30Z",
-      "sha": "2df99b7"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/adagora.github.io",
-      "message": "content: plainer CV wording and updated Wiśniowski highlights",
-      "url": "https://github.com/adagora/adagora.github.io/commit/79501b2b00aa4b9a0dbac0e178b070b5646b98b5",
-      "private": false,
-      "date": "2026-09-27T13:53:32Z",
-      "sha": "79501b2"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/adagora.github.io",
-      "message": "feat: rebuild portfolio from data/profile.json with CVs and machine-readable profile",
-      "url": "https://github.com/adagora/adagora.github.io/commit/b74d653aa606787eb2c5f283243bd3604072c422",
-      "private": false,
-      "date": "2026-09-27T13:31:45Z",
-      "sha": "b74d653"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: one-command robot-fleet demo (scripts/robot-demo.sh)",
-      "url": null,
-      "private": true,
-      "date": "2026-09-25T21:09:43Z",
-      "sha": "6cd3b19"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/manufacturing-tool",
-      "message": "feat: VDA 5050 fleet recordings -> measured robot load (pintrest-cairn-pqvy.15)",
-      "url": null,
-      "private": true,
-      "date": "2026-09-25T20:44:02Z",
-      "sha": "292609e"
     }
   ]
 }
