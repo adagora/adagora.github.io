@@ -1,6 +1,24 @@
 {
-  "generated": "2026-10-10T11:55:21.028Z",
+  "generated": "2026-10-11T12:06:38.103Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/quatation-transport",
+      "message": "Google Earth export, team marketplace, hosted access keys, next-gen research",
+      "url": null,
+      "private": true,
+      "date": "2026-10-10T16:32:10Z",
+      "sha": "1ff1c82"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/quatation-transport",
+      "message": "ChatGPT plugin, pluggable app backend, distance-provider ADR",
+      "url": null,
+      "private": true,
+      "date": "2026-10-10T11:58:30Z",
+      "sha": "b3333ce"
+    },
     {
       "type": "commit",
       "repo": "adagora/EternalChat",
@@ -207,24 +225,6 @@
       "private": false,
       "date": "2026-09-28T19:51:55Z",
       "sha": "fb680f2"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/translate-app",
-      "message": "Merge branch 'feat/glossary-seed'",
-      "url": null,
-      "private": true,
-      "date": "2026-09-27T16:28:11Z",
-      "sha": "9dfcffc"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/translate-app",
-      "message": "feat(translate-audit): seed a glossary from the terms translators already agree on",
-      "url": null,
-      "private": true,
-      "date": "2026-09-27T16:21:44Z",
-      "sha": "d442167"
     }
   ]
 }
