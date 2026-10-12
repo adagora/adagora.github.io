@@ -48,3 +48,10 @@ h3 span { color: var(--ink-2); font-weight: 500; }
 .cols p { margin: 0; color: var(--ink-2); }
 .avoid-break { break-inside: avoid; }
 .consent { margin: 12px 0 0; font-size: 6.8pt; line-height: 1.35; color: var(--muted); }
+
+/* Keep section labels with content; start career history on a clear second page. */
+h2 { break-after: avoid; }
+@media print { .earlier-experience { break-before: page; margin-top: 0; } }
+/* A slightly tighter rhythm keeps career history and supporting details together. */
+.earlier-experience .job { margin-top: 6px; line-height: 1.4; }
+.skills { line-height: 1.4; gap: 1px; }

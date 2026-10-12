@@ -107,6 +107,7 @@ function siteRegions(p) {
   const featured = p.projects.filter((x) => x.tier === 'featured');
   const priv = p.projects.filter((x) => x.tier === 'private');
   const earlier = p.projects.filter((x) => x.tier === 'earlier');
+  const profileFacts = b.titleBlock.filter((fact) => ['Focus', 'Stack', 'Domain'].includes(fact.label));
   const current = p.work[0];
   const mail = `mailto:${b.email}`;
   const byNet = Object.fromEntries(b.profiles.map((x) => [x.network, x.url]));
@@ -175,12 +176,8 @@ function siteRegions(p) {
         <div class="hero-copy">
           <p class="status"><span class="pulse" aria-hidden="true"></span>${esc(t(b.availability.short))} · ${esc(t(b.location.region))} · remote or hybrid</p>
           <h1 class="hero-name">${esc(b.name)}</h1>
-          <p class="hero-role">AI Engineer <span>for manufacturing and engineering data</span></p>
+          <p class="hero-role">AI Engineer <span>· LLM and document search</span></p>
           <p class="hero-tagline">${esc(t(b.tagline))}</p>
-          <div class="dimline" role="img" aria-label="Career: three and a half years of automotive CAD engineering, then six years of software and AI">
-            <div class="dim-seg" style="--w:3.5">2017–2020 · automotive CAD</div>
-            <div class="dim-seg dim-seg--accent" style="--w:6">2020–now · software → AI</div>
-          </div>
           <div class="hero-cta">
             <a class="btn btn-primary" href="${FILES.pdfEn}" download>Download CV <span class="btn-note">PDF</span></a>
             <a class="btn" href="${mail}">Email me</a>
@@ -192,9 +189,8 @@ function siteRegions(p) {
         <aside class="titleblock" aria-label="Profile at a glance">
           <div class="tb-photo"><img src="${esc(b.image)}" alt="Portrait of ${esc(b.name)}" width="600" height="800" /></div>
           <dl class="tb">
-            ${b.titleBlock.map((r) => `<div><dt>${esc(r.label)}</dt><dd>${esc(r.value)}</dd></div>`).join('\n            ')}
+            ${profileFacts.map((r) => `<div><dt>${esc(r.label)}</dt><dd>${esc(r.value)}</dd></div>`).join('\n            ')}
           </dl>
-          <div class="tb-foot"><span>ADAGORA.GITHUB.IO</span><span>REV ${esc(p.meta.updated)}</span><span>SHEET 1/1</span></div>
         </aside>
       </div>
     </section>`;
@@ -240,17 +236,17 @@ function siteRegions(p) {
   const projects = `
     <section id="projects" class="section">
       ${sectionHead('02', 'Selected projects', 'Projects with code you can read',
-        'Each one links to its code. Private repositories and earlier experiments are folded below.')}
+        'Each one links to its code. Private repositories and additional projects are folded below.')}
       <div class="projects-featured">
         ${featured.map((pr, i) => projectCard(pr, i < 2 ? 'xl' : 'md')).join('\n        ')}
       </div>
       <details class="more-projects">
-        <summary><span class="more-title">More projects</span><span class="more-meta">${priv.length} private repositories · ${earlier.length} earlier experiments</span></summary>
+        <summary><span class="more-title">More projects</span><span class="more-meta">${priv.length} private repositories · ${earlier.length} additional projects</span></summary>
         <h3 class="subhead">Private repositories, shown on a call</h3>
         <div class="projects-private">
           ${priv.map((pr) => projectCard(pr, 'sm')).join('\n          ')}
         </div>
-        <h3 class="subhead">Earlier experiments</h3>
+        <h3 class="subhead">Additional projects</h3>
         <ul class="earlier">
           ${earlier.map((pr) => `<li><a href="${esc(pr.links[0].url)}" target="_blank" rel="noopener">${esc(t(pr.name))}</a><span class="earlier-sum">${esc(t(pr.summary))}${pr.links.slice(1).map((l) => ` ${external(l.url, l.label, '')}`).join('')}</span><span class="earlier-stack">${esc(pr.stack.join(' · '))}</span></li>`).join('\n          ')}
         </ul>
@@ -391,7 +387,7 @@ function cvHtml(p, lang, variant) {
 
   const job = (w, bullets) => `<div class="job">
       <div class="job-head"><h3>${esc(w.position)} <span>· ${esc(w.company)}</span></h3><span class="when">${esc(range(w.startDate, w.endDate, lang, L))}</span></div>
-      ${bullets.length ? `<ul>${bullets.map((h) => `<li>${esc(t(h.text, lang))}</li>`).join('')}</ul>` : ''}
+      ${bullets.length ? `<ul>${bullets.map((h) => `<li>${esc(t(h.cvText ?? h.text, lang))}</li>`).join('')}</ul>` : ''}
     </div>`;
 
   return `<!DOCTYPE html>
@@ -448,12 +444,12 @@ ${css}</style>
     <p class="more">${L.allProjects}: <a href="${esc(b.url)}#projects">${esc(strip(b.url))}/#projects</a></p>
   </section>
 
-  <section>
+  <section class="earlier-experience">
     <h2>${L.earlierExperience}</h2>
     ${rest.map((w) => job(w, w.highlights)).join('\n    ')}
     <div class="job">
       <div class="job-head"><h3>${L.earlierCad} <span>· ${esc(cad.map((w) => w.company).join(', '))}</span></h3><span class="when">${esc(range(cad[cad.length - 1].startDate, cad[0].endDate, lang, L))}</span></div>
-      <ul>${cad.map((w) => `<li><strong>${esc(w.position)}, ${esc(w.company)}.</strong> ${esc(t(w.highlights[0].text, lang))}</li>`).join('')}</ul>
+      <ul>${cad.map((w) => `<li><strong>${esc(w.position)}, ${esc(w.company)}.</strong> ${esc(t(w.highlights[0].cvText ?? w.highlights[0].text, lang))}</li>`).join('')}</ul>
     </div>
   </section>
 
@@ -532,7 +528,7 @@ function cvMarkdown(p, lang, variant) {
   }
   push(`### ${lang === 'pl' ? 'Prywatne repozytoria (kod do pokazania na rozmowie)' : 'Private repositories (code shown on request)'}`, '');
   for (const pr of p.projects.filter((x) => x.tier === 'private')) push(`- ${t(pr.name, lang)}: ${t(pr.summary, lang)} (${pr.stack.join(', ')})`);
-  push('', `### ${lang === 'pl' ? 'Wcześniejsze eksperymenty' : 'Earlier experiments'}`, '');
+  push('', `### ${lang === 'pl' ? 'Dodatkowe projekty' : 'Additional projects'}`, '');
   for (const pr of p.projects.filter((x) => x.tier === 'earlier')) push(`- [${t(pr.name)}](${pr.links[0].url}): ${t(pr.summary)} (${pr.stack.join(', ')})${pr.links.slice(1).map((l) => ` ${l.label}: ${l.url}`).join('')}`);
   push('');
 
@@ -684,7 +680,7 @@ async function checkLinks(p) {
 function outputs(profile) {
   const p = withLang(profile, 'en');
   const pl = withLang(profile, 'pl');
-  const index = fillRegions(fs.readFileSync(abs('index.html'), 'utf8'), siteRegions(p));
+  const index = fillRegions(fs.readFileSync(abs('index.html'), 'utf8'), siteRegions(p)).replace(/[ \t]+$/gm, '');
   return {
     'index.html': index,
     [FILES.htmlEn]: cvHtml(p, 'en'),

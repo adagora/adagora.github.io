@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Adrian Góra · CV</title>
-<meta name="description" content="AI Engineer | LLM apps, RAG and AI agents for manufacturing | TypeScript, Python" />
+<meta name="description" content="AI / Software Engineer | LLM apps, RAG, agents | TypeScript, Python" />
 <link rel="canonical" href="https://adagora.github.io/cv/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,6 +60,13 @@ h3 span { color: var(--ink-2); font-weight: 500; }
 .cols p { margin: 0; color: var(--ink-2); }
 .avoid-break { break-inside: avoid; }
 .consent { margin: 12px 0 0; font-size: 6.8pt; line-height: 1.35; color: var(--muted); }
+
+/* Keep section labels with content; start career history on a clear second page. */
+h2 { break-after: avoid; }
+@media print { .earlier-experience { break-before: page; margin-top: 0; } }
+/* A slightly tighter rhythm keeps career history and supporting details together. */
+.earlier-experience .job { margin-top: 6px; line-height: 1.4; }
+.skills { line-height: 1.4; gap: 1px; }
 </style>
 </head>
 <body>
@@ -67,7 +74,7 @@ h3 span { color: var(--ink-2); font-weight: 500; }
   <header class="cv-head">
     <div>
       <h1>Adrian Góra</h1>
-      <p class="headline">AI Engineer | LLM apps, RAG and AI agents for manufacturing | TypeScript, Python</p>
+      <p class="headline">AI / Software Engineer | LLM apps, RAG, agents | TypeScript, Python</p>
       <p class="contact">
         <a href="mailto:adrian.gora14@gmail.com">adrian.gora14@gmail.com</a> |
         <a href="https://adagora.github.io/">adagora.github.io</a> |
@@ -81,7 +88,7 @@ h3 span { color: var(--ink-2); font-weight: 500; }
 
   <section>
     <h2>Profile</h2>
-    <p class="summary">Since February 2025 I have been building internal AI tools at an industrial manufacturer: a company-wide RAG assistant, a Teams meeting pipeline, an AI translation portal and production-route analytics. Before that I spent four years on TypeScript and React in fintech and web3, and three and a half years designing car parts in CATIA V5.</p>
+    <p class="summary">AI Engineer at Wiśniowski, building internal tools for document search, translation, meeting reports and production analysis. Previous roles include software engineering in fintech and Web3, plus automotive CAD design.</p>
   </section>
 
   <section>
@@ -96,8 +103,12 @@ h3 span { color: var(--ink-2); font-weight: 500; }
   <section>
     <h2>Selected projects</h2>
     <div class="proj">
-      <h3>Visual RAG for technical PDFs <a href="https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV">github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV</a></h3>
-      <p>Search and Q&amp;A over technical PDFs and product catalogues with complex layouts (drawings, tables, dimensions). It finds the right page from its image and its text, answers with a vision model and cites the page.</p>
+      <h3>PDF-Insight: validated document extraction <a href="https://github.com/adagora/PDF-Insight">github.com/adagora/PDF-Insight</a></h3>
+      <p>PDF → validated JSON with local inspection, text redaction and source checks for amounts and dates. React, Cloudflare Workers, Gemini and shared Zod schemas; 298 unit/contract/property tests.</p>
+    </div>
+    <div class="proj">
+      <h3>VisualRAG <a href="https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV">github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV</a></h3>
+      <p>Pixel-level retrieval over technical PDF pages, combined with BM25 text search; answers cite source pages.</p>
     </div>
     <div class="proj">
       <h3>CAD quoting engine for machined parts <a href="https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena">github.com/adagora/cad-tools (skills/wycena)</a></h3>
@@ -110,15 +121,15 @@ h3 span { color: var(--ink-2); font-weight: 500; }
     <p class="more">All projects: <a href="https://adagora.github.io/#projects">adagora.github.io/#projects</a></p>
   </section>
 
-  <section>
+  <section class="earlier-experience">
     <h2>Earlier experience</h2>
     <div class="job">
       <div class="job-head"><h3>Software Engineer <span>· Freelance</span></h3><span class="when">Aug 2023 – Jan 2025</span></div>
-      <ul><li>Prototyped AI tools (predictive models, chat over documents) to test product ideas, and shipped a staking app UI for web and mobile (TypeScript, React, ethers). Took 2nd place at the LearnWeb3 AI Hackathon.</li></ul>
+      <ul><li>Prototyped predictive models and document chat; shipped a web/mobile staking UI in TypeScript, React and ethers. 2nd place, LearnWeb3 AI Hackathon.</li></ul>
     </div>
     <div class="job">
       <div class="job-head"><h3>Full-Stack Engineer <span>· Playdate App Limited</span></h3><span class="when">Jun 2023 – Aug 2023</span></div>
-      <ul><li>Built release version control so users on outdated iOS and Android builds could be migrated, fixed a critical Android onboarding bug and owned CI/CD on AWS Elastic Beanstalk (React Native, Django).</li></ul>
+      <ul><li>Built mobile release versioning, fixed Android onboarding and owned CI/CD on AWS Elastic Beanstalk (React Native, Django).</li></ul>
     </div>
     <div class="job">
       <div class="job-head"><h3>Software Engineer <span>· Ariable</span></h3><span class="when">Dec 2022 – Jun 2023</span></div>
@@ -134,7 +145,7 @@ h3 span { color: var(--ink-2); font-weight: 500; }
     </div>
     <div class="job">
       <div class="job-head"><h3>Automotive engineering <span>· Varroc Lighting Systems, Auto Design, Alpha Technology</span></h3><span class="when">Jan 2017 – Jul 2020</span></div>
-      <ul><li><strong>Product Engineer, Varroc Lighting Systems.</strong> Designed front and rear lamp components in CATIA V5: concept, fixing, feasibility, simulation and test results, tooling requests, BOM and GD&amp;T drawings. Worked with the Czech R&amp;D team.</li><li><strong>CAD Designer, Auto Design.</strong> Designed interior parts (instrument panel, door trim) for Audi and ported parts from CATIA V5 to NX 11.</li><li><strong>Project Engineer, Alpha Technology.</strong> Prepared technical inquiries for the VW Group, worked in the D-FMEA team and trained staff on plastics processes.</li></ul>
+      <ul><li><strong>Product Engineer, Varroc Lighting Systems.</strong> Designed automotive lamp components in CATIA V5, from concept and feasibility to tooling, BOM and GD&amp;T drawings, with Czech R&amp;D.</li><li><strong>CAD Designer, Auto Design.</strong> Designed interior parts (instrument panel, door trim) for Audi and ported parts from CATIA V5 to NX 11.</li><li><strong>Project Engineer, Alpha Technology.</strong> Prepared technical inquiries for the VW Group, worked in the D-FMEA team and trained staff on plastics processes.</li></ul>
     </div>
   </section>
 
@@ -143,11 +154,12 @@ h3 span { color: var(--ink-2); font-weight: 500; }
     <dl class="skills">
       <div><dt>LLM applications</dt><dd>RAG (hybrid BM25 + vector, reranking, citations), Visual RAG over PDFs, Agents and tool calling, LLM-as-judge, Structured extraction, Evaluation and benchmarks, Prompt engineering</dd></div>
       <div><dt>Models and platforms</dt><dd>Claude, Gemini, OpenAI, Vercel AI SDK, RAGFlow, Open WebUI, FAISS, Microsoft Graph</dd></div>
-      <div><dt>Languages</dt><dd>TypeScript, Python, Go, JavaScript, SQL</dd></div>
+      <div><dt>Languages</dt><dd>TypeScript, Python, Go (one project), Rust (6 months), JavaScript, SQL</dd></div>
       <div><dt>Backend and infrastructure</dt><dd>Node.js, Bun, Express, NestJS, FastAPI, PostgreSQL, Prisma, Redis, Linux servers, GitHub Actions, AWS Elastic Beanstalk, Telemetry and monitoring</dd></div>
-      <div><dt>Frontend</dt><dd>React, Next.js, React Native, React Query, Material-UI, Storybook, Cypress, D3</dd></div>
+      <div><dt>Frontend and testing</dt><dd>React, Next.js, React Native, React Query, Material-UI, Storybook, Cypress, D3, Playwright, pytest</dd></div>
       <div><dt>Engineering and CAD</dt><dd>CATIA V5 (advanced), Siemens NX, AutoCAD, GD&amp;T, BOM, D-FMEA, Plastics, OpenCASCADE / build123d, STEP and DXF</dd></div>
       <div><dt>AI-assisted development</dt><dd>Claude Code, Codex, Agent skills, AGENTS.md</dd></div>
+      <div><dt>Web3</dt><dd>Solidity, Foundry, ethers.js, Cardano</dd></div>
     </dl>
   </section>
 

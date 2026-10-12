@@ -1,69 +1,78 @@
 {
   "meta": {
-    "updated": "2026-09-27",
+    "updated": "2026-10-12",
     "canonical": "https://adagora.github.io/",
     "source": "Single source of truth for the site, CVs, llms.txt and resume.json. Edit here, then run `npm run build`. Text fields are a plain string or {\"en\": ..., \"pl\": ...}."
   },
-
   "basics": {
     "name": "Adrian Góra",
     "asciiName": "Adrian Gora",
     "label": "AI Engineer",
     "headline": {
-      "en": "AI Engineer | LLM apps, RAG and AI agents for manufacturing | TypeScript, Python",
-      "pl": "AI Engineer | aplikacje LLM, RAG i agenci AI dla produkcji | TypeScript, Python"
+      "en": "AI / Software Engineer | LLM apps, RAG, agents | TypeScript, Python",
+      "pl": "AI / Software Engineer | aplikacje LLM, RAG, agenci | TypeScript, Python"
     },
     "tagline": {
-      "en": "I build AI tools for manufacturing teams: document search that cites its sources, meeting and translation pipelines, and quoting from CAD models. Six years in software and three and a half in automotive CAD engineering.",
-      "pl": "Buduję narzędzia AI dla zespołów produkcyjnych: wyszukiwanie w dokumentach z cytowaniem źródeł, pipeline'y spotkań i tłumaczeń oraz wycenę z modeli CAD. Sześć lat w oprogramowaniu i trzy i pół roku projektowania CAD w motoryzacji."
+      "en": "I build AI software for engineering and manufacturing. TypeScript and Python.",
+      "pl": "Tworzę oprogramowanie AI dla inżynierii i produkcji. TypeScript i Python."
     },
     "summary": {
-      "en": "Since February 2025 I have been building internal AI tools at an industrial manufacturer: a company-wide RAG assistant, a Teams meeting pipeline, an AI translation portal and production-route analytics. Before that I spent four years on TypeScript and React in fintech and web3, and three and a half years designing car parts in CATIA V5.",
-      "pl": "Od lutego 2025 buduję wewnętrzne narzędzia AI u producenta przemysłowego: firmowego asystenta RAG, pipeline spotkań Teams, portal tłumaczeń z AI i analitykę marszrut. Wcześniej przez cztery lata pisałem w TypeScript i React (fintech, web3), a przez trzy i pół roku projektowałem części samochodowe w CATIA V5."
+      "en": "AI Engineer at Wiśniowski, building internal tools for document search, translation, meeting reports and production analysis. Previous roles include software engineering in fintech and Web3, plus automotive CAD design.",
+      "pl": "AI Engineer w Wiśniowski, gdzie tworzę wewnętrzne narzędzia do wyszukiwania w dokumentach, tłumaczeń, raportów ze spotkań i analizy produkcji. Wcześniej rozwijałem oprogramowanie dla fintechu i Web3 oraz projektowałem części samochodowe w CATIA V5."
     },
     "email": "adrian.gora14@gmail.com",
     "url": "https://adagora.github.io/",
     "image": "assets/img/adrian-gora.jpg",
-    "location": { "countryCode": "PL", "region": { "en": "Poland", "pl": "Polska" } },
+    "location": {
+      "countryCode": "PL",
+      "region": {"en": "Poland", "pl": "Polska"}
+    },
     "profiles": [
-      { "network": "GitHub", "username": "adagora", "url": "https://github.com/adagora" },
-      { "network": "LinkedIn", "username": "adrian-gora", "url": "https://www.linkedin.com/in/adrian-gora/" }
+      {"network": "GitHub", "username": "adagora", "url": "https://github.com/adagora"},
+      {"network": "LinkedIn", "username": "adrian-gora", "url": "https://www.linkedin.com/in/adrian-gora/"}
     ],
     "availability": {
       "from": "2026-11-01",
-      "text": { "en": "Available from 1 November 2026, no notice period", "pl": "Dostępny od 1 listopada 2026, bez okresu wypowiedzenia" },
-      "short": { "en": "Available from 1 Nov 2026", "pl": "Dostępny od 1.11.2026" }
+      "text": {
+        "en": "Available from 1 November 2026, no notice period",
+        "pl": "Dostępny od 1 listopada 2026, bez okresu wypowiedzenia"
+      },
+      "short": {"en": "Available from 1 Nov 2026", "pl": "Dostępny od 1.11.2026"}
     },
-    "workMode": { "en": "Remote or hybrid, also open to remote roles in the EU and worldwide", "pl": "Zdalnie lub hybrydowo, także zdalnie dla firm z UE i spoza niej" },
-    "contract": { "en": "B2B or employment contract", "pl": "B2B lub umowa o pracę" },
+    "workMode": {
+      "en": "Remote or hybrid, also open to remote roles in the EU and worldwide",
+      "pl": "Zdalnie lub hybrydowo, także zdalnie dla firm z UE i spoza niej"
+    },
+    "contract": {"en": "B2B or employment contract", "pl": "B2B lub umowa o pracę"},
     "titleBlock": [
-      { "label": "Role", "value": "AI Engineer" },
-      { "label": "Focus", "value": "LLM apps · RAG · agents · evals" },
-      { "label": "Stack", "value": "TypeScript · Python · Go" },
-      { "label": "Domain", "value": "Manufacturing · CAD · documents" },
-      { "label": "Based in", "value": "Poland" },
-      { "label": "Mode", "value": "Remote or hybrid" },
-      { "label": "Contract", "value": "B2B or employment" },
-      { "label": "Available", "value": "1 Nov 2026" },
-      { "label": "Languages", "value": "PL native · EN B2 · DE B1" }
+      {"label": "Role", "value": "AI Engineer"},
+      {"label": "Focus", "value": "LLM apps · RAG · agents · evals"},
+      {"label": "Stack", "value": "TypeScript · Python"},
+      {"label": "Domain", "value": "Manufacturing · CAD · documents"},
+      {"label": "Based in", "value": "Poland"},
+      {"label": "Mode", "value": "Remote or hybrid"},
+      {"label": "Contract", "value": "B2B or employment"},
+      {"label": "Available", "value": "1 Nov 2026"},
+      {"label": "Languages", "value": "PL native · EN B2 · DE B1"}
     ],
-    "targetRoles": [
-      "AI Engineer",
-      "LLM Engineer",
-      "Generative AI Engineer",
-      "AI Solutions Engineer",
-      "Forward Deployed Engineer",
-      "Full-stack Engineer (TypeScript / Python), AI focus"
-    ]
+    "targetRoles": ["AI Engineer", "Software Engineer"]
   },
-
   "proof": [
-    { "id": "judgments", "value": "99,933", "label": "terminology checks made by AI in 3 minutes, across 7,040 translated texts in 8 languages", "href": "#project-translate-audit" },
-    { "id": "commits", "value": "2,200+", "label": "commits in the last 12 months, most of them in private repos", "href": "#activity", "live": "commits" },
-    { "id": "tools", "value": "5", "label": "internal AI tools built at a manufacturer since February 2025", "href": "#delivery" }
+    {
+      "id": "judgments",
+      "value": "99,933",
+      "label": "terminology checks made by AI in 3 minutes, across 7,040 translated texts in 8 languages",
+      "href": "#project-translate-audit"
+    },
+    {
+      "id": "commits",
+      "value": "2,200+",
+      "label": "commits in the last 12 months, most of them in private repos",
+      "href": "#activity",
+      "live": "commits"
+    },
+    {"id": "tools", "value": "5", "label": "internal AI tools built at a manufacturer since February 2025", "href": "#delivery"}
   ],
-
-
   "work": [
     {
       "id": "wisniowski",
@@ -80,7 +89,7 @@
       "highlights": [
         {
           "tags": ["rag", "deployment", "llm"],
-          "title": { "en": "Company-wide RAG assistant", "pl": "Firmowy asystent RAG" },
+          "title": {"en": "Company-wide RAG assistant", "pl": "Firmowy asystent RAG"},
           "text": {
             "en": "Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from the company's technical PDFs with complex layouts. Telemetry and monitoring are built for EU AI Act compliance.",
             "pl": "Wdrożyłem RAGFlow na serwerze Linux i podłączyłem go do Open WebUI jako firmowy czat. Odpowiada na podstawie firmowej dokumentacji technicznej PDF o złożonym układzie. Telemetria i monitoring są przygotowane pod zgodność z unijnym AI Act."
@@ -89,7 +98,7 @@
         },
         {
           "tags": ["pipelines", "llm", "integration", "automation"],
-          "title": { "en": "Microsoft Teams meeting pipeline", "pl": "Pipeline spotkań Microsoft Teams" },
+          "title": {"en": "Microsoft Teams meeting pipeline", "pl": "Pipeline spotkań Microsoft Teams"},
           "text": {
             "en": "Scans one group's meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.",
             "pl": "Skanuje spotkania jednej grupy w lokalnym (on-premises) Outlooku i włącza automatyczne nagrywanie. Transkrypcje i nagrania przychodzą przez Microsoft Graph (webhooki i polling), a LLM zamienia je w raporty JSON."
@@ -98,7 +107,7 @@
         },
         {
           "tags": ["fullstack", "llm", "product"],
-          "title": { "en": "AI translation portal", "pl": "Portal tłumaczeń z AI" },
+          "title": {"en": "AI translation portal", "pl": "Portal tłumaczeń z AI"},
           "text": {
             "en": "Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. To keep terms consistent across languages, I added statistics, translator helpers and a generated starting glossary. Every decision is logged, which shows how often the AI is right.",
             "pl": "Zbudowałem wewnętrzny portal zamiast lokalise.com. Gemini wstępnie tłumaczy każdy klucz, tłumacze akceptują albo poprawiają, a brakujące klucze są oznaczane. Żeby terminy były spójne między językami, dodałem statystyki, podpowiedzi dla tłumaczy i automatycznie tworzony glosariusz startowy. Każda decyzja jest logowana, więc widać, jak często AI trafia."
@@ -107,7 +116,7 @@
         },
         {
           "tags": ["manufacturing", "data", "llm"],
-          "title": { "en": "Process-route analytics", "pl": "Analityka marszrut" },
+          "title": {"en": "Process-route analytics", "pl": "Analityka marszrut"},
           "text": {
             "en": "Working on a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.",
             "pl": "Rozwijam prototyp, w którym technolog rozmawia z historią przebiegów produkcji, testuje nowe ustawienia i dostaje propozycje marszrut. Deterministyczny rdzeń liczy statystyki, a eksperymentalne moduły dodają LLM i autoresearch."
@@ -116,7 +125,7 @@
         },
         {
           "tags": ["agents", "product", "llm", "knowledge"],
-          "title": { "en": "AI interviews for process improvement", "pl": "Wywiady AI o usprawnieniach" },
+          "title": {"en": "AI interviews for process improvement", "pl": "Wywiady AI o usprawnieniach"},
           "text": {
             "en": "After a 15-minute voice or text interview about someone's daily work, it writes an automation report, adds what it learned to an LLM wiki and turns repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox.",
             "pl": "Po 15-minutowym wywiadzie (głos lub tekst) o codziennej pracy pisze raport z pomysłami na automatyzację, dopisuje wiedzę do wiki prowadzonego przez LLM i zamienia powtarzalne zadania w pliki SKILL.md dla agentów. Działa na sandboxie Gemini managed agents."
@@ -138,6 +147,10 @@
           "text": {
             "en": "Prototyped AI tools (predictive models, chat over documents) to test product ideas, and shipped a staking app UI for web and mobile (TypeScript, React, ethers). Took 2nd place at the LearnWeb3 AI Hackathon.",
             "pl": "Prototypowałem narzędzia AI (modele predykcyjne, czat nad dokumentami) do testowania pomysłów i dostarczyłem interfejs aplikacji stakingowej na web i mobile (TypeScript, React, ethers). 2. miejsce w LearnWeb3 AI Hackathon."
+          },
+          "cvText": {
+            "en": "Prototyped predictive models and document chat; shipped a web/mobile staking UI in TypeScript, React and ethers. 2nd place, LearnWeb3 AI Hackathon.",
+            "pl": "Prototypowałem modele predykcyjne i czat nad dokumentami; dostarczyłem interfejs stakingowy web/mobile (TypeScript, React, ethers). 2. miejsce, LearnWeb3 AI Hackathon."
           }
         }
       ]
@@ -155,6 +168,10 @@
           "text": {
             "en": "Built release version control so users on outdated iOS and Android builds could be migrated, fixed a critical Android onboarding bug and owned CI/CD on AWS Elastic Beanstalk (React Native, Django).",
             "pl": "Zbudowałem wersjonowanie wydań, dzięki któremu użytkowników starych wersji iOS i Android dało się zmigrować, naprawiłem krytyczny błąd onboardingu na Androidzie i odpowiadałem za CI/CD na AWS Elastic Beanstalk (React Native, Django)."
+          },
+          "cvText": {
+            "en": "Built mobile release versioning, fixed Android onboarding and owned CI/CD on AWS Elastic Beanstalk (React Native, Django).",
+            "pl": "Zbudowałem wersjonowanie aplikacji mobilnej, naprawiłem onboarding Androida i odpowiadałem za CI/CD na AWS Elastic Beanstalk (React Native, Django)."
           }
         }
       ]
@@ -196,7 +213,7 @@
     {
       "id": "nervos",
       "company": "Nervos Network",
-      "position": { "en": "Web Developer (part-time, in parallel)", "pl": "Web Developer (równolegle, część etatu)" },
+      "position": {"en": "Web Developer (part-time, in parallel)", "pl": "Web Developer (równolegle, część etatu)"},
       "startDate": "2021-12",
       "endDate": "2022-05",
       "cv": "compact",
@@ -225,6 +242,10 @@
           "text": {
             "en": "Designed front and rear lamp components in CATIA V5: concept, fixing, feasibility, simulation and test results, tooling requests, BOM and GD&T drawings. Worked with the Czech R&D team.",
             "pl": "Projektowałem elementy lamp przednich i tylnych w CATIA V5: koncepcja, mocowania, wykonalność, wyniki symulacji i testów, zapytania narzędziowe, BOM i rysunki z GD&T. Współpraca z działem R&D w Czechach."
+          },
+          "cvText": {
+            "en": "Designed automotive lamp components in CATIA V5, from concept and feasibility to tooling, BOM and GD&T drawings, with Czech R&D.",
+            "pl": "Projektowałem elementy lamp w CATIA V5: od koncepcji i wykonalności po narzędzia, BOM i rysunki GD&T, we współpracy z czeskim R&D."
           }
         }
       ]
@@ -267,41 +288,81 @@
       ]
     }
   ],
-
   "projects": [
     {
-      "id": "visual-rag",
-      "cvSummary": { "en": "Search and Q&A over technical PDFs and product catalogues with complex layouts (drawings, tables, dimensions). It finds the right page from its image and its text, answers with a vision model and cites the page.", "pl": "Wyszukiwanie i odpowiedzi na pytania w dokumentacji technicznej PDF i katalogach o złożonym układzie (rysunki, tabele, wymiary). Znajduje właściwą stronę po jej obrazie i tekście, odpowiada modelem wizyjnym i podaje stronę." },
+      "id": "pdf-insight",
       "tier": "featured",
       "visibility": "public",
-      "name": { "en": "Visual RAG for technical PDFs", "pl": "Visual RAG dla dokumentacji technicznej" },
+      "name": {"en": "PDF-Insight: validated document extraction", "pl": "PDF-Insight: ekstrakcja dokumentów z walidacją"},
       "summary": {
-        "en": "Search and Q&A over product catalogues and technical PDFs with complex layouts: drawings, tables and dimension callouts. It finds the right page by how it looks, answers from the page image with a vision model and cites the page.",
-        "pl": "Wyszukiwanie i odpowiedzi na pytania w katalogach i dokumentacji technicznej PDF o złożonym układzie: rysunki, tabele i wymiary. Znajduje właściwą stronę po tym, jak wygląda, odpowiada z obrazu strony modelem wizyjnym i cytuje stronę."
+        "en": "Inspects PDFs locally, redacts sensitive text and extracts summaries, parties, amounts and dates as validated JSON. Shared Zod schemas connect the React frontend, Cloudflare Worker and Gemini responses.",
+        "pl": "Sprawdza PDF lokalnie, maskuje wrażliwe dane i wyodrębnia podsumowania, strony umowy, kwoty i daty do JSON z walidacją. Wspólne schematy Zod łączą frontend React, Cloudflare Worker i odpowiedzi Gemini."
+      },
+      "cvSummary": {
+        "en": "PDF → validated JSON with local inspection, text redaction and source checks for amounts and dates. React, Cloudflare Workers, Gemini and shared Zod schemas; 298 unit/contract/property tests.",
+        "pl": "PDF → JSON z walidacją, lokalną inspekcją, maskowaniem tekstu i sprawdzaniem źródeł kwot oraz dat. React, Cloudflare Workers, Gemini i wspólne schematy Zod; 298 testów jednostkowych, kontraktowych i własności."
+      },
+      "metrics": [
+        {"value": "298", "label": "unit, contract and property tests documented in the repository"},
+        {"value": "29.1 s", "label": "p95 across 20 public uploads in the 6 October 2026 benchmark"}
+      ],
+      "bullets": [
+        "Original PDF bytes remain local; only redacted text reaches the API.",
+        "Checks amounts and dates against source text and flags values it cannot verify. These checks do not establish the accuracy of every summary sentence.",
+        "Benchmark: 19 of 20 public uploads completed within 30 seconds; maximum 41.0 seconds. Long-term reliability remains under observation."
+      ],
+      "stack": ["TypeScript", "React", "Cloudflare Workers", "Gemini", "Zod", "Playwright"],
+      "tags": ["llm", "typescript", "evals", "fullstack", "documents"],
+      "links": [
+        {"label": "Code and validation", "url": "https://github.com/adagora/PDF-Insight"},
+        {"label": "Live demo", "url": "https://adagora.github.io/PDF-Insight/"},
+        {
+          "label": "Performance evidence",
+          "url": "https://github.com/adagora/PDF-Insight/blob/master/docs/performance/2026-10-06/README.md"
+        }
+      ],
+      "cv": true
+    },
+    {
+      "id": "visual-rag",
+      "cvSummary": {
+        "en": "Pixel-level retrieval over technical PDF pages, combined with BM25 text search; answers cite source pages.",
+        "pl": "Wyszukiwanie stron technicznych PDF na poziomie pikseli połączone z BM25; odpowiedzi cytują strony źródłowe."
+      },
+      "tier": "featured",
+      "visibility": "public",
+      "name": {"en": "VisualRAG", "pl": "VisualRAG dla technicznych PDF"},
+      "summary": {
+        "en": "Searches technical PDFs using page images and BM25 text retrieval, then answers with citations to source pages.",
+        "pl": "Wyszukuje informacje w technicznych PDF-ach na podstawie obrazu stron i tekstu BM25, a odpowiedzi cytują strony źródłowe."
       },
       "bullets": [
-        "Searches page images and the PDF text together; adding the text search finds the right page more often than image search alone.",
-        "Seven search modes were compared on test questions with known answer pages. A paid query-rewriting step did not help, so it is off by default.",
-        "Web UI and API: choose a search mode per question, and every answer cites its page."
+        "Hybrid retrieval fuses page-image matches with BM25 text matches using Reciprocal Rank Fusion.",
+        "Seven retrieval modes can be compared in the web UI; answers cite the retrieved source pages."
       ],
       "stack": ["Python", "FAISS", "BM25 + RRF", "PixelRAG", "Gemini", "Claude"],
       "tags": ["rag", "evals", "vision", "python"],
-      "credit": "Thin layer over PixelRAG (StarTrail): the search modes, combined image and text search, testing and UI are mine.",
-      "links": [{ "label": "Code and benchmark", "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV" }],
+      "credit": "Built on StarTrail’s PixelRAG; I added page-level retrieval, BM25 fusion, citations, evaluation and the web UI.",
+      "links": [
+        {"label": "Code and benchmark", "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV"}
+      ],
       "cv": true
     },
     {
       "id": "cad-quote",
-      "cvSummary": { "en": "Prices a machined part from its STEP file (3D CAD model) for a tool shop. The code calculates geometry and cost, and the AI only reviews the machining process and risks, like a shop manager would. Includes a web app for estimators and automated tests.", "pl": "Wycenia detal obrabiany na podstawie pliku STEP (model 3D CAD) dla narzędziowni. Geometrię i koszt liczy kod, a AI ocenia tylko technologię i ryzyka, jak kierownik narzędziowni. Ma aplikację web dla osób od wycen i testy automatyczne." },
+      "cvSummary": {
+        "en": "Prices a machined part from its STEP file (3D CAD model) for a tool shop. The code calculates geometry and cost, and the AI only reviews the machining process and risks, like a shop manager would. Includes a web app for estimators and automated tests.",
+        "pl": "Wycenia detal obrabiany na podstawie pliku STEP (model 3D CAD) dla narzędziowni. Geometrię i koszt liczy kod, a AI ocenia tylko technologię i ryzyka, jak kierownik narzędziowni. Ma aplikację web dla osób od wycen i testy automatyczne."
+      },
       "tier": "featured",
       "visibility": "public",
-      "name": { "en": "CAD quoting engine for machined parts", "pl": "Wycena detali obrabianych z modelu CAD" },
+      "name": {"en": "CAD quoting engine for machined parts", "pl": "Wycena detali obrabianych z modelu CAD"},
       "summary": {
         "en": "Quotes a machined part from its STEP file (a 3D CAD model) for a tool shop. Code measures the part and computes the price; an AI model reviews the machining process and risks the way a shop manager would.",
         "pl": "Wycenia detal obrabiany mechanicznie na podstawie pliku STEP (model 3D CAD) dla narzędziowni. Wymiary i cenę liczy kod, a model AI ocenia technologię i ryzyka jak kierownik narzędziowni."
       },
       "metrics": [
-        { "value": "STEP file → price", "label": "a 3D CAD model goes in, a quote in PLN comes out, based on the shop's own rates" }
+        {"value": "STEP file → price", "label": "a 3D CAD model goes in, a quote in PLN comes out, based on the shop's own rates"}
       ],
       "bullets": [
         "Volume, mass, envelope and cost-driving features come from OpenCASCADE. Price is machining time × shop rate, and a physics-based floor on cutting time stops the model from inventing hours.",
@@ -311,22 +372,27 @@
       "stack": ["Python", "OpenCASCADE", "build123d", "trimesh", "ezdxf", "Claude / OpenAI"],
       "tags": ["manufacturing", "cad", "llm", "python"],
       "credit": "My `wycena` skill inside a fork of the MIT-licensed text-to-cad library.",
-      "links": [{ "label": "Code", "url": "https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena" }],
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena"}
+      ],
       "cv": true
     },
     {
       "id": "translate-audit",
-      "cvSummary": { "en": "Checks terminology across 7,040 translated texts in 8 languages. An AI model made 99,933 decisions in 3 minutes, and translators approve the results in a small review app.", "pl": "Sprawdza terminologię w 7 040 tekstach tłumaczeń w 8 językach. Model AI podjął 99 933 decyzji w 3 minuty, a tłumacze zatwierdzają wyniki w prostej aplikacji." },
+      "cvSummary": {
+        "en": "Checks terminology across 7,040 translated texts in 8 languages. An AI model made 99,933 decisions in 3 minutes, and translators approve the results in a small review app.",
+        "pl": "Sprawdza terminologię w 7 040 tekstach tłumaczeń w 8 językach. Model AI podjął 99 933 decyzji w 3 minuty, a tłumacze zatwierdzają wyniki w prostej aplikacji."
+      },
       "tier": "featured",
       "visibility": "public",
-      "name": { "en": "LLM-judged translation audit", "pl": "Audyt tłumaczeń z sędzią LLM" },
+      "name": {"en": "LLM-judged translation audit", "pl": "Audyt tłumaczeń z sędzią LLM"},
       "summary": {
         "en": "Finds inconsistent terms in translations that never had a glossary. Code finds the disagreements across 7,040 texts, and an AI model decides each one.",
         "pl": "Wykrywa niespójne terminy w tłumaczeniach, które nigdy nie miały glosariusza. Kod wyszukuje rozbieżności w 7 040 tekstach, a model AI rozstrzyga każdą z nich."
       },
       "metrics": [
-        { "value": "99,933", "label": "AI decisions in 3 minutes" },
-        { "value": "~300 ms", "label": "to re-check a text after each edit in the review app" }
+        {"value": "99,933", "label": "AI decisions in 3 minutes"},
+        {"value": "~300 ms", "label": "to re-check a text after each edit in the review app"}
       ],
       "bullets": [
         "Exports an Excel workbook for sign-off and a keyboard-driven review app where translators curate the glossary; decided terms are never re-arbitrated.",
@@ -334,42 +400,64 @@
       ],
       "stack": ["TypeScript", "TypeSafe Jev", "Excel"],
       "tags": ["llm", "evals", "localization", "typescript"],
-      "links": [{ "label": "Code", "url": "https://github.com/adagora/jev-experiments" }],
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/jev-experiments"}
+      ],
       "cv": true
     },
     {
-      "id": "agent-playground",
+      "id": "eternalchat",
       "tier": "featured",
       "visibility": "public",
-      "name": { "en": "Multi-agent pricing playground", "pl": "Wieloagentowy playground do wycen" },
+      "name": {"en": "EternalChat: conversation as memory", "pl": "EternalChat: rozmowa jako pamięć"},
+      "summary": {
+        "en": "Local terminal chat implementing the UniiChat design: append-only message logs feed a background tree of summaries. Each turn receives a size-budgeted view, with zoom back to original messages. Python with no runtime dependencies.",
+        "pl": "Lokalny czat terminalowy według projektu UniiChat: dopisywany dziennik wiadomości zasila drzewo podsumowań w tle. Każda tura otrzymuje widok o ograniczonym rozmiarze, z możliwością powrotu do oryginalnych wiadomości. Python bez zależności wykonawczych."
+      },
+      "stack": ["Python", "Claude", "UniiChat"],
+      "tags": ["agents", "memory", "python"],
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/EternalChat"}
+      ],
+      "cv": false
+    },
+    {
+      "id": "agent-playground",
+      "tier": "earlier",
+      "visibility": "public",
+      "name": {"en": "Multi-agent pricing playground", "pl": "Wieloagentowy playground do wycen"},
       "summary": {
         "en": "Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE.",
         "pl": "Cztery workspace'y Bun na Vercel AI SDK: agent-kalkulator z narzędziami, REPL do kodowania z potwierdzaniem narzędzi, agent wyceny na danych z eBay (parse → search → compute → present) i serwer strumieniujący agentów przez SSE."
       },
       "stack": ["TypeScript", "Bun", "Vercel AI SDK", "Claude", "OpenAI", "eBay API"],
       "tags": ["agents", "typescript"],
-      "links": [{ "label": "Code", "url": "https://github.com/adagora/calc-price-agent" }],
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/calc-price-agent"}
+      ],
       "cv": false
     },
     {
       "id": "streamr-hackathon",
-      "tier": "featured",
+      "tier": "earlier",
       "visibility": "public",
-      "name": { "en": "Streaming ML demo, hackathon 2nd place", "pl": "Demo ML na strumieniu danych, 2. miejsce w hackathonie" },
+      "name": {"en": "Streaming ML demo, hackathon 2nd place", "pl": "Demo ML na strumieniu danych, 2. miejsce w hackathonie"},
       "summary": {
         "en": "Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon.",
         "pl": "Transakcje z Binance na żywo przez sieć Streamr, prognozy ARIMA na strumieniu, wyniki na wykresie. 2. miejsce w LearnWeb3 AI Hackathon."
       },
       "stack": ["Node.js", "Streamr", "ARIMA"],
       "tags": ["ml", "award"],
-      "links": [{ "label": "Code", "url": "https://github.com/adagora/streamr-ml-demo" }],
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/streamr-ml-demo"}
+      ],
       "cv": false
     },
     {
       "id": "cairn",
       "tier": "private",
       "visibility": "private",
-      "name": { "en": "Cairn: evidence CLI for process routing", "pl": "Cairn: CLI do analizy przepływu pracy" },
+      "name": {"en": "Cairn: evidence CLI for process routing", "pl": "Cairn: CLI do analizy przepływu pracy"},
       "summary": {
         "en": "Answers where work waits, where it loops back and which routing choice succeeded more often with the work mix held fixed. Each claim carries its sample size, basis and whether it may be quoted, and findings can be re-proved on new data. Output is one JSON envelope per call, built for AI agents first. Includes a robot-fleet dispatch testbed (VDA 5050).",
         "pl": "Odpowiada, gdzie praca czeka, gdzie wraca i który wybór marszruty częściej się udawał przy tej samej mieszance zleceń. Każde twierdzenie ma liczność próby, podstawę i informację, czy wolno je cytować. Wynik to jedna koperta JSON na wywołanie, zaprojektowana w pierwszej kolejności dla agentów AI."
@@ -382,7 +470,7 @@
       "id": "pdf-wiki",
       "tier": "private",
       "visibility": "private",
-      "name": { "en": "PDF wiki", "pl": "PDF wiki" },
+      "name": {"en": "PDF wiki", "pl": "PDF wiki"},
       "summary": {
         "en": "Local-first knowledge base: drop in a PDF, run ingest, get a cross-linked Markdown wiki with semantic search. Claude vision describes every figure.",
         "pl": "Lokalna baza wiedzy: wrzucasz PDF, uruchamiasz ingest i dostajesz powiązane wiki w Markdown z wyszukiwaniem semantycznym. Claude opisuje każdą rycinę."
@@ -395,7 +483,7 @@
       "id": "robot-arm",
       "tier": "private",
       "visibility": "private",
-      "name": { "en": "Robot arm control in the browser", "pl": "Sterowanie ramieniem robota z przeglądarki" },
+      "name": {"en": "Robot arm control in the browser", "pl": "Sterowanie ramieniem robota z przeglądarki"},
       "summary": {
         "en": "Calibration and daily control of a LeRobot SO-ARM100 from a laptop or phone: keyboard and gamepad input, an e-stop, and a single owner for the serial port.",
         "pl": "Kalibracja i codzienne sterowanie ramieniem LeRobot SO-ARM100 z laptopa lub telefonu: klawiatura i gamepad, e-stop i jeden właściciel portu szeregowego."
@@ -408,7 +496,7 @@
       "id": "har",
       "tier": "private",
       "visibility": "private",
-      "name": { "en": "HAR to API brief", "pl": "HAR → opis API" },
+      "name": {"en": "HAR to API brief", "pl": "HAR → opis API"},
       "summary": {
         "en": "Record browser traffic once and get a brief for rebuilding the API outside the browser: auth, endpoints, body shapes and curl templates.",
         "pl": "Nagrywasz ruch przeglądarki raz i dostajesz opis potrzebny do odtworzenia API poza przeglądarką: autoryzacja, endpointy, kształty body i szablony curl."
@@ -419,16 +507,19 @@
     },
     {
       "id": "meat",
-      "tier": "private",
-      "visibility": "private",
-      "name": { "en": "meat: reading diffs", "pl": "meat: diff do czytania" },
+      "tier": "featured",
+      "visibility": "public",
+      "name": {"en": "meat: reading diffs", "pl": "meat: diff do czytania"},
       "summary": {
         "en": "Turns a large code diff into a smaller reading diff focused on the consequential changes. TypeScript CLI, migrated from Go.",
         "pl": "Zamienia duży diff kodu w mniejszy diff do czytania, skupiony na istotnych zmianach. CLI w TypeScript, zmigrowane z Go."
       },
       "stack": ["TypeScript", "Go"],
       "tags": ["tooling", "code-review"],
-      "cv": false
+      "cv": false,
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/diff-explain"}
+      ]
     },
     {
       "id": "loop-coding-agent",
@@ -437,7 +528,9 @@
       "name": "Ralph loop for coding agents",
       "summary": "A plan-and-build prompt loop driven by AGENTS.md and specs, for Claude Code, opencode and Kilo Code.",
       "stack": ["Shell"],
-      "links": [{ "label": "Code", "url": "https://github.com/adagora/loop-coding-agent" }]
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/loop-coding-agent"}
+      ]
     },
     {
       "id": "roaming-rag",
@@ -446,7 +539,9 @@
       "name": "Roaming RAG",
       "summary": "Collapses a long Markdown document to its headings and lets the model expand only the sections it needs.",
       "stack": ["Python"],
-      "links": [{ "label": "Code", "url": "https://github.com/adagora/experiment-with-roaming-RAG" }]
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/experiment-with-roaming-RAG"}
+      ]
     },
     {
       "id": "book-ai-chat",
@@ -456,8 +551,8 @@
       "summary": "Answers questions about the EU crypto-asset regulation (MiCA) from the regulation text, with PostgresML for semantic search. A 2024 project, still live; the free hosting tier can take a minute to wake up.",
       "stack": ["Node.js", "PostgresML", "OpenAI"],
       "links": [
-        { "label": "Code", "url": "https://github.com/adagora/book-ai-chat" },
-        { "label": "Live demo", "url": "https://cryptoregulationtalk.onrender.com/" }
+        {"label": "Code", "url": "https://github.com/adagora/book-ai-chat"},
+        {"label": "Live demo", "url": "https://cryptoregulationtalk.onrender.com/"}
       ]
     },
     {
@@ -467,7 +562,9 @@
       "name": "Say: speech to text in the browser",
       "summary": "Voice notes transcribed locally with Whisper on Transformers.js, with a rich-text editor.",
       "stack": ["React", "Transformers.js", "Whisper"],
-      "links": [{ "label": "Code", "url": "https://github.com/adagora/voice-to-text-research" }]
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/voice-to-text-research"}
+      ]
     },
     {
       "id": "video-frames",
@@ -476,7 +573,9 @@
       "name": "Video frames analyzer",
       "summary": "Extracts frames from video, analyses them with Gemini, tracks cost and skips duplicate work.",
       "stack": ["TypeScript", "Gemini"],
-      "links": [{ "label": "Code", "url": "https://github.com/adagora/llm-video-extract-frames" }]
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/llm-video-extract-frames"}
+      ]
     },
     {
       "id": "mediapipe",
@@ -485,7 +584,9 @@
       "name": "Hand-tracking interaction experiments",
       "summary": "Human-computer interaction prototypes with MediaPipe.",
       "stack": ["Python", "MediaPipe"],
-      "links": [{ "label": "Code", "url": "https://github.com/adagora/mediapipe-for-fun" }]
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/mediapipe-for-fun"}
+      ]
     },
     {
       "id": "eboombox",
@@ -494,65 +595,200 @@
       "name": "Eboombox",
       "summary": "Turns Cardano transactions into sound.",
       "stack": ["Next.js", "Cardano"],
-      "links": [{ "label": "Code", "url": "https://github.com/adagora/eboombox" }]
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/eboombox"}
+      ]
+    },
+    {
+      "id": "hss-heat-treatment",
+      "tier": "featured",
+      "visibility": "public",
+      "name": {"en": "HSS heat treatment", "pl": "Obróbka cieplna stali HSS"},
+      "summary": {
+        "en": "Steel quench simulation with a narrated Manim explainer.",
+        "pl": "Symulacja hartowania stali z narracyjnym objaśnieniem w Manim."
+      },
+      "stack": ["Manim"],
+      "tags": ["manufacturing", "simulation"],
+      "links": [
+        {"label": "Code", "url": "https://github.com/adagora/HSS-heat-treatment"}
+      ],
+      "cv": false
+    },
+    {
+      "id": "loop-me",
+      "tier": "private",
+      "visibility": "private",
+      "name": {"en": "loop-me: employee interviews", "pl": "loop-me: wywiady z pracownikami"},
+      "summary": {
+        "en": "Agent interviews employees and produces automation specifications with ROI estimates.",
+        "pl": "Agent przeprowadza wywiady z pracownikami i przygotowuje specyfikacje automatyzacji z szacunkami ROI."
+      },
+      "stack": ["AI agents"],
+      "tags": ["agents", "automation"],
+      "cv": false
+    },
+    {
+      "id": "transport-planner",
+      "tier": "private",
+      "visibility": "private",
+      "name": {"en": "Transport planner", "pl": "Planowanie transportu"},
+      "summary": {
+        "en": "Turns Excel orders into truck loads, routes and 3D loading plans.",
+        "pl": "Zamienia zamówienia z Excela w załadunki ciężarówek, trasy i plany załadunku 3D."
+      },
+      "stack": ["Excel", "3D"],
+      "tags": ["manufacturing", "logistics"],
+      "cv": false
+    },
+    {
+      "id": "allegro-auto-sell",
+      "tier": "private",
+      "visibility": "private",
+      "name": {"en": "Allegro selling skill", "pl": "Skill do sprzedaży na Allegro"},
+      "summary": {
+        "en": "Agent skill for selling on Allegro with human approval.",
+        "pl": "Skill agenta do sprzedaży na Allegro z zatwierdzaniem przez człowieka."
+      },
+      "stack": ["Agent skills"],
+      "tags": ["agents", "automation"],
+      "cv": false
     }
   ],
-
   "skills": [
-    { "name": { "en": "LLM applications", "pl": "Aplikacje LLM" }, "keywords": ["RAG (hybrid BM25 + vector, reranking, citations)", "Visual RAG over PDFs", "Agents and tool calling", "LLM-as-judge", "Structured extraction", "Evaluation and benchmarks", "Prompt engineering"] },
-    { "name": { "en": "Models and platforms", "pl": "Modele i platformy" }, "keywords": ["Claude", "Gemini", "OpenAI", "Vercel AI SDK", "RAGFlow", "Open WebUI", "FAISS", "Microsoft Graph"] },
-    { "name": { "en": "Languages", "pl": "Języki programowania" }, "keywords": ["TypeScript", "Python", "Go", "JavaScript", "SQL"] },
-    { "name": { "en": "Backend and infrastructure", "pl": "Backend i infrastruktura" }, "keywords": ["Node.js", "Bun", "Express", "NestJS", "FastAPI", "PostgreSQL", "Prisma", "Redis", "Linux servers", "GitHub Actions", "AWS Elastic Beanstalk", "Telemetry and monitoring"] },
-    { "name": { "en": "Frontend", "pl": "Frontend" }, "keywords": ["React", "Next.js", "React Native", "React Query", "Material-UI", "Storybook", "Cypress", "D3"] },
-    { "name": { "en": "Engineering and CAD", "pl": "Inżynieria i CAD" }, "keywords": ["CATIA V5 (advanced)", "Siemens NX", "AutoCAD", "GD&T", "BOM", "D-FMEA", "Plastics", "OpenCASCADE / build123d", "STEP and DXF"] },
-    { "name": { "en": "AI-assisted development", "pl": "Programowanie z agentami AI" }, "keywords": ["Claude Code", "Codex", "Agent skills", "AGENTS.md"] },
-    { "name": { "en": "Earlier: web3", "pl": "Wcześniej: web3" }, "keywords": ["Solidity", "Foundry", "ethers.js", "Cardano"], "cv": false }
+    {
+      "name": {"en": "LLM applications", "pl": "Aplikacje LLM"},
+      "keywords": [
+        "RAG (hybrid BM25 + vector, reranking, citations)",
+        "Visual RAG over PDFs",
+        "Agents and tool calling",
+        "LLM-as-judge",
+        "Structured extraction",
+        "Evaluation and benchmarks",
+        "Prompt engineering"
+      ]
+    },
+    {
+      "name": {"en": "Models and platforms", "pl": "Modele i platformy"},
+      "keywords": ["Claude", "Gemini", "OpenAI", "Vercel AI SDK", "RAGFlow", "Open WebUI", "FAISS", "Microsoft Graph"]
+    },
+    {
+      "name": {"en": "Languages", "pl": "Języki programowania"},
+      "keywords": ["TypeScript", "Python", "Go (one project)", "Rust (6 months)", "JavaScript", "SQL"]
+    },
+    {
+      "name": {"en": "Backend and infrastructure", "pl": "Backend i infrastruktura"},
+      "keywords": [
+        "Node.js",
+        "Bun",
+        "Express",
+        "NestJS",
+        "FastAPI",
+        "PostgreSQL",
+        "Prisma",
+        "Redis",
+        "Linux servers",
+        "GitHub Actions",
+        "AWS Elastic Beanstalk",
+        "Telemetry and monitoring"
+      ]
+    },
+    {
+      "name": {"en": "Frontend and testing", "pl": "Frontend i testy"},
+      "keywords": [
+        "React",
+        "Next.js",
+        "React Native",
+        "React Query",
+        "Material-UI",
+        "Storybook",
+        "Cypress",
+        "D3",
+        "Playwright",
+        "pytest"
+      ]
+    },
+    {
+      "name": {"en": "Engineering and CAD", "pl": "Inżynieria i CAD"},
+      "keywords": [
+        "CATIA V5 (advanced)",
+        "Siemens NX",
+        "AutoCAD",
+        "GD&T",
+        "BOM",
+        "D-FMEA",
+        "Plastics",
+        "OpenCASCADE / build123d",
+        "STEP and DXF"
+      ]
+    },
+    {
+      "name": {"en": "AI-assisted development", "pl": "Programowanie z agentami AI"},
+      "keywords": ["Claude Code", "Codex", "Agent skills", "AGENTS.md"]
+    },
+    {
+      "name": {"en": "Web3", "pl": "Web3"},
+      "keywords": ["Solidity", "Foundry", "ethers.js", "Cardano"],
+      "cv": true
+    }
   ],
-
   "education": [
     {
-      "institution": { "en": "Silesian University of Technology, Gliwice", "pl": "Politechnika Śląska, Gliwice" },
-      "studyType": { "en": "MSc Eng.", "pl": "mgr inż." },
-      "area": { "en": "Materials Engineering (surface engineering and heat treatment)", "pl": "Inżynieria Materiałowa (inżynieria powierzchni i obróbka cieplna)" },
+      "institution": {"en": "Silesian University of Technology, Gliwice", "pl": "Politechnika Śląska, Gliwice"},
+      "studyType": {"en": "MSc Eng.", "pl": "mgr inż."},
+      "area": {
+        "en": "Materials Engineering (surface engineering and heat treatment)",
+        "pl": "Inżynieria Materiałowa (inżynieria powierzchni i obróbka cieplna)"
+      },
       "startDate": "2010",
       "endDate": "2016"
     },
     {
-      "institution": { "en": "TU Bergakademie Freiberg, Germany", "pl": "TU Bergakademie Freiberg, Niemcy" },
-      "studyType": { "en": "Exchange", "pl": "Wymiana" },
-      "area": { "en": "Forming technology (Umformtechnik)", "pl": "Technologia przeróbki plastycznej (Umformtechnik)" },
+      "institution": {"en": "TU Bergakademie Freiberg, Germany", "pl": "TU Bergakademie Freiberg, Niemcy"},
+      "studyType": {"en": "Exchange", "pl": "Wymiana"},
+      "area": {"en": "Forming technology (Umformtechnik)", "pl": "Technologia przeróbki plastycznej (Umformtechnik)"},
       "startDate": "2014",
       "endDate": "2015"
     },
     {
-      "institution": { "en": "Universidad de Oviedo, Spain", "pl": "Universidad de Oviedo, Hiszpania" },
-      "studyType": { "en": "Exchange", "pl": "Wymiana" },
-      "area": { "en": "Materials science", "pl": "Nauka o materiałach" },
+      "institution": {"en": "Universidad de Oviedo, Spain", "pl": "Universidad de Oviedo, Hiszpania"},
+      "studyType": {"en": "Exchange", "pl": "Wymiana"},
+      "area": {"en": "Materials science", "pl": "Nauka o materiałach"},
       "startDate": "2013",
       "endDate": "2013"
     }
   ],
-
   "languages": [
-    { "language": { "en": "Polish", "pl": "polski" }, "fluency": { "en": "Native", "pl": "ojczysty" } },
-    { "language": { "en": "English", "pl": "angielski" }, "fluency": { "en": "Professional working (B2)", "pl": "B2, swobodna praca zawodowa" } },
-    { "language": { "en": "German", "pl": "niemiecki" }, "fluency": { "en": "Limited working (B1, DSH-2 certificate)", "pl": "B1 (certyfikat DSH-2)" } }
+    {
+      "language": {"en": "Polish", "pl": "polski"},
+      "fluency": {"en": "Native", "pl": "ojczysty"}
+    },
+    {
+      "language": {"en": "English", "pl": "angielski"},
+      "fluency": {"en": "Professional working (B2)", "pl": "B2, swobodna praca zawodowa"}
+    },
+    {
+      "language": {"en": "German", "pl": "niemiecki"},
+      "fluency": {"en": "Limited working (B1, DSH-2 certificate)", "pl": "B1 (certyfikat DSH-2)"}
+    }
   ],
-
   "certificates": [
-    { "name": "CATIA V5, advanced level", "issuer": "CADSOL Design Poland", "date": "2018" },
-    { "name": "AutoCAD, levels 1 and 2", "issuer": "Autodesk", "date": "2015" },
-    { "name": "Generative AI Essentials for Software Developers" }
+    {"name": "CATIA V5, advanced level", "issuer": "CADSOL Design Poland", "date": "2018"},
+    {"name": "AutoCAD, levels 1 and 2", "issuer": "Autodesk", "date": "2015"},
+    {"name": "Generative AI Essentials for Software Developers"}
   ],
-
   "awards": [
-    { "title": { "en": "2nd place, LearnWeb3 AI Hackathon", "pl": "2. miejsce, LearnWeb3 AI Hackathon" }, "date": "2023" }
+    {
+      "title": {"en": "2nd place, LearnWeb3 AI Hackathon", "pl": "2. miejsce, LearnWeb3 AI Hackathon"},
+      "date": "2023"
+    }
   ],
-
   "publications": [
-    { "name": "Laser surface treatment technologies: laser ablation", "role": { "en": "Co-author", "pl": "Współautor" } }
+    {
+      "name": "Laser surface treatment technologies: laser ablation",
+      "role": {"en": "Co-author", "pl": "Współautor"}
+    }
   ],
-
   "labels": {
     "en": {
       "profile": "Profile",

@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Adrian Góra · CV (PL)</title>
-<meta name="description" content="AI Engineer | aplikacje LLM, RAG i agenci AI dla produkcji | TypeScript, Python" />
+<meta name="description" content="AI / Software Engineer | aplikacje LLM, RAG, agenci | TypeScript, Python" />
 <link rel="canonical" href="https://adagora.github.io/cv/pl.html" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,6 +60,13 @@ h3 span { color: var(--ink-2); font-weight: 500; }
 .cols p { margin: 0; color: var(--ink-2); }
 .avoid-break { break-inside: avoid; }
 .consent { margin: 12px 0 0; font-size: 6.8pt; line-height: 1.35; color: var(--muted); }
+
+/* Keep section labels with content; start career history on a clear second page. */
+h2 { break-after: avoid; }
+@media print { .earlier-experience { break-before: page; margin-top: 0; } }
+/* A slightly tighter rhythm keeps career history and supporting details together. */
+.earlier-experience .job { margin-top: 6px; line-height: 1.4; }
+.skills { line-height: 1.4; gap: 1px; }
 </style>
 </head>
 <body>
@@ -67,7 +74,7 @@ h3 span { color: var(--ink-2); font-weight: 500; }
   <header class="cv-head">
     <div>
       <h1>Adrian Góra</h1>
-      <p class="headline">AI Engineer | aplikacje LLM, RAG i agenci AI dla produkcji | TypeScript, Python</p>
+      <p class="headline">AI / Software Engineer | aplikacje LLM, RAG, agenci | TypeScript, Python</p>
       <p class="contact">
         <a href="mailto:adrian.gora14@gmail.com">adrian.gora14@gmail.com</a> |
         <a href="https://adagora.github.io/">adagora.github.io</a> |
@@ -81,7 +88,7 @@ h3 span { color: var(--ink-2); font-weight: 500; }
 
   <section>
     <h2>Profil</h2>
-    <p class="summary">Od lutego 2025 buduję wewnętrzne narzędzia AI u producenta przemysłowego: firmowego asystenta RAG, pipeline spotkań Teams, portal tłumaczeń z AI i analitykę marszrut. Wcześniej przez cztery lata pisałem w TypeScript i React (fintech, web3), a przez trzy i pół roku projektowałem części samochodowe w CATIA V5.</p>
+    <p class="summary">AI Engineer w Wiśniowski, gdzie tworzę wewnętrzne narzędzia do wyszukiwania w dokumentach, tłumaczeń, raportów ze spotkań i analizy produkcji. Wcześniej rozwijałem oprogramowanie dla fintechu i Web3 oraz projektowałem części samochodowe w CATIA V5.</p>
   </section>
 
   <section>
@@ -96,8 +103,12 @@ h3 span { color: var(--ink-2); font-weight: 500; }
   <section>
     <h2>Wybrane projekty</h2>
     <div class="proj">
-      <h3>Visual RAG dla dokumentacji technicznej <a href="https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV">github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV</a></h3>
-      <p>Wyszukiwanie i odpowiedzi na pytania w dokumentacji technicznej PDF i katalogach o złożonym układzie (rysunki, tabele, wymiary). Znajduje właściwą stronę po jej obrazie i tekście, odpowiada modelem wizyjnym i podaje stronę.</p>
+      <h3>PDF-Insight: ekstrakcja dokumentów z walidacją <a href="https://github.com/adagora/PDF-Insight">github.com/adagora/PDF-Insight</a></h3>
+      <p>PDF → JSON z walidacją, lokalną inspekcją, maskowaniem tekstu i sprawdzaniem źródeł kwot oraz dat. React, Cloudflare Workers, Gemini i wspólne schematy Zod; 298 testów jednostkowych, kontraktowych i własności.</p>
+    </div>
+    <div class="proj">
+      <h3>VisualRAG dla technicznych PDF <a href="https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV">github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV</a></h3>
+      <p>Wyszukiwanie stron technicznych PDF na poziomie pikseli połączone z BM25; odpowiedzi cytują strony źródłowe.</p>
     </div>
     <div class="proj">
       <h3>Wycena detali obrabianych z modelu CAD <a href="https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena">github.com/adagora/cad-tools (skills/wycena)</a></h3>
@@ -110,15 +121,15 @@ h3 span { color: var(--ink-2); font-weight: 500; }
     <p class="more">Wszystkie projekty: <a href="https://adagora.github.io/#projects">adagora.github.io/#projects</a></p>
   </section>
 
-  <section>
+  <section class="earlier-experience">
     <h2>Wcześniejsze doświadczenie</h2>
     <div class="job">
       <div class="job-head"><h3>Software Engineer <span>· Freelance</span></h3><span class="when">08.2023 – 01.2025</span></div>
-      <ul><li>Prototypowałem narzędzia AI (modele predykcyjne, czat nad dokumentami) do testowania pomysłów i dostarczyłem interfejs aplikacji stakingowej na web i mobile (TypeScript, React, ethers). 2. miejsce w LearnWeb3 AI Hackathon.</li></ul>
+      <ul><li>Prototypowałem modele predykcyjne i czat nad dokumentami; dostarczyłem interfejs stakingowy web/mobile (TypeScript, React, ethers). 2. miejsce, LearnWeb3 AI Hackathon.</li></ul>
     </div>
     <div class="job">
       <div class="job-head"><h3>Full-Stack Engineer <span>· Playdate App Limited</span></h3><span class="when">06.2023 – 08.2023</span></div>
-      <ul><li>Zbudowałem wersjonowanie wydań, dzięki któremu użytkowników starych wersji iOS i Android dało się zmigrować, naprawiłem krytyczny błąd onboardingu na Androidzie i odpowiadałem za CI/CD na AWS Elastic Beanstalk (React Native, Django).</li></ul>
+      <ul><li>Zbudowałem wersjonowanie aplikacji mobilnej, naprawiłem onboarding Androida i odpowiadałem za CI/CD na AWS Elastic Beanstalk (React Native, Django).</li></ul>
     </div>
     <div class="job">
       <div class="job-head"><h3>Software Engineer <span>· Ariable</span></h3><span class="when">12.2022 – 06.2023</span></div>
@@ -134,7 +145,7 @@ h3 span { color: var(--ink-2); font-weight: 500; }
     </div>
     <div class="job">
       <div class="job-head"><h3>Inżynieria w motoryzacji <span>· Varroc Lighting Systems, Auto Design, Alpha Technology</span></h3><span class="when">01.2017 – 07.2020</span></div>
-      <ul><li><strong>Product Engineer, Varroc Lighting Systems.</strong> Projektowałem elementy lamp przednich i tylnych w CATIA V5: koncepcja, mocowania, wykonalność, wyniki symulacji i testów, zapytania narzędziowe, BOM i rysunki z GD&amp;T. Współpraca z działem R&amp;D w Czechach.</li><li><strong>CAD Designer, Auto Design.</strong> Projektowałem elementy wnętrza (deska rozdzielcza, boczki drzwi) dla Audi; przenosiłem części z CATIA V5 do NX 11.</li><li><strong>Project Engineer, Alpha Technology.</strong> Przygotowywałem zapytania techniczne dla Grupy VW, pracowałem w zespole D-FMEA i szkoliłem pracowników z przetwórstwa tworzyw.</li></ul>
+      <ul><li><strong>Product Engineer, Varroc Lighting Systems.</strong> Projektowałem elementy lamp w CATIA V5: od koncepcji i wykonalności po narzędzia, BOM i rysunki GD&amp;T, we współpracy z czeskim R&amp;D.</li><li><strong>CAD Designer, Auto Design.</strong> Projektowałem elementy wnętrza (deska rozdzielcza, boczki drzwi) dla Audi; przenosiłem części z CATIA V5 do NX 11.</li><li><strong>Project Engineer, Alpha Technology.</strong> Przygotowywałem zapytania techniczne dla Grupy VW, pracowałem w zespole D-FMEA i szkoliłem pracowników z przetwórstwa tworzyw.</li></ul>
     </div>
   </section>
 
@@ -143,11 +154,12 @@ h3 span { color: var(--ink-2); font-weight: 500; }
     <dl class="skills">
       <div><dt>Aplikacje LLM</dt><dd>RAG (hybrid BM25 + vector, reranking, citations), Visual RAG over PDFs, Agents and tool calling, LLM-as-judge, Structured extraction, Evaluation and benchmarks, Prompt engineering</dd></div>
       <div><dt>Modele i platformy</dt><dd>Claude, Gemini, OpenAI, Vercel AI SDK, RAGFlow, Open WebUI, FAISS, Microsoft Graph</dd></div>
-      <div><dt>Języki programowania</dt><dd>TypeScript, Python, Go, JavaScript, SQL</dd></div>
+      <div><dt>Języki programowania</dt><dd>TypeScript, Python, Go (one project), Rust (6 months), JavaScript, SQL</dd></div>
       <div><dt>Backend i infrastruktura</dt><dd>Node.js, Bun, Express, NestJS, FastAPI, PostgreSQL, Prisma, Redis, Linux servers, GitHub Actions, AWS Elastic Beanstalk, Telemetry and monitoring</dd></div>
-      <div><dt>Frontend</dt><dd>React, Next.js, React Native, React Query, Material-UI, Storybook, Cypress, D3</dd></div>
+      <div><dt>Frontend i testy</dt><dd>React, Next.js, React Native, React Query, Material-UI, Storybook, Cypress, D3, Playwright, pytest</dd></div>
       <div><dt>Inżynieria i CAD</dt><dd>CATIA V5 (advanced), Siemens NX, AutoCAD, GD&amp;T, BOM, D-FMEA, Plastics, OpenCASCADE / build123d, STEP and DXF</dd></div>
       <div><dt>Programowanie z agentami AI</dt><dd>Claude Code, Codex, Agent skills, AGENTS.md</dd></div>
+      <div><dt>Web3</dt><dd>Solidity, Foundry, ethers.js, Cardano</dd></div>
     </dl>
   </section>
 

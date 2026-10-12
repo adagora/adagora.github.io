@@ -9,7 +9,7 @@ Key facts:
 - Earlier: four years of TypeScript and React (fintech, web3, React Native), three and a half years of automotive CAD engineering (CATIA V5, NX, GD&T, D-FMEA).
 - Measured results: 99,933 (terminology checks made by AI in 3 minutes, across 7,040 translated texts in 8 languages); 5 (internal AI tools built at a manufacturer since February 2025).
 - Languages: Polish: Native; English: Professional working (B2); German: Limited working (B1, DSH-2 certificate).
-- Target roles: AI Engineer, LLM Engineer, Generative AI Engineer, AI Solutions Engineer, Forward Deployed Engineer, Full-stack Engineer (TypeScript / Python), AI focus.
+- Target roles: AI Engineer, Software Engineer.
 - Contact: adrian.gora14@gmail.com · https://github.com/adagora · https://www.linkedin.com/in/adrian-gora/
 
 ## CV
@@ -22,11 +22,13 @@ Key facts:
 
 ## Public projects
 
-- [Visual RAG for technical PDFs](https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV): Search and Q&A over product catalogues and technical PDFs with complex layouts: drawings, tables and dimension callouts. It finds the right page by how it looks, answers from the page image with a vision model and cites the page.
+- [PDF-Insight: validated document extraction](https://github.com/adagora/PDF-Insight): Inspects PDFs locally, redacts sensitive text and extracts summaries, parties, amounts and dates as validated JSON. Shared Zod schemas connect the React frontend, Cloudflare Worker and Gemini responses. Results: 298 (unit, contract and property tests documented in the repository); 29.1 s (p95 across 20 public uploads in the 6 October 2026 benchmark).
+- [VisualRAG](https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV): Searches technical PDFs using page images and BM25 text retrieval, then answers with citations to source pages.
 - [CAD quoting engine for machined parts](https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena): Quotes a machined part from its STEP file (a 3D CAD model) for a tool shop. Code measures the part and computes the price; an AI model reviews the machining process and risks the way a shop manager would. Results: STEP file → price (a 3D CAD model goes in, a quote in PLN comes out, based on the shop's own rates).
 - [LLM-judged translation audit](https://github.com/adagora/jev-experiments): Finds inconsistent terms in translations that never had a glossary. Code finds the disagreements across 7,040 texts, and an AI model decides each one. Results: 99,933 (AI decisions in 3 minutes); ~300 ms (to re-check a text after each edit in the review app).
-- [Multi-agent pricing playground](https://github.com/adagora/calc-price-agent): Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE.
-- [Streaming ML demo, hackathon 2nd place](https://github.com/adagora/streamr-ml-demo): Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon.
+- [EternalChat: conversation as memory](https://github.com/adagora/EternalChat): Local terminal chat implementing the UniiChat design: append-only message logs feed a background tree of summaries. Each turn receives a size-budgeted view, with zoom back to original messages. Python with no runtime dependencies.
+- [meat: reading diffs](https://github.com/adagora/diff-explain): Turns a large code diff into a smaller reading diff focused on the consequential changes. TypeScript CLI, migrated from Go.
+- [HSS heat treatment](https://github.com/adagora/HSS-heat-treatment): Steel quench simulation with a narrated Manim explainer.
 
 ## Optional
 

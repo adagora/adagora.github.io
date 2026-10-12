@@ -1,6 +1,6 @@
 # Adrian Góra
 
-AI Engineer | aplikacje LLM, RAG i agenci AI dla produkcji | TypeScript, Python
+AI / Software Engineer | aplikacje LLM, RAG, agenci | TypeScript, Python
 
 - Email: adrian.gora14@gmail.com
 - Portfolio: https://adagora.github.io/
@@ -9,11 +9,11 @@ AI Engineer | aplikacje LLM, RAG i agenci AI dla produkcji | TypeScript, Python
 - Lokalizacja: Polska · Zdalnie lub hybrydowo, także zdalnie dla firm z UE i spoza niej
 - Dostępność: Dostępny od 1 listopada 2026, bez okresu wypowiedzenia
 - Forma współpracy: B2B lub umowa o pracę
-- Szukane role: AI Engineer, LLM Engineer, Generative AI Engineer, AI Solutions Engineer, Forward Deployed Engineer, Full-stack Engineer (TypeScript / Python), AI focus
+- Szukane role: AI Engineer, Software Engineer
 
 ## Profil
 
-Od lutego 2025 buduję wewnętrzne narzędzia AI u producenta przemysłowego: firmowego asystenta RAG, pipeline spotkań Teams, portal tłumaczeń z AI i analitykę marszrut. Wcześniej przez cztery lata pisałem w TypeScript i React (fintech, web3), a przez trzy i pół roku projektowałem części samochodowe w CATIA V5.
+AI Engineer w Wiśniowski, gdzie tworzę wewnętrzne narzędzia do wyszukiwania w dokumentach, tłumaczeń, raportów ze spotkań i analizy produkcji. Wcześniej rozwijałem oprogramowanie dla fintechu i Web3 oraz projektowałem części samochodowe w CATIA V5.
 
 ## Doświadczenie
 
@@ -29,9 +29,18 @@ Stanowisko formalne: Specjalista ds. AI. Wewnętrzne narzędzia AI dla polskiego
 
 ## Wybrane projekty
 
-### Visual RAG dla dokumentacji technicznej
+### PDF-Insight: ekstrakcja dokumentów z walidacją
 
-Wyszukiwanie i odpowiedzi na pytania w katalogach i dokumentacji technicznej PDF o złożonym układzie: rysunki, tabele i wymiary. Znajduje właściwą stronę po tym, jak wygląda, odpowiada z obrazu strony modelem wizyjnym i cytuje stronę.
+Sprawdza PDF lokalnie, maskuje wrażliwe dane i wyodrębnia podsumowania, strony umowy, kwoty i daty do JSON z walidacją. Wspólne schematy Zod łączą frontend React, Cloudflare Worker i odpowiedzi Gemini.
+
+Results: 298 (unit, contract and property tests documented in the repository); 29.1 s (p95 across 20 public uploads in the 6 October 2026 benchmark).
+
+Stack: TypeScript, React, Cloudflare Workers, Gemini, Zod, Playwright
+Code: https://github.com/adagora/PDF-Insight
+
+### VisualRAG dla technicznych PDF
+
+Wyszukuje informacje w technicznych PDF-ach na podstawie obrazu stron i tekstu BM25, a odpowiedzi cytują strony źródłowe.
 
 Stack: Python, FAISS, BM25 + RRF, PixelRAG, Gemini, Claude
 Code: https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV
@@ -54,19 +63,26 @@ Results: 99,933 (AI decisions in 3 minutes); ~300 ms (to re-check a text after e
 Stack: TypeScript, TypeSafe Jev, Excel
 Code: https://github.com/adagora/jev-experiments
 
-### Wieloagentowy playground do wycen
+### EternalChat: rozmowa jako pamięć
 
-Cztery workspace'y Bun na Vercel AI SDK: agent-kalkulator z narzędziami, REPL do kodowania z potwierdzaniem narzędzi, agent wyceny na danych z eBay (parse → search → compute → present) i serwer strumieniujący agentów przez SSE.
+Lokalny czat terminalowy według projektu UniiChat: dopisywany dziennik wiadomości zasila drzewo podsumowań w tle. Każda tura otrzymuje widok o ograniczonym rozmiarze, z możliwością powrotu do oryginalnych wiadomości. Python bez zależności wykonawczych.
 
-Stack: TypeScript, Bun, Vercel AI SDK, Claude, OpenAI, eBay API
-Code: https://github.com/adagora/calc-price-agent
+Stack: Python, Claude, UniiChat
+Code: https://github.com/adagora/EternalChat
 
-### Demo ML na strumieniu danych, 2. miejsce w hackathonie
+### meat: diff do czytania
 
-Transakcje z Binance na żywo przez sieć Streamr, prognozy ARIMA na strumieniu, wyniki na wykresie. 2. miejsce w LearnWeb3 AI Hackathon.
+Zamienia duży diff kodu w mniejszy diff do czytania, skupiony na istotnych zmianach. CLI w TypeScript, zmigrowane z Go.
 
-Stack: Node.js, Streamr, ARIMA
-Code: https://github.com/adagora/streamr-ml-demo
+Stack: TypeScript, Go
+Code: https://github.com/adagora/diff-explain
+
+### Obróbka cieplna stali HSS
+
+Symulacja hartowania stali z narracyjnym objaśnieniem w Manim.
+
+Stack: Manim
+Code: https://github.com/adagora/HSS-heat-treatment
 
 ### Prywatne repozytoria (kod do pokazania na rozmowie)
 
@@ -74,10 +90,14 @@ Code: https://github.com/adagora/streamr-ml-demo
 - PDF wiki: Lokalna baza wiedzy: wrzucasz PDF, uruchamiasz ingest i dostajesz powiązane wiki w Markdown z wyszukiwaniem semantycznym. Claude opisuje każdą rycinę. (TypeScript, Claude, qmd)
 - Sterowanie ramieniem robota z przeglądarki: Kalibracja i codzienne sterowanie ramieniem LeRobot SO-ARM100 z laptopa lub telefonu: klawiatura i gamepad, e-stop i jeden właściciel portu szeregowego. (Python, LeRobot, WebSockets)
 - HAR → opis API: Nagrywasz ruch przeglądarki raz i dostajesz opis potrzebny do odtworzenia API poza przeglądarką: autoryzacja, endpointy, kształty body i szablony curl. (Python)
-- meat: diff do czytania: Zamienia duży diff kodu w mniejszy diff do czytania, skupiony na istotnych zmianach. CLI w TypeScript, zmigrowane z Go. (TypeScript, Go)
+- loop-me: wywiady z pracownikami: Agent przeprowadza wywiady z pracownikami i przygotowuje specyfikacje automatyzacji z szacunkami ROI. (AI agents)
+- Planowanie transportu: Zamienia zamówienia z Excela w załadunki ciężarówek, trasy i plany załadunku 3D. (Excel, 3D)
+- Skill do sprzedaży na Allegro: Skill agenta do sprzedaży na Allegro z zatwierdzaniem przez człowieka. (Agent skills)
 
-### Wcześniejsze eksperymenty
+### Dodatkowe projekty
 
+- [Multi-agent pricing playground](https://github.com/adagora/calc-price-agent): Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE. (TypeScript, Bun, Vercel AI SDK, Claude, OpenAI, eBay API)
+- [Streaming ML demo, hackathon 2nd place](https://github.com/adagora/streamr-ml-demo): Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon. (Node.js, Streamr, ARIMA)
 - [Ralph loop for coding agents](https://github.com/adagora/loop-coding-agent): A plan-and-build prompt loop driven by AGENTS.md and specs, for Claude Code, opencode and Kilo Code. (Shell)
 - [Roaming RAG](https://github.com/adagora/experiment-with-roaming-RAG): Collapses a long Markdown document to its headings and lets the model expand only the sections it needs. (Python)
 - [MiCA regulation Q&A](https://github.com/adagora/book-ai-chat): Answers questions about the EU crypto-asset regulation (MiCA) from the regulation text, with PostgresML for semantic search. A 2024 project, still live; the free hosting tier can take a minute to wake up. (Node.js, PostgresML, OpenAI) Live demo: https://cryptoregulationtalk.onrender.com/
@@ -124,11 +144,12 @@ Code: https://github.com/adagora/streamr-ml-demo
 
 - Aplikacje LLM: RAG (hybrid BM25 + vector, reranking, citations), Visual RAG over PDFs, Agents and tool calling, LLM-as-judge, Structured extraction, Evaluation and benchmarks, Prompt engineering
 - Modele i platformy: Claude, Gemini, OpenAI, Vercel AI SDK, RAGFlow, Open WebUI, FAISS, Microsoft Graph
-- Języki programowania: TypeScript, Python, Go, JavaScript, SQL
+- Języki programowania: TypeScript, Python, Go (one project), Rust (6 months), JavaScript, SQL
 - Backend i infrastruktura: Node.js, Bun, Express, NestJS, FastAPI, PostgreSQL, Prisma, Redis, Linux servers, GitHub Actions, AWS Elastic Beanstalk, Telemetry and monitoring
-- Frontend: React, Next.js, React Native, React Query, Material-UI, Storybook, Cypress, D3
+- Frontend i testy: React, Next.js, React Native, React Query, Material-UI, Storybook, Cypress, D3, Playwright, pytest
 - Inżynieria i CAD: CATIA V5 (advanced), Siemens NX, AutoCAD, GD&T, BOM, D-FMEA, Plastics, OpenCASCADE / build123d, STEP and DXF
 - Programowanie z agentami AI: Claude Code, Codex, Agent skills, AGENTS.md
+- Web3: Solidity, Foundry, ethers.js, Cardano
 
 ## Wykształcenie
 

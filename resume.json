@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Adrian Góra",
-    "label": "AI Engineer | LLM apps, RAG and AI agents for manufacturing | TypeScript, Python",
+    "label": "AI / Software Engineer | LLM apps, RAG, agents | TypeScript, Python",
     "image": "https://adagora.github.io/assets/img/adrian-gora.jpg",
     "email": "adrian.gora14@gmail.com",
     "url": "https://adagora.github.io/",
-    "summary": "Since February 2025 I have been building internal AI tools at an industrial manufacturer: a company-wide RAG assistant, a Teams meeting pipeline, an AI translation portal and production-route analytics. Before that I spent four years on TypeScript and React in fintech and web3, and three and a half years designing car parts in CATIA V5.",
+    "summary": "AI Engineer at Wiśniowski, building internal tools for document search, translation, meeting reports and production analysis. Previous roles include software engineering in fintech and Web3, plus automotive CAD design.",
     "location": {
       "countryCode": "PL",
       "region": "Poland"
@@ -193,7 +193,8 @@
       "keywords": [
         "TypeScript",
         "Python",
-        "Go",
+        "Go (one project)",
+        "Rust (6 months)",
         "JavaScript",
         "SQL"
       ]
@@ -216,7 +217,7 @@
       ]
     },
     {
-      "name": "Frontend",
+      "name": "Frontend and testing",
       "keywords": [
         "React",
         "Next.js",
@@ -225,7 +226,9 @@
         "Material-UI",
         "Storybook",
         "Cypress",
-        "D3"
+        "D3",
+        "Playwright",
+        "pytest"
       ]
     },
     {
@@ -252,7 +255,7 @@
       ]
     },
     {
-      "name": "Earlier: web3",
+      "name": "Web3",
       "keywords": [
         "Solidity",
         "Foundry",
@@ -277,12 +280,30 @@
   ],
   "projects": [
     {
-      "name": "Visual RAG for technical PDFs",
-      "description": "Search and Q&A over product catalogues and technical PDFs with complex layouts: drawings, tables and dimension callouts. It finds the right page by how it looks, answers from the page image with a vision model and cites the page.",
+      "name": "PDF-Insight: validated document extraction",
+      "description": "Inspects PDFs locally, redacts sensitive text and extracts summaries, parties, amounts and dates as validated JSON. Shared Zod schemas connect the React frontend, Cloudflare Worker and Gemini responses.",
       "highlights": [
-        "Searches page images and the PDF text together; adding the text search finds the right page more often than image search alone.",
-        "Seven search modes were compared on test questions with known answer pages. A paid query-rewriting step did not help, so it is off by default.",
-        "Web UI and API: choose a search mode per question, and every answer cites its page."
+        "Original PDF bytes remain local; only redacted text reaches the API.",
+        "Checks amounts and dates against source text and flags values it cannot verify. These checks do not establish the accuracy of every summary sentence.",
+        "Benchmark: 19 of 20 public uploads completed within 30 seconds; maximum 41.0 seconds. Long-term reliability remains under observation."
+      ],
+      "keywords": [
+        "TypeScript",
+        "React",
+        "Cloudflare Workers",
+        "Gemini",
+        "Zod",
+        "Playwright"
+      ],
+      "url": "https://github.com/adagora/PDF-Insight",
+      "type": "public repository"
+    },
+    {
+      "name": "VisualRAG",
+      "description": "Searches technical PDFs using page images and BM25 text retrieval, then answers with citations to source pages.",
+      "highlights": [
+        "Hybrid retrieval fuses page-image matches with BM25 text matches using Reciprocal Rank Fusion.",
+        "Seven retrieval modes can be compared in the web UI; answers cite the retrieved source pages."
       ],
       "keywords": [
         "Python",
@@ -330,28 +351,14 @@
       "type": "public repository"
     },
     {
-      "name": "Multi-agent pricing playground",
-      "description": "Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE.",
+      "name": "EternalChat: conversation as memory",
+      "description": "Local terminal chat implementing the UniiChat design: append-only message logs feed a background tree of summaries. Each turn receives a size-budgeted view, with zoom back to original messages. Python with no runtime dependencies.",
       "keywords": [
-        "TypeScript",
-        "Bun",
-        "Vercel AI SDK",
+        "Python",
         "Claude",
-        "OpenAI",
-        "eBay API"
+        "UniiChat"
       ],
-      "url": "https://github.com/adagora/calc-price-agent",
-      "type": "public repository"
-    },
-    {
-      "name": "Streaming ML demo, hackathon 2nd place",
-      "description": "Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon.",
-      "keywords": [
-        "Node.js",
-        "Streamr",
-        "ARIMA"
-      ],
-      "url": "https://github.com/adagora/streamr-ml-demo",
+      "url": "https://github.com/adagora/EternalChat",
       "type": "public repository"
     },
     {
@@ -399,23 +406,54 @@
         "TypeScript",
         "Go"
       ],
+      "url": "https://github.com/adagora/diff-explain",
+      "type": "public repository"
+    },
+    {
+      "name": "HSS heat treatment",
+      "description": "Steel quench simulation with a narrated Manim explainer.",
+      "keywords": [
+        "Manim"
+      ],
+      "url": "https://github.com/adagora/HSS-heat-treatment",
+      "type": "public repository"
+    },
+    {
+      "name": "loop-me: employee interviews",
+      "description": "Agent interviews employees and produces automation specifications with ROI estimates.",
+      "keywords": [
+        "AI agents"
+      ],
+      "type": "private repository"
+    },
+    {
+      "name": "Transport planner",
+      "description": "Turns Excel orders into truck loads, routes and 3D loading plans.",
+      "keywords": [
+        "Excel",
+        "3D"
+      ],
+      "type": "private repository"
+    },
+    {
+      "name": "Allegro selling skill",
+      "description": "Agent skill for selling on Allegro with human approval.",
+      "keywords": [
+        "Agent skills"
+      ],
       "type": "private repository"
     }
   ],
   "meta": {
     "canonical": "https://adagora.github.io/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-09-27",
+    "lastModified": "2026-10-12",
     "availability": "Available from 1 November 2026, no notice period",
     "workMode": "Remote or hybrid, also open to remote roles in the EU and worldwide",
     "contract": "B2B or employment contract",
     "targetRoles": [
       "AI Engineer",
-      "LLM Engineer",
-      "Generative AI Engineer",
-      "AI Solutions Engineer",
-      "Forward Deployed Engineer",
-      "Full-stack Engineer (TypeScript / Python), AI focus"
+      "Software Engineer"
     ]
   }
 }
