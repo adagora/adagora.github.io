@@ -1,77 +1,203 @@
 {
-  "generated": "2026-10-11T12:06:38.103Z",
+  "generated": "2026-10-12T14:25:38.239Z",
   "items": [
     {
       "type": "commit",
-      "repo": "adagora/quatation-transport",
-      "message": "Google Earth export, team marketplace, hosted access keys, next-gen research",
+      "repo": "adagora/adagora",
+      "message": "Link meat in profile README",
+      "url": "https://github.com/adagora/adagora/commit/207f9e8df27fd4af0bc019e9892b66ec451291a2",
+      "private": false,
+      "date": "2026-10-12T10:09:09Z",
+      "sha": "207f9e8"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/adagora",
+      "message": "Link EternalChat in profile README",
+      "url": "https://github.com/adagora/adagora/commit/1934015647104c193e42921edc88e97f7f32660e",
+      "private": false,
+      "date": "2026-10-12T10:08:38Z",
+      "sha": "1934015"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/loop-me-enterprise",
+      "message": "Merge pull request #1 from adagora/oss-prep",
       "url": null,
       "private": true,
-      "date": "2026-10-10T16:32:10Z",
-      "sha": "1ff1c82"
+      "date": "2026-10-12T08:28:39Z",
+      "sha": "aaf1ac3"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/loop-me-enterprise",
+      "message": "README: drop CI badge until the workflow lands",
+      "url": null,
+      "private": true,
+      "date": "2026-10-12T08:23:32Z",
+      "sha": "04c8bb4"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/loop-me-enterprise",
+      "message": "README: lead with problem, result and mock-mode quickstart; note preview API risk; move details to docs/reference.md",
+      "url": null,
+      "private": true,
+      "date": "2026-10-12T08:22:40Z",
+      "sha": "736fb92"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/loop-me-enterprise",
+      "message": "Add MIT license",
+      "url": null,
+      "private": true,
+      "date": "2026-10-12T08:22:40Z",
+      "sha": "0b04b81"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/loop-me-enterprise",
+      "message": "Stop tracking build output (dist/ is already ignored)",
+      "url": null,
+      "private": true,
+      "date": "2026-10-12T08:22:02Z",
+      "sha": "183b7c7"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "Add MIT license",
+      "url": "https://github.com/adagora/EternalChat/commit/7142be9f2feff890282cb02a62d7038a36010117",
+      "private": false,
+      "date": "2026-10-12T08:15:12Z",
+      "sha": "7142be9"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/adagora",
+      "message": "Update profile README",
+      "url": "https://github.com/adagora/adagora/commit/4516fd9bed82bbae044a58cdbc2544930c88bc4c",
+      "private": false,
+      "date": "2026-10-12T08:02:25Z",
+      "sha": "4516fd9"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/chatbot",
+      "message": "feat(ui): improve chatbot experience add categories, some fancy steppers, animation",
+      "url": null,
+      "private": true,
+      "date": "2026-10-12T06:53:40Z",
+      "sha": "db51574"
     },
     {
       "type": "commit",
       "repo": "adagora/quatation-transport",
-      "message": "ChatGPT plugin, pluggable app backend, distance-provider ADR",
+      "message": "Merge pull request #1 from adagora/claude/cool-goodall-dcr7wu",
       "url": null,
       "private": true,
-      "date": "2026-10-10T11:58:30Z",
-      "sha": "b3333ce"
+      "date": "2026-10-11T20:38:08Z",
+      "sha": "1750691"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/quatation-transport",
+      "message": "One planner tool for agents, Claude Code plugin and Claude Desktop extension (ADR 0019)",
+      "url": null,
+      "private": true,
+      "date": "2026-10-11T20:37:56Z",
+      "sha": "4ef13b6"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/quatation-transport",
+      "message": "tp: agent CLI over the shared planner folder and inbox (ADR 0019 step 3)",
+      "url": null,
+      "private": true,
+      "date": "2026-10-11T20:37:55Z",
+      "sha": "d06001e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/quatation-transport",
+      "message": "Agent verbs with a grounded answer envelope (ADR 0019 step 2)",
+      "url": null,
+      "private": true,
+      "date": "2026-10-11T20:37:55Z",
+      "sha": "59b4384"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/quatation-transport",
+      "message": "Claude Code plugin manifest, slash commands and agent-first ADR 0019",
+      "url": null,
+      "private": true,
+      "date": "2026-10-11T20:37:55Z",
+      "sha": "887b32b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/HSS-heat-treatment",
+      "message": "Add narrated explainer video and README showcase",
+      "url": "https://github.com/adagora/HSS-heat-treatment/commit/b6a94370e4451a06066564015da42b1a2c530163",
+      "private": false,
+      "date": "2026-10-11T19:27:51Z",
+      "sha": "b6a9437"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/HSS-heat-treatment",
+      "message": "Add rendered videos of the cycle and the water vs oil quench",
+      "url": "https://github.com/adagora/HSS-heat-treatment/commit/ad12cf4aa36f179b1c9aa9ecb5706fb7967f3a2a",
+      "private": false,
+      "date": "2026-10-11T18:29:24Z",
+      "sha": "ad12cf4"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/HSS-heat-treatment",
+      "message": "Add HSS (M2) heat-treatment animation and water vs oil quench model",
+      "url": "https://github.com/adagora/HSS-heat-treatment/commit/abdf67833643859ac6e6c35c5351b2b38673cbed",
+      "private": false,
+      "date": "2026-10-11T18:29:23Z",
+      "sha": "abdf678"
     },
     {
       "type": "commit",
       "repo": "adagora/EternalChat",
       "message": "Fix compaction bounds, recovery, shutdown, and lossless imports",
-      "url": null,
-      "private": true,
+      "url": "https://github.com/adagora/EternalChat/commit/17321cfe2757df7c8d7279553daecf53484d1cb9",
+      "private": false,
       "date": "2026-10-09T21:54:38Z",
-      "sha": "7aca0e3"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/quatation-transport",
-      "message": "Plan 2026-10-09: European deliveries (customer data, private)",
-      "url": null,
-      "private": true,
-      "date": "2026-10-09T21:42:05Z",
-      "sha": "29d7472"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/quatation-transport",
-      "message": "Transport planner: import, 3D loading, routing, audit (PL/EN)",
-      "url": null,
-      "private": true,
-      "date": "2026-10-09T21:42:04Z",
-      "sha": "d55d3ce"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/quatation-transport",
-      "message": "first commit",
-      "url": null,
-      "private": true,
-      "date": "2026-10-09T18:14:39Z",
-      "sha": "0da450e"
+      "sha": "17321cf"
     },
     {
       "type": "commit",
       "repo": "adagora/EternalChat",
       "message": "Harden storage and transport, clarify CLI help, enforce layering",
+      "url": "https://github.com/adagora/EternalChat/commit/9dc43464d3c73560310798ca79adbbf587bd794a",
+      "private": false,
+      "date": "2026-10-09T12:21:32Z",
+      "sha": "9dc4346"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/chatbot",
+      "message": "jev: asystent serwisowy — karta dokumentu, wydania, preferencja źródeł, kontrola cytowań po odpowiedzi",
       "url": null,
       "private": true,
-      "date": "2026-10-09T12:21:32Z",
-      "sha": "6af720a"
+      "date": "2026-10-09T12:13:35Z",
+      "sha": "e25db74"
     },
     {
       "type": "commit",
       "repo": "adagora/EternalChat",
       "message": "Implement persistent EternalChat with hierarchical memory",
-      "url": null,
-      "private": true,
+      "url": "https://github.com/adagora/EternalChat/commit/5c34c878ee083eee02068dde196712c6bce974aa",
+      "private": false,
       "date": "2026-10-09T04:33:31Z",
-      "sha": "1994c09"
+      "sha": "5c34c87"
     },
     {
       "type": "commit",
@@ -99,132 +225,6 @@
       "private": true,
       "date": "2026-10-08T19:21:10Z",
       "sha": "e951d55"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/EternalChat",
-      "message": "Add README.md with project information",
-      "url": null,
-      "private": true,
-      "date": "2026-10-08T18:08:36Z",
-      "sha": "e5c6c01"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/allegro-auto-sell",
-      "message": "Allegro selling skill: API client, ledger, monitor, references",
-      "url": null,
-      "private": true,
-      "date": "2026-10-08T08:45:12Z",
-      "sha": "61b88bf"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/PDF-Insight",
-      "message": "chore: record public verification and monitor analysis failures",
-      "url": "https://github.com/adagora/PDF-Insight/commit/d3571d79d72facbd612b91b718255f44976e7970",
-      "private": false,
-      "date": "2026-10-06T10:14:30Z",
-      "sha": "d3571d7"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/PDF-Insight",
-      "message": "fix: decode large PDF strings without overflowing the stack",
-      "url": "https://github.com/adagora/PDF-Insight/commit/fbf13151bd729fe05b417e899dd7258a1c234813",
-      "private": false,
-      "date": "2026-10-06T09:50:01Z",
-      "sha": "fbf1315"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/PDF-Insight",
-      "message": "test: retain inline image fixtures for decoder failures",
-      "url": "https://github.com/adagora/PDF-Insight/commit/ce72dcab9338b2a80e227ed4a9c5e445e74c23f6",
-      "private": false,
-      "date": "2026-10-06T09:41:04Z",
-      "sha": "ce72dca"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/PDF-Insight",
-      "message": "ci: test the production preview before Pages publication",
-      "url": "https://github.com/adagora/PDF-Insight/commit/13daef685a632e339718cd511ee3544872a914b5",
-      "private": false,
-      "date": "2026-10-06T09:28:48Z",
-      "sha": "13daef6"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/PDF-Insight",
-      "message": "ci: publish Pages with documented checks and availability monitoring",
-      "url": "https://github.com/adagora/PDF-Insight/commit/39f49c2fc3f551986302b8d4567d940590c5c13d",
-      "private": false,
-      "date": "2026-10-06T08:28:10Z",
-      "sha": "39f49c2"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Merge realism-campaign-2: rewind and photo mode, footpads, sea, twilight, AO, shocks, path-traced stills, native GPU renderer",
-      "url": null,
-      "private": true,
-      "date": "2026-10-03T23:07:49Z",
-      "sha": "a86ab1e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Close the realism campaign beads with the native GPU shortfalls recorded",
-      "url": null,
-      "private": true,
-      "date": "2026-10-03T23:07:37Z",
-      "sha": "ecd56d6"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Face hand-made near-horizontal faces up and drop the two-sided exception: pad 56 FPS, browser SSIM 0.81",
-      "url": null,
-      "private": true,
-      "date": "2026-10-03T22:37:33Z",
-      "sha": "5a0b030"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Native GPU measurements and parity at f1f58b8",
-      "url": null,
-      "private": true,
-      "date": "2026-10-03T21:55:10Z",
-      "sha": "85b6529"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Native GPU renderer in Bend (ADR-0039): one bang over a cell tree, parity exact, 52/62/96 FPS on pad/ascent/descent",
-      "url": null,
-      "private": true,
-      "date": "2026-10-03T21:53:33Z",
-      "sha": "f1f58b8"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/adagora.github.io",
-      "message": "content: plain-language project numbers for non-technical readers",
-      "url": "https://github.com/adagora/adagora.github.io/commit/31846969c220adbe6a2730e333e947d1d12ec436",
-      "private": false,
-      "date": "2026-09-28T20:06:54Z",
-      "sha": "3184696"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/adagora.github.io",
-      "message": "feat: fold project details and trim the portfolio page",
-      "url": "https://github.com/adagora/adagora.github.io/commit/fb680f29478e783d9c95e8026ff2b325b634b40e",
-      "private": false,
-      "date": "2026-09-28T19:51:55Z",
-      "sha": "fb680f2"
     }
   ]
 }
