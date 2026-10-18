@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-12",
+    "updated": "2026-10-18",
     "canonical": "https://adagora.github.io/",
     "source": "Single source of truth for the site, CVs, llms.txt and resume.json. Edit here, then run `npm run build`. Text fields are a plain string or {\"en\": ..., \"pl\": ...}."
   },
@@ -13,12 +13,12 @@
       "pl": "AI / Software Engineer | aplikacje LLM, RAG, agenci | TypeScript, Python"
     },
     "tagline": {
-      "en": "I build AI software for engineering and manufacturing. TypeScript and Python.",
-      "pl": "Tworzę oprogramowanie AI dla inżynierii i produkcji. TypeScript i Python."
+      "en": "I build AI tools for engineering and look for areas to improve and automate.",
+      "pl": "Tworzę narzędzia AI dla inżynierii i szukam obszarów, które można usprawnić i zautomatyzować."
     },
     "summary": {
-      "en": "AI Engineer at Wiśniowski, building internal tools for document search, translation, meeting reports and production analysis. Previous roles include software engineering in fintech and Web3, plus automotive CAD design.",
-      "pl": "AI Engineer w Wiśniowski, gdzie tworzę wewnętrzne narzędzia do wyszukiwania w dokumentach, tłumaczeń, raportów ze spotkań i analizy produkcji. Wcześniej rozwijałem oprogramowanie dla fintechu i Web3 oraz projektowałem części samochodowe w CATIA V5."
+      "en": "AI Engineer at Wiśniowski since February 2025, building internal tools for document search, translation, meeting reports and production analysis. Before that, four years of TypeScript and React in fintech and Web3.",
+      "pl": "Od lutego 2025 AI Engineer w Wiśniowski: tworzę wewnętrzne narzędzia do wyszukiwania w dokumentach, tłumaczeń, raportów ze spotkań i analizy produkcji. Wcześniej przez cztery lata rozwijałem oprogramowanie w TypeScript i React dla fintechu i Web3."
     },
     "email": "adrian.gora14@gmail.com",
     "url": "https://adagora.github.io/",
@@ -57,22 +57,35 @@
     ],
     "targetRoles": ["AI Engineer", "Software Engineer"]
   },
-  "proof": [
-    {
-      "id": "judgments",
-      "value": "99,933",
-      "label": "terminology checks made by AI in 3 minutes, across 7,040 translated texts in 8 languages",
-      "href": "#project-translate-audit"
-    },
-    {
-      "id": "commits",
-      "value": "2,200+",
-      "label": "commits in the last 12 months, most of them in private repos",
-      "href": "#activity",
-      "live": "commits"
-    },
-    {"id": "tools", "value": "5", "label": "internal AI tools built at a manufacturer since February 2025", "href": "#delivery"}
-  ],
+  "about": {
+    "title": "How I got here",
+    "route": [
+      {
+        "when": "2010–2016",
+        "title": "Materials engineering",
+        "text": "MSc in Gliwice with semesters in Freiberg and Oviedo: heat treatment and surface engineering.",
+        "href": "#background"
+      },
+      {
+        "when": "2017–2020",
+        "title": "Automotive parts design",
+        "text": "Lamp components at Varroc and interior parts for Audi in CATIA V5 and NX: GD&T, BOM, D-FMEA.",
+        "href": "#experience"
+      },
+      {
+        "when": "2020–2025",
+        "title": "Product software",
+        "text": "React and TypeScript for a regulated finance app, Web3 platforms and a React Native app, then freelance AI prototypes.",
+        "href": "#experience"
+      },
+      {
+        "when": "Since Feb 2025",
+        "title": "AI engineering in manufacturing",
+        "text": "AI engineer at Wiśniowski: five internal tools for documents, translation, meetings and production routes.",
+        "href": "#delivery"
+      }
+    ]
+  },
   "work": [
     {
       "id": "wisniowski",
@@ -324,6 +337,31 @@
       "cv": true
     },
     {
+      "id": "cairn",
+      "tier": "featured",
+      "visibility": "private",
+      "name": {"en": "Cairn: process-route analysis", "pl": "Cairn: analiza marszrut"},
+      "summary": {
+        "en": "Shows where work waits, where it loops back and which routing choice succeeded more often once the mix of work is held fixed. Every number opens into the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.",
+        "pl": "Pokazuje, gdzie praca czeka, gdzie wraca i który wybór marszruty częściej się udawał przy tej samej mieszance zleceń. Każdą liczbę można rozwinąć do rekordów źródłowych. Kod jest prywatny; demo działa na publicznych zbiorach danych, a darmowy hosting potrzebuje do minuty na start."
+      },
+      "cvSummary": {
+        "en": "Shows where work waits, where it loops back and which routing choice succeeded more often with the work mix held fixed; every claim carries its sample size. Go engine, agent-first CLI and web workbench; live demo on public datasets.",
+        "pl": "Pokazuje, gdzie praca czeka, gdzie wraca i która marszruta częściej się udawała przy tej samej mieszance zleceń; każde twierdzenie ma liczność próby. Silnik w Go, CLI dla agentów AI i webowy workbench; demo na publicznych danych."
+      },
+      "bullets": [
+        "Each claim carries its sample size, basis and whether it may be quoted, and a marked finding can be re-proved on new data.",
+        "The CLI prints one JSON envelope per call, with ready-to-quote sentences, caveats and refused questions, so an AI agent can use it without inventing numbers.",
+        "The demo opens on online retail orders (UCI, CC BY 4.0); the factory data the tool was built for stays private. Includes a robot-fleet dispatch testbed (VDA 5050)."
+      ],
+      "stack": ["Go", "TypeScript", "Preact", "BPMN", "VDA 5050"],
+      "tags": ["manufacturing", "data", "agents", "go"],
+      "links": [
+        {"label": "Live demo", "url": "https://manufacturing-tool.onrender.com/"}
+      ],
+      "cv": true
+    },
+    {
       "id": "visual-rag",
       "cvSummary": {
         "en": "Pixel-level retrieval over technical PDF pages, combined with BM25 text search; answers cite source pages.",
@@ -344,7 +382,7 @@
       "tags": ["rag", "evals", "vision", "python"],
       "credit": "Built on StarTrail’s PixelRAG; I added page-level retrieval, BM25 fusion, citations, evaluation and the web UI.",
       "links": [
-        {"label": "Code and benchmark", "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV"}
+        {"label": "Code and benchmark", "url": "https://github.com/adagora/visualRAG"}
       ],
       "cv": true
     },
@@ -451,19 +489,6 @@
       "links": [
         {"label": "Code", "url": "https://github.com/adagora/streamr-ml-demo"}
       ],
-      "cv": false
-    },
-    {
-      "id": "cairn",
-      "tier": "private",
-      "visibility": "private",
-      "name": {"en": "Cairn: evidence CLI for process routing", "pl": "Cairn: CLI do analizy przepływu pracy"},
-      "summary": {
-        "en": "Answers where work waits, where it loops back and which routing choice succeeded more often with the work mix held fixed. Each claim carries its sample size, basis and whether it may be quoted, and findings can be re-proved on new data. Output is one JSON envelope per call, built for AI agents first. Includes a robot-fleet dispatch testbed (VDA 5050).",
-        "pl": "Odpowiada, gdzie praca czeka, gdzie wraca i który wybór marszruty częściej się udawał przy tej samej mieszance zleceń. Każde twierdzenie ma liczność próby, podstawę i informację, czy wolno je cytować. Wynik to jedna koperta JSON na wywołanie, zaprojektowana w pierwszej kolejności dla agentów AI."
-      },
-      "stack": ["Go", "BPMN", "VDA 5050"],
-      "tags": ["manufacturing", "data", "agents", "go"],
       "cv": false
     },
     {

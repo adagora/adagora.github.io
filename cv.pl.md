@@ -13,7 +13,7 @@ AI / Software Engineer | aplikacje LLM, RAG, agenci | TypeScript, Python
 
 ## Profil
 
-AI Engineer w Wiśniowski, gdzie tworzę wewnętrzne narzędzia do wyszukiwania w dokumentach, tłumaczeń, raportów ze spotkań i analizy produkcji. Wcześniej rozwijałem oprogramowanie dla fintechu i Web3 oraz projektowałem części samochodowe w CATIA V5.
+Od lutego 2025 AI Engineer w Wiśniowski: tworzę wewnętrzne narzędzia do wyszukiwania w dokumentach, tłumaczeń, raportów ze spotkań i analizy produkcji. Wcześniej przez cztery lata rozwijałem oprogramowanie w TypeScript i React dla fintechu i Web3.
 
 ## Doświadczenie
 
@@ -38,12 +38,19 @@ Results: 298 (unit, contract and property tests documented in the repository); 2
 Stack: TypeScript, React, Cloudflare Workers, Gemini, Zod, Playwright
 Code: https://github.com/adagora/PDF-Insight
 
+### Cairn: analiza marszrut
+
+Pokazuje, gdzie praca czeka, gdzie wraca i który wybór marszruty częściej się udawał przy tej samej mieszance zleceń. Każdą liczbę można rozwinąć do rekordów źródłowych. Kod jest prywatny; demo działa na publicznych zbiorach danych, a darmowy hosting potrzebuje do minuty na start.
+
+Stack: Go, TypeScript, Preact, BPMN, VDA 5050
+Live demo: https://manufacturing-tool.onrender.com/
+
 ### VisualRAG dla technicznych PDF
 
 Wyszukuje informacje w technicznych PDF-ach na podstawie obrazu stron i tekstu BM25, a odpowiedzi cytują strony źródłowe.
 
 Stack: Python, FAISS, BM25 + RRF, PixelRAG, Gemini, Claude
-Code: https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV
+Code: https://github.com/adagora/visualRAG
 
 ### Wycena detali obrabianych z modelu CAD
 
@@ -86,7 +93,6 @@ Code: https://github.com/adagora/HSS-heat-treatment
 
 ### Prywatne repozytoria (kod do pokazania na rozmowie)
 
-- Cairn: CLI do analizy przepływu pracy: Odpowiada, gdzie praca czeka, gdzie wraca i który wybór marszruty częściej się udawał przy tej samej mieszance zleceń. Każde twierdzenie ma liczność próby, podstawę i informację, czy wolno je cytować. Wynik to jedna koperta JSON na wywołanie, zaprojektowana w pierwszej kolejności dla agentów AI. (Go, BPMN, VDA 5050)
 - PDF wiki: Lokalna baza wiedzy: wrzucasz PDF, uruchamiasz ingest i dostajesz powiązane wiki w Markdown z wyszukiwaniem semantycznym. Claude opisuje każdą rycinę. (TypeScript, Claude, qmd)
 - Sterowanie ramieniem robota z przeglądarki: Kalibracja i codzienne sterowanie ramieniem LeRobot SO-ARM100 z laptopa lub telefonu: klawiatura i gamepad, e-stop i jeden właściciel portu szeregowego. (Python, LeRobot, WebSockets)
 - HAR → opis API: Nagrywasz ruch przeglądarki raz i dostajesz opis potrzebny do odtworzenia API poza przeglądarką: autoryzacja, endpointy, kształty body i szablony curl. (Python)

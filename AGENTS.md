@@ -30,7 +30,7 @@ Done means: check green, both PDFs regenerated and exactly 2 A4 pages (`pdfinfo 
 
 ## Rules the data encodes
 
-- A public project links to its code; a private project carries no repo link, since visitors would hit a 404. Validation enforces this.
+- A public project links to its code; a private project carries no repo link, since visitors would hit a 404, though it may link a live demo. Validation enforces this.
 - Every number shown has a source a recruiter can follow (a README, a benchmark). A new number arrives together with its source.
 - Wiśniowski work is described in words; its code stays private until Adrian confirms the employer agreed to more.
 - Public files carry email, LinkedIn and GitHub as contact data. A phone number goes only into private variants.

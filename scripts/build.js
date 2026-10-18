@@ -86,8 +86,8 @@ function validate(p) {
       errors.push(`${pr.id}: private project links to its repo; visitors would get a 404`);
     }
   }
-  const anchors = new Set(['#delivery', '#activity', '#projects', ...p.projects.map((x) => `#project-${x.id}`)]);
-  for (const pr of p.proof) if (!anchors.has(pr.href)) errors.push(`proof ${pr.id}: href ${pr.href} matches no section`);
+  const anchors = new Set(['#delivery', '#activity', '#projects', '#experience', '#background', ...p.projects.map((x) => `#project-${x.id}`)]);
+  for (const x of p.about.route) if (!anchors.has(x.href)) errors.push(`about "${x.title}": href ${x.href} matches no section`);
   for (const url of collectUrls(p)) if (!/^https:\/\//.test(url)) errors.push(`not https: ${url}`);
   return errors;
 }
@@ -107,7 +107,7 @@ function siteRegions(p) {
   const featured = p.projects.filter((x) => x.tier === 'featured');
   const priv = p.projects.filter((x) => x.tier === 'private');
   const earlier = p.projects.filter((x) => x.tier === 'earlier');
-  const profileFacts = b.titleBlock.filter((fact) => ['Focus', 'Stack', 'Domain'].includes(fact.label));
+  const profileFacts = b.titleBlock.filter((fact) => ['Focus', 'Stack', 'Domain', 'Languages'].includes(fact.label));
   const current = p.work[0];
   const mail = `mailto:${b.email}`;
   const byNet = Object.fromEntries(b.profiles.map((x) => [x.network, x.url]));
@@ -145,7 +145,9 @@ function siteRegions(p) {
         itemListElement: featured.map((pr, i) => ({
           '@type': 'ListItem',
           position: i + 1,
-          item: { '@type': 'SoftwareSourceCode', name: t(pr.name), description: t(pr.summary), codeRepository: pr.links[0].url, programmingLanguage: pr.stack[0], author: { '@id': `${base}#person` } },
+          item: pr.visibility === 'public'
+            ? { '@type': 'SoftwareSourceCode', name: t(pr.name), description: t(pr.summary), codeRepository: pr.links[0].url, programmingLanguage: pr.stack[0], author: { '@id': `${base}#person` } }
+            : { '@type': 'WebApplication', name: t(pr.name), description: t(pr.summary), url: pr.links[0].url, applicationCategory: 'BusinessApplication', author: { '@id': `${base}#person` } },
         })),
       },
     ],
@@ -174,9 +176,9 @@ function siteRegions(p) {
     <section id="top" class="hero">
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="status"><span class="pulse" aria-hidden="true"></span>${esc(t(b.availability.short))} · ${esc(t(b.location.region))} · remote or hybrid</p>
+          <p class="status"><span class="pulse" aria-hidden="true"></span>${esc(t(b.availability.short))} · ${esc(t(b.location.region))}<span class="status-extra">&nbsp;· remote or hybrid</span></p>
           <h1 class="hero-name">${esc(b.name)}</h1>
-          <p class="hero-role">AI Engineer <span>· LLM and document search</span></p>
+          <p class="hero-role">${esc(b.label)}</p>
           <p class="hero-tagline">${esc(t(b.tagline))}</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="${FILES.pdfEn}" download>Download CV <span class="btn-note">PDF</span></a>
@@ -191,13 +193,24 @@ function siteRegions(p) {
           <dl class="tb">
             ${profileFacts.map((r) => `<div><dt>${esc(r.label)}</dt><dd>${esc(r.value)}</dd></div>`).join('\n            ')}
           </dl>
+          <p class="tb-foot"><span>Sheet 1 of 1</span><span>Rev. ${esc(p.meta.updated)}</span></p>
         </aside>
       </div>
     </section>`;
 
-  const proof = `
-    <section class="proof" aria-label="Results in numbers">
-      ${p.proof.map((x) => `<a class="proof-item" href="${x.href}"><span class="proof-value"${x.live ? ` data-live="${x.live}"` : ''}>${esc(x.value)}</span><span class="proof-label">${esc(x.label)}</span></a>`).join('\n      ')}
+  // The career reads as a process route: each station links to the section that backs it.
+  const { route } = p.about;
+  const about = `
+    <section id="about" class="about" aria-labelledby="about-title">
+      <h2 id="about-title" class="about-label">${esc(p.about.title)}</h2>
+      <ol class="route">
+        ${route.map((s, i) => `<li class="station${i === route.length - 1 ? ' station--now' : ''}"><a href="${s.href}">
+          <span class="st-mark" aria-hidden="true"></span>
+          <span class="st-when">${esc(s.when)}</span>
+          <span class="st-title">${esc(s.title)}</span>
+          <span class="st-text">${esc(s.text)}</span>
+        </a></li>`).join('\n        ')}
+      </ol>
     </section>`;
 
   const delivery = `
@@ -218,9 +231,11 @@ function siteRegions(p) {
   const projectCard = (pr, size) => {
     const bullets = pr.bullets ? `<ul class="bullets">${pr.bullets.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
     const credit = pr.credit ? `<p class="credit">${esc(pr.credit).replace(/`([^`]+)`/g, '<code>$1</code>')}</p>` : '';
+    // Public code is the norm here, so only the exceptions carry a badge.
+    const badge = pr.visibility === 'public' ? '' : `<span class="badge">${pr.links?.length ? 'Live demo · private code' : 'Private repo'}</span>`;
     return `<article id="project-${pr.id}" class="project project--${size}">
           <div class="project-head">
-            <span class="badge badge--${pr.visibility}">${pr.visibility === 'public' ? 'Public code' : 'Private repo'}</span>
+            ${badge}
             <h3>${esc(t(pr.name))}</h3>
           </div>
           <p class="project-summary">${esc(t(pr.summary))}</p>
@@ -235,8 +250,8 @@ function siteRegions(p) {
 
   const projects = `
     <section id="projects" class="section">
-      ${sectionHead('02', 'Selected projects', 'Projects with code you can read',
-        'Each one links to its code. Private repositories and additional projects are folded below.')}
+      ${sectionHead('02', 'Selected projects', 'Projects you can check',
+        'Each one links to its code or a running demo. Private repositories and additional projects are folded below.')}
       <div class="projects-featured">
         ${featured.map((pr, i) => projectCard(pr, i < 2 ? 'xl' : 'md')).join('\n        ')}
       </div>
@@ -340,7 +355,7 @@ function siteRegions(p) {
     <span class="footer-links"><a href="${mail}">Email</a>${b.profiles.map((x) => external(x.url, x.network, '')).join('')}</span>
   </footer>`;
 
-  return { head, hero, proof, delivery, projects, experience, skills, background, recruiters, footer };
+  return { head, hero, about, delivery, projects, experience, skills, background, recruiters, footer };
 }
 
 function fillRegions(html, regions) {
@@ -523,7 +538,7 @@ function cvMarkdown(p, lang, variant) {
     if (pr.bullets && lang === 'en') { for (const x of pr.bullets) push(`- ${x}`); push(''); }
     if (pr.credit && lang === 'en') push(`Credit: ${pr.credit.replace(/`/g, '')}`, '');
     push(`Stack: ${pr.stack.join(', ')}`);
-    if (pr.links) push(`Code: ${pr.links[0].url}`);
+    if (pr.links) push(`${pr.visibility === 'public' ? 'Code' : pr.links[0].label}: ${pr.links[0].url}`);
     push('');
   }
   push(`### ${lang === 'pl' ? 'Prywatne repozytoria (kod do pokazania na rozmowie)' : 'Private repositories (code shown on request)'}`, '');
@@ -588,7 +603,7 @@ function resumeJson(p) {
       ...(x.bullets && { highlights: x.bullets }),
       keywords: x.stack,
       ...(x.links && { url: x.links[0].url }),
-      type: x.visibility === 'public' ? 'public repository' : 'private repository',
+      type: x.visibility === 'public' ? 'public repository' : x.links ? 'live demo, private repository' : 'private repository',
     })),
     meta: {
       canonical: `${base}resume.json`,
@@ -618,7 +633,7 @@ function llmsTxt(p) {
     `- Current role: ${current.position} (official title: ${current.officialTitle}) at ${current.company} since ${range(current.startDate, null, 'en', p.labels.en).split(' – ')[0]}. ${t(current.summary)}`,
     `- Built there: ${current.highlights.map((h) => t(h.title)).join('; ')}.`,
     '- Earlier: four years of TypeScript and React (fintech, web3, React Native), three and a half years of automotive CAD engineering (CATIA V5, NX, GD&T, D-FMEA).',
-    `- Measured results: ${p.proof.filter((x) => !x.live).map((x) => `${x.value} (${x.label})`).join('; ')}.`,
+    `- Path: ${p.about.route.map((s) => `${s.when}: ${s.title}`).join('; ')}.`,
     `- Languages: ${p.languages.map((l) => `${t(l.language)}: ${t(l.fluency)}`).join('; ')}.`,
     `- Target roles: ${b.targetRoles.join(', ')}.`,
     `- Contact: ${b.email} · ${b.profiles.map((x) => x.url).join(' · ')}`,
@@ -631,9 +646,9 @@ function llmsTxt(p) {
     `- [CV PDF, English](${base}${FILES.pdfEn})`,
     `- [CV PDF, Polish](${base}${FILES.pdfPl})`,
     '',
-    '## Public projects',
+    '## Selected projects',
     '',
-    ...pub.map((x) => `- [${t(x.name)}](${x.links[0].url}): ${t(x.summary)}${x.metrics ? ` Results: ${x.metrics.map((m) => `${m.value} (${m.label})`).join('; ')}.` : ''}`),
+    ...pub.map((x) => `- [${t(x.name)}](${x.links[0].url})${x.visibility === 'public' ? '' : ' (live demo, code private)'}: ${t(x.summary)}${x.metrics ? ` Results: ${x.metrics.map((m) => `${m.value} (${m.label})`).join('; ')}.` : ''}`),
     '',
     '## Optional',
     '',

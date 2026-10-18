@@ -13,7 +13,7 @@ AI / Software Engineer | LLM apps, RAG, agents | TypeScript, Python
 
 ## Profile
 
-AI Engineer at Wiśniowski, building internal tools for document search, translation, meeting reports and production analysis. Previous roles include software engineering in fintech and Web3, plus automotive CAD design.
+AI Engineer at Wiśniowski since February 2025, building internal tools for document search, translation, meeting reports and production analysis. Before that, four years of TypeScript and React in fintech and Web3.
 
 ## Experience
 
@@ -42,6 +42,17 @@ Results: 298 (unit, contract and property tests documented in the repository); 2
 Stack: TypeScript, React, Cloudflare Workers, Gemini, Zod, Playwright
 Code: https://github.com/adagora/PDF-Insight
 
+### Cairn: process-route analysis
+
+Shows where work waits, where it loops back and which routing choice succeeded more often once the mix of work is held fixed. Every number opens into the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.
+
+- Each claim carries its sample size, basis and whether it may be quoted, and a marked finding can be re-proved on new data.
+- The CLI prints one JSON envelope per call, with ready-to-quote sentences, caveats and refused questions, so an AI agent can use it without inventing numbers.
+- The demo opens on online retail orders (UCI, CC BY 4.0); the factory data the tool was built for stays private. Includes a robot-fleet dispatch testbed (VDA 5050).
+
+Stack: Go, TypeScript, Preact, BPMN, VDA 5050
+Live demo: https://manufacturing-tool.onrender.com/
+
 ### VisualRAG
 
 Searches technical PDFs using page images and BM25 text retrieval, then answers with citations to source pages.
@@ -52,7 +63,7 @@ Searches technical PDFs using page images and BM25 text retrieval, then answers 
 Credit: Built on StarTrail’s PixelRAG; I added page-level retrieval, BM25 fusion, citations, evaluation and the web UI.
 
 Stack: Python, FAISS, BM25 + RRF, PixelRAG, Gemini, Claude
-Code: https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV
+Code: https://github.com/adagora/visualRAG
 
 ### CAD quoting engine for machined parts
 
@@ -104,7 +115,6 @@ Code: https://github.com/adagora/HSS-heat-treatment
 
 ### Private repositories (code shown on request)
 
-- Cairn: evidence CLI for process routing: Answers where work waits, where it loops back and which routing choice succeeded more often with the work mix held fixed. Each claim carries its sample size, basis and whether it may be quoted, and findings can be re-proved on new data. Output is one JSON envelope per call, built for AI agents first. Includes a robot-fleet dispatch testbed (VDA 5050). (Go, BPMN, VDA 5050)
 - PDF wiki: Local-first knowledge base: drop in a PDF, run ingest, get a cross-linked Markdown wiki with semantic search. Claude vision describes every figure. (TypeScript, Claude, qmd)
 - Robot arm control in the browser: Calibration and daily control of a LeRobot SO-ARM100 from a laptop or phone: keyboard and gamepad input, an e-stop, and a single owner for the serial port. (Python, LeRobot, WebSockets)
 - HAR to API brief: Record browser traffic once and get a brief for rebuilding the API outside the browser: auth, endpoints, body shapes and curl templates. (Python)

@@ -7,7 +7,7 @@ Key facts:
 - Current role: AI Engineer (official title: Specjalista ds. AI) at Wiśniowski since Feb 2025. Internal AI tools for a Polish manufacturer of industrial doors, gates and fences.
 - Built there: Company-wide RAG assistant; Microsoft Teams meeting pipeline; AI translation portal; Process-route analytics; AI interviews for process improvement.
 - Earlier: four years of TypeScript and React (fintech, web3, React Native), three and a half years of automotive CAD engineering (CATIA V5, NX, GD&T, D-FMEA).
-- Measured results: 99,933 (terminology checks made by AI in 3 minutes, across 7,040 translated texts in 8 languages); 5 (internal AI tools built at a manufacturer since February 2025).
+- Path: 2010–2016: Materials engineering; 2017–2020: Automotive parts design; 2020–2025: Product software; Since Feb 2025: AI engineering in manufacturing.
 - Languages: Polish: Native; English: Professional working (B2); German: Limited working (B1, DSH-2 certificate).
 - Target roles: AI Engineer, Software Engineer.
 - Contact: adrian.gora14@gmail.com · https://github.com/adagora · https://www.linkedin.com/in/adrian-gora/
@@ -20,10 +20,11 @@ Key facts:
 - [CV PDF, English](https://adagora.github.io/cv/Adrian-Gora-CV-EN.pdf)
 - [CV PDF, Polish](https://adagora.github.io/cv/Adrian-Gora-CV-PL.pdf)
 
-## Public projects
+## Selected projects
 
 - [PDF-Insight: validated document extraction](https://github.com/adagora/PDF-Insight): Inspects PDFs locally, redacts sensitive text and extracts summaries, parties, amounts and dates as validated JSON. Shared Zod schemas connect the React frontend, Cloudflare Worker and Gemini responses. Results: 298 (unit, contract and property tests documented in the repository); 29.1 s (p95 across 20 public uploads in the 6 October 2026 benchmark).
-- [VisualRAG](https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV): Searches technical PDFs using page images and BM25 text retrieval, then answers with citations to source pages.
+- [Cairn: process-route analysis](https://manufacturing-tool.onrender.com/) (live demo, code private): Shows where work waits, where it loops back and which routing choice succeeded more often once the mix of work is held fixed. Every number opens into the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.
+- [VisualRAG](https://github.com/adagora/visualRAG): Searches technical PDFs using page images and BM25 text retrieval, then answers with citations to source pages.
 - [CAD quoting engine for machined parts](https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena): Quotes a machined part from its STEP file (a 3D CAD model) for a tool shop. Code measures the part and computes the price; an AI model reviews the machining process and risks the way a shop manager would. Results: STEP file → price (a 3D CAD model goes in, a quote in PLN comes out, based on the shop's own rates).
 - [LLM-judged translation audit](https://github.com/adagora/jev-experiments): Finds inconsistent terms in translations that never had a glossary. Code finds the disagreements across 7,040 texts, and an AI model decides each one. Results: 99,933 (AI decisions in 3 minutes); ~300 ms (to re-check a text after each edit in the review app).
 - [EternalChat: conversation as memory](https://github.com/adagora/EternalChat): Local terminal chat implementing the UniiChat design: append-only message logs feed a background tree of summaries. Each turn receives a size-budgeted view, with zoom back to original messages. Python with no runtime dependencies.

@@ -6,7 +6,7 @@
     "image": "https://adagora.github.io/assets/img/adrian-gora.jpg",
     "email": "adrian.gora14@gmail.com",
     "url": "https://adagora.github.io/",
-    "summary": "AI Engineer at Wiśniowski, building internal tools for document search, translation, meeting reports and production analysis. Previous roles include software engineering in fintech and Web3, plus automotive CAD design.",
+    "summary": "AI Engineer at Wiśniowski since February 2025, building internal tools for document search, translation, meeting reports and production analysis. Before that, four years of TypeScript and React in fintech and Web3.",
     "location": {
       "countryCode": "PL",
       "region": "Poland"
@@ -299,6 +299,24 @@
       "type": "public repository"
     },
     {
+      "name": "Cairn: process-route analysis",
+      "description": "Shows where work waits, where it loops back and which routing choice succeeded more often once the mix of work is held fixed. Every number opens into the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.",
+      "highlights": [
+        "Each claim carries its sample size, basis and whether it may be quoted, and a marked finding can be re-proved on new data.",
+        "The CLI prints one JSON envelope per call, with ready-to-quote sentences, caveats and refused questions, so an AI agent can use it without inventing numbers.",
+        "The demo opens on online retail orders (UCI, CC BY 4.0); the factory data the tool was built for stays private. Includes a robot-fleet dispatch testbed (VDA 5050)."
+      ],
+      "keywords": [
+        "Go",
+        "TypeScript",
+        "Preact",
+        "BPMN",
+        "VDA 5050"
+      ],
+      "url": "https://manufacturing-tool.onrender.com/",
+      "type": "live demo, private repository"
+    },
+    {
       "name": "VisualRAG",
       "description": "Searches technical PDFs using page images and BM25 text retrieval, then answers with citations to source pages.",
       "highlights": [
@@ -313,7 +331,7 @@
         "Gemini",
         "Claude"
       ],
-      "url": "https://github.com/adagora/try_pixelRAG_optional_BM25_hybrid_JEV",
+      "url": "https://github.com/adagora/visualRAG",
       "type": "public repository"
     },
     {
@@ -360,16 +378,6 @@
       ],
       "url": "https://github.com/adagora/EternalChat",
       "type": "public repository"
-    },
-    {
-      "name": "Cairn: evidence CLI for process routing",
-      "description": "Answers where work waits, where it loops back and which routing choice succeeded more often with the work mix held fixed. Each claim carries its sample size, basis and whether it may be quoted, and findings can be re-proved on new data. Output is one JSON envelope per call, built for AI agents first. Includes a robot-fleet dispatch testbed (VDA 5050).",
-      "keywords": [
-        "Go",
-        "BPMN",
-        "VDA 5050"
-      ],
-      "type": "private repository"
     },
     {
       "name": "PDF wiki",
@@ -447,7 +455,7 @@
   "meta": {
     "canonical": "https://adagora.github.io/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-10-12",
+    "lastModified": "2026-10-18",
     "availability": "Available from 1 November 2026, no notice period",
     "workMode": "Remote or hybrid, also open to remote roles in the EU and worldwide",
     "contract": "B2B or employment contract",

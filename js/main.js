@@ -114,7 +114,6 @@
           const total = data.total.toLocaleString('en-US');
           const el = $('#graph-total');
           if (el) el.innerHTML = `<strong>${total}</strong> commits in the last year`;
-          $$('[data-live="commits"]').forEach((n) => { n.textContent = total; });
         }
         const repoCount = data.repoCount ?? (data.repos ? data.repos.length : 0);
         const src = $('#graph-source');
