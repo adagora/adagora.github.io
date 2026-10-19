@@ -1,6 +1,42 @@
 {
-  "generated": "2026-10-13T13:34:39.843Z",
+  "generated": "2026-10-19T12:07:27.018Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/adagora.github.io",
+      "message": "Redesign portfolio and replace numbers band with career route",
+      "url": "https://github.com/adagora/adagora.github.io/commit/00074754b01fc869e1a3367b9de0a3b5bb47b22a",
+      "private": false,
+      "date": "2026-10-18T19:22:11Z",
+      "sha": "0007475"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/distributed-camera-node",
+      "message": "Align workbench with the MVP guide, in Polish",
+      "url": null,
+      "private": true,
+      "date": "2026-10-17T15:16:18Z",
+      "sha": "377a225"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/distributed-camera-node",
+      "message": "Add arduino-cli build, camera sketch and firmware CI",
+      "url": null,
+      "private": true,
+      "date": "2026-10-17T13:55:41Z",
+      "sha": "c1d39f7"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/distributed-camera-node",
+      "message": "Add MVP guide, ServoTracker firmware and Polish BOM",
+      "url": null,
+      "private": true,
+      "date": "2026-10-17T13:10:50Z",
+      "sha": "fe76b6c"
+    },
     {
       "type": "commit",
       "repo": "adagora/visualRAG",
@@ -189,42 +225,6 @@
       "private": true,
       "date": "2026-10-11T20:37:55Z",
       "sha": "887b32b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/HSS-heat-treatment",
-      "message": "Add narrated explainer video and README showcase",
-      "url": "https://github.com/adagora/HSS-heat-treatment/commit/b6a94370e4451a06066564015da42b1a2c530163",
-      "private": false,
-      "date": "2026-10-11T19:27:51Z",
-      "sha": "b6a9437"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/HSS-heat-treatment",
-      "message": "Add rendered videos of the cycle and the water vs oil quench",
-      "url": "https://github.com/adagora/HSS-heat-treatment/commit/ad12cf4aa36f179b1c9aa9ecb5706fb7967f3a2a",
-      "private": false,
-      "date": "2026-10-11T18:29:24Z",
-      "sha": "ad12cf4"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/HSS-heat-treatment",
-      "message": "Add HSS (M2) heat-treatment animation and water vs oil quench model",
-      "url": "https://github.com/adagora/HSS-heat-treatment/commit/abdf67833643859ac6e6c35c5351b2b38673cbed",
-      "private": false,
-      "date": "2026-10-11T18:29:23Z",
-      "sha": "abdf678"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/EternalChat",
-      "message": "Fix compaction bounds, recovery, shutdown, and lossless imports",
-      "url": "https://github.com/adagora/EternalChat/commit/17321cfe2757df7c8d7279553daecf53484d1cb9",
-      "private": false,
-      "date": "2026-10-09T21:54:38Z",
-      "sha": "17321cf"
     }
   ]
 }
