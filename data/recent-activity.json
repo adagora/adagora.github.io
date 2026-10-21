@@ -1,6 +1,96 @@
 {
-  "generated": "2026-10-19T12:07:27.018Z",
+  "generated": "2026-10-21T11:10:27.496Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "skill: verify-proxy drives real proxy processes like a client",
+      "url": "https://github.com/adagora/ai-audit/commit/96053466f0182b38db24bfd1b6e97dfc72d4a541",
+      "private": false,
+      "date": "2026-10-21T11:08:51Z",
+      "sha": "9605346"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "test: skip attachment tests with a reason when tools are missing, never in CI",
+      "url": "https://github.com/adagora/ai-audit/commit/16c0615a3169878f03bfb585671543ff1b3c0987",
+      "private": false,
+      "date": "2026-10-21T11:05:53Z",
+      "sha": "16c0615"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "build: default build back to tsc; tsrs kept as build:fast",
+      "url": "https://github.com/adagora/ai-audit/commit/28d1dd8ce0e1dd68e106945e08650c5ad4b626c7",
+      "private": false,
+      "date": "2026-10-21T11:04:08Z",
+      "sha": "28d1dd8"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "docs(context): context map from a real gpt-4o-mini session",
+      "url": "https://github.com/adagora/ai-audit/commit/286b828417d368084b9136984e1c7684097196eb",
+      "private": false,
+      "date": "2026-10-21T10:55:44Z",
+      "sha": "286b828"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "feat(context): arena map, cache-bust detection and token timeline",
+      "url": "https://github.com/adagora/ai-audit/commit/0801b14898e6d9636fc4d42d213c5c37196c07fd",
+      "private": false,
+      "date": "2026-10-21T10:51:23Z",
+      "sha": "0801b14"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/PDF-Insight",
+      "message": "docs: add why-it-is-hard section to README",
+      "url": "https://github.com/adagora/PDF-Insight/commit/094a1612f65c5267e3ebac9f91b4cf210a1148b4",
+      "private": false,
+      "date": "2026-10-20T19:52:54Z",
+      "sha": "094a161"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "Add web chat and saved settings; improve providers and memory compaction",
+      "url": "https://github.com/adagora/EternalChat/commit/51042c83e0c6a3474edc0573bc71e4ecd45e2493",
+      "private": false,
+      "date": "2026-10-20T14:04:33Z",
+      "sha": "51042c8"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "the way to the moon",
+      "url": null,
+      "private": true,
+      "date": "2026-10-19T21:54:37Z",
+      "sha": "f24b169"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "fix memory merge ordering, acceptane of incomplete api streams, some validation image",
+      "url": "https://github.com/adagora/EternalChat/commit/8be0f64a120fbc4379c5f875274a525d4d456273",
+      "private": false,
+      "date": "2026-10-19T20:23:31Z",
+      "sha": "8be0f64"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "Prove journey depot and tank amounts as whole kilograms",
+      "url": null,
+      "private": true,
+      "date": "2026-10-19T12:43:06Z",
+      "sha": "cf6c548"
+    },
     {
       "type": "commit",
       "repo": "adagora/adagora.github.io",
@@ -36,6 +126,15 @@
       "private": true,
       "date": "2026-10-17T13:10:50Z",
       "sha": "fe76b6c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "fix: make browser verification portable (lb-qwzg)",
+      "url": null,
+      "private": true,
+      "date": "2026-10-15T19:20:03Z",
+      "sha": "8352e58"
     },
     {
       "type": "commit",
@@ -126,105 +225,6 @@
       "private": true,
       "date": "2026-10-12T08:23:32Z",
       "sha": "04c8bb4"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/loop-me-enterprise",
-      "message": "README: lead with problem, result and mock-mode quickstart; note preview API risk; move details to docs/reference.md",
-      "url": null,
-      "private": true,
-      "date": "2026-10-12T08:22:40Z",
-      "sha": "736fb92"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/loop-me-enterprise",
-      "message": "Add MIT license",
-      "url": null,
-      "private": true,
-      "date": "2026-10-12T08:22:40Z",
-      "sha": "0b04b81"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/loop-me-enterprise",
-      "message": "Stop tracking build output (dist/ is already ignored)",
-      "url": null,
-      "private": true,
-      "date": "2026-10-12T08:22:02Z",
-      "sha": "183b7c7"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/EternalChat",
-      "message": "Add MIT license",
-      "url": "https://github.com/adagora/EternalChat/commit/7142be9f2feff890282cb02a62d7038a36010117",
-      "private": false,
-      "date": "2026-10-12T08:15:12Z",
-      "sha": "7142be9"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/adagora",
-      "message": "Update profile README",
-      "url": "https://github.com/adagora/adagora/commit/4516fd9bed82bbae044a58cdbc2544930c88bc4c",
-      "private": false,
-      "date": "2026-10-12T08:02:25Z",
-      "sha": "4516fd9"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/chatbot",
-      "message": "feat(ui): improve chatbot experience add categories, some fancy steppers, animation",
-      "url": null,
-      "private": true,
-      "date": "2026-10-12T06:53:40Z",
-      "sha": "db51574"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/quatation-transport",
-      "message": "Merge pull request #1 from adagora/claude/cool-goodall-dcr7wu",
-      "url": null,
-      "private": true,
-      "date": "2026-10-11T20:38:08Z",
-      "sha": "1750691"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/quatation-transport",
-      "message": "One planner tool for agents, Claude Code plugin and Claude Desktop extension (ADR 0019)",
-      "url": null,
-      "private": true,
-      "date": "2026-10-11T20:37:56Z",
-      "sha": "4ef13b6"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/quatation-transport",
-      "message": "tp: agent CLI over the shared planner folder and inbox (ADR 0019 step 3)",
-      "url": null,
-      "private": true,
-      "date": "2026-10-11T20:37:55Z",
-      "sha": "d06001e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/quatation-transport",
-      "message": "Agent verbs with a grounded answer envelope (ADR 0019 step 2)",
-      "url": null,
-      "private": true,
-      "date": "2026-10-11T20:37:55Z",
-      "sha": "59b4384"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/quatation-transport",
-      "message": "Claude Code plugin manifest, slash commands and agent-first ADR 0019",
-      "url": null,
-      "private": true,
-      "date": "2026-10-11T20:37:55Z",
-      "sha": "887b32b"
     }
   ]
 }
