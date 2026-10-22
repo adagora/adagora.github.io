@@ -1,6 +1,42 @@
 {
-  "generated": "2026-10-21T11:10:27.496Z",
+  "generated": "2026-10-22T11:10:33.178Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "chore(node): require patched Node lines from the 2026-10-21 security release",
+      "url": "https://github.com/adagora/ai-audit/commit/55329f017026f85ee34e7d52c8edd69a3e1e10ed",
+      "private": false,
+      "date": "2026-10-21T23:29:43Z",
+      "sha": "55329f0"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "feat(attachments): page images through a per-job dir, not worker stdout",
+      "url": "https://github.com/adagora/ai-audit/commit/95d2cd53c1ef0a317c10cf1dbccb68eaf6ea4fe8",
+      "private": false,
+      "date": "2026-10-21T11:52:20Z",
+      "sha": "95d2cd5"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "feat(attachments): preflight worker resource limits",
+      "url": "https://github.com/adagora/ai-audit/commit/7750bfe014386847c775114e2567df034ae51b33",
+      "private": false,
+      "date": "2026-10-21T11:38:42Z",
+      "sha": "7750bfe"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "fix(attachments): sandbox fails closed, minimal mounts, explicit unsafe opt-out",
+      "url": "https://github.com/adagora/ai-audit/commit/110058e1a360622263e9fcb116ce77ae33a4e69a",
+      "private": false,
+      "date": "2026-10-21T11:26:13Z",
+      "sha": "110058e"
+    },
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
@@ -9,42 +45,6 @@
       "private": false,
       "date": "2026-10-21T11:08:51Z",
       "sha": "9605346"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "test: skip attachment tests with a reason when tools are missing, never in CI",
-      "url": "https://github.com/adagora/ai-audit/commit/16c0615a3169878f03bfb585671543ff1b3c0987",
-      "private": false,
-      "date": "2026-10-21T11:05:53Z",
-      "sha": "16c0615"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "build: default build back to tsc; tsrs kept as build:fast",
-      "url": "https://github.com/adagora/ai-audit/commit/28d1dd8ce0e1dd68e106945e08650c5ad4b626c7",
-      "private": false,
-      "date": "2026-10-21T11:04:08Z",
-      "sha": "28d1dd8"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "docs(context): context map from a real gpt-4o-mini session",
-      "url": "https://github.com/adagora/ai-audit/commit/286b828417d368084b9136984e1c7684097196eb",
-      "private": false,
-      "date": "2026-10-21T10:55:44Z",
-      "sha": "286b828"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "feat(context): arena map, cache-bust detection and token timeline",
-      "url": "https://github.com/adagora/ai-audit/commit/0801b14898e6d9636fc4d42d213c5c37196c07fd",
-      "private": false,
-      "date": "2026-10-21T10:51:23Z",
-      "sha": "0801b14"
     },
     {
       "type": "commit",
