@@ -1,50 +1,95 @@
 {
-  "generated": "2026-10-22T11:10:33.178Z",
+  "generated": "2026-10-26T12:16:00.046Z",
   "items": [
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
-      "message": "chore(node): require patched Node lines from the 2026-10-21 security release",
-      "url": "https://github.com/adagora/ai-audit/commit/55329f017026f85ee34e7d52c8edd69a3e1e10ed",
+      "message": "docs(readme): spell out how to run the proxy, and what it will not do",
+      "url": "https://github.com/adagora/ai-audit/commit/153765d54d1435d76689a312de3b95ddb046d0bd",
       "private": false,
-      "date": "2026-10-21T23:29:43Z",
-      "sha": "55329f0"
+      "date": "2026-10-26T00:34:44Z",
+      "sha": "153765d"
     },
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
-      "message": "feat(attachments): page images through a per-job dir, not worker stdout",
-      "url": "https://github.com/adagora/ai-audit/commit/95d2cd53c1ef0a317c10cf1dbccb68eaf6ea4fe8",
+      "message": "chore(examples): keep the policy lab as the only Quineling walkthrough",
+      "url": "https://github.com/adagora/ai-audit/commit/c2cb612edf500794b04bdc5364e9fb3ba448fb9a",
       "private": false,
-      "date": "2026-10-21T11:52:20Z",
-      "sha": "95d2cd5"
+      "date": "2026-10-26T00:00:35Z",
+      "sha": "c2cb612"
     },
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
-      "message": "feat(attachments): preflight worker resource limits",
-      "url": "https://github.com/adagora/ai-audit/commit/7750bfe014386847c775114e2567df034ae51b33",
+      "message": "feat(qdl): a policy lab replays two session governors on retained observations (ADR 0034)",
+      "url": "https://github.com/adagora/ai-audit/commit/2823897d29864ea66832f8086974b3ecda6f45be",
       "private": false,
-      "date": "2026-10-21T11:38:42Z",
-      "sha": "7750bfe"
+      "date": "2026-10-26T00:00:35Z",
+      "sha": "2823897"
     },
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
-      "message": "fix(attachments): sandbox fails closed, minimal mounts, explicit unsafe opt-out",
-      "url": "https://github.com/adagora/ai-audit/commit/110058e1a360622263e9fcb116ce77ae33a4e69a",
+      "message": "feat(qdl): keep decision evidence content-free and add a receipt",
+      "url": "https://github.com/adagora/ai-audit/commit/2e06678193a898d2c249e25b8a7057b163e17607",
       "private": false,
-      "date": "2026-10-21T11:26:13Z",
-      "sha": "110058e"
+      "date": "2026-10-25T23:07:46Z",
+      "sha": "2e06678"
     },
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
-      "message": "skill: verify-proxy drives real proxy processes like a client",
-      "url": "https://github.com/adagora/ai-audit/commit/96053466f0182b38db24bfd1b6e97dfc72d4a541",
+      "message": "fix(proxy): x-request-id stays the proxy's own, so llmCallId names the llm-call record with OpenAI (ADR 0023)",
+      "url": "https://github.com/adagora/ai-audit/commit/aea8e699b7559509f09069ad55566eaa481aa424",
       "private": false,
-      "date": "2026-10-21T11:08:51Z",
-      "sha": "9605346"
+      "date": "2026-10-24T11:19:32Z",
+      "sha": "aea8e69"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "Merge pull request #3 from adagora/docs/web-ui-walkthrough",
+      "url": "https://github.com/adagora/EternalChat/commit/d687a42529b25f7e88de05ed4b836d3cd3265a95",
+      "private": false,
+      "date": "2026-10-22T18:01:09Z",
+      "sha": "d687a42"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "Add web UI screenshots and clarify permissions and tool safety",
+      "url": "https://github.com/adagora/EternalChat/commit/820ff5fe000f437008fe42b133d8eaf6aa956a72",
+      "private": false,
+      "date": "2026-10-22T18:00:42Z",
+      "sha": "820ff5f"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "Merge pull request #2 from adagora/fix-spawn-shutdown-races",
+      "url": "https://github.com/adagora/EternalChat/commit/669754c6542655c67e9ba2a6c4b1ef74f28b63f8",
+      "private": false,
+      "date": "2026-10-22T17:44:32Z",
+      "sha": "669754c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "Fix agent batch name collisions and shutdown during shell startup",
+      "url": "https://github.com/adagora/EternalChat/commit/230449ffddd6ce61822ad6d8fd86120bd03a6e45",
+      "private": false,
+      "date": "2026-10-22T17:42:09Z",
+      "sha": "230449f"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "Merge pull request #1 from adagora/web-ui-redesign",
+      "url": "https://github.com/adagora/EternalChat/commit/194baf1faa01c635f42b1ed53419d6dc55ba43d3",
+      "private": false,
+      "date": "2026-10-22T17:38:07Z",
+      "sha": "194baf1"
     },
     {
       "type": "commit",
@@ -57,30 +102,12 @@
     },
     {
       "type": "commit",
-      "repo": "adagora/EternalChat",
-      "message": "Add web chat and saved settings; improve providers and memory compaction",
-      "url": "https://github.com/adagora/EternalChat/commit/51042c83e0c6a3474edc0573bc71e4ecd45e2493",
-      "private": false,
-      "date": "2026-10-20T14:04:33Z",
-      "sha": "51042c8"
-    },
-    {
-      "type": "commit",
       "repo": "adagora/rocket-simulator",
       "message": "the way to the moon",
       "url": null,
       "private": true,
       "date": "2026-10-19T21:54:37Z",
       "sha": "f24b169"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/EternalChat",
-      "message": "fix memory merge ordering, acceptane of incomplete api streams, some validation image",
-      "url": "https://github.com/adagora/EternalChat/commit/8be0f64a120fbc4379c5f875274a525d4d456273",
-      "private": false,
-      "date": "2026-10-19T20:23:31Z",
-      "sha": "8be0f64"
     },
     {
       "type": "commit",
@@ -198,33 +225,6 @@
       "private": false,
       "date": "2026-10-12T10:09:09Z",
       "sha": "207f9e8"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/adagora",
-      "message": "Link EternalChat in profile README",
-      "url": "https://github.com/adagora/adagora/commit/1934015647104c193e42921edc88e97f7f32660e",
-      "private": false,
-      "date": "2026-10-12T10:08:38Z",
-      "sha": "1934015"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/loop-me-enterprise",
-      "message": "Merge pull request #1 from adagora/oss-prep",
-      "url": null,
-      "private": true,
-      "date": "2026-10-12T08:28:39Z",
-      "sha": "aaf1ac3"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/loop-me-enterprise",
-      "message": "README: drop CI badge until the workflow lands",
-      "url": null,
-      "private": true,
-      "date": "2026-10-12T08:23:32Z",
-      "sha": "04c8bb4"
     }
   ]
 }
