@@ -1,6 +1,33 @@
 {
-  "generated": "2026-10-27T11:36:38.686Z",
+  "generated": "2026-10-28T12:07:41.377Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "Add durable optional token budgets for virtual keys",
+      "url": "https://github.com/adagora/ai-audit/commit/2b04a6b550bf0c17769b9d2f3ce4880411560d7d",
+      "private": false,
+      "date": "2026-10-28T10:15:43Z",
+      "sha": "2b04a6b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "Evaluate QDL quote policy against labeled cases and OpenAI Decisions",
+      "url": "https://github.com/adagora/ai-audit/commit/0b57a085532e9f96c8db410e3af97497c7a7fc83",
+      "private": false,
+      "date": "2026-10-28T08:56:58Z",
+      "sha": "0b57a08"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/ai-audit",
+      "message": "Add evidence workbench, portable QDL receipts, and workflow showcase",
+      "url": "https://github.com/adagora/ai-audit/commit/0f61351240346b569986a25bd92b5bef088be729",
+      "private": false,
+      "date": "2026-10-27T22:24:36Z",
+      "sha": "0f61351"
+    },
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
@@ -18,33 +45,6 @@
       "private": false,
       "date": "2026-10-26T00:00:35Z",
       "sha": "c2cb612"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "feat(qdl): a policy lab replays two session governors on retained observations (ADR 0034)",
-      "url": "https://github.com/adagora/ai-audit/commit/2823897d29864ea66832f8086974b3ecda6f45be",
-      "private": false,
-      "date": "2026-10-26T00:00:35Z",
-      "sha": "2823897"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "feat(qdl): keep decision evidence content-free and add a receipt",
-      "url": "https://github.com/adagora/ai-audit/commit/2e06678193a898d2c249e25b8a7057b163e17607",
-      "private": false,
-      "date": "2026-10-25T23:07:46Z",
-      "sha": "2e06678"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "fix(proxy): x-request-id stays the proxy's own, so llmCallId names the llm-call record with OpenAI (ADR 0023)",
-      "url": "https://github.com/adagora/ai-audit/commit/aea8e699b7559509f09069ad55566eaa481aa424",
-      "private": false,
-      "date": "2026-10-24T11:19:32Z",
-      "sha": "aea8e69"
     },
     {
       "type": "commit",
