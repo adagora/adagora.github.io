@@ -1,50 +1,50 @@
 {
-  "generated": "2026-10-29T12:18:02.020Z",
+  "generated": "2026-10-30T12:08:32.156Z",
   "items": [
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
-      "message": "Store each finding once per rule and path, with a count (ADR 0051)",
-      "url": "https://github.com/adagora/ai-audit/commit/27deef7029a473ed16e1634711569b1ecb6dc6e9",
+      "message": "Move the verify-audit-log sync commit to bda95ae",
+      "url": "https://github.com/adagora/ai-audit/commit/c56b96cdcebea0d66b64aa5c513649fd165bd542",
       "private": false,
-      "date": "2026-10-29T11:48:45Z",
-      "sha": "27deef7"
+      "date": "2026-10-29T22:42:26Z",
+      "sha": "c56b96c"
     },
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
-      "message": "Inspect large request texts in worker threads with a deadline (ADR 0050)",
-      "url": "https://github.com/adagora/ai-audit/commit/bc252c873e2a1f64ab83e926b353a74b914f4fe6",
+      "message": "Add a live example: four synthetic customer mails through the real proxy, a real model, the console and the CLI",
+      "url": "https://github.com/adagora/ai-audit/commit/4d732f0e44b12234155e4ef886c723133be5529b",
       "private": false,
-      "date": "2026-10-29T11:48:04Z",
-      "sha": "bc252c8"
+      "date": "2026-10-29T22:41:12Z",
+      "sha": "4d732f0"
     },
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
-      "message": "Record an internal error before forwarding as a refusal, and clear the request deadline on every path",
-      "url": "https://github.com/adagora/ai-audit/commit/fc88731f8cdd08f0bdb83032eb58beb6796eaa51",
+      "message": "Show a decision whose application only timed out as waiting, not done by the rule",
+      "url": "https://github.com/adagora/ai-audit/commit/bda95aeae91e22b6a2a66a71d7f4bab11bb5e35d",
       "private": false,
-      "date": "2026-10-29T11:18:03Z",
-      "sha": "fc88731"
+      "date": "2026-10-29T22:41:12Z",
+      "sha": "bda95ae"
     },
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
-      "message": "Rotate the audit log into linked segments and prune old ones with a record (ADR 0049)",
-      "url": "https://github.com/adagora/ai-audit/commit/370a4c7426c26bf9769c3a9d787d9ee01a5c3f74",
+      "message": "Draw the three verification charts with /statechart from the models, and remove the hand-drawn ones",
+      "url": "https://github.com/adagora/ai-audit/commit/f11955ebed0d952734343867a18c567b3c5cdcfb",
       "private": false,
-      "date": "2026-10-29T11:08:06Z",
-      "sha": "370a4c7"
+      "date": "2026-10-29T22:26:32Z",
+      "sha": "f11955e"
     },
     {
       "type": "commit",
       "repo": "adagora/ai-audit",
-      "message": "Collect findings in a loop, so a text with many findings does not overflow the stack",
-      "url": "https://github.com/adagora/ai-audit/commit/c9892a027873636299124d2c0dac30b444c13f47",
+      "message": "Move the verify-audit-log sync commit to b07696d",
+      "url": "https://github.com/adagora/ai-audit/commit/4e46225c5f8dae6f8631928ed411d8710ac6d8c4",
       "private": false,
-      "date": "2026-10-29T10:55:51Z",
-      "sha": "c9892a0"
+      "date": "2026-10-29T22:14:43Z",
+      "sha": "4e46225"
     },
     {
       "type": "commit",
