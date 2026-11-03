@@ -2,30 +2,28 @@
 
 AI / Software Engineer | LLM apps, RAG, agents | TypeScript, Python
 
-- Email: adrian.gora14@gmail.com
+- Email: adrian.gora14@gmail.com · Phone: +48 694 983 705
 - Portfolio: https://adagora.github.io/
 - GitHub: https://github.com/adagora
 - LinkedIn: https://www.linkedin.com/in/adrian-gora/
 - Location: Poland · Remote or hybrid, also open to remote roles in the EU and worldwide
-- Availability: Available from 1 November 2026, no notice period
+- Availability: Available now, no notice period
 - Contract: B2B or employment contract
 - Target roles: AI Engineer, Software Engineer
 
 ## Profile
 
-AI Engineer at Wiśniowski since February 2025, building internal tools for document search, translation, meeting reports and production analysis. Before that, four years of TypeScript and React in fintech and Web3.
+AI Engineer with experience building internal tools at Wiśniowski for document search, translation, meeting reports and production analysis. Previously developed software mainly in fintech.
 
 ## Experience
 
-### AI Engineer · Wiśniowski (Feb 2025 – present)
+### AI Engineer · Wiśniowski (Feb 2025 – Oct 2026)
 
-Official title: Specjalista ds. AI. Internal AI tools for a Polish manufacturer of industrial doors, gates and fences.
-
-- **Company-wide RAG assistant:** Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from the company's technical PDFs with complex layouts. Telemetry and monitoring are built for EU AI Act compliance.
+- **Company-wide RAG assistant:** Developed two versions of the company chatbot over technical PDFs: the first in Python with RAGFlow, the second a production version in Node.js. Deployed RAGFlow on Linux, integrated it with Open WebUI, and used Elastic Agent to monitor server performance.
 - **Microsoft Teams meeting pipeline:** Scans one group's meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.
-- **AI translation portal:** Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. To keep terms consistent across languages, I added statistics, translator helpers and a generated starting glossary. Every decision is logged, which shows how often the AI is right.
-- **Process-route analytics:** Working on a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.
-- **AI interviews for process improvement:** After a 15-minute voice or text interview about someone's daily work, it writes an automation report, adds what it learned to an LLM wiki and turns repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox.
+- **AI translation portal:** During data import, Gemini fills in missing translations or suggests translations in the background, keeping terminology consistent with the company glossary.
+- **Process-route analytics:** Developed a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.
+- **AI interviews for process improvement:** After a voice or text interview about daily work, it produces an automation report and adds knowledge to an LLM wiki. Supports Excel files, images and screenshots. Once enough knowledge has been collected, it can optionally turn repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox.
 
 ## Selected projects
 
@@ -50,7 +48,7 @@ Shows where work waits, where it loops back and which routing choice succeeded m
 - The CLI prints one JSON envelope per call, with ready-to-quote sentences, caveats and refused questions, so an AI agent can use it without inventing numbers.
 - The demo opens on online retail orders (UCI, CC BY 4.0); the factory data the tool was built for stays private. Includes a robot-fleet dispatch testbed (VDA 5050).
 
-Stack: Go, TypeScript, Preact, BPMN, VDA 5050
+Stack: Go, TypeScript, Gherkin, Preact, BPMN, VDA 5050
 Live demo: https://manufacturing-tool.onrender.com/
 
 ### VisualRAG
@@ -62,56 +60,15 @@ Searches technical PDFs using page images and BM25 text retrieval, then answers 
 
 Credit: Built on StarTrail’s PixelRAG; I added page-level retrieval, BM25 fusion, citations, evaluation and the web UI.
 
-Stack: Python, FAISS, BM25 + RRF, PixelRAG, Gemini, Claude
+Stack: Python, FAISS, BM25 + RRF, PixelRAG, Gemini, Claude, api-decisions (experimental)
 Code: https://github.com/adagora/visualRAG
 
-### CAD quoting engine for machined parts
+### ai-audit: audit proxy for LLM APIs
 
-Quotes a machined part from its STEP file (a 3D CAD model) for a tool shop. Code measures the part and computes the price; an AI model reviews the machining process and risks the way a shop manager would.
+Local proxy for OpenAI and Anthropic APIs. Detects secrets and personal data, redacts sensitive content or blocks requests, and records calls in a hash-chained audit log.
 
-Results: STEP file → price (a 3D CAD model goes in, a quote in PLN comes out, based on the shop's own rates).
-
-- Volume, mass, envelope and cost-driving features come from OpenCASCADE. Price is machining time × shop rate, and a physics-based floor on cutting time stops the model from inventing hours.
-- Preflight marks each check pass, fail or need-info with a cited source (ISO 2768, ISO 286, material data). Any fail or missing input makes the quote non-binding.
-- Web app for estimators who don't program: 3D preview, 2D drawing input, editable rates, print to PDF and a make-or-buy check against SendCutSend. Covered by 8 test modules.
-
-Credit: My wycena skill inside a fork of the MIT-licensed text-to-cad library.
-
-Stack: Python, OpenCASCADE, build123d, trimesh, ezdxf, Claude / OpenAI
-Code: https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena
-
-### LLM-judged translation audit
-
-Finds inconsistent terms in translations that never had a glossary. Code finds the disagreements across 7,040 texts, and an AI model decides each one.
-
-Results: 99,933 (AI decisions in 3 minutes); ~300 ms (to re-check a text after each edit in the review app).
-
-- Exports an Excel workbook for sign-off and a keyboard-driven review app where translators curate the glossary; decided terms are never re-arbitrated.
-- Sibling demo judge-sheets: type a column header such as Urgency and 300 rows fill with semantic predictions in about 3.5 s, as =JUDGE, =PICK and =RATE formulas you can inspect in the formula bar.
-
-Stack: TypeScript, TypeSafe Jev, Excel
-Code: https://github.com/adagora/jev-experiments
-
-### EternalChat: conversation as memory
-
-Local terminal chat implementing the UniiChat design: append-only message logs feed a background tree of summaries. Each turn receives a size-budgeted view, with zoom back to original messages. Python with no runtime dependencies.
-
-Stack: Python, Claude, UniiChat
-Code: https://github.com/adagora/EternalChat
-
-### meat: reading diffs
-
-Turns a large code diff into a smaller reading diff focused on the consequential changes. TypeScript CLI, migrated from Go.
-
-Stack: TypeScript, Go
-Code: https://github.com/adagora/diff-explain
-
-### HSS heat treatment
-
-Steel quench simulation with a narrated Manim explainer.
-
-Stack: Manim
-Code: https://github.com/adagora/HSS-heat-treatment
+Stack: TypeScript, Node.js, OpenAI API, Anthropic API, Bend, TLA+
+Code: https://github.com/adagora/ai-audit
 
 ### Private repositories (code shown on request)
 
@@ -124,8 +81,12 @@ Code: https://github.com/adagora/HSS-heat-treatment
 
 ### Additional projects
 
+- [CAD quoting engine for machined parts](https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena): Quotes a machined part from its STEP file (a 3D CAD model) for a tool shop. Code measures the part and computes the price; an AI model reviews the machining process and risks the way a shop manager would. (Python, OpenCASCADE, build123d, trimesh, ezdxf, Claude / OpenAI)
+- [AI decisions in Excel and translation consistency](https://github.com/adagora/jev-experiments): Experiments with a decision API in Excel: AI decisions exposed as spreadsheet formulas, plus terminology checks to keep AI translations consistent. A review app lets translators curate the glossary and approve decisions. (TypeScript, TypeSafe Jev, Excel, api-decisions)
+- [EternalChat: conversation as memory](https://github.com/adagora/EternalChat): Local terminal chat implementing the UniiChat design: append-only message logs feed a background tree of summaries. Each turn receives a size-budgeted view, with zoom back to original messages. Python with no runtime dependencies. (Python, Claude, UniiChat)
 - [Multi-agent pricing playground](https://github.com/adagora/calc-price-agent): Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE. (TypeScript, Bun, Vercel AI SDK, Claude, OpenAI, eBay API)
 - [Streaming ML demo, hackathon 2nd place](https://github.com/adagora/streamr-ml-demo): Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon. (Node.js, Streamr, ARIMA)
+- [meat: reading diffs](https://github.com/adagora/diff-explain): Turns a large code diff into a smaller reading diff focused on the consequential changes. TypeScript CLI, migrated from Go. (TypeScript, Go)
 - [Ralph loop for coding agents](https://github.com/adagora/loop-coding-agent): A plan-and-build prompt loop driven by AGENTS.md and specs, for Claude Code, opencode and Kilo Code. (Shell)
 - [Roaming RAG](https://github.com/adagora/experiment-with-roaming-RAG): Collapses a long Markdown document to its headings and lets the model expand only the sections it needs. (Python)
 - [MiCA regulation Q&A](https://github.com/adagora/book-ai-chat): Answers questions about the EU crypto-asset regulation (MiCA) from the regulation text, with PostgresML for semantic search. A 2024 project, still live; the free hosting tier can take a minute to wake up. (Node.js, PostgresML, OpenAI) Live demo: https://cryptoregulationtalk.onrender.com/
@@ -133,6 +94,7 @@ Code: https://github.com/adagora/HSS-heat-treatment
 - [Video frames analyzer](https://github.com/adagora/llm-video-extract-frames): Extracts frames from video, analyses them with Gemini, tracks cost and skips duplicate work. (TypeScript, Gemini)
 - [Hand-tracking interaction experiments](https://github.com/adagora/mediapipe-for-fun): Human-computer interaction prototypes with MediaPipe. (Python, MediaPipe)
 - [Eboombox](https://github.com/adagora/eboombox): Turns Cardano transactions into sound. (Next.js, Cardano)
+- [HSS heat treatment](https://github.com/adagora/HSS-heat-treatment): Steel quench simulation with a narrated Manim explainer. (Manim)
 
 ## Earlier experience
 

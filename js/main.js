@@ -15,14 +15,23 @@
   const bar = $('.topbar');
   const toggle = $('.nav-toggle');
   if (toggle) {
+    const closeMenu = () => {
+      bar.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
     toggle.addEventListener('click', () => {
       const open = bar.classList.toggle('open');
       toggle.setAttribute('aria-expanded', String(open));
     });
-    $$('.topnav a').forEach((a) => a.addEventListener('click', () => {
-      bar.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    }));
+    $$('.topnav a').forEach((a) => a.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && bar.classList.contains('open')) {
+        closeMenu();
+        toggle.focus();
+      }
+    });
+    document.addEventListener('click', (e) => { if (!bar.contains(e.target)) closeMenu(); });
+    window.matchMedia('(min-width: 861px)').addEventListener('change', closeMenu);
   }
 
   /* ── Active nav link ── */
@@ -32,7 +41,12 @@
     const y = window.scrollY + 140;
     let current = '';
     for (const s of sections) if (s.offsetTop <= y) current = '#' + s.id;
-    for (const a of navLinks) a.classList.toggle('active', a.getAttribute('href') === current);
+    for (const a of navLinks) {
+      const active = a.getAttribute('href') === current;
+      a.classList.toggle('active', active);
+      if (active) a.setAttribute('aria-current', 'location');
+      else a.removeAttribute('aria-current');
+    }
   }
   window.addEventListener('scroll', updateActiveNav, { passive: true });
   updateActiveNav();
@@ -67,13 +81,13 @@
       ctx.fillStyle = muted;
       ctx.font = font;
       ctx.textAlign = 'center';
-      ctx.fillText('Commit data appears after the daily GitHub Action runs', W / 2, H / 2);
+      ctx.fillText('Activity unavailable. See the GitHub link below.', W / 2, H / 2);
       return;
     }
 
     const cell = 11, gap = 3, step = cell + gap, cols = 53, rows = 7;
     const startX = Math.max(28, (W - cols * step) / 2);
-    const today = new Date();
+    const today = new Date(data.generated);
     const start = new Date(today);
     start.setFullYear(start.getFullYear() - 1);
     start.setDate(start.getDate() - start.getDay());
@@ -83,10 +97,15 @@
     ctx.fillStyle = muted;
     ctx.font = font;
     ctx.textAlign = 'start';
+    let lastMonthX = -Infinity;
     for (let c = 0; c < cols; c++) {
       const d = new Date(start); d.setDate(d.getDate() + c * 7);
       const prev = new Date(d); prev.setDate(prev.getDate() - 7);
-      if (c === 0 || d.getMonth() !== prev.getMonth()) ctx.fillText(months[d.getMonth()], startX + c * step, 10);
+      const x = startX + c * step;
+      if ((c === 0 || d.getMonth() !== prev.getMonth()) && x - lastMonthX >= 36) {
+        ctx.fillText(months[d.getMonth()], x, 10);
+        lastMonthX = x;
+      }
     }
     ctx.textAlign = 'end';
     ['', 'Mon', '', 'Wed', '', 'Fri', ''].forEach((l, r) => { if (l) ctx.fillText(l, startX - 6, 26 + r * step + 4); });
@@ -95,7 +114,7 @@
       for (let r = 0; r < rows; r++) {
         const d = new Date(start); d.setDate(d.getDate() + c * 7 + r);
         if (d > today) continue;
-        const count = data.days[d.toISOString().slice(0, 10)] || 0;
+        const count = data.days[`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`] || 0;
         const level = Math.min(4, levels.findIndex((t) => count <= t));
         ctx.fillStyle = colors[level];
         ctx.fillRect(startX + c * step, 18 + r * step, cell, cell);
@@ -103,24 +122,40 @@
     }
   }
 
+  const activityLink = '<a href="https://github.com/adagora?tab=overview">View public activity on GitHub</a>';
+  const activityUnavailable = `Activity unavailable. ${activityLink}.`;
   function loadStats() {
     const canvas = $('#activity-graph');
     fetch('data/commit-stats.json')
-      .then((r) => r.json())
+      .then((r) => { if (!r.ok) throw new Error('Activity request failed'); return r.json(); })
       .then((data) => {
+        if (!data.days || !Object.keys(data.days).length || !Number.isFinite(Date.parse(data.generated))) throw new Error('Invalid activity data');
         statsData = data;
         if (canvas) renderGraph(canvas, data);
-        if (data.total > 0) {
-          const total = data.total.toLocaleString('en-US');
-          const el = $('#graph-total');
-          if (el) el.innerHTML = `<strong>${total}</strong> commits in the last year`;
+        const months = new Map();
+        for (const [day, count] of Object.entries(data.days).sort()) {
+          const month = day.slice(0, 7);
+          months.set(month, (months.get(month) || 0) + count);
         }
-        const repoCount = data.repoCount ?? (data.repos ? data.repos.length : 0);
+        const total = [...months.values()].reduce((a, b) => a + b, 0);
+        const el = $('#graph-total');
+        if (el) el.innerHTML = `<strong>${total.toLocaleString('en-US')}</strong> commits in the recorded period`;
         const src = $('#graph-source');
-        if (src && repoCount) src.textContent = `across ${repoCount} repositories`;
+        if (src && data.repoCount) src.textContent = `across ${data.repoCount} repositories`;
+        const days = Object.keys(data.days).sort();
+        const dateLabel = (day) => new Date(day + 'T12:00:00Z').toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric', timeZone:'UTC'});
+        $('#graph-summary').textContent = `${total.toLocaleString('en-US')} commits from ${dateLabel(days[0])} to ${dateLabel(days.at(-1))}. Includes public and private repositories; monthly totals below.`;
+        canvas?.setAttribute('aria-describedby', 'graph-summary');
+        $('#graph-months').innerHTML = '<table><caption>Commits by month, including partial months</caption><thead><tr><th scope="col">Month</th><th scope="col">Commits</th></tr></thead><tbody>' + [...months].map(([month,count]) => `<tr><th scope="row">${new Date(month + '-01T12:00:00Z').toLocaleDateString('en-GB',{month:'long',year:'numeric',timeZone:'UTC'})}</th><td>${count.toLocaleString('en-US')}</td></tr>`).join('') + '</tbody></table>';
       })
-      .catch(() => canvas && renderGraph(canvas, null));
+      .catch(() => {
+        if (canvas) renderGraph(canvas, null);
+        $('#graph-total').textContent = 'Activity unavailable';
+        $('#graph-summary').innerHTML = activityUnavailable;
+        $('#graph-months').innerHTML = activityUnavailable;
+      });
   }
+
   loadStats();
 
   let resizeTimer;
@@ -154,7 +189,7 @@
     const feed = $('#shipstream-feed');
     if (!feed) return;
     if (!data || !data.items || data.items.length === 0) {
-      feed.innerHTML = '<div class="shipstream-empty">No recent activity yet.</div>';
+      feed.innerHTML = `<div class="shipstream-empty">No recent activity yet. ${activityLink}.</div>`;
       return;
     }
     const seen = new Set();
@@ -164,7 +199,7 @@
       seen.add(key);
       return true;
     });
-    feed.innerHTML = items.map((item) => {
+    const rows = items.map((item) => {
       const isPr = item.type === 'pr';
       const text = esc(isPr ? item.title : item.message);
       const title = item.url && !item.private ? `<a href="${esc(item.url)}" target="_blank" rel="noopener">${text}</a>` : text;
@@ -181,12 +216,14 @@
           </div>
         </div>
       </div>`;
-    }).join('');
+    });
+    feed.innerHTML = rows.slice(0, 4).join('') + (rows.length > 4 ? `<details class="activity-more"><summary>More recent work (${rows.length - 4})</summary>${rows.slice(4).join('')}</details>` : '');
   }
 
   fetch('data/recent-activity.json')
-    .then((r) => r.json())
+    .then((r) => { if (!r.ok) throw new Error('Feed request failed'); return r.json(); })
     .then((data) => {
+      if (!Array.isArray(data.items)) throw new Error('Invalid feed');
       renderShipstream(data);
       const footer = $('#shipstream-footer');
       if (footer && data.generated) {
@@ -196,6 +233,6 @@
     })
     .catch(() => {
       const feed = $('#shipstream-feed');
-      if (feed) feed.innerHTML = '<div class="shipstream-empty">Could not load the activity feed.</div>';
+      if (feed) feed.innerHTML = `<div class="shipstream-empty">${activityUnavailable}</div>`;
     });
 })();

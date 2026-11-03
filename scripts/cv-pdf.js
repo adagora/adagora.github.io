@@ -40,6 +40,7 @@ for (const [html, pdf] of jobs) {
     '--no-first-run',
     '--no-pdf-header-footer',
     '--virtual-time-budget=8000',
+    '--timeout=15000',
     `--print-to-pdf=${pdf}`,
     `file://${html}`,
   ], { stdio: ['ignore', 'ignore', 'pipe'] });

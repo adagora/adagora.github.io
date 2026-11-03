@@ -3,10 +3,11 @@
   "basics": {
     "name": "Adrian Góra",
     "label": "AI / Software Engineer | LLM apps, RAG, agents | TypeScript, Python",
-    "image": "https://adagora.github.io/assets/img/adrian-gora.jpg",
+    "image": "https://adagora.github.io/cv/foto.jpg",
     "email": "adrian.gora14@gmail.com",
+    "phone": "+48 694 983 705",
     "url": "https://adagora.github.io/",
-    "summary": "AI Engineer at Wiśniowski since February 2025, building internal tools for document search, translation, meeting reports and production analysis. Before that, four years of TypeScript and React in fintech and Web3.",
+    "summary": "AI Engineer with experience building internal tools at Wiśniowski for document search, translation, meeting reports and production analysis. Previously developed software mainly in fintech.",
     "location": {
       "countryCode": "PL",
       "region": "Poland"
@@ -27,15 +28,16 @@
   "work": [
     {
       "name": "Wiśniowski",
-      "position": "AI Engineer (Specjalista ds. AI)",
+      "position": "AI Engineer",
       "startDate": "2025-02",
+      "endDate": "2026-10-31",
       "summary": "Internal AI tools for a Polish manufacturer of industrial doors, gates and fences.",
       "highlights": [
-        "Deployed RAGFlow on a Linux server and connected it to Open WebUI as the company chat. It answers from the company's technical PDFs with complex layouts. Telemetry and monitoring are built for EU AI Act compliance.",
+        "Developed two versions of the company chatbot over technical PDFs: the first in Python with RAGFlow, the second a production version in Node.js. Deployed RAGFlow on Linux, integrated it with Open WebUI, and used Elastic Agent to monitor server performance.",
         "Scans one group's meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.",
-        "Built an internal portal to replace lokalise.com. Gemini pre-translates every key, translators accept or fix it, and missing keys are flagged. To keep terms consistent across languages, I added statistics, translator helpers and a generated starting glossary. Every decision is logged, which shows how often the AI is right.",
-        "Working on a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.",
-        "After a 15-minute voice or text interview about someone's daily work, it writes an automation report, adds what it learned to an LLM wiki and turns repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox."
+        "During data import, Gemini fills in missing translations or suggests translations in the background, keeping terminology consistent with the company glossary.",
+        "Developed a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.",
+        "After a voice or text interview about daily work, it produces an automation report and adds knowledge to an LLM wiki. Supports Excel files, images and screenshots. Once enough knowledge has been collected, it can optionally turn repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox."
       ]
     },
     {
@@ -309,6 +311,7 @@
       "keywords": [
         "Go",
         "TypeScript",
+        "Gherkin",
         "Preact",
         "BPMN",
         "VDA 5050"
@@ -329,54 +332,24 @@
         "BM25 + RRF",
         "PixelRAG",
         "Gemini",
-        "Claude"
+        "Claude",
+        "api-decisions (experimental)"
       ],
       "url": "https://github.com/adagora/visualRAG",
       "type": "public repository"
     },
     {
-      "name": "CAD quoting engine for machined parts",
-      "description": "Quotes a machined part from its STEP file (a 3D CAD model) for a tool shop. Code measures the part and computes the price; an AI model reviews the machining process and risks the way a shop manager would.",
-      "highlights": [
-        "Volume, mass, envelope and cost-driving features come from OpenCASCADE. Price is machining time × shop rate, and a physics-based floor on cutting time stops the model from inventing hours.",
-        "Preflight marks each check pass, fail or need-info with a cited source (ISO 2768, ISO 286, material data). Any fail or missing input makes the quote non-binding.",
-        "Web app for estimators who don't program: 3D preview, 2D drawing input, editable rates, print to PDF and a make-or-buy check against SendCutSend. Covered by 8 test modules."
-      ],
-      "keywords": [
-        "Python",
-        "OpenCASCADE",
-        "build123d",
-        "trimesh",
-        "ezdxf",
-        "Claude / OpenAI"
-      ],
-      "url": "https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena",
-      "type": "public repository"
-    },
-    {
-      "name": "LLM-judged translation audit",
-      "description": "Finds inconsistent terms in translations that never had a glossary. Code finds the disagreements across 7,040 texts, and an AI model decides each one.",
-      "highlights": [
-        "Exports an Excel workbook for sign-off and a keyboard-driven review app where translators curate the glossary; decided terms are never re-arbitrated.",
-        "Sibling demo judge-sheets: type a column header such as Urgency and 300 rows fill with semantic predictions in about 3.5 s, as =JUDGE, =PICK and =RATE formulas you can inspect in the formula bar."
-      ],
+      "name": "ai-audit: audit proxy for LLM APIs",
+      "description": "Local proxy for OpenAI and Anthropic APIs. Detects secrets and personal data, redacts sensitive content or blocks requests, and records calls in a hash-chained audit log.",
       "keywords": [
         "TypeScript",
-        "TypeSafe Jev",
-        "Excel"
+        "Node.js",
+        "OpenAI API",
+        "Anthropic API",
+        "Bend",
+        "TLA+"
       ],
-      "url": "https://github.com/adagora/jev-experiments",
-      "type": "public repository"
-    },
-    {
-      "name": "EternalChat: conversation as memory",
-      "description": "Local terminal chat implementing the UniiChat design: append-only message logs feed a background tree of summaries. Each turn receives a size-budgeted view, with zoom back to original messages. Python with no runtime dependencies.",
-      "keywords": [
-        "Python",
-        "Claude",
-        "UniiChat"
-      ],
-      "url": "https://github.com/adagora/EternalChat",
+      "url": "https://github.com/adagora/ai-audit",
       "type": "public repository"
     },
     {
@@ -408,25 +381,6 @@
       "type": "private repository"
     },
     {
-      "name": "meat: reading diffs",
-      "description": "Turns a large code diff into a smaller reading diff focused on the consequential changes. TypeScript CLI, migrated from Go.",
-      "keywords": [
-        "TypeScript",
-        "Go"
-      ],
-      "url": "https://github.com/adagora/diff-explain",
-      "type": "public repository"
-    },
-    {
-      "name": "HSS heat treatment",
-      "description": "Steel quench simulation with a narrated Manim explainer.",
-      "keywords": [
-        "Manim"
-      ],
-      "url": "https://github.com/adagora/HSS-heat-treatment",
-      "type": "public repository"
-    },
-    {
       "name": "loop-me: employee interviews",
       "description": "Agent interviews employees and produces automation specifications with ROI estimates.",
       "keywords": [
@@ -455,8 +409,8 @@
   "meta": {
     "canonical": "https://adagora.github.io/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-10-18",
-    "availability": "Available from 1 November 2026, no notice period",
+    "lastModified": "2026-11-03",
+    "availability": "Available now, no notice period",
     "workMode": "Remote or hybrid, also open to remote roles in the EU and worldwide",
     "contract": "B2B or employment contract",
     "targetRoles": [

@@ -59,6 +59,10 @@ function deepMerge(base, over) {
 }
 
 const chips = (list, cls = 'chips') => (list?.length ? `<ul class="${cls}">${list.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>` : '');
+const cvStack = (item) => {
+  const stack = item.cvStack ?? item.stack?.slice(0, 3) ?? [];
+  return stack.length ? `<span class="cv-stack">${stack.map((name) => `<span class="stack-badge">${esc(name)}</span>`).join(' ')}</span>` : '';
+};
 const external = (url, label, cls = 'link-arrow') => `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} <span aria-hidden="true">↗</span></a>`;
 
 function sectionHead(num, kicker, title, lede) {
@@ -86,7 +90,7 @@ function validate(p) {
       errors.push(`${pr.id}: private project links to its repo; visitors would get a 404`);
     }
   }
-  const anchors = new Set(['#delivery', '#activity', '#projects', '#experience', '#background', ...p.projects.map((x) => `#project-${x.id}`)]);
+  const anchors = new Set(['#delivery', '#activity', '#projects', '#experience', '#background', '#experience-automotive', ...p.work.filter((w) => w.group !== 'cad').map((w) => `#experience-${w.id}`), ...p.projects.map((x) => `#project-${x.id}`)]);
   for (const x of p.about.route) if (!anchors.has(x.href)) errors.push(`about "${x.title}": href ${x.href} matches no section`);
   for (const url of collectUrls(p)) if (!/^https:\/\//.test(url)) errors.push(`not https: ${url}`);
   return errors;
@@ -126,7 +130,8 @@ function siteRegions(p) {
     image: abs_url(b.image, base),
     sameAs: b.profiles.map((x) => x.url),
     address: { '@type': 'PostalAddress', addressCountry: b.location.countryCode },
-    worksFor: { '@type': 'Organization', name: current.company },
+    ...(current.endDate ? {} : { worksFor: { '@type': 'Organization', name: current.company } }),
+    ...(b.phone && { telephone: b.phone }),
     hasOccupation: { '@type': 'Occupation', name: b.label, skills: p.skills.slice(0, 4).flatMap((s) => s.keywords).join(', ') },
     knowsAbout: p.skills.flatMap((s) => s.keywords),
     knowsLanguage: p.languages.map((l) => ({ '@type': 'Language', name: t(l.language) })),
@@ -179,17 +184,19 @@ function siteRegions(p) {
           <p class="status"><span class="pulse" aria-hidden="true"></span>${esc(t(b.availability.short))} · ${esc(t(b.location.region))}<span class="status-extra">&nbsp;· remote or hybrid</span></p>
           <h1 class="hero-name">${esc(b.name)}</h1>
           <p class="hero-role">${esc(b.label)}</p>
+          <p class="hero-engagement">${esc(t(b.engagement))}</p>
           <p class="hero-tagline">${esc(t(b.tagline))}</p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="${FILES.pdfEn}" download>Download CV <span class="btn-note">PDF</span></a>
+            <a class="btn btn-primary" href="${FILES.pdfEn}" download>CV EN <span class="btn-note">PDF</span></a>
             <a class="btn" href="${mail}">Email me</a>
+            ${b.phone ? `<a class="btn" href="tel:${esc(b.phone.replace(/\s/g, ''))}">${esc(b.phone)}</a>` : ''}
             ${external(byNet.LinkedIn, 'LinkedIn', 'btn btn-ghost')}
             ${external(byNet.GitHub, 'GitHub', 'btn btn-ghost')}
           </div>
-          <p class="hero-alt">CV po polsku: <a href="${FILES.pdfPl}" download>PDF</a> · <a href="${FILES.htmlPl}">wersja web</a></p>
+          <p class="hero-alt"><a href="${FILES.pdfPl}" download>CV PL (PDF)</a> · <a href="${FILES.htmlPl}">CV PL online</a></p>
         </div>
         <aside class="titleblock" aria-label="Profile at a glance">
-          <div class="tb-photo"><img src="${esc(b.image)}" alt="Portrait of ${esc(b.name)}" width="600" height="800" /></div>
+          <div class="tb-photo"><img src="${esc(b.image)}" alt="Portrait of ${esc(b.name)}" width="1373" height="1824" /></div>
           <dl class="tb">
             ${profileFacts.map((r) => `<div><dt>${esc(r.label)}</dt><dd>${esc(r.value)}</dd></div>`).join('\n            ')}
           </dl>
@@ -215,8 +222,8 @@ function siteRegions(p) {
 
   const delivery = `
     <section id="delivery" class="section">
-      ${sectionHead('01', 'Current role', `Shipped at ${current.company}`,
-        `${esc(current.position)} (${L.officialTitle.toLowerCase()}: ${esc(current.officialTitle)}), ${esc(range(current.startDate, current.endDate, 'en', L))}. ${esc(t(current.summary))} The code is private; I can walk through any of it in an interview.`)}
+      ${sectionHead('01', current.endDate ? 'Most recent role' : 'Current role', `Shipped at ${current.company}`,
+        `${esc(current.position)}, ${esc(range(current.startDate, current.endDate, 'en', L))}. ${esc(t(current.summary))}`)}
       <ol class="callouts">
         ${current.highlights.map((h, i) => `<li class="callout">
           <span class="balloon" aria-hidden="true">${i + 1}</span>
@@ -274,21 +281,21 @@ function siteRegions(p) {
     <section id="experience" class="section">
       ${sectionHead('03', 'Career', 'Experience')}
       <ol class="timeline">
-        <li class="tl-item tl-item--now">
+        <li id="experience-wisniowski" class="tl-item">
           <div class="tl-when">${esc(range(current.startDate, current.endDate, 'en', L))}</div>
           <div class="tl-body">
             <h3>${esc(current.position)} <span class="at">${esc(current.company)}</span></h3>
-            <p class="tl-note">${L.officialTitle}: ${esc(current.officialTitle)}. ${esc(t(current.summary))} Five internal AI tools, described in <a href="#delivery">Shipped at ${esc(current.company)}</a>.</p>
+            <p class="tl-note">${esc(t(current.summary))} Five internal AI tools, described in <a href="#delivery">Shipped at ${esc(current.company)}</a>.</p>
           </div>
         </li>
-        ${others.map((w) => `<li class="tl-item">
+        ${others.map((w) => `<li id="experience-${w.id}" class="tl-item">
           <div class="tl-when">${esc(range(w.startDate, w.endDate, 'en', L))}</div>
           <div class="tl-body">
             <h3>${esc(w.position)} <span class="at">${esc(w.company)}</span></h3>
             <ul>${w.highlights.map((h) => `<li>${esc(t(h.text))}</li>`).join('')}</ul>
           </div>
         </li>`).join('\n        ')}
-        <li class="tl-item tl-item--cad">
+        <li id="experience-automotive" class="tl-item tl-item--cad">
           <div class="tl-when">${esc(range(cad[cad.length - 1].startDate, cad[0].endDate, 'en', L))}</div>
           <div class="tl-body">
             <h3>Product and CAD engineering <span class="at">${esc(cad.map((w) => w.company).join(' · '))}</span></h3>
@@ -328,7 +335,7 @@ function siteRegions(p) {
           <div><dt>Location and mode</dt><dd>${esc(t(b.location.region))} · ${esc(t(b.workMode))}</dd></div>
           <div><dt>Contract</dt><dd>${esc(t(b.contract))}</dd></div>
           <div><dt>Languages</dt><dd>${esc(p.languages.map((l) => `${t(l.language)} ${t(l.fluency).replace(/^.*?\((.*)\)$/, '$1')}`).join(' · '))}</dd></div>
-          <div><dt>Contact</dt><dd><a href="${mail}">${esc(b.email)}</a> · <a href="${esc(byNet.LinkedIn)}" target="_blank" rel="noopener">LinkedIn</a></dd></div>
+          <div><dt>Contact</dt><dd><a href="${mail}">${esc(b.email)}</a>${b.phone ? ` · <a href="tel:${esc(b.phone.replace(/\s/g, ''))}">${esc(b.phone)}</a>` : ''} · <a href="${esc(byNet.LinkedIn)}" target="_blank" rel="noopener">LinkedIn</a></dd></div>
         </dl>
         <div class="machine">
           <h3>Machine-readable versions</h3>
@@ -426,12 +433,11 @@ ${css}</style>
       <h1>${esc(b.name)}</h1>
       <p class="headline">${esc(t(b.headline, lang))}</p>
       <p class="contact">
-        <a href="mailto:${esc(b.email)}">${esc(b.email)}</a>${b.phone ? ` | ${esc(b.phone)}` : ''} |
+        <a href="mailto:${esc(b.email)}">${esc(b.email)}</a>${b.phone ? ` | <a href="tel:${esc(b.phone.replace(/\s/g, ''))}">${esc(b.phone)}</a>` : ''} |
         <a href="${esc(b.url)}">${esc(strip(b.url))}</a> |
-        <a href="${esc(byNet.LinkedIn)}">${esc(strip(byNet.LinkedIn))}</a> |
-        <a href="${esc(byNet.GitHub)}">${esc(strip(byNet.GitHub))}</a>
+        <a href="${esc(byNet.LinkedIn)}">${esc(strip(byNet.LinkedIn))}</a>
       </p>
-      <p class="avail">${esc(t(b.availability.text, lang))} | ${esc(t(b.location.region, lang))}, ${esc(t(b.workMode, lang)).replace(/^./, (c) => c.toLowerCase())} | ${esc(t(b.contract, lang))}</p>
+      <p class="avail">${esc(t(b.engagement, lang))}</p>
     </div>
     ${photo ? `<img class="photo" src="${photo}" alt="${esc(b.name)}" />` : ''}
   </header>
@@ -445,8 +451,8 @@ ${css}</style>
     <h2>${L.experience}</h2>
     <div class="job">
       <div class="job-head"><h3>${esc(current.position)} <span>· ${esc(current.company)}</span></h3><span class="when">${esc(range(current.startDate, current.endDate, lang, L))}</span></div>
-      <p class="job-sum">${esc(t(current.summary, lang))} ${L.officialTitle}: ${esc(current.officialTitle)}.</p>
-      <ul>${sortByFocus(current.highlights, focus).map((h) => `<li><strong>${esc(t(h.title, lang))}:</strong> ${esc(t(h.text, lang))}</li>`).join('')}</ul>
+      <p class="job-sum">${esc(t(current.summary, lang))}</p>
+      <ul>${sortByFocus(current.highlights, focus).map((h) => `<li><strong>${esc(t(h.title, lang))}:</strong> ${esc(t(h.text, lang))}${cvStack(h)}</li>`).join('')}</ul>
     </div>
   </section>
 
@@ -455,6 +461,7 @@ ${css}</style>
     ${projects.map((pr) => `<div class="proj">
       <h3>${esc(t(pr.name, lang))}${pr.links?.[0] ? ` <a href="${esc(pr.links[0].url)}">${esc(linkText(pr.links[0].url))}</a>` : ''}</h3>
       <p>${pr.cvSummary ? esc(t(pr.cvSummary, lang)) : `${esc(t(pr.summary, lang))}${pr.metrics ? ` <span class="metric">${esc(pr.metrics.map((m) => `${m.value}: ${m.label}`).join('; '))}.</span>` : ''}`}</p>
+      ${cvStack(pr)}
     </div>`).join('\n    ')}
     <p class="more">${L.allProjects}: <a href="${esc(b.url)}#projects">${esc(strip(b.url))}/#projects</a></p>
   </section>
@@ -577,6 +584,7 @@ function resumeJson(p) {
       label: t(b.headline),
       image: abs_url(b.image, base),
       email: b.email,
+      ...(b.phone && { phone: b.phone }),
       url: b.url,
       summary: t(b.summary),
       location: { countryCode: b.location.countryCode, region: t(b.location.region) },
@@ -630,7 +638,7 @@ function llmsTxt(p) {
     '',
     'Key facts:',
     '',
-    `- Current role: ${current.position} (official title: ${current.officialTitle}) at ${current.company} since ${range(current.startDate, null, 'en', p.labels.en).split(' – ')[0]}. ${t(current.summary)}`,
+    `- Most recent role: ${current.position} at ${current.company}, ${range(current.startDate, current.endDate, 'en', p.labels.en)}. ${t(current.summary)}`,
     `- Built there: ${current.highlights.map((h) => t(h.title)).join('; ')}.`,
     '- Earlier: four years of TypeScript and React (fintech, web3, React Native), three and a half years of automotive CAD engineering (CATIA V5, NX, GD&T, D-FMEA).',
     `- Path: ${p.about.route.map((s) => `${s.when}: ${s.title}`).join('; ')}.`,

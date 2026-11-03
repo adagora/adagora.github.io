@@ -172,7 +172,7 @@ main > section, .footer { max-width: var(--wrap); margin: 0 auto; padding-left: 
 .titleblock::before { top: -9px; left: -9px; border-top-width: 1.5px; border-left-width: 1.5px; }
 .titleblock::after { bottom: -9px; right: -9px; border-bottom-width: 1.5px; border-right-width: 1.5px; }
 .tb-photo { border-right: 1px solid var(--line-strong); overflow: hidden; }
-.tb-photo img { width: 100%; height: 100%; min-height: 280px; object-fit: cover; object-position: 50% 30%; filter: saturate(0.9) contrast(1.02); }
+.tb-photo img { width: 100%; height: 100%; min-height: 280px; object-fit: contain; object-position: center; background: #b8b9b3; filter: saturate(0.9) contrast(1.02); }
 .tb { display: grid; grid-auto-rows: 1fr; }
 .tb div { display: grid; grid-template-columns: 82px minmax(0, 1fr); border-bottom: 1px solid var(--line); }
 .tb div:last-child { border-bottom: 0; }
@@ -182,7 +182,7 @@ main > section, .footer { max-width: var(--wrap); margin: 0 auto; padding-left: 
 
 /* ── About: career as a process route ── */
 main > .about { width: calc(100% - 2 * var(--gutter)); max-width: calc(var(--wrap) - 2 * var(--gutter)); margin: 24px auto 0; padding: 28px 0 32px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.route { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 40px; margin-top: 22px; }
+.route { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 40px; margin-top: 22px; }
 .station a { display: grid; align-content: start; gap: 4px; height: 100%; color: var(--text); }
 .station a:hover { text-decoration: none; }
 .station a:hover .st-title { color: var(--accent); }
@@ -338,7 +338,7 @@ details > summary::-webkit-details-marker { display: none; }
 
 .shipstream-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; }
 .shipstream-footer { font-size: 0.78rem; color: var(--muted); }
-.shipstream-feed { max-height: 420px; overflow-y: auto; -webkit-mask-image: linear-gradient(#000 82%, transparent); mask-image: linear-gradient(#000 82%, transparent); }
+.shipstream-feed { overflow-wrap: anywhere; }
 .shipstream-item { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); }
 .shipstream-item:last-child { border-bottom: 0; }
 .shipstream-icon { color: var(--muted); padding-top: 2px; }
@@ -460,7 +460,7 @@ details > summary::-webkit-details-marker { display: none; }
   .btn { min-height: 46px; }
   .btn-sm { min-height: 40px; }
   .titleblock { justify-self: stretch; max-width: none; grid-template-columns: 108px minmax(0, 1fr); }
-  .tb-photo img { min-height: 0; object-position: 49% 30%; }
+  .tb-photo img { min-height: 0; object-position: center; }
   .tb div { grid-template-columns: 74px minmax(0, 1fr); }
   .tb dt { padding: 9px 8px; font-size: 0.58rem; letter-spacing: 0.08em; }
   .tb dd { padding: 9px 10px; font-size: 0.8rem; }
@@ -496,4 +496,19 @@ details > summary::-webkit-details-marker { display: none; }
   .cta-band .btn { width: 100%; justify-content: center; }
   .footer { margin-top: 80px; }
   .brand-name { display: none; }
+}
+
+.hero-engagement { margin-top: 10px; color: var(--text-2); font-size: 0.94rem; }
+[id^="experience-"] { scroll-margin-top: 88px; }
+.graph-hint, #graph-summary { margin-top: 12px; color: var(--text-2); font-size: 0.88rem; }
+.graph-hint { margin-bottom: 10px; }
+.monthly-activity { margin-top: 14px; }
+.monthly-activity summary, .activity-more summary { cursor: pointer; color: var(--accent); padding: 12px 0; }
+.monthly-activity table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.monthly-activity th, .monthly-activity td { padding: 6px 10px; text-align: left; border-bottom: 1px solid var(--line); }
+.monthly-activity th:last-child, .monthly-activity td:last-child { text-align: right; }
+@media (max-width: 620px) {
+  .hero-cta { margin-top: 18px; }
+  .hero-cta .btn-ghost { flex: 0 1 auto; min-height: 40px; }
+  .hero-engagement { font-size: 0.86rem; }
 }
