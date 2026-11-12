@@ -1,230 +1,230 @@
 {
-  "generated": "2026-10-30T12:08:32.156Z",
+  "generated": "2026-11-12T14:38:26.085Z",
   "items": [
     {
       "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "Move the verify-audit-log sync commit to bda95ae",
-      "url": "https://github.com/adagora/ai-audit/commit/c56b96cdcebea0d66b64aa5c513649fd165bd542",
-      "private": false,
-      "date": "2026-10-29T22:42:26Z",
-      "sha": "c56b96c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "Add a live example: four synthetic customer mails through the real proxy, a real model, the console and the CLI",
-      "url": "https://github.com/adagora/ai-audit/commit/4d732f0e44b12234155e4ef886c723133be5529b",
-      "private": false,
-      "date": "2026-10-29T22:41:12Z",
-      "sha": "4d732f0"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "Show a decision whose application only timed out as waiting, not done by the rule",
-      "url": "https://github.com/adagora/ai-audit/commit/bda95aeae91e22b6a2a66a71d7f4bab11bb5e35d",
-      "private": false,
-      "date": "2026-10-29T22:41:12Z",
-      "sha": "bda95ae"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "Draw the three verification charts with /statechart from the models, and remove the hand-drawn ones",
-      "url": "https://github.com/adagora/ai-audit/commit/f11955ebed0d952734343867a18c567b3c5cdcfb",
-      "private": false,
-      "date": "2026-10-29T22:26:32Z",
-      "sha": "f11955e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ai-audit",
-      "message": "Move the verify-audit-log sync commit to b07696d",
-      "url": "https://github.com/adagora/ai-audit/commit/4e46225c5f8dae6f8631928ed411d8710ac6d8c4",
-      "private": false,
-      "date": "2026-10-29T22:14:43Z",
-      "sha": "4e46225"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/EternalChat",
-      "message": "Merge pull request #3 from adagora/docs/web-ui-walkthrough",
-      "url": "https://github.com/adagora/EternalChat/commit/d687a42529b25f7e88de05ed4b836d3cd3265a95",
-      "private": false,
-      "date": "2026-10-22T18:01:09Z",
-      "sha": "d687a42"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/EternalChat",
-      "message": "Add web UI screenshots and clarify permissions and tool safety",
-      "url": "https://github.com/adagora/EternalChat/commit/820ff5fe000f437008fe42b133d8eaf6aa956a72",
-      "private": false,
-      "date": "2026-10-22T18:00:42Z",
-      "sha": "820ff5f"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/EternalChat",
-      "message": "Merge pull request #2 from adagora/fix-spawn-shutdown-races",
-      "url": "https://github.com/adagora/EternalChat/commit/669754c6542655c67e9ba2a6c4b1ef74f28b63f8",
-      "private": false,
-      "date": "2026-10-22T17:44:32Z",
-      "sha": "669754c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/EternalChat",
-      "message": "Fix agent batch name collisions and shutdown during shell startup",
-      "url": "https://github.com/adagora/EternalChat/commit/230449ffddd6ce61822ad6d8fd86120bd03a6e45",
-      "private": false,
-      "date": "2026-10-22T17:42:09Z",
-      "sha": "230449f"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/EternalChat",
-      "message": "Merge pull request #1 from adagora/web-ui-redesign",
-      "url": "https://github.com/adagora/EternalChat/commit/194baf1faa01c635f42b1ed53419d6dc55ba43d3",
-      "private": false,
-      "date": "2026-10-22T17:38:07Z",
-      "sha": "194baf1"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/PDF-Insight",
-      "message": "docs: add why-it-is-hard section to README",
-      "url": "https://github.com/adagora/PDF-Insight/commit/094a1612f65c5267e3ebac9f91b4cf210a1148b4",
-      "private": false,
-      "date": "2026-10-20T19:52:54Z",
-      "sha": "094a161"
+      "repo": "adagora/rocket-simulator",
+      "message": "Ignore Beads audit and writer artifacts",
+      "url": null,
+      "private": true,
+      "date": "2026-11-11T00:43:07Z",
+      "sha": "200420a"
     },
     {
       "type": "commit",
       "repo": "adagora/rocket-simulator",
-      "message": "the way to the moon",
+      "message": "Record AO performance profiling results",
       "url": null,
       "private": true,
-      "date": "2026-10-19T21:54:37Z",
-      "sha": "f24b169"
+      "date": "2026-11-11T00:27:31Z",
+      "sha": "93fa8f4"
     },
     {
       "type": "commit",
       "repo": "adagora/rocket-simulator",
-      "message": "Prove journey depot and tank amounts as whole kilograms",
+      "message": "Reduce Lumen AO target resolution",
       "url": null,
       "private": true,
-      "date": "2026-10-19T12:43:06Z",
-      "sha": "cf6c548"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/adagora.github.io",
-      "message": "Redesign portfolio and replace numbers band with career route",
-      "url": "https://github.com/adagora/adagora.github.io/commit/00074754b01fc869e1a3367b9de0a3b5bb47b22a",
-      "private": false,
-      "date": "2026-10-18T19:22:11Z",
-      "sha": "0007475"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/distributed-camera-node",
-      "message": "Align workbench with the MVP guide, in Polish",
-      "url": null,
-      "private": true,
-      "date": "2026-10-17T15:16:18Z",
-      "sha": "377a225"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/distributed-camera-node",
-      "message": "Add arduino-cli build, camera sketch and firmware CI",
-      "url": null,
-      "private": true,
-      "date": "2026-10-17T13:55:41Z",
-      "sha": "c1d39f7"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/distributed-camera-node",
-      "message": "Add MVP guide, ServoTracker firmware and Polish BOM",
-      "url": null,
-      "private": true,
-      "date": "2026-10-17T13:10:50Z",
-      "sha": "fe76b6c"
+      "date": "2026-11-11T00:27:06Z",
+      "sha": "0ad9437"
     },
     {
       "type": "commit",
       "repo": "adagora/rocket-simulator",
-      "message": "fix: make browser verification portable (lb-qwzg)",
+      "message": "Record private Moving Day review handoff",
       "url": null,
       "private": true,
-      "date": "2026-10-15T19:20:03Z",
-      "sha": "8352e58"
+      "date": "2026-11-11T00:14:20Z",
+      "sha": "9ab8efd"
     },
     {
       "type": "commit",
-      "repo": "adagora/visualRAG",
-      "message": "feat(chat): follow-ups, topic and task classification, answer cards",
-      "url": "https://github.com/adagora/visualRAG/commit/40bf214820d5e22acdc16abd549f6acc5a3e280f",
-      "private": false,
-      "date": "2026-10-12T20:28:27Z",
-      "sha": "40bf214"
+      "repo": "adagora/rocket-simulator",
+      "message": "Add Moving Day graphics review captures",
+      "url": null,
+      "private": true,
+      "date": "2026-11-11T00:13:17Z",
+      "sha": "fd54640"
     },
     {
       "type": "commit",
-      "repo": "adagora/visualRAG",
-      "message": "feat(jev): cache raw judgments, versioned and bounded in age",
-      "url": "https://github.com/adagora/visualRAG/commit/d8a09c1e63d22f024a885ef6a53b7b8c19075d49",
-      "private": false,
-      "date": "2026-10-12T20:27:07Z",
-      "sha": "d8a09c1"
+      "repo": "adagora/ideas",
+      "message": "add mechanics",
+      "url": null,
+      "private": true,
+      "date": "2026-11-08T20:36:58Z",
+      "sha": "bd2bd43"
     },
     {
       "type": "commit",
-      "repo": "adagora/visualRAG",
-      "message": "feat(jev): rank by pairwise Choice judgments and a Bradley-Terry fit",
-      "url": "https://github.com/adagora/visualRAG/commit/5332de523016fb4621a88ad59fcf598f4522cc02",
-      "private": false,
-      "date": "2026-10-12T20:26:43Z",
-      "sha": "5332de5"
+      "repo": "adagora/ideas",
+      "message": "Publish generated Idea Atlas game ideas.",
+      "url": null,
+      "private": true,
+      "date": "2026-11-08T20:25:17Z",
+      "sha": "7e37d7c"
     },
     {
       "type": "commit",
-      "repo": "adagora/visualRAG",
-      "message": "fix(cache): include the Gemini index files in the answer-cache fingerprint",
-      "url": "https://github.com/adagora/visualRAG/commit/4835965b2934390c871ae5a8655fbd2cd7c07b85",
-      "private": false,
-      "date": "2026-10-12T20:25:57Z",
-      "sha": "4835965"
+      "repo": "adagora/atlas-game",
+      "message": "Show saved mechanic checks in the web app.",
+      "url": null,
+      "private": true,
+      "date": "2026-11-08T17:07:13Z",
+      "sha": "ff140ac"
     },
     {
       "type": "commit",
-      "repo": "adagora/visualRAG",
-      "message": "feat(example): chat with a public paper using Gemini Embedding 2",
-      "url": "https://github.com/adagora/visualRAG/commit/e8fb39be2178c29592ef32d0ca70ad0f93a0b010",
+      "repo": "adagora/auditline",
+      "message": "Add scoped encrypted PII token vault",
+      "url": "https://github.com/adagora/auditline/commit/02923eb593a1f1bf8ad6f0b71f9f8c758cf1b21c",
       "private": false,
-      "date": "2026-10-12T19:10:47Z",
-      "sha": "e8fb39b"
+      "date": "2026-11-06T22:45:19Z",
+      "sha": "02923eb"
     },
     {
       "type": "commit",
-      "repo": "adagora/adagora.github.io",
-      "message": "Polish CV and portfolio for job search",
-      "url": "https://github.com/adagora/adagora.github.io/commit/d8b445569f718e8965936291152396682734dc35",
-      "private": false,
-      "date": "2026-10-12T18:04:30Z",
-      "sha": "d8b4455"
+      "repo": "adagora/okazje",
+      "message": "Complete the card map and merge earlier idea lists into one ranking.",
+      "url": null,
+      "private": true,
+      "date": "2026-11-06T10:59:21Z",
+      "sha": "d967ef6"
     },
     {
       "type": "commit",
-      "repo": "adagora/adagora",
-      "message": "Link meat in profile README",
-      "url": "https://github.com/adagora/adagora/commit/207f9e8df27fd4af0bc019e9892b66ec451291a2",
+      "repo": "adagora/auditline",
+      "message": "Pin policy interpreter code and gate fresh uncontradicted evidence",
+      "url": "https://github.com/adagora/auditline/commit/e631e4a1dd46cc60a4b06cd7989d89bbd5281a38",
       "private": false,
-      "date": "2026-10-12T10:09:09Z",
-      "sha": "207f9e8"
+      "date": "2026-11-06T00:07:59Z",
+      "sha": "e631e4a"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/auditline",
+      "message": "Replace Quinelings SDK with native bounded policy engine",
+      "url": "https://github.com/adagora/auditline/commit/01c35206e034e860653cd4caa5028717ba698377",
+      "private": false,
+      "date": "2026-11-05T23:36:58Z",
+      "sha": "01c3520"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/okazje",
+      "message": "Rank generated business ideas on the national map and show them in the web app.",
+      "url": null,
+      "private": true,
+      "date": "2026-11-05T21:36:25Z",
+      "sha": "4bba1d6"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/IntentGauge",
+      "message": "Ignore local data and tool folders that must never be published.",
+      "url": "https://github.com/adagora/IntentGauge/commit/3f519242713efdb6103ad9bd6e1f2678a878f0f5",
+      "private": false,
+      "date": "2026-11-05T17:53:01Z",
+      "sha": "3f51924"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/IntentGauge",
+      "message": "Add an MIT license now that the repository is public.",
+      "url": "https://github.com/adagora/IntentGauge/commit/63c0b16482e825aa36d8dd54c203ada0c66c3c4c",
+      "private": false,
+      "date": "2026-11-05T17:52:47Z",
+      "sha": "63c0b16"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/deskhand",
+      "message": "Bring the write-up and the eval names up to date with the project.",
+      "url": "https://github.com/adagora/deskhand/commit/02492fc665530ec5210c71c44c45f84d465edc9c",
+      "private": false,
+      "date": "2026-11-05T17:47:15Z",
+      "sha": "02492fc"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/deskhand",
+      "message": "Add an MIT license and state it in the README.",
+      "url": "https://github.com/adagora/deskhand/commit/778096728d8cc3fd8111e24a7faac1b87bfeab61",
+      "private": false,
+      "date": "2026-11-05T17:47:13Z",
+      "sha": "7780967"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/deskhand",
+      "message": "Document the sidebar links and the one-command start.",
+      "url": "https://github.com/adagora/deskhand/commit/2cb634872b2e1c662314efc52648584a6d67c8dd",
+      "private": false,
+      "date": "2026-11-05T17:20:33Z",
+      "sha": "2cb6348"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/deskhand",
+      "message": "Start the operator side of Deskhand with one command.",
+      "url": "https://github.com/adagora/deskhand/commit/d605f454ddc805fd0040a38dd41530e8fb1d629e",
+      "private": false,
+      "date": "2026-11-05T17:20:30Z",
+      "sha": "d605f45"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/deskhand",
+      "message": "Link the cockpit sidebar to the Auditline console and the IntentGauge dashboard.",
+      "url": "https://github.com/adagora/deskhand/commit/9ebcc0c1041ffeaeec824a58e6eeef2715ac90a3",
+      "private": false,
+      "date": "2026-11-05T17:20:16Z",
+      "sha": "9ebcc0c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/IntentGauge",
+      "message": "Replace the dashboard recording with three recordings of a live run.",
+      "url": "https://github.com/adagora/IntentGauge/commit/412257447858f516f4430dc55d9b0c08f48f32c7",
+      "private": false,
+      "date": "2026-11-05T17:05:38Z",
+      "sha": "4122574"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/chatbot",
+      "message": "docs: add 2026-11-05 workflow analysis and diagrams",
+      "url": null,
+      "private": true,
+      "date": "2026-11-05T16:50:59Z",
+      "sha": "e51026e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/auditline",
+      "message": "Record the console and the decision receipt on a live run of the help-desk agent.",
+      "url": "https://github.com/adagora/auditline/commit/20f60bd28a45a970e33b9d6b759eb99e92589b9f",
+      "private": false,
+      "date": "2026-11-05T16:43:38Z",
+      "sha": "20f60bd"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/IntentGauge",
+      "message": "Add a recording of the dashboard to the README.",
+      "url": "https://github.com/adagora/IntentGauge/commit/63bd40d33918c6a19705f4caa13110be954b5646",
+      "private": false,
+      "date": "2026-11-05T16:22:43Z",
+      "sha": "63bd40d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/auditline",
+      "message": "Add a recording of the operator console to the README.",
+      "url": "https://github.com/adagora/auditline/commit/39740f2a52f5d32fa94bc6ccf24ae257be7ff63c",
+      "private": false,
+      "date": "2026-11-05T16:22:43Z",
+      "sha": "39740f2"
     }
   ]
 }
