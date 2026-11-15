@@ -1,6 +1,51 @@
 {
-  "generated": "2026-11-14T12:58:18.781Z",
+  "generated": "2026-11-15T13:27:06.629Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Record the baselines with fillets defined at any angle and the radius note",
+      "url": null,
+      "private": true,
+      "date": "2026-11-15T05:03:32Z",
+      "sha": "c32f391"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Count a fillet stored in pieces once",
+      "url": null,
+      "private": true,
+      "date": "2026-11-15T04:40:24Z",
+      "sha": "eed1204"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Take a torus as a fillet only when its tube is its sharper bend; full rounds keep a radius under the note",
+      "url": null,
+      "private": true,
+      "date": "2026-11-15T04:16:59Z",
+      "sha": "0358134"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "State the most common fillet radius in one checked note; define fillets at an angle",
+      "url": null,
+      "private": true,
+      "date": "2026-11-15T04:01:25Z",
+      "sha": "fcb0aac"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Record the timed comparison with draftwright after the frame fix",
+      "url": null,
+      "private": true,
+      "date": "2026-11-15T03:24:06Z",
+      "sha": "3a4389a"
+    },
     {
       "type": "commit",
       "repo": "adagora/rocket-simulator",
@@ -180,51 +225,6 @@
       "private": false,
       "date": "2026-11-05T17:20:16Z",
       "sha": "9ebcc0c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/IntentGauge",
-      "message": "Replace the dashboard recording with three recordings of a live run.",
-      "url": "https://github.com/adagora/IntentGauge/commit/412257447858f516f4430dc55d9b0c08f48f32c7",
-      "private": false,
-      "date": "2026-11-05T17:05:38Z",
-      "sha": "4122574"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/chatbot",
-      "message": "docs: add 2026-11-05 workflow analysis and diagrams",
-      "url": null,
-      "private": true,
-      "date": "2026-11-05T16:50:59Z",
-      "sha": "e51026e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/auditline",
-      "message": "Record the console and the decision receipt on a live run of the help-desk agent.",
-      "url": "https://github.com/adagora/auditline/commit/20f60bd28a45a970e33b9d6b759eb99e92589b9f",
-      "private": false,
-      "date": "2026-11-05T16:43:38Z",
-      "sha": "20f60bd"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/IntentGauge",
-      "message": "Add a recording of the dashboard to the README.",
-      "url": "https://github.com/adagora/IntentGauge/commit/63bd40d33918c6a19705f4caa13110be954b5646",
-      "private": false,
-      "date": "2026-11-05T16:22:43Z",
-      "sha": "63bd40d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/auditline",
-      "message": "Add a recording of the operator console to the README.",
-      "url": "https://github.com/adagora/auditline/commit/39740f2a52f5d32fa94bc6ccf24ae257be7ff63c",
-      "private": false,
-      "date": "2026-11-05T16:22:43Z",
-      "sha": "39740f2"
     }
   ]
 }
