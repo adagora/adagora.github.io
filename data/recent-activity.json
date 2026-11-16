@@ -1,95 +1,95 @@
 {
-  "generated": "2026-11-15T13:27:06.629Z",
+  "generated": "2026-11-16T14:48:10.479Z",
   "items": [
     {
       "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Record the baselines with fillets defined at any angle and the radius note",
+      "repo": "adagora/rocket-simulator",
+      "message": "Wire the open universe into the game",
       "url": null,
       "private": true,
-      "date": "2026-11-15T05:03:32Z",
-      "sha": "c32f391"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Count a fillet stored in pieces once",
-      "url": null,
-      "private": true,
-      "date": "2026-11-15T04:40:24Z",
-      "sha": "eed1204"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Take a torus as a fillet only when its tube is its sharper bend; full rounds keep a radius under the note",
-      "url": null,
-      "private": true,
-      "date": "2026-11-15T04:16:59Z",
-      "sha": "0358134"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "State the most common fillet radius in one checked note; define fillets at an angle",
-      "url": null,
-      "private": true,
-      "date": "2026-11-15T04:01:25Z",
-      "sha": "fcb0aac"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Record the timed comparison with draftwright after the frame fix",
-      "url": null,
-      "private": true,
-      "date": "2026-11-15T03:24:06Z",
-      "sha": "3a4389a"
+      "date": "2026-11-16T14:13:33Z",
+      "sha": "e1f095f"
     },
     {
       "type": "commit",
       "repo": "adagora/rocket-simulator",
-      "message": "Ignore Beads audit and writer artifacts",
+      "message": "Accessibility and performance gates",
       "url": null,
       "private": true,
-      "date": "2026-11-11T00:43:07Z",
-      "sha": "200420a"
+      "date": "2026-11-16T14:13:33Z",
+      "sha": "7322258"
     },
     {
       "type": "commit",
       "repo": "adagora/rocket-simulator",
-      "message": "Record AO performance profiling results",
+      "message": "Open space: travel, ship roles and space combat",
       "url": null,
       "private": true,
-      "date": "2026-11-11T00:27:31Z",
-      "sha": "93fa8f4"
+      "date": "2026-11-16T14:13:33Z",
+      "sha": "b20c7b4"
     },
     {
       "type": "commit",
       "repo": "adagora/rocket-simulator",
-      "message": "Reduce Lumen AO target resolution",
+      "message": "Three Earth worlds: freight, economy, the office, the yard and water",
       "url": null,
       "private": true,
-      "date": "2026-11-11T00:27:06Z",
-      "sha": "0ad9437"
+      "date": "2026-11-16T14:13:33Z",
+      "sha": "9b8ff9a"
     },
     {
       "type": "commit",
       "repo": "adagora/rocket-simulator",
-      "message": "Record private Moving Day review handoff",
+      "message": "A shared universe: the world server, rooms and saves",
       "url": null,
       "private": true,
-      "date": "2026-11-11T00:14:20Z",
-      "sha": "9ab8efd"
+      "date": "2026-11-16T14:13:33Z",
+      "sha": "61e5467"
     },
     {
       "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Add Moving Day graphics review captures",
+      "repo": "adagora/CAD-helpers",
+      "message": "Withdraw record 0001 and raise the bar for decision records; the showcase shows the full app",
       "url": null,
       "private": true,
-      "date": "2026-11-11T00:13:17Z",
-      "sha": "fd54640"
+      "date": "2026-11-16T12:53:08Z",
+      "sha": "c418be2"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Skill selection reports: which agent skills fit this project now",
+      "url": null,
+      "private": true,
+      "date": "2026-11-16T12:49:42Z",
+      "sha": "66bd068"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Beads: showcase link, MCP in code mode, a precision decision, profile of part 203",
+      "url": null,
+      "private": true,
+      "date": "2026-11-16T12:49:42Z",
+      "sha": "c427f39"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "AGENTS.md as a lookup table; goal, principles, decisions and verification as skills",
+      "url": null,
+      "private": true,
+      "date": "2026-11-16T12:48:12Z",
+      "sha": "c1c7bd6"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Decision records start again: the guard passes with none; 0001, a showcase link for prospects",
+      "url": null,
+      "private": true,
+      "date": "2026-11-16T12:46:46Z",
+      "sha": "b87c09a"
     },
     {
       "type": "commit",
