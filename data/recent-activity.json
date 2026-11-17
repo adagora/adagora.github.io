@@ -1,6 +1,60 @@
 {
-  "generated": "2026-11-16T14:48:10.479Z",
+  "generated": "2026-11-17T15:30:24.643Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Add multi-sheet drawings, continuation parts lists, and per-sheet verification (cad-helpers-e-legible-p9w.3)",
+      "url": null,
+      "private": true,
+      "date": "2026-11-17T12:26:07Z",
+      "sha": "3dbd63b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Implement NIST CAD definition PDF reader and three-way checker (cad-helpers-e-reader-zlp.2)",
+      "url": null,
+      "private": true,
+      "date": "2026-11-17T11:48:19Z",
+      "sha": "5adec3d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Ruff: S110 and S112 in the gate; swallowed exceptions are suppress() or named helpers (cad-helpers-e-trust-a44.10, step 2)",
+      "url": null,
+      "private": true,
+      "date": "2026-11-17T08:52:17Z",
+      "sha": "87fb413"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Ruff: flake8-simplify, unused loop variables and strict zips in the gate (cad-helpers-e-trust-a44.10, step 1)",
+      "url": null,
+      "private": true,
+      "date": "2026-11-17T08:49:12Z",
+      "sha": "bb1bb4d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Verified standard parts and AP242 specified source (cad-helpers-e-function-0sa.5)",
+      "url": null,
+      "private": true,
+      "date": "2026-11-17T01:49:36Z",
+      "sha": "46a5213"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "Earth worlds overhaul: site modes, horizon isolation & PBR site kits (md-984)",
+      "url": null,
+      "private": true,
+      "date": "2026-11-16T16:23:44Z",
+      "sha": "1686b16"
+    },
     {
       "type": "commit",
       "repo": "adagora/rocket-simulator",
@@ -36,60 +90,6 @@
       "private": true,
       "date": "2026-11-16T14:13:33Z",
       "sha": "9b8ff9a"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "A shared universe: the world server, rooms and saves",
-      "url": null,
-      "private": true,
-      "date": "2026-11-16T14:13:33Z",
-      "sha": "61e5467"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Withdraw record 0001 and raise the bar for decision records; the showcase shows the full app",
-      "url": null,
-      "private": true,
-      "date": "2026-11-16T12:53:08Z",
-      "sha": "c418be2"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Skill selection reports: which agent skills fit this project now",
-      "url": null,
-      "private": true,
-      "date": "2026-11-16T12:49:42Z",
-      "sha": "66bd068"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Beads: showcase link, MCP in code mode, a precision decision, profile of part 203",
-      "url": null,
-      "private": true,
-      "date": "2026-11-16T12:49:42Z",
-      "sha": "c427f39"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "AGENTS.md as a lookup table; goal, principles, decisions and verification as skills",
-      "url": null,
-      "private": true,
-      "date": "2026-11-16T12:48:12Z",
-      "sha": "c1c7bd6"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Decision records start again: the guard passes with none; 0001, a showcase link for prospects",
-      "url": null,
-      "private": true,
-      "date": "2026-11-16T12:46:46Z",
-      "sha": "b87c09a"
     },
     {
       "type": "commit",
