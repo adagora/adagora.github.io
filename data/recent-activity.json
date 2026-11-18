@@ -1,6 +1,24 @@
 {
-  "generated": "2026-11-17T15:30:24.643Z",
+  "generated": "2026-11-18T15:07:21.829Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "refactor: rename project to GoraBot and modernize CI",
+      "url": "https://github.com/adagora/EternalChat/commit/b402b3e80f2a69aaef8958bfa591fc4cd3cd6d45",
+      "private": false,
+      "date": "2026-11-18T00:18:06Z",
+      "sha": "b402b3e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/EternalChat",
+      "message": "refactor: rename project to GoraMind and update UI",
+      "url": "https://github.com/adagora/EternalChat/commit/1e3c52c57d3817ac0e4dc3b510f287e7ed705442",
+      "private": false,
+      "date": "2026-11-17T23:51:43Z",
+      "sha": "1e3c52c"
+    },
     {
       "type": "commit",
       "repo": "adagora/CAD-helpers",
@@ -207,24 +225,6 @@
       "private": false,
       "date": "2026-11-05T17:20:33Z",
       "sha": "2cb6348"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/deskhand",
-      "message": "Start the operator side of Deskhand with one command.",
-      "url": "https://github.com/adagora/deskhand/commit/d605f454ddc805fd0040a38dd41530e8fb1d629e",
-      "private": false,
-      "date": "2026-11-05T17:20:30Z",
-      "sha": "d605f45"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/deskhand",
-      "message": "Link the cockpit sidebar to the Auditline console and the IntentGauge dashboard.",
-      "url": "https://github.com/adagora/deskhand/commit/9ebcc0c1041ffeaeec824a58e6eeef2715ac90a3",
-      "private": false,
-      "date": "2026-11-05T17:20:16Z",
-      "sha": "9ebcc0c"
     }
   ]
 }
