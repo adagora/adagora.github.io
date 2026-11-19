@@ -1,6 +1,78 @@
 {
-  "generated": "2026-11-18T15:07:21.829Z",
+  "generated": "2026-11-19T15:15:39.010Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Complete drafting requirements epic (reqs-7r1): sections, threads, surface texture, auxiliary views, PMI checks, and DOF certificate",
+      "url": null,
+      "private": true,
+      "date": "2026-11-19T08:50:20Z",
+      "sha": "2e96766"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Add Apache-2.0 Rust engine (wymiar-core, PyO3, WASM), single-parse cache, and dual-kernel verification",
+      "url": null,
+      "private": true,
+      "date": "2026-11-19T08:37:56Z",
+      "sha": "097d30f"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Add first-class mm/in/dual units, 3-file Git build pipeline, build123d bridge, Agent Skills, and CI action (reqs-7r1.12, buildproc-t1v, product-kp7.5)",
+      "url": null,
+      "private": true,
+      "date": "2026-11-19T08:14:45Z",
+      "sha": "f5fed48"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Add Native Code Mode MCP server, dual sandbox, and ADR 0002 HostPolicyProxy (cad-helpers-e-codemode-l9l)",
+      "url": null,
+      "private": true,
+      "date": "2026-11-19T07:59:15Z",
+      "sha": "6b8700c"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Add AutoCAD-native AC1024 DXF writer and verifier (cad-helpers-e-dxf-iri)",
+      "url": null,
+      "private": true,
+      "date": "2026-11-19T07:52:18Z",
+      "sha": "0e274f1"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/columbo-diff",
+      "message": "docs: add KPI dashboard guide and status tags",
+      "url": "https://github.com/adagora/columbo-diff/commit/3f720e54e9fb9aadb6eea564884b57a4ec4d30c3",
+      "private": false,
+      "date": "2026-11-19T00:26:02Z",
+      "sha": "3f720e5"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/columbo-diff",
+      "message": "docs: add and update skill definition files",
+      "url": "https://github.com/adagora/columbo-diff/commit/c808b173af79e891bb21a90eb23a9dc259c1083f",
+      "private": false,
+      "date": "2026-11-18T23:57:13Z",
+      "sha": "c808b17"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/columbo-diff",
+      "message": "Initial commit",
+      "url": "https://github.com/adagora/columbo-diff/commit/9b94b525e1b59745961d64f5e71bc00c590e4e50",
+      "private": false,
+      "date": "2026-11-18T23:56:11Z",
+      "sha": "9b94b52"
+    },
     {
       "type": "commit",
       "repo": "adagora/EternalChat",
@@ -18,51 +90,6 @@
       "private": false,
       "date": "2026-11-17T23:51:43Z",
       "sha": "1e3c52c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Add multi-sheet drawings, continuation parts lists, and per-sheet verification (cad-helpers-e-legible-p9w.3)",
-      "url": null,
-      "private": true,
-      "date": "2026-11-17T12:26:07Z",
-      "sha": "3dbd63b"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Implement NIST CAD definition PDF reader and three-way checker (cad-helpers-e-reader-zlp.2)",
-      "url": null,
-      "private": true,
-      "date": "2026-11-17T11:48:19Z",
-      "sha": "5adec3d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Ruff: S110 and S112 in the gate; swallowed exceptions are suppress() or named helpers (cad-helpers-e-trust-a44.10, step 2)",
-      "url": null,
-      "private": true,
-      "date": "2026-11-17T08:52:17Z",
-      "sha": "87fb413"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Ruff: flake8-simplify, unused loop variables and strict zips in the gate (cad-helpers-e-trust-a44.10, step 1)",
-      "url": null,
-      "private": true,
-      "date": "2026-11-17T08:49:12Z",
-      "sha": "bb1bb4d"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Verified standard parts and AP242 specified source (cad-helpers-e-function-0sa.5)",
-      "url": null,
-      "private": true,
-      "date": "2026-11-17T01:49:36Z",
-      "sha": "46a5213"
     },
     {
       "type": "commit",
@@ -198,33 +225,6 @@
       "private": false,
       "date": "2026-11-05T17:52:47Z",
       "sha": "63c0b16"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/deskhand",
-      "message": "Bring the write-up and the eval names up to date with the project.",
-      "url": "https://github.com/adagora/deskhand/commit/02492fc665530ec5210c71c44c45f84d465edc9c",
-      "private": false,
-      "date": "2026-11-05T17:47:15Z",
-      "sha": "02492fc"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/deskhand",
-      "message": "Add an MIT license and state it in the README.",
-      "url": "https://github.com/adagora/deskhand/commit/778096728d8cc3fd8111e24a7faac1b87bfeab61",
-      "private": false,
-      "date": "2026-11-05T17:47:13Z",
-      "sha": "7780967"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/deskhand",
-      "message": "Document the sidebar links and the one-command start.",
-      "url": "https://github.com/adagora/deskhand/commit/2cb634872b2e1c662314efc52648584a6d67c8dd",
-      "private": false,
-      "date": "2026-11-05T17:20:33Z",
-      "sha": "2cb6348"
     }
   ]
 }
