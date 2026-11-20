@@ -1,50 +1,131 @@
 {
-  "generated": "2026-11-19T15:15:39.010Z",
+  "generated": "2026-11-20T14:54:14.399Z",
   "items": [
     {
       "type": "commit",
       "repo": "adagora/CAD-helpers",
-      "message": "Complete drafting requirements epic (reqs-7r1): sections, threads, surface texture, auxiliary views, PMI checks, and DOF certificate",
+      "message": "Pack studio on the desk: projects, review queue, verdicts, sign-off, revision changes (cad-helpers-e-product-kp7.3, first part)",
       "url": null,
       "private": true,
-      "date": "2026-11-19T08:50:20Z",
-      "sha": "2e96766"
+      "date": "2026-11-20T06:53:55Z",
+      "sha": "462788f"
     },
     {
       "type": "commit",
       "repo": "adagora/CAD-helpers",
-      "message": "Add Apache-2.0 Rust engine (wymiar-core, PyO3, WASM), single-parse cache, and dual-kernel verification",
+      "message": "Pyright in the gate: 65 modules in basic mode, the pure kernels strict (cad-helpers-e-trust-a44.9, first step)",
       "url": null,
       "private": true,
-      "date": "2026-11-19T08:37:56Z",
-      "sha": "097d30f"
+      "date": "2026-11-20T06:45:16Z",
+      "sha": "291bd62"
     },
     {
       "type": "commit",
       "repo": "adagora/CAD-helpers",
-      "message": "Add first-class mm/in/dual units, 3-file Git build pipeline, build123d bridge, Agent Skills, and CI action (reqs-7r1.12, buildproc-t1v, product-kp7.5)",
+      "message": "Read a team's drawings back as wymiar edits; fit their habits per axis (cad-helpers-e-reader-zlp.5)",
       "url": null,
       "private": true,
-      "date": "2026-11-19T08:14:45Z",
-      "sha": "f5fed48"
+      "date": "2026-11-20T06:39:47Z",
+      "sha": "e689b75"
     },
     {
       "type": "commit",
       "repo": "adagora/CAD-helpers",
-      "message": "Add Native Code Mode MCP server, dual sandbox, and ADR 0002 HostPolicyProxy (cad-helpers-e-codemode-l9l)",
+      "message": "Assembly order proven by disassembly, exploded view, fasteners; DrawBench (cad-helpers-e-function-0sa.7, cad-helpers-e-eco-kfk.4)",
       "url": null,
       "private": true,
-      "date": "2026-11-19T07:59:15Z",
-      "sha": "6b8700c"
+      "date": "2026-11-20T06:32:43Z",
+      "sha": "d1c0b3c"
     },
     {
       "type": "commit",
       "repo": "adagora/CAD-helpers",
-      "message": "Add AutoCAD-native AC1024 DXF writer and verifier (cad-helpers-e-dxf-iri)",
+      "message": "Shop memory and CNC operation sheets with a tolerance chart (cad-helpers-e-factory-62x.5, cad-helpers-e-factory-62x.3)",
       "url": null,
       "private": true,
-      "date": "2026-11-19T07:52:18Z",
-      "sha": "0e274f1"
+      "date": "2026-11-20T06:25:53Z",
+      "sha": "4a0c65e"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/auditline",
+      "message": "Sync custom workflow dashboard and monitoring READMEs with PII vault and hot-reload alerts",
+      "url": "https://github.com/adagora/auditline/commit/443a64d770653ff0858b65de93bb2861ee3cb470",
+      "private": false,
+      "date": "2026-11-19T22:27:18Z",
+      "sha": "443a64d"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/auditline",
+      "message": "Add atomic gateway hot-reload, PII/reload alerting metrics and reproducible flake.nix",
+      "url": "https://github.com/adagora/auditline/commit/56d742b621c47fd363509480ce2f759929fd6b44",
+      "private": false,
+      "date": "2026-11-19T22:25:04Z",
+      "sha": "56d742b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/auditline",
+      "message": "Add console case correlation, PII telemetry, qualify/authority CLI and policy/PII fuzz targets",
+      "url": "https://github.com/adagora/auditline/commit/bb76967293a62ccd5002d23e9c9ae3e60ef22f73",
+      "private": false,
+      "date": "2026-11-19T22:04:17Z",
+      "sha": "bb76967"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/IntentGauge",
+      "message": "Add first-class Auditline verifier, assertions, dashboard links and red-team cases",
+      "url": "https://github.com/adagora/IntentGauge/commit/28ae5ec0f7fb59c29c0db1048d1935313ae80e03",
+      "private": false,
+      "date": "2026-11-19T22:04:03Z",
+      "sha": "28ae5ec"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/deskhand",
+      "message": "Fix Auditline integration bugs, anchor health, prompt/tool accuracy and CI coverage",
+      "url": "https://github.com/adagora/deskhand/commit/f22beac5f9a113a6b6b266ad8ce6d7372e40f02c",
+      "private": false,
+      "date": "2026-11-19T22:04:03Z",
+      "sha": "f22beac"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/IntentGauge",
+      "message": "Link CityWheels live trials to verified Auditline gateway logs",
+      "url": "https://github.com/adagora/IntentGauge/commit/d57135a0433bbbca7d273154716da60661fae6c5",
+      "private": false,
+      "date": "2026-11-19T21:38:56Z",
+      "sha": "d57135a"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/deskhand",
+      "message": "Migrate refund policy to native Auditline format and add three-app PII-vault demo",
+      "url": "https://github.com/adagora/deskhand/commit/d45a7ebd8507682975a78be6c553d622e03c624f",
+      "private": false,
+      "date": "2026-11-19T21:38:56Z",
+      "sha": "d45a7eb"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "refactor: add ledger-dead invariant and dev scripts",
+      "url": null,
+      "private": true,
+      "date": "2026-11-19T19:57:01Z",
+      "sha": "895eeb0"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "wip",
+      "url": null,
+      "private": true,
+      "date": "2026-11-19T16:27:28Z",
+      "sha": "62c1d5a"
     },
     {
       "type": "commit",
@@ -72,6 +153,42 @@
       "private": false,
       "date": "2026-11-18T23:56:11Z",
       "sha": "9b94b52"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/diff-explain",
+      "message": "chore: remove the Go reference tree and record the no-comments rule",
+      "url": "https://github.com/adagora/diff-explain/commit/ac8fb9730c48b59241182e1666c5840701cbf339",
+      "private": false,
+      "date": "2026-11-18T13:51:35Z",
+      "sha": "ac8fb97"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/diff-explain",
+      "message": "docs: record Apache-2.0 derivation and upstream attribution",
+      "url": "https://github.com/adagora/diff-explain/commit/8004b6709d8e2c7f899d68946a0944e2e0aa8470",
+      "private": false,
+      "date": "2026-11-18T13:47:49Z",
+      "sha": "8004b67"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/diff-explain",
+      "message": "Merge origin/main: combine setup, doctor, and observe with the columbo workflow",
+      "url": "https://github.com/adagora/diff-explain/commit/810683bdcace464d1dbc9f007f404ac425c3ba78",
+      "private": false,
+      "date": "2026-11-18T13:38:54Z",
+      "sha": "810683b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/diff-explain",
+      "message": "feat: rename the workflow to columbo",
+      "url": "https://github.com/adagora/diff-explain/commit/ef9160ddd7924079043c7e3d16659ec2cc4a882d",
+      "private": false,
+      "date": "2026-11-18T13:25:24Z",
+      "sha": "ef9160d"
     },
     {
       "type": "commit",
@@ -108,123 +225,6 @@
       "private": true,
       "date": "2026-11-16T14:13:33Z",
       "sha": "e1f095f"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Accessibility and performance gates",
-      "url": null,
-      "private": true,
-      "date": "2026-11-16T14:13:33Z",
-      "sha": "7322258"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Open space: travel, ship roles and space combat",
-      "url": null,
-      "private": true,
-      "date": "2026-11-16T14:13:33Z",
-      "sha": "b20c7b4"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Three Earth worlds: freight, economy, the office, the yard and water",
-      "url": null,
-      "private": true,
-      "date": "2026-11-16T14:13:33Z",
-      "sha": "9b8ff9a"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ideas",
-      "message": "add mechanics",
-      "url": null,
-      "private": true,
-      "date": "2026-11-08T20:36:58Z",
-      "sha": "bd2bd43"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/ideas",
-      "message": "Publish generated Idea Atlas game ideas.",
-      "url": null,
-      "private": true,
-      "date": "2026-11-08T20:25:17Z",
-      "sha": "7e37d7c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/atlas-game",
-      "message": "Show saved mechanic checks in the web app.",
-      "url": null,
-      "private": true,
-      "date": "2026-11-08T17:07:13Z",
-      "sha": "ff140ac"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/auditline",
-      "message": "Add scoped encrypted PII token vault",
-      "url": "https://github.com/adagora/auditline/commit/02923eb593a1f1bf8ad6f0b71f9f8c758cf1b21c",
-      "private": false,
-      "date": "2026-11-06T22:45:19Z",
-      "sha": "02923eb"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/okazje",
-      "message": "Complete the card map and merge earlier idea lists into one ranking.",
-      "url": null,
-      "private": true,
-      "date": "2026-11-06T10:59:21Z",
-      "sha": "d967ef6"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/auditline",
-      "message": "Pin policy interpreter code and gate fresh uncontradicted evidence",
-      "url": "https://github.com/adagora/auditline/commit/e631e4a1dd46cc60a4b06cd7989d89bbd5281a38",
-      "private": false,
-      "date": "2026-11-06T00:07:59Z",
-      "sha": "e631e4a"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/auditline",
-      "message": "Replace Quinelings SDK with native bounded policy engine",
-      "url": "https://github.com/adagora/auditline/commit/01c35206e034e860653cd4caa5028717ba698377",
-      "private": false,
-      "date": "2026-11-05T23:36:58Z",
-      "sha": "01c3520"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/okazje",
-      "message": "Rank generated business ideas on the national map and show them in the web app.",
-      "url": null,
-      "private": true,
-      "date": "2026-11-05T21:36:25Z",
-      "sha": "4bba1d6"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/IntentGauge",
-      "message": "Ignore local data and tool folders that must never be published.",
-      "url": "https://github.com/adagora/IntentGauge/commit/3f519242713efdb6103ad9bd6e1f2678a878f0f5",
-      "private": false,
-      "date": "2026-11-05T17:53:01Z",
-      "sha": "3f51924"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/IntentGauge",
-      "message": "Add an MIT license now that the repository is public.",
-      "url": "https://github.com/adagora/IntentGauge/commit/63c0b16482e825aa36d8dd54c203ada0c66c3c4c",
-      "private": false,
-      "date": "2026-11-05T17:52:47Z",
-      "sha": "63c0b16"
     }
   ]
 }
