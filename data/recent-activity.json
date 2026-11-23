@@ -1,50 +1,95 @@
 {
-  "generated": "2026-11-22T14:02:25.982Z",
+  "generated": "2026-11-23T17:23:57.972Z",
   "items": [
     {
       "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "message": "Pack studio on the desk: projects, review queue, verdicts, sign-off, revision changes (cad-helpers-e-product-kp7.3, first part)",
+      "repo": "adagora/rocket-simulator",
+      "message": "working on perf, domains",
       "url": null,
       "private": true,
-      "date": "2026-11-20T06:53:55Z",
-      "sha": "462788f"
+      "date": "2026-11-23T10:41:21Z",
+      "sha": "abdff0e"
     },
     {
       "type": "commit",
       "repo": "adagora/CAD-helpers",
-      "message": "Pyright in the gate: 65 modules in basic mode, the pure kernels strict (cad-helpers-e-trust-a44.9, first step)",
+      "message": "Zero-clash layout & RustGrid perimeter-rail inspection balloons (53h.4)",
       "url": null,
       "private": true,
-      "date": "2026-11-20T06:45:16Z",
-      "sha": "291bd62"
+      "date": "2026-11-23T08:54:40Z",
+      "sha": "887e606"
     },
     {
       "type": "commit",
       "repo": "adagora/CAD-helpers",
-      "message": "Read a team's drawings back as wymiar edits; fit their habits per axis (cad-helpers-e-reader-zlp.5)",
+      "message": "Add branded Polish/EU PDF quotations, Karta Technologiczna routing cards & ERP/CAM export (3onb.4)",
       "url": null,
       "private": true,
-      "date": "2026-11-20T06:39:47Z",
-      "sha": "e689b75"
+      "date": "2026-11-23T05:35:36Z",
+      "sha": "808eba9"
     },
     {
       "type": "commit",
       "repo": "adagora/CAD-helpers",
-      "message": "Assembly order proven by disassembly, exploded view, fasteners; DrawBench (cad-helpers-e-function-0sa.7, cad-helpers-e-eco-kfk.4)",
+      "message": "Promote unified React SPA to / on local metrology serve with full legacy parity (cg1.2)",
       "url": null,
       "private": true,
-      "date": "2026-11-20T06:32:43Z",
-      "sha": "d1c0b3c"
+      "date": "2026-11-23T05:19:08Z",
+      "sha": "ab6ca31"
     },
     {
       "type": "commit",
       "repo": "adagora/CAD-helpers",
-      "message": "Shop memory and CNC operation sheets with a tolerance chart (cad-helpers-e-factory-62x.5, cad-helpers-e-factory-62x.3)",
+      "message": "Harden independent verifier, add split/entry ACAD_TABLE, and slash unwitnessed curved-face numbers (2dp8.3)",
       "url": null,
       "private": true,
-      "date": "2026-11-20T06:25:53Z",
-      "sha": "4a0c65e"
+      "date": "2026-11-23T04:58:48Z",
+      "sha": "b2dbc77"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "message": "Auto-wire verified ISO 6410 cosmetic threads and ISO 21920 surface texture symbols (53h.8)",
+      "url": null,
+      "private": true,
+      "date": "2026-11-23T03:44:22Z",
+      "sha": "d19df61"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "feat(p7): 20Hz co-op delta sync, cross-site Vance memory, 14-site globe & ./md verify-2.0 gate",
+      "url": null,
+      "private": true,
+      "date": "2026-11-21T00:49:33Z",
+      "sha": "ebc768b"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "feat(p6): Bend 2 machine-checked Moving Day 2.0 proofs & 10,000-case differential fuzzing",
+      "url": null,
+      "private": true,
+      "date": "2026-11-21T00:42:31Z",
+      "sha": "1aa5c57"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "feat(p4): CIVIC-OS 2.0 dynamic anchors, Helbing-Molnar social force, Pearl causal DAG & P4 proof suite",
+      "url": null,
+      "private": true,
+      "date": "2026-11-21T00:40:26Z",
+      "sha": "5351916"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/rocket-simulator",
+      "message": "feat(p3.5.3-5.6): live Counter-Doctrine, 3D decoy cams, orbiting debris shell & P3 proof suite",
+      "url": null,
+      "private": true,
+      "date": "2026-11-21T00:37:42Z",
+      "sha": "91ba356"
     },
     {
       "type": "commit",
@@ -108,24 +153,6 @@
       "private": false,
       "date": "2026-11-19T21:38:56Z",
       "sha": "d45a7eb"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "refactor: add ledger-dead invariant and dev scripts",
-      "url": null,
-      "private": true,
-      "date": "2026-11-19T19:57:01Z",
-      "sha": "895eeb0"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "wip",
-      "url": null,
-      "private": true,
-      "date": "2026-11-19T16:27:28Z",
-      "sha": "62c1d5a"
     },
     {
       "type": "commit",
@@ -198,33 +225,6 @@
       "private": false,
       "date": "2026-11-18T00:18:06Z",
       "sha": "b402b3e"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/EternalChat",
-      "message": "refactor: rename project to GoraMind and update UI",
-      "url": "https://github.com/adagora/EternalChat/commit/1e3c52c57d3817ac0e4dc3b510f287e7ed705442",
-      "private": false,
-      "date": "2026-11-17T23:51:43Z",
-      "sha": "1e3c52c"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Earth worlds overhaul: site modes, horizon isolation & PBR site kits (md-984)",
-      "url": null,
-      "private": true,
-      "date": "2026-11-16T16:23:44Z",
-      "sha": "1686b16"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/rocket-simulator",
-      "message": "Wire the open universe into the game",
-      "url": null,
-      "private": true,
-      "date": "2026-11-16T14:13:33Z",
-      "sha": "e1f095f"
     }
   ]
 }
