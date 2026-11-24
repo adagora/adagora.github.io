@@ -64,6 +64,14 @@ const cvStack = (item) => {
   return stack.length ? `<span class="cv-stack">${stack.map((name) => `<span class="stack-badge">${esc(name)}</span>`).join(' ')}</span>` : '';
 };
 const external = (url, label, cls = 'link-arrow') => `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} <span aria-hidden="true">↗</span></a>`;
+const linkLabel = (l, lang = 'en') => t(l?.label, lang);
+const RENDER_NOTE = 'Render free tier: first load may take ~30-60\u00a0s';
+const isRenderUrl = (url) => /onrender\.com/i.test(String(url || ''));
+function renderLink(l, cls = 'link-arrow') {
+  const a = external(l.url, linkLabel(l), cls);
+  if (!isRenderUrl(l.url)) return a;
+  return `${a}<span class="cold-start">${esc(RENDER_NOTE)}</span>`;
+}
 
 function sectionHead(num, kicker, title, lede) {
   return `<header class="section-head">
@@ -89,6 +97,18 @@ function validate(p) {
     if (pr.visibility === 'private' && pr.links?.some((l) => l.url.includes('github.com/adagora'))) {
       errors.push(`${pr.id}: private project links to its repo; visitors would get a 404`);
     }
+    if (pr.media != null) {
+      if (typeof pr.media.url !== 'string' || !/^https:\/\//.test(pr.media.url)) errors.push(`${pr.id}: media.url must be https`);
+      if (typeof pr.media.alt !== 'string' || !pr.media.alt.trim()) errors.push(`${pr.id}: media.alt is required`);
+      if (pr.visibility === 'private' && /github\.com\/[^/]+\/[^/]+/.test(pr.media.url || '')) {
+        errors.push(`${pr.id}: private project media must not point at a GitHub repository`);
+      }
+    }
+  }
+  for (const item of p.alsoLive || []) {
+    if (!item.url || !/^https:\/\//.test(item.url)) errors.push('alsoLive: https url required');
+    if (String(item.url || '').includes('github.com/')) errors.push(`alsoLive must not link a repository: ${item.url}`);
+    if (!t(item.name) || !t(item.summary)) errors.push('alsoLive: name and summary required');
   }
   const anchors = new Set(['#delivery', '#activity', '#projects', '#experience', '#background', '#experience-automotive', ...p.work.filter((w) => w.group !== 'cad').map((w) => `#experience-${w.id}`), ...p.projects.map((x) => `#project-${x.id}`)]);
   for (const x of p.about.route) if (!anchors.has(x.href)) errors.push(`about "${x.title}": href ${x.href} matches no section`);
@@ -98,7 +118,11 @@ function validate(p) {
 
 function collectUrls(p) {
   const urls = new Set([p.basics.url, ...p.basics.profiles.map((x) => x.url)]);
-  for (const pr of p.projects) for (const l of pr.links || []) urls.add(l.url);
+  for (const pr of p.projects) {
+    for (const l of pr.links || []) urls.add(l.url);
+    if (pr.media?.url) urls.add(pr.media.url);
+  }
+  for (const item of p.alsoLive || []) if (item.url) urls.add(item.url);
   return [...urls];
 }
 
@@ -240,17 +264,20 @@ function siteRegions(p) {
     const credit = pr.credit ? `<p class="credit">${esc(pr.credit).replace(/`([^`]+)`/g, '<code>$1</code>')}</p>` : '';
     // Public code is the norm here, so only the exceptions carry a badge.
     const badge = pr.visibility === 'public' ? '' : `<span class="badge">${pr.links?.length ? 'Live demo · private code' : 'Private repo'}</span>`;
+    const media = pr.media?.url
+      ? `\n          <img class="project-media" src="${esc(pr.media.url)}" alt="${esc(pr.media.alt || '')}" loading="lazy" decoding="async" />`
+      : '';
     return `<article id="project-${pr.id}" class="project project--${size}">
           <div class="project-head">
             ${badge}
             <h3>${esc(t(pr.name))}</h3>
           </div>
-          <p class="project-summary">${esc(t(pr.summary))}</p>
+          <p class="project-summary">${esc(t(pr.summary))}</p>${media}
           ${pr.metrics ? `<dl class="metrics">${pr.metrics.map((m) => `<div><dt>${esc(m.value)}</dt><dd>${esc(m.label)}</dd></div>`).join('')}</dl>` : ''}
           ${bullets ? `<details class="fold"><summary>How it works</summary>${bullets}${credit}</details>` : credit}
           <div class="project-foot">
             ${chips(pr.stack)}
-            ${(pr.links || []).map((l) => external(l.url, l.label)).join('')}
+            ${(pr.links || []).map((l) => renderLink(l)).join('')}
           </div>
         </article>`;
   };
@@ -260,8 +287,8 @@ function siteRegions(p) {
       ${sectionHead('02', 'Selected projects', 'Projects you can check',
         'Each one links to its code or a running demo. Private repositories and additional projects are folded below.')}
       <div class="projects-featured">
-        ${featured.map((pr, i) => projectCard(pr, i < 2 ? 'xl' : 'md')).join('\n        ')}
-      </div>
+        ${featured.map((pr, i) => projectCard(pr, i < 2 || pr.media ? 'xl' : 'md')).join('\n        ')}
+      </div>${alsoLiveBlock(p)}
       <details class="more-projects">
         <summary><span class="more-title">More projects</span><span class="more-meta">${priv.length} private repositories · ${earlier.length} additional projects</span></summary>
         <h3 class="subhead">Private repositories, shown on a call</h3>
@@ -270,7 +297,7 @@ function siteRegions(p) {
         </div>
         <h3 class="subhead">Additional projects</h3>
         <ul class="earlier">
-          ${earlier.map((pr) => `<li><a href="${esc(pr.links[0].url)}" target="_blank" rel="noopener">${esc(t(pr.name))}</a><span class="earlier-sum">${esc(t(pr.summary))}${pr.links.slice(1).map((l) => ` ${external(l.url, l.label, '')}`).join('')}</span><span class="earlier-stack">${esc(pr.stack.join(' · '))}</span></li>`).join('\n          ')}
+          ${earlier.map((pr) => `<li><a href="${esc(pr.links[0].url)}" target="_blank" rel="noopener">${esc(t(pr.name))}</a><span class="earlier-sum">${esc(t(pr.summary))}${pr.links.slice(1).map((l) => ` ${renderLink(l, '')}`).join('')}</span><span class="earlier-stack">${esc(pr.stack.join(' · '))}</span></li>`).join('\n          ')}
         </ul>
       </details>
     </section>`;
@@ -285,7 +312,7 @@ function siteRegions(p) {
           <div class="tl-when">${esc(range(current.startDate, current.endDate, 'en', L))}</div>
           <div class="tl-body">
             <h3>${esc(current.position)} <span class="at">${esc(current.company)}</span></h3>
-            <p class="tl-note">${esc(t(current.summary))} Five internal AI tools, described in <a href="#delivery">Shipped at ${esc(current.company)}</a>.</p>
+            <p class="tl-note">${esc(t(current.summary))} <a href="#delivery">The five tools</a>.</p>
           </div>
         </li>
         ${others.map((w) => `<li id="experience-${w.id}" class="tl-item">
@@ -362,7 +389,199 @@ function siteRegions(p) {
     <span class="footer-links"><a href="${mail}">Email</a>${b.profiles.map((x) => external(x.url, x.network, '')).join('')}</span>
   </footer>`;
 
-  return { head, hero, about, delivery, projects, experience, skills, background, recruiters, footer };
+  return { head, hero, about, delivery, projects, experience, skills, activity: activitySection(), background, recruiters, footer };
+}
+
+function alsoLiveBlock(p) {
+  const items = p.alsoLive || [];
+  if (!items.length) return '';
+  return `
+      <div class="also-live">
+        <h3 class="also-live-title">Also live <span lang="pl">także na żywo</span></h3>
+        <ul class="also-live-list">
+          ${items.map((item) => `<li><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(t(item.name))} <span aria-hidden="true">↗</span></a><span class="also-live-sum">${esc(t(item.summary))}</span></li>`).join('\n          ')}
+        </ul>
+      </div>`;
+}
+
+function readJson(rel) {
+  try { return JSON.parse(fs.readFileSync(abs(rel), 'utf8')); }
+  catch { return null; }
+}
+
+const HEAT_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+function heatLevel(count) {
+  const stops = [0, 1, 3, 6, Infinity];
+  return Math.min(4, stops.findIndex((n) => count <= n));
+}
+function fmtIso(iso) {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  return `${d.getUTCDate()} ${HEAT_MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+}
+function grouped(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+
+function heatmapCells(days) {
+  const keys = Object.keys(days || {}).filter((k) => /^\d{4}-\d{2}-\d{2}$/.test(k)).sort();
+  if (!keys.length) return [];
+  const start = new Date(`${keys[0]}T00:00:00Z`);
+  const end = new Date(`${keys[keys.length - 1]}T00:00:00Z`);
+  const aligned = new Date(start);
+  aligned.setUTCDate(aligned.getUTCDate() - aligned.getUTCDay());
+  const cells = [];
+  for (let d = new Date(aligned); d.getTime() <= end.getTime(); d.setUTCDate(d.getUTCDate() + 1)) {
+    const key = d.toISOString().slice(0, 10);
+    if (key < keys[0]) cells.push({ pad: true });
+    else cells.push({ key, count: days[key] || 0, level: heatLevel(days[key] || 0) });
+  }
+  while (cells.length % 7 !== 0) cells.push({ pad: true });
+  return cells;
+}
+
+function capFeed(items, maxPerRepo = 2, limit = 25) {
+  const sorted = [...(items || [])].sort((a, b) => new Date(b.date) - new Date(a.date));
+  const seen = new Set();
+  const counts = new Map();
+  const out = [];
+  for (const item of sorted) {
+    const key = item.sha ? `sha:${item.sha}` : `${item.type || 'commit'}|${item.repo}|${item.date}|${item.message || item.title || ''}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const repo = item.repo || '';
+    const n = counts.get(repo) || 0;
+    if (n >= maxPerRepo) continue;
+    counts.set(repo, n + 1);
+    out.push(item);
+    if (out.length >= limit) break;
+  }
+  return out;
+}
+
+const ICON_COMMIT = '<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5H11.93zm-3.93-2.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>';
+const ICON_PR = '<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854v2.396h.775c1.766 0 3.225 1.312 3.225 2.93v3.188a2.251 2.251 0 1 1-1.5 0V6.18c0-.552-.492-.854-1.225-.854H10v2.396a.25.25 0 0 1-.427.177L7.177 5.427a.25.25 0 0 1 0-.354z"/></svg>';
+
+function activitySection() {
+  const stats = readJson('data/commit-stats.json');
+  const feed = readJson('data/recent-activity.json');
+  const days = stats?.days && typeof stats.days === 'object' ? stats.days : {};
+  const cells = heatmapCells(days);
+  const dayKeys = Object.keys(days).sort();
+  const total = dayKeys.reduce((sum, key) => sum + (Number(days[key]) || 0), 0);
+  const months = new Map();
+  for (const key of dayKeys) {
+    const month = key.slice(0, 7);
+    months.set(month, (months.get(month) || 0) + (Number(days[key]) || 0));
+  }
+  const weeks = Math.max(1, cells.length / 7);
+  const monthLabels = [];
+  let lastMonth = -1;
+  for (let i = 0; i < cells.length; i += 7) {
+    const sample = cells.slice(i, i + 7).find((c) => !c.pad);
+    if (!sample) continue;
+    const month = Number(sample.key.slice(5, 7)) - 1;
+    if (month !== lastMonth) {
+      monthLabels.push({ col: i / 7 + 1, text: HEAT_MONTHS[month] });
+      lastMonth = month;
+    }
+  }
+  const grid = cells.map((c) => c.pad
+    ? '<span class="heat-cell heat-cell--pad"></span>'
+    : `<span class="heat-cell l${c.level}" title="${esc(`${c.key}: ${c.count} commit${c.count === 1 ? '' : 's'}`)}"></span>`).join('');
+  const monthRow = monthLabels.map((m) => `<span style="grid-column:${m.col}">${m.text}</span>`).join('');
+  const monthTable = [...months].map(([month, count]) => {
+    const [y, m] = month.split('-');
+    const label = `${HEAT_MONTHS[Number(m) - 1]} ${y}`;
+    return `<tr><th scope="row">${label}</th><td>${grouped(count)}</td></tr>`;
+  }).join('');
+  const range = dayKeys.length ? `${fmtIso(dayKeys[0])} to ${fmtIso(dayKeys[dayKeys.length - 1])}` : 'the recorded period';
+  const generated = feed?.generated || stats?.generated;
+  const items = capFeed(feed?.items);
+  assertActivitySafe(items);
+  const rows = items.map((item) => {
+    const isPr = item.type === 'pr';
+    const text = esc(isPr ? item.title : item.message);
+    const isPrivate = item.private === true;
+    const url = !isPrivate && typeof item.url === 'string' && item.url.startsWith('https://') ? item.url : '';
+    const title = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${text}</a>` : text;
+    const repo = esc(String(item.repo || '').replace(/^adagora\//, ''));
+    const day = String(item.date || '').slice(0, 10);
+    const dayCount = Number(days[day]);
+    const countBit = Number.isFinite(dayCount) ? `<span>${grouped(dayCount)} that day</span>` : '';
+    return `<div class="shipstream-item">
+          <span class="shipstream-icon ${isPr ? 'pr' : 'commit'}">${isPr ? ICON_PR : ICON_COMMIT}</span>
+          <div>
+            <div class="shipstream-title">${title}</div>
+            <div class="shipstream-meta">
+              <span>${repo}</span>
+              ${isPr ? '<span class="shipstream-badge merged">merged</span>' : ''}
+              ${isPrivate ? '<span class="shipstream-badge private">private repo</span>' : ''}
+              <span>${esc(fmtIso(item.date))}</span>
+              ${countBit}
+            </div>
+          </div>
+        </div>`;
+  }).join('\n        ');
+  const hidden = rows ? '' : '<div class="shipstream-empty">No recent commits in the latest snapshot. <a href="https://github.com/adagora?tab=overview">View public activity on GitHub</a>.</div>';
+
+  const html = `
+    <section id="activity" class="section" data-static="true">
+      <header class="section-head">
+        <p class="kicker"><span class="sheet">05</span>Proof of work</p>
+        <h2>Commit activity</h2>
+        <p class="lede">Every commit across public and private repositories over the recorded period, refreshed daily by a GitHub Action. Private repositories contribute the date, the day's count, the repository name and the commit headline only.</p>
+      </header>
+      <div class="panel graph-panel">
+        <div class="graph-header">
+          <span class="graph-title">Commit log</span>
+          <span class="graph-total"><strong>${grouped(total)}</strong> commits in the recorded period</span>
+        </div>
+        <p class="graph-hint" id="graph-hint">One cell is one day. Darker cells are busier days.</p>
+        <div class="heatmap" style="--weeks:${weeks}" role="img" aria-label="Daily commits from ${esc(range)}">
+          <div class="heatmap-months" aria-hidden="true">${monthRow}</div>
+          <div class="heatmap-dow" aria-hidden="true"><span></span><span>Mon</span><span></span><span>Wed</span><span></span><span>Fri</span><span></span></div>
+          <div class="heatmap-grid" aria-hidden="true">${grid}</div>
+        </div>
+        <div class="graph-legend">
+          <span>Less</span>
+          <span class="swatch l0"></span><span class="swatch l1"></span><span class="swatch l2"></span><span class="swatch l3"></span><span class="swatch l4"></span>
+          <span>More</span>
+          ${stats?.repoCount ? `<span class="graph-source">across ${esc(String(stats.repoCount))} repositories</span>` : ''}
+        </div>
+        <p id="graph-summary" role="status">${grouped(total)} commits from ${esc(range)}. Includes public and private repositories; monthly totals below.</p>
+        <details class="monthly-activity"><summary>Monthly totals</summary><table><caption>Commits by month, including partial months</caption><thead><tr><th scope="col">Month</th><th scope="col">Commits</th></tr></thead><tbody>${monthTable}</tbody></table></details>
+      </div>
+      <div class="panel shipstream">
+        <div class="shipstream-head">
+          <h3>Recent work</h3>
+          <span class="shipstream-footer">${generated ? `Updated ${esc(fmtIso(generated))} by a GitHub Action` : ''}</span>
+        </div>
+        <div class="shipstream-feed" id="shipstream-feed" data-static="true">
+          ${rows || hidden}
+        </div>
+      </div>
+    </section>`;
+  const hrefs = [...html.matchAll(/href="([^"]*)"/g)].map((m) => m[1].replace(/&amp;/g, '&'));
+  for (const item of items) {
+    if (item.private !== true || !item.repo) continue;
+    if (hrefs.some((href) => href.includes(`github.com/${item.repo}`))) {
+      throw new Error(`activity HTML links private repo ${item.repo}`);
+    }
+  }
+  return html;
+}
+
+function assertActivitySafe(items) {
+  const htmlProbe = JSON.stringify(items);
+  for (const item of items) {
+    if (item.private !== true) continue;
+    if (item.url) throw new Error(`activity item for private repo ${item.repo} still has a url`);
+    if (item.repo && htmlProbe.includes(`github.com/${item.repo}`)) {
+      throw new Error(`activity data links private repo ${item.repo}`);
+    }
+    for (const key of ['files', 'patch', 'diff', 'filename']) {
+      if (key in item) throw new Error(`activity item exposes ${key}`);
+    }
+  }
 }
 
 function fillRegions(html, regions) {
@@ -545,13 +764,13 @@ function cvMarkdown(p, lang, variant) {
     if (pr.bullets && lang === 'en') { for (const x of pr.bullets) push(`- ${x}`); push(''); }
     if (pr.credit && lang === 'en') push(`Credit: ${pr.credit.replace(/`/g, '')}`, '');
     push(`Stack: ${pr.stack.join(', ')}`);
-    if (pr.links) push(`${pr.visibility === 'public' ? 'Code' : pr.links[0].label}: ${pr.links[0].url}`);
+    if (pr.links) push(`${pr.visibility === 'public' ? 'Code' : linkLabel(pr.links[0], lang)}: ${pr.links[0].url}`);
     push('');
   }
   push(`### ${lang === 'pl' ? 'Prywatne repozytoria (kod do pokazania na rozmowie)' : 'Private repositories (code shown on request)'}`, '');
   for (const pr of p.projects.filter((x) => x.tier === 'private')) push(`- ${t(pr.name, lang)}: ${t(pr.summary, lang)} (${pr.stack.join(', ')})`);
   push('', `### ${lang === 'pl' ? 'Dodatkowe projekty' : 'Additional projects'}`, '');
-  for (const pr of p.projects.filter((x) => x.tier === 'earlier')) push(`- [${t(pr.name)}](${pr.links[0].url}): ${t(pr.summary)} (${pr.stack.join(', ')})${pr.links.slice(1).map((l) => ` ${l.label}: ${l.url}`).join('')}`);
+  for (const pr of p.projects.filter((x) => x.tier === 'earlier')) push(`- [${t(pr.name, lang)}](${pr.links[0].url}): ${t(pr.summary, lang)} (${pr.stack.join(', ')})${pr.links.slice(1).map((l) => ` ${linkLabel(l, lang)}: ${l.url}`).join('')}`);
   push('');
 
   push(`## ${L.earlierExperience}`, '');

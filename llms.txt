@@ -4,7 +4,7 @@
 
 Key facts:
 
-- Most recent role: AI Engineer at Wiśniowski, Feb 2025 – Oct 2026. Internal AI tools for a Polish manufacturer of industrial doors, gates and fences.
+- Most recent role: AI Engineer at Wiśniowski, Feb 2025 – Oct 2026. Internal AI tools for a Polish manufacturer of industrial doors, gates and fences. The RAG assistant reached production; process-route analytics stayed a prototype.
 - Built there: Company-wide RAG assistant; Microsoft Teams meeting pipeline; AI translation portal; Process-route analytics; AI interviews for process improvement.
 - Earlier: four years of TypeScript and React (fintech, web3, React Native), three and a half years of automotive CAD engineering (CATIA V5, NX, GD&T, D-FMEA).
 - Path: 2017–2020: Automotive; 2020–present: Software & AI.
@@ -23,9 +23,12 @@ Key facts:
 ## Selected projects
 
 - [PDF-Insight: validated document extraction](https://github.com/adagora/PDF-Insight): Inspects PDFs locally, redacts sensitive text and extracts summaries, parties, amounts and dates as validated JSON. Shared Zod schemas connect the React frontend, Cloudflare Worker and Gemini responses. Results: 298 (unit, contract and property tests documented in the repository); 29.1 s (p95 across 20 public uploads in the 6 October 2026 benchmark).
-- [Cairn: process-route analysis](https://manufacturing-tool.onrender.com/) (live demo, code private): Shows where work waits, where it loops back and which routing choice succeeded more often once the mix of work is held fixed. Every number opens into the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.
+- [Cairn: process-route analysis](https://manufacturing-tool.onrender.com/) (live demo, code private): Finds where work waits, where it loops, and which route did better on a comparable set of jobs. Every number says how many jobs it comes from and opens the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.
 - [VisualRAG](https://github.com/adagora/visualRAG): Searches technical PDFs using page images and BM25 text retrieval, then answers with citations to source pages.
 - [ai-audit: audit proxy for LLM APIs](https://github.com/adagora/ai-audit): Local proxy for OpenAI and Anthropic APIs. Detects secrets and personal data, redacts sensitive content or blocks requests, and records calls in a hash-chained audit log.
+- [loop-me: employee interviews](https://takt-view.ai.studio/) (live demo, code private): Agent interviews employees and produces automation specifications with ROI estimates.
+- [IntentGauge: evaluation evidence](https://github.com/adagora/IntentGauge): Regression-tested evals for agent behaviour: live runs, case libraries, human review with agreement, and evidence views.
+- [deskhand: helpdesk agent](https://github.com/adagora/deskhand): Helpdesk agent with a reviewer cockpit: approve a refund, replay the decision, inspect cases and health.
 
 ## Optional
 

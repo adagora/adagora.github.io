@@ -92,15 +92,15 @@ h2 { break-after: avoid; }
 
   <section>
     <h2>Profile</h2>
-    <p class="summary">AI Engineer with experience building internal tools at Wiśniowski for document search, translation, meeting reports and production analysis. Previously developed software mainly in fintech.</p>
+    <p class="summary">Software engineer since 2020. At Wiśniowski I shipped a production RAG assistant over technical PDFs and built tools for meeting reports, translation and process routes; before that, mainly fintech, including sanction screening on a regulated application.</p>
   </section>
 
   <section>
     <h2>Experience</h2>
     <div class="job">
       <div class="job-head"><h3>AI Engineer <span>· Wiśniowski</span></h3><span class="when">Feb 2025 – Oct 2026</span></div>
-      <p class="job-sum">Internal AI tools for a Polish manufacturer of industrial doors, gates and fences.</p>
-      <ul><li><strong>Company-wide RAG assistant:</strong> Developed two versions of the company chatbot over technical PDFs: the first in Python with RAGFlow, the second a production version in Node.js. Deployed RAGFlow on Linux, integrated it with Open WebUI, and used Elastic Agent to monitor server performance.<span class="cv-stack"><span class="stack-badge">Python</span> <span class="stack-badge">Node.js</span> <span class="stack-badge">RAGFlow</span> <span class="stack-badge">LanceDB</span> <span class="stack-badge">RBAC</span></span></li><li><strong>Microsoft Teams meeting pipeline:</strong> Scans one group&#39;s meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.<span class="cv-stack"><span class="stack-badge">TypeScript</span> <span class="stack-badge">Node.js</span> <span class="stack-badge">Microsoft Graph</span> <span class="stack-badge">Microsoft Exchange</span> <span class="stack-badge">OpenAI API</span> <span class="stack-badge">RBAC</span></span></li><li><strong>AI translation portal:</strong> During data import, Gemini fills in missing translations or suggests translations in the background, keeping terminology consistent with the company glossary.<span class="cv-stack"><span class="stack-badge">TypeScript</span> <span class="stack-badge">Node.js</span> <span class="stack-badge">Python</span> <span class="stack-badge">Gemini API</span> <span class="stack-badge">RBAC</span></span></li><li><strong>Process-route analytics:</strong> Developed a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.<span class="cv-stack"><span class="stack-badge">Go</span> <span class="stack-badge">TypeScript</span> <span class="stack-badge">Gherkin</span></span></li><li><strong>AI interviews for process improvement:</strong> After a voice or text interview about daily work, it produces an automation report and adds knowledge to an LLM wiki. Supports Excel files, images and screenshots. Once enough knowledge has been collected, it can optionally turn repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox.<span class="cv-stack"><span class="stack-badge">TypeScript</span> <span class="stack-badge">Gemini managed agents</span> <span class="stack-badge">Secure</span></span></li></ul>
+      <p class="job-sum">Internal AI tools for a Polish manufacturer of industrial doors, gates and fences. The RAG assistant reached production; process-route analytics stayed a prototype.</p>
+      <ul><li><strong>Company-wide RAG assistant:</strong> Shipped two versions of the company chatbot over technical PDFs: the first in Python with RAGFlow, the second a production version in Node.js. Deployed RAGFlow on Linux, connected it to Open WebUI, and monitored the server with Elastic Agent.<span class="cv-stack"><span class="stack-badge">Python</span> <span class="stack-badge">Node.js</span> <span class="stack-badge">RBAC</span></span></li><li><strong>Microsoft Teams meeting pipeline:</strong> Built a pipeline for one group&#39;s meetings in on-premises Outlook. It switches on recording, pulls transcripts and recordings through Microsoft Graph (webhooks and polling), and an LLM writes structured JSON reports.<span class="cv-stack"><span class="stack-badge">TypeScript</span> <span class="stack-badge">OpenAI API</span> <span class="stack-badge">RBAC</span></span></li><li><strong>AI translation portal:</strong> Built the data import where Gemini fills missing translations or suggests them, and keeps the wording in line with the company glossary.<span class="cv-stack"><span class="stack-badge">TypeScript</span> <span class="stack-badge">Python</span> <span class="stack-badge">RBAC</span></span></li><li><strong>Process-route analytics:</strong> Built a prototype in which engineers chat with historical production traces, try new settings and get suggested routes. A deterministic core computes the numbers; experimental modules add an LLM and autoresearch.<span class="cv-stack"><span class="stack-badge">Go</span> <span class="stack-badge">TypeScript</span></span></li><li><strong>AI interviews for process improvement:</strong> Built voice and text interviews about daily work: an automation report, an entry in an LLM wiki, and Excel, image and screenshot input. With enough collected knowledge it can write SKILL.md files for agents. It runs in the Gemini managed-agents sandbox.<span class="cv-stack"><span class="stack-badge">TypeScript</span></span></li></ul>
     </div>
   </section>
 
@@ -108,13 +108,13 @@ h2 { break-after: avoid; }
     <h2>Selected projects</h2>
     <div class="proj">
       <h3>PDF-Insight: validated document extraction <a href="https://github.com/adagora/PDF-Insight">github.com/adagora/PDF-Insight</a></h3>
-      <p>PDF → validated JSON with local inspection, text redaction and source checks for amounts and dates. React, Cloudflare Workers, Gemini and shared Zod schemas; 298 unit/contract/property tests.</p>
+      <p>298 unit, contract and property tests for a PDF-to-JSON tool: local inspection, text redaction, and source checks for amounts and dates. On 6 Oct 2026, 19 of 20 public uploads finished within 30 seconds (p95 29.1 s).</p>
       <span class="cv-stack"><span class="stack-badge">TypeScript</span> <span class="stack-badge">React</span> <span class="stack-badge">Gemini</span></span>
     </div>
     <div class="proj">
       <h3>Cairn: process-route analysis <a href="https://manufacturing-tool.onrender.com/">manufacturing-tool.onrender.com</a></h3>
-      <p>Shows where work waits, where it loops back and which routing choice succeeded more often with the work mix held fixed; every claim carries its sample size. Go engine, agent-first CLI and web workbench; live demo on public datasets.</p>
-      <span class="cv-stack"><span class="stack-badge">Go</span> <span class="stack-badge">TypeScript</span> <span class="stack-badge">Gherkin</span></span>
+      <p>Finds where work waits, where it loops, and which route did better on a comparable set of jobs. Every number says how many jobs it comes from. Go engine; live demo on public data, factory data stays private.</p>
+      <span class="cv-stack"><span class="stack-badge">Go</span> <span class="stack-badge">TypeScript</span></span>
     </div>
     <div class="proj">
       <h3>VisualRAG <a href="https://github.com/adagora/visualRAG">github.com/adagora/visualRAG</a></h3>
@@ -124,11 +124,11 @@ h2 { break-after: avoid; }
     <div class="proj">
       <h3>ai-audit: audit proxy for LLM APIs <a href="https://github.com/adagora/ai-audit">github.com/adagora/ai-audit</a></h3>
       <p>Local proxy for OpenAI and Anthropic APIs. Detects secrets and personal data, redacts sensitive content or blocks requests, and records calls in a hash-chained audit log.</p>
-      <span class="cv-stack"><span class="stack-badge">TypeScript</span> <span class="stack-badge">Node.js</span> <span class="stack-badge">Bend</span> <span class="stack-badge">TLA+</span></span>
+      <span class="cv-stack"><span class="stack-badge">TypeScript</span> <span class="stack-badge">Node.js</span></span>
     </div>
     <div class="proj">
       <h3>AI decisions in Excel and translation consistency <a href="https://github.com/adagora/jev-experiments">github.com/adagora/jev-experiments</a></h3>
-      <p>Experiments with a decision API in Excel: AI decisions exposed as spreadsheet formulas, plus terminology checks to keep AI translations consistent. A review app lets translators curate the glossary and approve decisions.</p>
+      <p>An experiment: Excel formulas =JUDGE, =PICK and =RATE call an AI decision API, and a glossary check keeps translation terms consistent. Translators approve decisions and glossary entries in a review app.</p>
       <span class="cv-stack"><span class="stack-badge">TypeScript</span> <span class="stack-badge">TypeSafe Jev</span> <span class="stack-badge">Excel</span> <span class="stack-badge">api-decisions</span></span>
     </div>
     <p class="more">All projects: <a href="https://adagora.github.io/#projects">adagora.github.io/#projects</a></p>

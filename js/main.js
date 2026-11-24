@@ -59,7 +59,8 @@
     $$('.section').forEach((el) => { el.classList.add('reveal'); io.observe(el); });
   }
 
-  /* ── Contribution graph ── */
+  /* Activity counts are rendered by scripts/build.js. This path remains for a page that has not been rebuilt. */
+  if (!document.querySelector('#activity[data-static]')) {
   let statsData = null;
 
   function renderGraph(canvas, data) {
@@ -235,4 +236,5 @@
       const feed = $('#shipstream-feed');
       if (feed) feed.innerHTML = `<div class="shipstream-empty">${activityUnavailable}</div>`;
     });
+  }
 })();

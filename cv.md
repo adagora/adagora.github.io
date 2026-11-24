@@ -13,17 +13,17 @@ AI / Software Engineer | LLM apps, RAG, agents | TypeScript, Python
 
 ## Profile
 
-AI Engineer with experience building internal tools at Wiśniowski for document search, translation, meeting reports and production analysis. Previously developed software mainly in fintech.
+Software engineer since 2020. At Wiśniowski I shipped a production RAG assistant over technical PDFs and built tools for meeting reports, translation and process routes; before that, mainly fintech, including sanction screening on a regulated application.
 
 ## Experience
 
 ### AI Engineer · Wiśniowski (Feb 2025 – Oct 2026)
 
-- **Company-wide RAG assistant:** Developed two versions of the company chatbot over technical PDFs: the first in Python with RAGFlow, the second a production version in Node.js. Deployed RAGFlow on Linux, integrated it with Open WebUI, and used Elastic Agent to monitor server performance.
-- **Microsoft Teams meeting pipeline:** Scans one group's meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.
-- **AI translation portal:** During data import, Gemini fills in missing translations or suggests translations in the background, keeping terminology consistent with the company glossary.
-- **Process-route analytics:** Developed a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.
-- **AI interviews for process improvement:** After a voice or text interview about daily work, it produces an automation report and adds knowledge to an LLM wiki. Supports Excel files, images and screenshots. Once enough knowledge has been collected, it can optionally turn repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox.
+- **Company-wide RAG assistant:** Shipped two versions of the company chatbot over technical PDFs: the first in Python with RAGFlow, the second a production version in Node.js. Deployed RAGFlow on Linux, connected it to Open WebUI, and monitored the server with Elastic Agent.
+- **Microsoft Teams meeting pipeline:** Built a pipeline for one group's meetings in on-premises Outlook. It switches on recording, pulls transcripts and recordings through Microsoft Graph (webhooks and polling), and an LLM writes structured JSON reports.
+- **AI translation portal:** Built the data import where Gemini fills missing translations or suggests them, and keeps the wording in line with the company glossary.
+- **Process-route analytics:** Built a prototype in which engineers chat with historical production traces, try new settings and get suggested routes. A deterministic core computes the numbers; experimental modules add an LLM and autoresearch.
+- **AI interviews for process improvement:** Built voice and text interviews about daily work: an automation report, an entry in an LLM wiki, and Excel, image and screenshot input. With enough collected knowledge it can write SKILL.md files for agents. It runs in the Gemini managed-agents sandbox.
 
 ## Selected projects
 
@@ -42,7 +42,7 @@ Code: https://github.com/adagora/PDF-Insight
 
 ### Cairn: process-route analysis
 
-Shows where work waits, where it loops back and which routing choice succeeded more often once the mix of work is held fixed. Every number opens into the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.
+Finds where work waits, where it loops, and which route did better on a comparable set of jobs. Every number says how many jobs it comes from and opens the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.
 
 - Each claim carries its sample size, basis and whether it may be quoted, and a marked finding can be re-proved on new data.
 - The CLI prints one JSON envelope per call, with ready-to-quote sentences, caveats and refused questions, so an AI agent can use it without inventing numbers.
@@ -70,19 +70,39 @@ Local proxy for OpenAI and Anthropic APIs. Detects secrets and personal data, re
 Stack: TypeScript, Node.js, OpenAI API, Anthropic API, Bend, TLA+
 Code: https://github.com/adagora/ai-audit
 
+### loop-me: employee interviews
+
+Agent interviews employees and produces automation specifications with ROI estimates.
+
+Stack: AI agents
+Live demo: https://takt-view.ai.studio/
+
+### IntentGauge: evaluation evidence
+
+Regression-tested evals for agent behaviour: live runs, case libraries, human review with agreement, and evidence views.
+
+Stack: TypeScript, evals
+Code: https://github.com/adagora/IntentGauge
+
+### deskhand: helpdesk agent
+
+Helpdesk agent with a reviewer cockpit: approve a refund, replay the decision, inspect cases and health.
+
+Stack: Python, agents
+Code: https://github.com/adagora/deskhand
+
 ### Private repositories (code shown on request)
 
 - PDF wiki: Local-first knowledge base: drop in a PDF, run ingest, get a cross-linked Markdown wiki with semantic search. Claude vision describes every figure. (TypeScript, Claude, qmd)
 - Robot arm control in the browser: Calibration and daily control of a LeRobot SO-ARM100 from a laptop or phone: keyboard and gamepad input, an e-stop, and a single owner for the serial port. (Python, LeRobot, WebSockets)
 - HAR to API brief: Record browser traffic once and get a brief for rebuilding the API outside the browser: auth, endpoints, body shapes and curl templates. (Python)
-- loop-me: employee interviews: Agent interviews employees and produces automation specifications with ROI estimates. (AI agents)
 - Transport planner: Turns Excel orders into truck loads, routes and 3D loading plans. (Excel, 3D)
 - Allegro selling skill: Agent skill for selling on Allegro with human approval. (Agent skills)
 
 ### Additional projects
 
 - [CAD quoting engine for machined parts](https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena): Quotes a machined part from its STEP file (a 3D CAD model) for a tool shop. Code measures the part and computes the price; an AI model reviews the machining process and risks the way a shop manager would. (Python, OpenCASCADE, build123d, trimesh, ezdxf, Claude / OpenAI)
-- [AI decisions in Excel and translation consistency](https://github.com/adagora/jev-experiments): Experiments with a decision API in Excel: AI decisions exposed as spreadsheet formulas, plus terminology checks to keep AI translations consistent. A review app lets translators curate the glossary and approve decisions. (TypeScript, TypeSafe Jev, Excel, api-decisions)
+- [AI decisions in Excel and translation consistency](https://github.com/adagora/jev-experiments): An experiment: Excel formulas =JUDGE, =PICK and =RATE call an AI decision API, and a glossary check keeps translation terms consistent. Translators approve decisions and glossary entries in a review app. (TypeScript, TypeSafe Jev, Excel, api-decisions)
 - [EternalChat: conversation as memory](https://github.com/adagora/EternalChat): Local terminal chat implementing the UniiChat design: append-only message logs feed a background tree of summaries. Each turn receives a size-budgeted view, with zoom back to original messages. Python with no runtime dependencies. (Python, Claude, UniiChat)
 - [Multi-agent pricing playground](https://github.com/adagora/calc-price-agent): Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE. (TypeScript, Bun, Vercel AI SDK, Claude, OpenAI, eBay API)
 - [Streaming ML demo, hackathon 2nd place](https://github.com/adagora/streamr-ml-demo): Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon. (Node.js, Streamr, ARIMA)
