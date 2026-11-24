@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-24",
     "canonical": "https://adagora.github.io/",
     "source": "Single source of truth for the site, CVs, llms.txt and resume.json. Edit here, then run `npm run build`. Text fields are a plain string or {\"en\": ..., \"pl\": ...}."
   },
@@ -1113,7 +1113,7 @@
     },
     {
       "id": "loop-me",
-      "tier": "private",
+      "tier": "featured",
       "visibility": "private",
       "name": {
         "en": "loop-me: employee interviews",
@@ -1129,6 +1129,16 @@
       "tags": [
         "agents",
         "automation"
+      ],
+      "links": [
+        {
+          "label": { "en": "Live demo", "pl": "Demo na żywo" },
+          "url": "https://takt-view.ai.studio/"
+        },
+        {
+          "label": { "en": "Also on Render (may take a minute to wake)", "pl": "Kopia na Renderze (bywa minutę na przebudzenie)" },
+          "url": "https://loop-me-enterprise.onrender.com/"
+        }
       ],
       "cv": false
     },
@@ -1174,6 +1184,65 @@
         "automation"
       ],
       "cv": false
+    },
+    {
+      "id": "intentgauge",
+      "tier": "featured",
+      "visibility": "public",
+      "name": { "en": "IntentGauge: evaluation evidence", "pl": "IntentGauge: dowody z ewaluacji" },
+      "summary": {
+        "en": "Regression-tested evals for agent behaviour: live runs, case libraries, human review with agreement, and evidence views.",
+        "pl": "Ewaluacje zachowania agenta z regresją: żywe runy, biblioteka przypadków, recenzja ludzka z zgodnością i widoki dowodów."
+      },
+      "stack": ["TypeScript", "evals"],
+      "media": {
+        "url": "https://raw.githubusercontent.com/adagora/IntentGauge/main/docs/media/live-run-and-cases.gif",
+        "alt": "IntentGauge: live run, regression diff, case library and checks"
+      },
+      "links": [
+        { "label": { "en": "Code", "pl": "Kod" }, "url": "https://github.com/adagora/IntentGauge" }
+      ],
+      "cv": false
+    },
+    {
+      "id": "deskhand",
+      "tier": "featured",
+      "visibility": "public",
+      "name": { "en": "deskhand: helpdesk agent", "pl": "deskhand: agent helpdesku" },
+      "summary": {
+        "en": "Helpdesk agent with a reviewer cockpit: approve a refund, replay the decision, inspect cases and health.",
+        "pl": "Agent helpdesku z kokpitem recenzenta: akceptacja zwrotu, odtworzenie decyzji, przypadki i zdrowie systemu."
+      },
+      "stack": ["Python", "agents"],
+      "media": {
+        "url": "https://raw.githubusercontent.com/adagora/deskhand/main/docs/media/deskhand-cockpit.gif",
+        "alt": "deskhand cockpit: approve a refund, replay the log, switch theme"
+      },
+      "links": [
+        { "label": { "en": "Code", "pl": "Kod" }, "url": "https://github.com/adagora/deskhand" }
+      ],
+      "cv": false
+    }
+  ],
+  "alsoLive": [
+    {
+      "name": {
+        "en": "Stadion Reymana 3D digital twin",
+        "pl": "Cyfrowy bliźniak Stadionu Reymana"
+      },
+      "summary": {
+        "en": "Walkable WebGL model of Kraków's Henryk Reyman Municipal Stadium: architecture and a simple physics pass in the browser.",
+        "pl": "Przechodzalny model WebGL Stadionu Miejskiego im. Henryka Reymana w Krakowie: architektura i prosta warstwa fizyki w przeglądarce."
+      },
+      "url": "https://stadion-reymana-3d.pages.dev/"
+    },
+    {
+      "name": { "en": "Moving Day", "pl": "Moving Day" },
+      "summary": {
+        "en": "Browser-scale evacuation game: Earth launch sites, open space, Moon and Mars, including a walkable Stadion Reymana. Side project — craft, not the AI brief.",
+        "pl": "Gra w przeglądarce: starty z Ziemi, przestrzeń, Księżyc i Mars, w tym przechodzalny Stadion Reymana. Projekt poboczny — rzemiosło, nie brief AI."
+      },
+      "url": "https://moving-day-c7z.pages.dev/"
     }
   ],
   "skills": [

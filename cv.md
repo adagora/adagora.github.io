@@ -70,12 +70,32 @@ Local proxy for OpenAI and Anthropic APIs. Detects secrets and personal data, re
 Stack: TypeScript, Node.js, OpenAI API, Anthropic API, Bend, TLA+
 Code: https://github.com/adagora/ai-audit
 
+### loop-me: employee interviews
+
+Agent interviews employees and produces automation specifications with ROI estimates.
+
+Stack: AI agents
+Live demo: https://takt-view.ai.studio/
+
+### IntentGauge: evaluation evidence
+
+Regression-tested evals for agent behaviour: live runs, case libraries, human review with agreement, and evidence views.
+
+Stack: TypeScript, evals
+Code: https://github.com/adagora/IntentGauge
+
+### deskhand: helpdesk agent
+
+Helpdesk agent with a reviewer cockpit: approve a refund, replay the decision, inspect cases and health.
+
+Stack: Python, agents
+Code: https://github.com/adagora/deskhand
+
 ### Private repositories (code shown on request)
 
 - PDF wiki: Local-first knowledge base: drop in a PDF, run ingest, get a cross-linked Markdown wiki with semantic search. Claude vision describes every figure. (TypeScript, Claude, qmd)
 - Robot arm control in the browser: Calibration and daily control of a LeRobot SO-ARM100 from a laptop or phone: keyboard and gamepad input, an e-stop, and a single owner for the serial port. (Python, LeRobot, WebSockets)
 - HAR to API brief: Record browser traffic once and get a brief for rebuilding the API outside the browser: auth, endpoints, body shapes and curl templates. (Python)
-- loop-me: employee interviews: Agent interviews employees and produces automation specifications with ROI estimates. (AI agents)
 - Transport planner: Turns Excel orders into truck loads, routes and 3D loading plans. (Excel, 3D)
 - Allegro selling skill: Agent skill for selling on Allegro with human approval. (Agent skills)
 

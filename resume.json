@@ -386,7 +386,8 @@
       "keywords": [
         "AI agents"
       ],
-      "type": "private repository"
+      "url": "https://takt-view.ai.studio/",
+      "type": "live demo, private repository"
     },
     {
       "name": "Transport planner",
@@ -404,12 +405,32 @@
         "Agent skills"
       ],
       "type": "private repository"
+    },
+    {
+      "name": "IntentGauge: evaluation evidence",
+      "description": "Regression-tested evals for agent behaviour: live runs, case libraries, human review with agreement, and evidence views.",
+      "keywords": [
+        "TypeScript",
+        "evals"
+      ],
+      "url": "https://github.com/adagora/IntentGauge",
+      "type": "public repository"
+    },
+    {
+      "name": "deskhand: helpdesk agent",
+      "description": "Helpdesk agent with a reviewer cockpit: approve a refund, replay the decision, inspect cases and health.",
+      "keywords": [
+        "Python",
+        "agents"
+      ],
+      "url": "https://github.com/adagora/deskhand",
+      "type": "public repository"
     }
   ],
   "meta": {
     "canonical": "https://adagora.github.io/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-11-03",
+    "lastModified": "2026-11-24",
     "availability": "Available now, no notice period",
     "workMode": "Remote or hybrid, also open to remote roles in the EU and worldwide",
     "contract": "B2B or employment contract",

@@ -57,23 +57,43 @@ Lokalne proxy dla API OpenAI i Anthropic. Wykrywa sekrety i dane osobowe, maskuj
 Stack: TypeScript, Node.js, OpenAI API, Anthropic API, Bend, TLA+
 Code: https://github.com/adagora/ai-audit
 
+### loop-me: wywiady z pracownikami
+
+Agent przeprowadza wywiady z pracownikami i przygotowuje specyfikacje automatyzacji z szacunkami ROI.
+
+Stack: AI agents
+Demo na żywo: https://takt-view.ai.studio/
+
+### IntentGauge: dowody z ewaluacji
+
+Ewaluacje zachowania agenta z regresją: żywe runy, biblioteka przypadków, recenzja ludzka z zgodnością i widoki dowodów.
+
+Stack: TypeScript, evals
+Code: https://github.com/adagora/IntentGauge
+
+### deskhand: agent helpdesku
+
+Agent helpdesku z kokpitem recenzenta: akceptacja zwrotu, odtworzenie decyzji, przypadki i zdrowie systemu.
+
+Stack: Python, agents
+Code: https://github.com/adagora/deskhand
+
 ### Prywatne repozytoria (kod do pokazania na rozmowie)
 
 - PDF wiki: Lokalna baza wiedzy: wrzucasz PDF, uruchamiasz ingest i dostajesz powiązane wiki w Markdown z wyszukiwaniem semantycznym. Claude opisuje każdą rycinę. (TypeScript, Claude, qmd)
 - Sterowanie ramieniem robota z przeglądarki: Kalibracja i codzienne sterowanie ramieniem LeRobot SO-ARM100 z laptopa lub telefonu: klawiatura i gamepad, e-stop i jeden właściciel portu szeregowego. (Python, LeRobot, WebSockets)
 - HAR → opis API: Nagrywasz ruch przeglądarki raz i dostajesz opis potrzebny do odtworzenia API poza przeglądarką: autoryzacja, endpointy, kształty body i szablony curl. (Python)
-- loop-me: wywiady z pracownikami: Agent przeprowadza wywiady z pracownikami i przygotowuje specyfikacje automatyzacji z szacunkami ROI. (AI agents)
 - Planowanie transportu: Zamienia zamówienia z Excela w załadunki ciężarówek, trasy i plany załadunku 3D. (Excel, 3D)
 - Skill do sprzedaży na Allegro: Skill agenta do sprzedaży na Allegro z zatwierdzaniem przez człowieka. (Agent skills)
 
 ### Dodatkowe projekty
 
-- [CAD quoting engine for machined parts](https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena): Quotes a machined part from its STEP file (a 3D CAD model) for a tool shop. Code measures the part and computes the price; an AI model reviews the machining process and risks the way a shop manager would. (Python, OpenCASCADE, build123d, trimesh, ezdxf, Claude / OpenAI)
-- [AI decisions in Excel and translation consistency](https://github.com/adagora/jev-experiments): Experiments with a decision API in Excel: AI decisions exposed as spreadsheet formulas, plus terminology checks to keep AI translations consistent. A review app lets translators curate the glossary and approve decisions. (TypeScript, TypeSafe Jev, Excel, api-decisions)
-- [EternalChat: conversation as memory](https://github.com/adagora/EternalChat): Local terminal chat implementing the UniiChat design: append-only message logs feed a background tree of summaries. Each turn receives a size-budgeted view, with zoom back to original messages. Python with no runtime dependencies. (Python, Claude, UniiChat)
-- [Multi-agent pricing playground](https://github.com/adagora/calc-price-agent): Four Bun workspaces on the Vercel AI SDK: a tool-calling calculator agent, a coding REPL with per-tool confirmations, an eBay pricing agent (parse → search → compute → present) and a web server that streams the agents over SSE. (TypeScript, Bun, Vercel AI SDK, Claude, OpenAI, eBay API)
-- [Streaming ML demo, hackathon 2nd place](https://github.com/adagora/streamr-ml-demo): Live Binance trades through the Streamr network, ARIMA forecasts on the stream, results on a chart. 2nd place at the LearnWeb3 AI Hackathon. (Node.js, Streamr, ARIMA)
-- [meat: reading diffs](https://github.com/adagora/diff-explain): Turns a large code diff into a smaller reading diff focused on the consequential changes. TypeScript CLI, migrated from Go. (TypeScript, Go)
+- [Wycena detali obrabianych z modelu CAD](https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena): Wycenia detal obrabiany mechanicznie na podstawie pliku STEP (model 3D CAD) dla narzędziowni. Wymiary i cenę liczy kod, a model AI ocenia technologię i ryzyka jak kierownik narzędziowni. (Python, OpenCASCADE, build123d, trimesh, ezdxf, Claude / OpenAI)
+- [Decyzje AI w Excelu i spójność tłumaczeń](https://github.com/adagora/jev-experiments): Eksperymenty z API do podejmowania decyzji w Excelu: decyzje AI dostępne jako formuły arkusza oraz kontrola terminologii dla zachowania spójności tłumaczeń AI. Aplikacja przeglądowa pozwala tłumaczom rozwijać glosariusz i zatwierdzać decyzje. (TypeScript, TypeSafe Jev, Excel, api-decisions)
+- [EternalChat: rozmowa jako pamięć](https://github.com/adagora/EternalChat): Lokalny czat terminalowy według projektu UniiChat: dopisywany dziennik wiadomości zasila drzewo podsumowań w tle. Każda tura otrzymuje widok o ograniczonym rozmiarze, z możliwością powrotu do oryginalnych wiadomości. Python bez zależności wykonawczych. (Python, Claude, UniiChat)
+- [Wieloagentowy playground do wycen](https://github.com/adagora/calc-price-agent): Cztery workspace'y Bun na Vercel AI SDK: agent-kalkulator z narzędziami, REPL do kodowania z potwierdzaniem narzędzi, agent wyceny na danych z eBay (parse → search → compute → present) i serwer strumieniujący agentów przez SSE. (TypeScript, Bun, Vercel AI SDK, Claude, OpenAI, eBay API)
+- [Demo ML na strumieniu danych, 2. miejsce w hackathonie](https://github.com/adagora/streamr-ml-demo): Transakcje z Binance na żywo przez sieć Streamr, prognozy ARIMA na strumieniu, wyniki na wykresie. 2. miejsce w LearnWeb3 AI Hackathon. (Node.js, Streamr, ARIMA)
+- [meat: diff do czytania](https://github.com/adagora/diff-explain): Zamienia duży diff kodu w mniejszy diff do czytania, skupiony na istotnych zmianach. CLI w TypeScript, zmigrowane z Go. (TypeScript, Go)
 - [Ralph loop for coding agents](https://github.com/adagora/loop-coding-agent): A plan-and-build prompt loop driven by AGENTS.md and specs, for Claude Code, opencode and Kilo Code. (Shell)
 - [Roaming RAG](https://github.com/adagora/experiment-with-roaming-RAG): Collapses a long Markdown document to its headings and lets the model expand only the sections it needs. (Python)
 - [MiCA regulation Q&A](https://github.com/adagora/book-ai-chat): Answers questions about the EU crypto-asset regulation (MiCA) from the regulation text, with PostgresML for semantic search. A 2024 project, still live; the free hosting tier can take a minute to wake up. (Node.js, PostgresML, OpenAI) Live demo: https://cryptoregulationtalk.onrender.com/
@@ -81,7 +101,7 @@ Code: https://github.com/adagora/ai-audit
 - [Video frames analyzer](https://github.com/adagora/llm-video-extract-frames): Extracts frames from video, analyses them with Gemini, tracks cost and skips duplicate work. (TypeScript, Gemini)
 - [Hand-tracking interaction experiments](https://github.com/adagora/mediapipe-for-fun): Human-computer interaction prototypes with MediaPipe. (Python, MediaPipe)
 - [Eboombox](https://github.com/adagora/eboombox): Turns Cardano transactions into sound. (Next.js, Cardano)
-- [HSS heat treatment](https://github.com/adagora/HSS-heat-treatment): Steel quench simulation with a narrated Manim explainer. (Manim)
+- [Obróbka cieplna stali HSS](https://github.com/adagora/HSS-heat-treatment): Symulacja hartowania stali z narracyjnym objaśnieniem w Manim. (Manim)
 
 ## Wcześniejsze doświadczenie
 
