@@ -17,8 +17,8 @@
       "pl": "Tworzę narzędzia AI dla inżynierii i szukam obszarów, które można usprawnić i zautomatyzować."
     },
     "summary": {
-      "en": "AI Engineer with experience building internal tools at Wiśniowski for document search, translation, meeting reports and production analysis. Previously developed software mainly in fintech.",
-      "pl": "AI Engineer z doświadczeniem w tworzeniu wewnętrznych narzędzi w Wiśniowski do wyszukiwania w dokumentach, tłumaczeń, raportów ze spotkań i analizy produkcji. Wcześniej rozwijałem oprogramowanie głównie w fintech."
+      "en": "Software engineer since 2020. At Wiśniowski I shipped a production RAG assistant over technical PDFs and built tools for meeting reports, translation and process routes; before that, mainly fintech, including sanction screening on a regulated application.",
+      "pl": "Inżynier oprogramowania od 2020. W Wiśniowski wdrożyłem asystenta RAG nad dokumentacją techniczną PDF na produkcję i zbudowałem narzędzia do raportów ze spotkań, tłumaczeń i marszrut; wcześniej głównie fintech, w tym screening sankcyjny w regulowanej aplikacji."
     },
     "email": "adrian.gora14@gmail.com",
     "url": "https://adagora.github.io/",
@@ -135,8 +135,8 @@
       "endDate": "2026-10-31",
       "cv": "full",
       "summary": {
-        "en": "Internal AI tools for a Polish manufacturer of industrial doors, gates and fences.",
-        "pl": "Wewnętrzne narzędzia AI dla polskiego producenta bram, drzwi i ogrodzeń."
+        "en": "Internal AI tools for a Polish manufacturer of industrial doors, gates and fences. The RAG assistant reached production; process-route analytics stayed a prototype.",
+        "pl": "Wewnętrzne narzędzia AI dla polskiego producenta bram, drzwi i ogrodzeń. Asystent RAG wszedł na produkcję; analityka marszrut została prototypem."
       },
       "highlights": [
         {
@@ -150,8 +150,8 @@
             "pl": "Firmowy asystent RAG"
           },
           "text": {
-            "en": "Developed two versions of the company chatbot over technical PDFs: the first in Python with RAGFlow, the second a production version in Node.js. Deployed RAGFlow on Linux, integrated it with Open WebUI, and used Elastic Agent to monitor server performance.",
-            "pl": "Pracowałem nad dwiema wersjami firmowego chatbota korzystającego z dokumentacji technicznej PDF: pierwszą w Pythonie z RAGFlow, drugą produkcyjną w Node.js. Wdrożyłem RAGFlow na Linuxie, zintegrowałem z Open WebUI i monitorowałem wydajność serwera za pomocą Elastic Agent."
+            "en": "Shipped two versions of the company chatbot over technical PDFs: the first in Python with RAGFlow, the second a production version in Node.js. Deployed RAGFlow on Linux, connected it to Open WebUI, and monitored the server with Elastic Agent.",
+            "pl": "Zbudowałem dwie wersje firmowego chatbota nad dokumentacją techniczną PDF: pierwszą w Pythonie z RAGFlow, drugą, produkcyjną, w Node.js. RAGFlow uruchomiłem na Linuxie, podłączyłem do Open WebUI i monitorowałem serwer przez Elastic Agent."
           },
           "stack": [
             "Python",
@@ -166,8 +166,6 @@
           "cvStack": [
             "Python",
             "Node.js",
-            "RAGFlow",
-            "LanceDB",
             "RBAC"
           ]
         },
@@ -183,8 +181,8 @@
             "pl": "Pipeline spotkań Microsoft Teams"
           },
           "text": {
-            "en": "Scans one group's meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.",
-            "pl": "Skanuje spotkania jednej grupy w lokalnym (on-premises) Outlooku i włącza automatyczne nagrywanie. Transkrypcje i nagrania przychodzą przez Microsoft Graph (webhooki i polling), a LLM zamienia je w raporty JSON."
+            "en": "Built a pipeline for one group's meetings in on-premises Outlook. It switches on recording, pulls transcripts and recordings through Microsoft Graph (webhooks and polling), and an LLM writes structured JSON reports.",
+            "pl": "Zbudowałem pipeline spotkań jednej grupy w lokalnym (on-premises) Outlooku. Włącza nagrywanie, pobiera transkrypcje i nagrania przez Microsoft Graph (webhooki i polling), a LLM składa z nich raporty JSON."
           },
           "stack": [
             "Microsoft Graph",
@@ -198,9 +196,6 @@
           ],
           "cvStack": [
             "TypeScript",
-            "Node.js",
-            "Microsoft Graph",
-            "Microsoft Exchange",
             "OpenAI API",
             "RBAC"
           ]
@@ -216,8 +211,8 @@
             "pl": "Portal tłumaczeń z AI"
           },
           "text": {
-            "pl": "Podczas importu danych Gemini w tle uzupełnia brakujące tłumaczenia lub proponuje ich treść, zachowując spójność z firmowym słownikiem pojęć (glossary).",
-            "en": "During data import, Gemini fills in missing translations or suggests translations in the background, keeping terminology consistent with the company glossary."
+            "pl": "Zbudowałem import danych, w którym Gemini uzupełnia brakujące tłumaczenia albo je proponuje, zgodnie z firmowym glosariuszem.",
+            "en": "Built the data import where Gemini fills missing translations or suggests them, and keeps the wording in line with the company glossary."
           },
           "stack": [
             "TypeScript",
@@ -228,9 +223,7 @@
           ],
           "cvStack": [
             "TypeScript",
-            "Node.js",
             "Python",
-            "Gemini API",
             "RBAC"
           ]
         },
@@ -245,8 +238,8 @@
             "pl": "Analityka marszrut"
           },
           "text": {
-            "en": "Developed a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.",
-            "pl": "Rozwijałem prototyp, w którym technolog rozmawia z historią przebiegów produkcji, testuje nowe ustawienia i dostaje propozycje marszrut. Deterministyczny rdzeń liczy statystyki, a eksperymentalne moduły dodają LLM i autoresearch."
+            "en": "Built a prototype in which engineers chat with historical production traces, try new settings and get suggested routes. A deterministic core computes the numbers; experimental modules add an LLM and autoresearch.",
+            "pl": "Zbudowałem prototyp, w którym technolog rozmawia z historią przebiegów produkcji, sprawdza nowe ustawienia i dostaje propozycje marszrut. Deterministyczny rdzeń liczy statystyki; eksperymentalne moduły dodają LLM i autoresearch."
           },
           "stack": [
             "Go",
@@ -255,8 +248,7 @@
           ],
           "cvStack": [
             "Go",
-            "TypeScript",
-            "Gherkin"
+            "TypeScript"
           ]
         },
         {
@@ -271,20 +263,17 @@
             "pl": "Wywiady AI o usprawnieniach"
           },
           "text": {
-            "pl": "Po wywiadzie głosowym lub tekstowym o codziennej pracy przygotowuje raport z pomysłami na automatyzację i dopisuje wiedzę do wiki prowadzonego przez LLM. Obsługuje załączniki: arkusze Excel, obrazy i zrzuty ekranu. Po zgromadzeniu odpowiedniej wiedzy opcjonalnie zamienia powtarzalne zadania w pliki SKILL.md dla agentów. Działa na sandboxie Gemini managed agents.",
-            "en": "After a voice or text interview about daily work, it produces an automation report and adds knowledge to an LLM wiki. Supports Excel files, images and screenshots. Once enough knowledge has been collected, it can optionally turn repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox."
+            "pl": "Zbudowałem wywiady głosowe i tekstowe o codziennej pracy: raport o automatyzacji, wpis do wiki LLM oraz Excel, obrazy i zrzuty ekranu. Gdy wiedzy jest dość, powtarzalne zadania mogą trafić do plików SKILL.md dla agentów. Działa w sandboxie Gemini managed agents.",
+            "en": "Built voice and text interviews about daily work: an automation report, an entry in an LLM wiki, and Excel, image and screenshot input. With enough collected knowledge it can write SKILL.md files for agents. It runs in the Gemini managed-agents sandbox."
           },
           "stack": [
             "Gemini managed agents",
             "TypeScript",
             "LLM wiki",
-            "SKILL.md",
-            "Secure"
+            "SKILL.md"
           ],
           "cvStack": [
-            "TypeScript",
-            "Gemini managed agents",
-            "Secure"
+            "TypeScript"
           ]
         }
       ]
@@ -487,8 +476,8 @@
         "pl": "Sprawdza PDF lokalnie, maskuje wrażliwe dane i wyodrębnia podsumowania, strony umowy, kwoty i daty do JSON z walidacją. Wspólne schematy Zod łączą frontend React, Cloudflare Worker i odpowiedzi Gemini."
       },
       "cvSummary": {
-        "en": "PDF → validated JSON with local inspection, text redaction and source checks for amounts and dates. React, Cloudflare Workers, Gemini and shared Zod schemas; 298 unit/contract/property tests.",
-        "pl": "PDF → JSON z walidacją, lokalną inspekcją, maskowaniem tekstu i sprawdzaniem źródeł kwot oraz dat. React, Cloudflare Workers, Gemini i wspólne schematy Zod; 298 testów jednostkowych, kontraktowych i własności."
+        "en": "298 unit, contract and property tests for a PDF-to-JSON tool: local inspection, text redaction, and source checks for amounts and dates. On 6 Oct 2026, 19 of 20 public uploads finished within 30 seconds (p95 29.1 s).",
+        "pl": "298 testów jednostkowych, kontraktowych i własności dla narzędzia PDF → JSON: lokalna inspekcja, maskowanie tekstu oraz kontrola źródeł kwot i dat. 6 października 2026 ukończono 19 z 20 publicznych wysyłek w 30 sekund (p95 29,1 s)."
       },
       "metrics": [
         {
@@ -550,12 +539,12 @@
         "pl": "Cairn: analiza marszrut"
       },
       "summary": {
-        "en": "Shows where work waits, where it loops back and which routing choice succeeded more often once the mix of work is held fixed. Every number opens into the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.",
-        "pl": "Pokazuje, gdzie praca czeka, gdzie wraca i który wybór marszruty częściej się udawał przy tej samej mieszance zleceń. Każdą liczbę można rozwinąć do rekordów źródłowych. Kod jest prywatny; demo działa na publicznych zbiorach danych, a darmowy hosting potrzebuje do minuty na start."
+        "en": "Finds where work waits, where it loops, and which route did better on a comparable set of jobs. Every number says how many jobs it comes from and opens the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.",
+        "pl": "Pokazuje, gdzie praca czeka, gdzie krąży w pętli i która marszruta wypadła lepiej przy porównywalnych zleceniach. Każda liczba podaje, z ilu zleceń pochodzi, i otwiera rekordy źródłowe. Kod jest prywatny; demo działa na publicznych zbiorach danych, a darmowy hosting potrzebuje do minuty na start."
       },
       "cvSummary": {
-        "en": "Shows where work waits, where it loops back and which routing choice succeeded more often with the work mix held fixed; every claim carries its sample size. Go engine, agent-first CLI and web workbench; live demo on public datasets.",
-        "pl": "Pokazuje, gdzie praca czeka, gdzie wraca i która marszruta częściej się udawała przy tej samej mieszance zleceń; każde twierdzenie ma liczność próby. Silnik w Go, CLI dla agentów AI i webowy workbench; demo na publicznych danych."
+        "en": "Finds where work waits, where it loops, and which route did better on a comparable set of jobs. Every number says how many jobs it comes from. Go engine; live demo on public data, factory data stays private.",
+        "pl": "Pokazuje, gdzie praca czeka, gdzie krąży w pętli i która marszruta wypadła lepiej przy porównywalnych zleceniach. Każda liczba podaje, z ilu zleceń pochodzi. Silnik w Go; demo na danych publicznych, dane z fabryki zostają prywatne."
       },
       "bullets": [
         "Each claim carries its sample size, basis and whether it may be quoted, and a marked finding can be re-proved on new data.",
@@ -585,8 +574,7 @@
       "cv": true,
       "cvStack": [
         "Go",
-        "TypeScript",
-        "Gherkin"
+        "TypeScript"
       ]
     },
     {
@@ -675,9 +663,7 @@
       "cv": true,
       "cvStack": [
         "TypeScript",
-        "Node.js",
-        "Bend",
-        "TLA+"
+        "Node.js"
       ]
     },
     {
@@ -733,8 +719,8 @@
     {
       "id": "translate-audit",
       "cvSummary": {
-        "en": "Experiments with a decision API in Excel: AI decisions exposed as spreadsheet formulas, plus terminology checks to keep AI translations consistent. A review app lets translators curate the glossary and approve decisions.",
-        "pl": "Eksperymenty z API do podejmowania decyzji w Excelu: decyzje AI dostępne jako formuły arkusza oraz kontrola terminologii dla zachowania spójności tłumaczeń AI. Aplikacja przeglądowa pozwala tłumaczom rozwijać glosariusz i zatwierdzać decyzje."
+        "en": "An experiment: Excel formulas =JUDGE, =PICK and =RATE call an AI decision API, and a glossary check keeps translation terms consistent. Translators approve decisions and glossary entries in a review app.",
+        "pl": "Eksperyment: formuły Excela =JUDGE, =PICK i =RATE wywołują API decyzji AI, a kontrola glosariusza pilnuje terminów w tłumaczeniach. Tłumacze zatwierdzają decyzje i hasła glosariusza w aplikacji do przeglądu."
       },
       "tier": "earlier",
       "visibility": "public",
@@ -743,8 +729,8 @@
         "pl": "Decyzje AI w Excelu i spójność tłumaczeń"
       },
       "summary": {
-        "en": "Experiments with a decision API in Excel: AI decisions exposed as spreadsheet formulas, plus terminology checks to keep AI translations consistent. A review app lets translators curate the glossary and approve decisions.",
-        "pl": "Eksperymenty z API do podejmowania decyzji w Excelu: decyzje AI dostępne jako formuły arkusza oraz kontrola terminologii dla zachowania spójności tłumaczeń AI. Aplikacja przeglądowa pozwala tłumaczom rozwijać glosariusz i zatwierdzać decyzje."
+        "en": "An experiment: Excel formulas =JUDGE, =PICK and =RATE call an AI decision API, and a glossary check keeps translation terms consistent. Translators approve decisions and glossary entries in a review app.",
+        "pl": "Eksperyment: formuły Excela =JUDGE, =PICK i =RATE wywołują API decyzji AI, a kontrola glosariusza pilnuje terminów w tłumaczeniach. Tłumacze zatwierdzają decyzje i hasła glosariusza w aplikacji do przeglądu."
       },
       "bullets": [
         "Decision API experiments expose AI judgments in Excel through =JUDGE, =PICK and =RATE formulas.",

@@ -7,7 +7,7 @@
     "email": "adrian.gora14@gmail.com",
     "phone": "+48 694 983 705",
     "url": "https://adagora.github.io/",
-    "summary": "AI Engineer with experience building internal tools at Wiśniowski for document search, translation, meeting reports and production analysis. Previously developed software mainly in fintech.",
+    "summary": "Software engineer since 2020. At Wiśniowski I shipped a production RAG assistant over technical PDFs and built tools for meeting reports, translation and process routes; before that, mainly fintech, including sanction screening on a regulated application.",
     "location": {
       "countryCode": "PL",
       "region": "Poland"
@@ -31,13 +31,13 @@
       "position": "AI Engineer",
       "startDate": "2025-02",
       "endDate": "2026-10-31",
-      "summary": "Internal AI tools for a Polish manufacturer of industrial doors, gates and fences.",
+      "summary": "Internal AI tools for a Polish manufacturer of industrial doors, gates and fences. The RAG assistant reached production; process-route analytics stayed a prototype.",
       "highlights": [
-        "Developed two versions of the company chatbot over technical PDFs: the first in Python with RAGFlow, the second a production version in Node.js. Deployed RAGFlow on Linux, integrated it with Open WebUI, and used Elastic Agent to monitor server performance.",
-        "Scans one group's meetings in on-premises Outlook and switches on automatic recording. Transcripts and recordings come in through Microsoft Graph (webhooks and polling), and an LLM turns them into structured JSON reports.",
-        "During data import, Gemini fills in missing translations or suggests translations in the background, keeping terminology consistent with the company glossary.",
-        "Developed a prototype that lets engineers chat with historical production traces, test new settings and get suggested routes. A deterministic core computes the numbers, and experimental modules add an LLM and autoresearch.",
-        "After a voice or text interview about daily work, it produces an automation report and adds knowledge to an LLM wiki. Supports Excel files, images and screenshots. Once enough knowledge has been collected, it can optionally turn repeatable tasks into SKILL.md files for agents. Runs on the Gemini managed-agents sandbox."
+        "Shipped two versions of the company chatbot over technical PDFs: the first in Python with RAGFlow, the second a production version in Node.js. Deployed RAGFlow on Linux, connected it to Open WebUI, and monitored the server with Elastic Agent.",
+        "Built a pipeline for one group's meetings in on-premises Outlook. It switches on recording, pulls transcripts and recordings through Microsoft Graph (webhooks and polling), and an LLM writes structured JSON reports.",
+        "Built the data import where Gemini fills missing translations or suggests them, and keeps the wording in line with the company glossary.",
+        "Built a prototype in which engineers chat with historical production traces, try new settings and get suggested routes. A deterministic core computes the numbers; experimental modules add an LLM and autoresearch.",
+        "Built voice and text interviews about daily work: an automation report, an entry in an LLM wiki, and Excel, image and screenshot input. With enough collected knowledge it can write SKILL.md files for agents. It runs in the Gemini managed-agents sandbox."
       ]
     },
     {
@@ -302,7 +302,7 @@
     },
     {
       "name": "Cairn: process-route analysis",
-      "description": "Shows where work waits, where it loops back and which routing choice succeeded more often once the mix of work is held fixed. Every number opens into the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.",
+      "description": "Finds where work waits, where it loops, and which route did better on a comparable set of jobs. Every number says how many jobs it comes from and opens the records behind it. The code is private; the live demo runs on public datasets, and its free hosting can take a minute to wake up.",
       "highlights": [
         "Each claim carries its sample size, basis and whether it may be quoted, and a marked finding can be re-proved on new data.",
         "The CLI prints one JSON envelope per call, with ready-to-quote sentences, caveats and refused questions, so an AI agent can use it without inventing numbers.",

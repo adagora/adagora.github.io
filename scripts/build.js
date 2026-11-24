@@ -312,7 +312,7 @@ function siteRegions(p) {
           <div class="tl-when">${esc(range(current.startDate, current.endDate, 'en', L))}</div>
           <div class="tl-body">
             <h3>${esc(current.position)} <span class="at">${esc(current.company)}</span></h3>
-            <p class="tl-note">${esc(t(current.summary))} Five internal AI tools, described in <a href="#delivery">Shipped at ${esc(current.company)}</a>.</p>
+            <p class="tl-note">${esc(t(current.summary))} <a href="#delivery">The five tools</a>.</p>
           </div>
         </li>
         ${others.map((w) => `<li id="experience-${w.id}" class="tl-item">

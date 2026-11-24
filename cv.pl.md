@@ -13,17 +13,17 @@ AI / Software Engineer | aplikacje LLM, RAG, agenci | TypeScript, Python
 
 ## Profil
 
-AI Engineer z doświadczeniem w tworzeniu wewnętrznych narzędzi w Wiśniowski do wyszukiwania w dokumentach, tłumaczeń, raportów ze spotkań i analizy produkcji. Wcześniej rozwijałem oprogramowanie głównie w fintech.
+Inżynier oprogramowania od 2020. W Wiśniowski wdrożyłem asystenta RAG nad dokumentacją techniczną PDF na produkcję i zbudowałem narzędzia do raportów ze spotkań, tłumaczeń i marszrut; wcześniej głównie fintech, w tym screening sankcyjny w regulowanej aplikacji.
 
 ## Doświadczenie
 
 ### AI Engineer · Wiśniowski (02.2025 – 10.2026)
 
-- **Firmowy asystent RAG:** Pracowałem nad dwiema wersjami firmowego chatbota korzystającego z dokumentacji technicznej PDF: pierwszą w Pythonie z RAGFlow, drugą produkcyjną w Node.js. Wdrożyłem RAGFlow na Linuxie, zintegrowałem z Open WebUI i monitorowałem wydajność serwera za pomocą Elastic Agent.
-- **Pipeline spotkań Microsoft Teams:** Skanuje spotkania jednej grupy w lokalnym (on-premises) Outlooku i włącza automatyczne nagrywanie. Transkrypcje i nagrania przychodzą przez Microsoft Graph (webhooki i polling), a LLM zamienia je w raporty JSON.
-- **Portal tłumaczeń z AI:** Podczas importu danych Gemini w tle uzupełnia brakujące tłumaczenia lub proponuje ich treść, zachowując spójność z firmowym słownikiem pojęć (glossary).
-- **Analityka marszrut:** Rozwijałem prototyp, w którym technolog rozmawia z historią przebiegów produkcji, testuje nowe ustawienia i dostaje propozycje marszrut. Deterministyczny rdzeń liczy statystyki, a eksperymentalne moduły dodają LLM i autoresearch.
-- **Wywiady AI o usprawnieniach:** Po wywiadzie głosowym lub tekstowym o codziennej pracy przygotowuje raport z pomysłami na automatyzację i dopisuje wiedzę do wiki prowadzonego przez LLM. Obsługuje załączniki: arkusze Excel, obrazy i zrzuty ekranu. Po zgromadzeniu odpowiedniej wiedzy opcjonalnie zamienia powtarzalne zadania w pliki SKILL.md dla agentów. Działa na sandboxie Gemini managed agents.
+- **Firmowy asystent RAG:** Zbudowałem dwie wersje firmowego chatbota nad dokumentacją techniczną PDF: pierwszą w Pythonie z RAGFlow, drugą, produkcyjną, w Node.js. RAGFlow uruchomiłem na Linuxie, podłączyłem do Open WebUI i monitorowałem serwer przez Elastic Agent.
+- **Pipeline spotkań Microsoft Teams:** Zbudowałem pipeline spotkań jednej grupy w lokalnym (on-premises) Outlooku. Włącza nagrywanie, pobiera transkrypcje i nagrania przez Microsoft Graph (webhooki i polling), a LLM składa z nich raporty JSON.
+- **Portal tłumaczeń z AI:** Zbudowałem import danych, w którym Gemini uzupełnia brakujące tłumaczenia albo je proponuje, zgodnie z firmowym glosariuszem.
+- **Analityka marszrut:** Zbudowałem prototyp, w którym technolog rozmawia z historią przebiegów produkcji, sprawdza nowe ustawienia i dostaje propozycje marszrut. Deterministyczny rdzeń liczy statystyki; eksperymentalne moduły dodają LLM i autoresearch.
+- **Wywiady AI o usprawnieniach:** Zbudowałem wywiady głosowe i tekstowe o codziennej pracy: raport o automatyzacji, wpis do wiki LLM oraz Excel, obrazy i zrzuty ekranu. Gdy wiedzy jest dość, powtarzalne zadania mogą trafić do plików SKILL.md dla agentów. Działa w sandboxie Gemini managed agents.
 
 ## Wybrane projekty
 
@@ -38,7 +38,7 @@ Code: https://github.com/adagora/PDF-Insight
 
 ### Cairn: analiza marszrut
 
-Pokazuje, gdzie praca czeka, gdzie wraca i który wybór marszruty częściej się udawał przy tej samej mieszance zleceń. Każdą liczbę można rozwinąć do rekordów źródłowych. Kod jest prywatny; demo działa na publicznych zbiorach danych, a darmowy hosting potrzebuje do minuty na start.
+Pokazuje, gdzie praca czeka, gdzie krąży w pętli i która marszruta wypadła lepiej przy porównywalnych zleceniach. Każda liczba podaje, z ilu zleceń pochodzi, i otwiera rekordy źródłowe. Kod jest prywatny; demo działa na publicznych zbiorach danych, a darmowy hosting potrzebuje do minuty na start.
 
 Stack: Go, TypeScript, Gherkin, Preact, BPMN, VDA 5050
 Live demo: https://manufacturing-tool.onrender.com/
@@ -89,7 +89,7 @@ Code: https://github.com/adagora/deskhand
 ### Dodatkowe projekty
 
 - [Wycena detali obrabianych z modelu CAD](https://github.com/adagora/cad-tools/tree/wycena/w1-foundation/skills/wycena): Wycenia detal obrabiany mechanicznie na podstawie pliku STEP (model 3D CAD) dla narzędziowni. Wymiary i cenę liczy kod, a model AI ocenia technologię i ryzyka jak kierownik narzędziowni. (Python, OpenCASCADE, build123d, trimesh, ezdxf, Claude / OpenAI)
-- [Decyzje AI w Excelu i spójność tłumaczeń](https://github.com/adagora/jev-experiments): Eksperymenty z API do podejmowania decyzji w Excelu: decyzje AI dostępne jako formuły arkusza oraz kontrola terminologii dla zachowania spójności tłumaczeń AI. Aplikacja przeglądowa pozwala tłumaczom rozwijać glosariusz i zatwierdzać decyzje. (TypeScript, TypeSafe Jev, Excel, api-decisions)
+- [Decyzje AI w Excelu i spójność tłumaczeń](https://github.com/adagora/jev-experiments): Eksperyment: formuły Excela =JUDGE, =PICK i =RATE wywołują API decyzji AI, a kontrola glosariusza pilnuje terminów w tłumaczeniach. Tłumacze zatwierdzają decyzje i hasła glosariusza w aplikacji do przeglądu. (TypeScript, TypeSafe Jev, Excel, api-decisions)
 - [EternalChat: rozmowa jako pamięć](https://github.com/adagora/EternalChat): Lokalny czat terminalowy według projektu UniiChat: dopisywany dziennik wiadomości zasila drzewo podsumowań w tle. Każda tura otrzymuje widok o ograniczonym rozmiarze, z możliwością powrotu do oryginalnych wiadomości. Python bez zależności wykonawczych. (Python, Claude, UniiChat)
 - [Wieloagentowy playground do wycen](https://github.com/adagora/calc-price-agent): Cztery workspace'y Bun na Vercel AI SDK: agent-kalkulator z narzędziami, REPL do kodowania z potwierdzaniem narzędzi, agent wyceny na danych z eBay (parse → search → compute → present) i serwer strumieniujący agentów przez SSE. (TypeScript, Bun, Vercel AI SDK, Claude, OpenAI, eBay API)
 - [Demo ML na strumieniu danych, 2. miejsce w hackathonie](https://github.com/adagora/streamr-ml-demo): Transakcje z Binance na żywo przez sieć Streamr, prognozy ARIMA na strumieniu, wyniki na wykresie. 2. miejsce w LearnWeb3 AI Hackathon. (Node.js, Streamr, ARIMA)
