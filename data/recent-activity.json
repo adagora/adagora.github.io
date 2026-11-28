@@ -1,6 +1,46 @@
 {
-  "generated": "2026-11-27T16:08:17.849Z",
+  "generated": "2026-11-28T15:02:07.796Z",
   "items": [
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "private": true,
+      "date": "2026-11-28T00:37:23Z",
+      "url": null,
+      "message": "feat: complete all 4 roadmap epics (kvdh, 3qto, qrqr, e8ww)"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/quatation-transport",
+      "private": true,
+      "date": "2026-11-27T22:44:48Z",
+      "url": null,
+      "message": "wip"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/quatation-transport",
+      "private": true,
+      "date": "2026-11-27T22:34:25Z",
+      "url": null,
+      "message": "Capture the offline synthetic plan and driver sheet (tp-jhu.6)"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/CAD-helpers",
+      "private": true,
+      "date": "2026-11-27T21:25:53Z",
+      "url": null,
+      "message": "feat: complete P1 wave 1 (kvdh.4, e8ww.3, 3qto.3)"
+    },
+    {
+      "type": "commit",
+      "repo": "adagora/stadium-3D-",
+      "private": true,
+      "date": "2026-11-27T16:19:06Z",
+      "url": null,
+      "message": "chore: ignore .agents and .beads directories"
+    },
     {
       "type": "commit",
       "repo": "adagora/stadium-3D-",
@@ -8,14 +48,6 @@
       "date": "2026-11-27T16:00:07Z",
       "url": null,
       "message": "fix: unblock Inside mode button on desktop, fix bookmark/seat walk exit & mobile walk-bar layout"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/stadium-3D-",
-      "private": true,
-      "date": "2026-11-27T15:07:03Z",
-      "url": null,
-      "message": "feat: V3 4D digital twin differentiators, AR Quick Look, Cloudflare Worker edge proxy & CI verification"
     },
     {
       "type": "commit",
@@ -32,22 +64,6 @@
       "date": "2026-11-26T23:11:31Z",
       "url": null,
       "message": "feat(moving): Phase 3 sky-to-orbit altitude LOD, KTX2 GPU texture pipeline & cell-scoped co-op (md-tx64.3)"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "private": true,
-      "date": "2026-11-26T21:57:39Z",
-      "url": null,
-      "message": "feat: implement 8fag.1-3, 87va.1, pt8b.1, and yg0o.2 beads"
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/CAD-helpers",
-      "private": true,
-      "date": "2026-11-26T16:49:48Z",
-      "url": null,
-      "message": "docs(adr): add ADR 0006 and roadmap epics for Specify/CI, Rust 0.5.6+, Wycena 2.0, and NIST thread"
     },
     {
       "type": "commit",
@@ -197,22 +213,6 @@
       "date": "2026-11-08T20:25:17Z",
       "url": null,
       "message": "Publish generated Idea Atlas game ideas."
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/atlas-game",
-      "private": true,
-      "date": "2026-11-08T17:07:13Z",
-      "url": null,
-      "message": "Show saved mechanic checks in the web app."
-    },
-    {
-      "type": "commit",
-      "repo": "adagora/okazje",
-      "private": true,
-      "date": "2026-11-06T10:59:21Z",
-      "url": null,
-      "message": "Complete the card map and merge earlier idea lists into one ranking."
     }
   ]
 }
